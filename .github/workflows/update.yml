@@ -1,0 +1,35 @@
+# purpose is to update the M&A tracker each hour 
+name: Update MA Tracker
+
+on:
+  schedule: 
+  - cron: '0 * * * *'
+  workflow_dispatch: # manual switch to run it
+
+jobs:
+  run-scraper:
+    runs-on: ubuntu-latest 
+    permissions: 
+      contents: write
+    steps: 
+      - name: Check out repo 
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+        
+      - name: Install dependencies
+        run: pip install feedparser tzdata
+
+      - name: Run script
+        run: python fetch_v1.py
+      
+      - name: Commit and push changes 
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.io"
+          git add deals.json index.html 
+          git diff --staged --quiet || git commit -m "Hourly automated deal update"
+          git push 
