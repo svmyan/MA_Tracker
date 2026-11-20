@@ -1,107 +1,114 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="refresh" content = "900">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>M&amp;A Tracker</title>
-<style>
-  .meta { color: var(--muted); font-size: 13px; margin-top: 8px; }
-  .notes { font-size: 14px; line-height: 1.5; margin-top: 8px;}
-    :root {
-    --bg: #f6f7f9;
-    --card: #ffffff;
-    --text: #1a1d21;
-    --muted: #6b7280;
-    --border: #e5e7eb;
-    --new: #16a34a;
-    --closed: #2563eb;
-    --dispute: #dc2626;
-}
-@media (prefers-color-scheme: dark) {
-        :root {
-      --bg: #0f1216;
-      --card: #171b21;
-      --text: #e6e8eb;
-      --muted: #8b94a1;
-      --border: #262c35;
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <meta http-equiv="refresh" content = "900">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>M&amp;A Tracker</title>
+  <style>
+    .meta { color: var(--muted); font-size: 13px; margin-top: 8px; }
+    .notes { font-size: 14px; line-height: 1.5; margin-top: 8px;}
+      :root {
+      --bg: #f6f7f9;
+      --card: #ffffff;
+      --text: #1a1d21;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --new: #16a34a;
+      --closed: #2563eb;
+      --dispute: #dc2626;
+  }
+  @media (prefers-color-scheme: dark) {
+          :root {
+        --bg: #0f1216;
+        --card: #171b21;
+        --text: #e6e8eb;
+        --muted: #8b94a1;
+        --border: #262c35;
+      }
+  }
+  body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, "Segoe UI", sans-serif;
+      margin: 0;
+  }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 32px 16px; }
+    h1 { font-size: 26px; margin: 0 0 4px; }
+    .sub { color: var(--muted); font-size: 14px; margin-bottom: 24px; }
+    .stats { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 24px; }
+    .stat {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 18px;
+      min-width: 120px;
+  }
+    .stat b { display: block; font-size: 24px; }
+    .stat span { color: var(--muted); font-size: 13px; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px 18px;
+      margin-bottom: 12px;
+  }
+    .card a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 1.4;
+  }
+    .card a:hover { text-decoration: underline; }
+    .meta { color: var(--muted); font-size: 13px; margin-top: 8px; }
+    .tag {
+      display: inline-block;
+      padding: 2px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 600;
+      color: white;
+      margin-right: 8px;
     }
-}
-body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: system-ui, "Segoe UI", sans-serif;
-    margin: 0;
-}
-  .wrap { max-width: 900px; margin: 0 auto; padding: 32px 16px; }
-  h1 { font-size: 26px; margin: 0 0 4px; }
-  .sub { color: var(--muted); font-size: 14px; margin-bottom: 24px; }
-  .stats { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 24px; }
-  .stat {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 12px 18px;
-    min-width: 120px;
-}
-  .stat b { display: block; font-size: 24px; }
-  .stat span { color: var(--muted); font-size: 13px; }
-  .card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 16px 18px;
-    margin-bottom: 12px;
-}
-  .card a {
-    color: var(--text);
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.4;
-}
-  .card a:hover { text-decoration: underline; }
-  .meta { color: var(--muted); font-size: 13px; margin-top: 8px; }
-  .tag {
-    display: inline-block;
-    padding: 2px 10px;
-    border-radius: 999px;
-    font-size: 12px;
-    font-weight: 600;
-    color: white;
-    margin-right: 8px;
-  }
-  .tag[hidden] {
-    display: none;
-  }
-  .ANNOUNCED { background: var(--new); }
-  .CLOSED { background: var(--closed); }
-  .UNSEEN {
-    background: #d97706;
-  }
-  .hero {
-    background: 
-     linear-gradient(rgba(10,14,20,0.55), rgba(10,14,20,0.85)),
-      url("Images/skyline.jpg") center / cover no-repeat;
-    color: white;
-    padding: 72px 16px 56px;
-  }
-  .hero-inner { max-width: 900px; margin: 0 auto;}
-  .hero h1 { font-size: 34px; margin: 0 0 6px; }
-  .hero .sub { color: #cbd2db; margin: 0; }
-  .DISPUTE { background: var(--dispute); }
-</style> 
-</head>
-<body>
-<div class="hero">
-  <div class="hero-inner">
-    <h1>M&amp;A Tracker</h1>
-    <div class="sub">Last updated: Nov 20, 2026, 09:37 AM (Ontario time)</div>
+    .tag[hidden] {
+      display: none;
+    }
+    .ANNOUNCED { background: var(--new); }
+    .CLOSED { background: var(--closed); }
+    .UNSEEN {
+      background: #d97706;
+    }
+    .hero {
+      background: 
+      linear-gradient(rgba(10,14,20,0.55), rgba(10,14,20,0.85)),
+        url("Images/skyline.jpg") center / cover no-repeat;
+      color: white;
+      padding: 72px 16px 56px;
+    }
+    .hero-inner { max-width: 900px; margin: 0 auto;}
+    .hero h1 { font-size: 34px; margin: 0 0 6px; }
+    .hero .sub { color: #cbd2db; margin: 0; }
+    .DISPUTE { background: var(--dispute); }
+  </style> 
+  </head>
+  <body>
+  <div class="hero">
+    <div class="hero-inner">
+      <h1>M&amp;A Tracker</h1>
+      <div class="sub">Last updated: Nov 20, 2026, 02:53 PM (Ontario time)</div>
+    </div>
   </div>
-</div>
-<div class="wrap">
-  <div class="stats"><div class="stat"><b>53</b><span>total tracked</span></div><div class="stat"><b>44</b><span>Announced</span></div><div class="stat"><b>8</b><span>Closed</span></div><div class="stat"><b>1</b><span>Disputes</span></div></div>
-  
+  <div class="wrap">
+    <div class="stats"><div class="stat"><b>54</b><span>total tracked</span></div><div class="stat"><b>45</b><span>Announced</span></div><div class="stat"><b>8</b><span>Closed</span></div><div class="stat"><b>1</b><span>Disputes</span></div></div>
+    
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/20/3407733/0/en/base-acquires-rubiq-to-give-companies-customer-context-they-can-trust-for-ai-infrastructure-and-agentic-teammates.html">
+        <span class="tag UNSEEN" hidden>NEW</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
+        <a href ="https://www.globenewswire.com/en/news-release/2026/11/20/3407733/0/en/base-acquires-rubiq-to-give-companies-customer-context-they-can-trust-for-ai-infrastructure-and-agentic-teammates.html" target="_blank">Base Acquires Rubiq to Give Companies Customer Context They Can Trust for AI Infrastructure and Agentic Teammates</a>
+        <div class="notes">Base acquired Rubiq to provide customer organizations and their AI teammates with trusted customer context. By integrating Rubiq’s customer context knowledge graph technology, Base aims to improve the performance of its AI-powered teams and agents by ensuring they have reliable, comprehensive data to inform their actions.</div>
+        <div class="meta">GlobeNewswire &middot; Nov 20, 2026, 12:30 PM</div>
+    </div>
     <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/20/3407310/0/en/visionwave-holdings-acquires-critical-minerals-intelligence-platform-targeting-near-term-commercialization-of-defense-supply-chain-intelligence.html">
         <span class="tag UNSEEN" hidden>NEW</span>
         <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -316,7 +323,7 @@ body {
         <span class="tag UNSEEN" hidden>NEW</span>
         <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/16/3403560/31297/en/taboola-finalizes-acquisition-of-dianomi.html" target="_blank">Taboola Finalizes Acquisition of Dianomi</a>
-        
+        <div class="notes">The acquisition bolsters Taboola’s ability to provide performance advertisers with a highly specialized, premium ad network focused on finance by utilizing its Realize platform. Additionally, the deal expands Taboola’s brand-safe reach and provides marketers with increased opportunities to connect with high-value business, finance, and lifestyle audiences.</div>
         <div class="meta">GlobeNewswire &middot; Nov 16, 2026, 09:00 AM</div>
     </div>
     <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403615/0/en/amd-completes-acquisition-of-world-labs.html">
@@ -379,42 +386,42 @@ body {
         <span class="tag UNSEEN" hidden>NEW</span>
         <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/13/3402523/0/en/proposed-merger-and-proven-vct-offer.html" target="_blank">Proposed Merger and ProVen VCT Offer</a>
-        
+        <div class="notes">The merger aims to achieve simplicity, administrative efficiency, and scale to better navigate the evolving VCT market. It is expected to deliver cost savings by reducing administrative expenses and management fees, while also increasing shareholder returns through a improved buyback program.</div>
         <div class="meta">GlobeNewswire &middot; Nov 13, 2026, 07:58 AM</div>
     </div>
     <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/13/3402525/0/en/proposed-merger-and-proven-vct-offer.html">
         <span class="tag UNSEEN" hidden>NEW</span>
         <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/13/3402525/0/en/proposed-merger-and-proven-vct-offer.html" target="_blank">Proposed Merger and ProVen VCT Offer</a>
-        
+        <div class="notes">The merger aims to achieve simplicity, administrative efficiency, and scale by combining the two entities into a single, larger platform. This consolidation is expected to improve shareholder returns through reduced administrative costs and a market-leading buyback program.</div>
         <div class="meta">GlobeNewswire &middot; Nov 13, 2026, 08:00 AM</div>
     </div>
     <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/13/3402604/0/en/gridai-technologies-signs-definitive-agreement-to-acquire-pronghorn-resources-establishing-major-wyoming-owned-natural-gas-and-multi-gigawatt-ai-power-infrastructure-platform-targe.html">
         <span class="tag UNSEEN" hidden>NEW</span>
         <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/13/3402604/0/en/gridai-technologies-signs-definitive-agreement-to-acquire-pronghorn-resources-establishing-major-wyoming-owned-natural-gas-and-multi-gigawatt-ai-power-infrastructure-platform-targe.html" target="_blank">GridAI Technologies Signs Definitive Agreement to Acquire Pronghorn Resources, Establishing Major Wyoming Owned-Natural Gas and Multi-Gigawatt AI Power Infrastructure Platform Targeting Initial Power Delivery in 2027</a>
-        
+        <div class="notes">GridAI Technologies is acquiring Pronghorn Resources to build a vertically integrated platform that supplies dedicated power and infrastructure to the artificial intelligence and hyperscale data center industries. This acquisition leverages Pronghorn&#x27;s existing natural gas production, pipelines, and water resources to accelerate power development and reduce reliance on conventional utility interconnection timelines.</div>
         <div class="meta">GlobeNewswire &middot; Nov 13, 2026, 09:00 AM</div>
     </div>
     <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/13/3402505/0/en/cerrado-gold-acquires-the-past-producing-manantial-espejo-mine-in-santa-cruz-argentina-from-pan-american-silver.html">
         <span class="tag UNSEEN" hidden>NEW</span>
         <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/13/3402505/0/en/cerrado-gold-acquires-the-past-producing-manantial-espejo-mine-in-santa-cruz-argentina-from-pan-american-silver.html" target="_blank">Cerrado Gold Acquires the Past-Producing Manantial Espejo Mine in Santa Cruz, Argentina, from Pan American Silver</a>
-        
+        <div class="notes">Cerrado Gold acquired the Manantial Espejo mine to achieve accelerated production growth in the Santa Cruz region by utilizing existing processing infrastructure to facilitate a rapid restart of operations. The company plans to leverage its regional experience and established foundation in Santa Cruz to support the site&#x27;s redevelopment and exploration opportunities.</div>
         <div class="meta">GlobeNewswire &middot; Nov 13, 2026, 07:26 AM</div>
     </div>
     <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/12/3402083/0/en/advini-and-invivo-continue-to-strengthen-their-strategic-partnership-with-the-proposed-acquisition-of-the-bonne-nouvelle-and-mythique-brands.html">
         <span class="tag UNSEEN" hidden>NEW</span>
         <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/12/3402083/0/en/advini-and-invivo-continue-to-strengthen-their-strategic-partnership-with-the-proposed-acquisition-of-the-bonne-nouvelle-and-mythique-brands.html" target="_blank">AdVini and InVivo continue to strengthen their strategic partnership with the proposed acquisition of the Bonne Nouvelle and Mythique brands</a>
-        
+        <div class="notes">The acquisition aims to strengthen AdVini&#x27;s position in the fast-growing alcohol-free wine market while expanding its portfolio of export-oriented Occitanie brands. This transaction serves to deepen the strategic partnership between AdVini and InVivo, supporting their shared ambition to establish AdVini as a major international wine industry player.</div>
         <div class="meta">GlobeNewswire &middot; Nov 12, 2026, 01:13 PM</div>
     </div>
     <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/12/3402034/0/en/danone-completes-its-acquisition-of-made-group-expanding-its-presence-in-the-fast-growing-healthy-nutrition-space-in-asia-pacific.html">
         <span class="tag UNSEEN" hidden>NEW</span>
         <span class="tag CLOSED">CLOSED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/12/3402034/0/en/danone-completes-its-acquisition-of-made-group-expanding-its-presence-in-the-fast-growing-healthy-nutrition-space-in-asia-pacific.html" target="_blank">Danone completes its acquisition of MADE Group, expanding its presence in the fast-growing healthy nutrition space in Asia Pacific</a>
-        
+        <div class="notes">Danone acquired MADE Group to expand its presence in the fast-growing healthy nutrition market within the Asia-Pacific region. The deal aims to leverage synergies by combining MADE Group’s entrepreneurial culture, marketing expertise, and route to market with Danone’s scale, science, and category expertise to unlock new growth opportunities.</div>
         <div class="meta">GlobeNewswire &middot; Nov 12, 2026, 12:00 PM</div>
     </div>
     <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/12/3401727/0/en/virtuix-signs-loi-to-acquire-defense-contractor-sts-international-reporting-40-million-in-unaudited-cash-basis-revenue-through-october-2026.html">
@@ -473,81 +480,73 @@ body {
         
         <div class="meta">GlobeNewswire &middot; Nov 11, 2026, 06:00 PM</div>
     </div>
-</div>
-<script>
-document.addEventListener("DOMContentLoaded", () => {
+  </div>
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
 
-    const cards = document.querySelectorAll(".card[data-deal-id]");
-    const STORAGE_KEY = "maTrackerSeenDeals";
+      const cards = document.querySelectorAll(".card[data-deal-id]");
+      const STORAGE_KEY = "maTrackerSeenDeals";
 
-    // Load previously viewed deals
+      // Load previously viewed deals
 
-    let seenDeals = new Set();
-    const saved = localStorage.getItem(STORAGE_KEY);
+      let seenDeals = new Set();
+      const saved = localStorage.getItem(STORAGE_KEY);
 
-    if (saved) {
-      seenDeals = new Set(JSON.parse(saved));
-    }
+      if (saved) {
+        seenDeals = new Set(JSON.parse(saved));
+      }
 
-    // Mark a deal as viewed
-    function markSeen(card) {
-        const id = card.dataset.dealId;
+      // Mark a deal as viewed
+      function markSeen(card) {
+          const id = card.dataset.dealId;
 
-        if (seenDeals.has(id)) return;
+          if (seenDeals.has(id)) return;
 
-        seenDeals.add(id);
+          seenDeals.add(id);
 
-        localStorage.setItem(
-            STORAGE_KEY,
-            JSON.stringify([...seenDeals])
-        );
+          localStorage.setItem(
+              STORAGE_KEY,
+              JSON.stringify([...seenDeals])
+          );
 
-        const badge = card.querySelector(".UNSEEN");
+      }
 
-        if (badge) {
-            badge.hidden = true;
-        }
-    }
+      // Show badges on deals that haven't been viewed
+      cards.forEach(card => {
 
-    // Show badges on deals that haven't been viewed
-    cards.forEach(card => {
+          const id = card.dataset.dealId;
+          const badge = card.querySelector(".UNSEEN");
 
-        const id = card.dataset.dealId;
-        const badge = card.querySelector(".UNSEEN");
+          if (!seenDeals.has(id)) {
+              badge.hidden = false;
+          } else {
+              badge.hidden = true;
+          }
 
-        if (!seenDeals.has(id)) {
-            badge.hidden = false;
-        } else {
-            badge.hidden = true;
-        }
+          // Clicking a deal marks it as viewed
+          card.querySelector("a").addEventListener("click", () => {
+              markSeen(card);
+          });
 
-        // Clicking a deal marks it as viewed
-        card.querySelector("a").addEventListener("click", () => {
-            markSeen(card);
-        });
+      });
 
-    });
+      // Track which deals are visible on screen
+      const timers = new Map();
 
-    // Track which deals are visible on screen
-    const timers = new Map();
-
-    const observer = new IntersectionObserver(entries => {
+          const observer = new IntersectionObserver(entries => {
 
         entries.forEach(entry => {
 
             const card = entry.target;
+            const id = card.dataset.dealId;
 
             if (entry.isIntersecting) {
 
-                if (!timers.has(card)) {
-
-                    const timer = setTimeout(() => {
+                if (!seenDeals.has(id) && !timers.has(card)) {
+                    timers.set(card, setTimeout(() => {
                         markSeen(card);
-                        observer.unobserve(card);
                         timers.delete(card);
-                    }, 1000);
-
-                    timers.set(card, timer);
+                    }, 1000));
                 }
 
             } else {
@@ -555,21 +554,25 @@ document.addEventListener("DOMContentLoaded", () => {
                 clearTimeout(timers.get(card));
                 timers.delete(card);
 
+                if (seenDeals.has(id)) {
+                    card.querySelector(".UNSEEN").hidden = true;
+                    observer.unobserve(card);
+                }
             }
 
         });
 
     }, { threshold: 0.5 });
 
-    cards.forEach(card => {
+      cards.forEach(card => {
 
-        if (!seenDeals.has(card.dataset.dealId)) {
-            observer.observe(card);
-        }
+          if (!seenDeals.has(card.dataset.dealId)) {
+              observer.observe(card);
+          }
 
-    });
+      });
 
-});
-</script>
-</body>
-</html>
+  });
+  </script>
+  </body>
+  </html>
