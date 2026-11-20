@@ -126,7 +126,7 @@ def deal_card(deal):
     notes_html = f'<div class="notes">{notes}</div>' if notes else ""
     return f"""
     <div class="card" data-deal-id="{deal_id}">
-        <span class="tag UNSEEN" hidden>UNSEEN</span>
+        <span class="tag UNSEEN" hidden>NEW</span>
         <span class="tag {status}">{status}</span>
         <a href ="{link}" target="_blank">{title}</a>
         {notes_html}

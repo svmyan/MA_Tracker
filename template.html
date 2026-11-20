@@ -77,7 +77,7 @@ body {
   .ANNOUNCED { background: var(--new); }
   .CLOSED { background: var(--closed); }
   .UNSEEN {
-    background: var(--new);
+    background: #d97706;
   }
   .hero {
     background: 
@@ -174,7 +174,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         markSeen(card);
                         observer.unobserve(card);
                         timers.delete(card);
-                    }, 500);
+                    }, 1000);
 
                     timers.set(card, timer);
                 }
