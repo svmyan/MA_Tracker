@@ -3,7 +3,7 @@ name: Update MA Tracker
 
 on:
   schedule: 
-  - cron: '30 13 * * *'
+  - cron: '23 * * * *'
   workflow_dispatch: # manual switch to run it
 
 jobs:
