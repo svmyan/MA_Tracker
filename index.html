@@ -6,6 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>M&amp;A Tracker</title>
 <style>
+  .meta { color: var(--muted); font-size: 13px; margin-top: 8px; }
+  .notes { font-size: 14px; line-height: 1.5; margin-top: 8px;}
     :root {
     --bg: #f6f7f9;
     --card: #ffffff;
@@ -69,277 +71,498 @@ body {
     color: white;
     margin-right: 8px;
   }
-  .NEW { background: var(--new); }
+  .tag[hidden] {
+    display: none;
+  }
+  .ANNOUNCED { background: var(--new); }
   .CLOSED { background: var(--closed); }
+  .UNSEEN {
+    background: var(--new);
+  }
+  .hero {
+    background: 
+     linear-gradient(rgba(10,14,20,0.55), rgba(10,14,20,0.85)),
+      url("images/skyline.jpg") center / cover no-repeat;
+    color: white;
+    padding: 72px 16px 56px;
+  }
+  .hero-inner { max-width: 900px; margin: 0 auto;}
+  .hero h1 { font-size: 34px; margin: 0 0 6px; }
+  .hero .sub { color: #cbd2db; margin: 0; }
   .DISPUTE { background: var(--dispute); }
 </style> 
 </head>
 <body>
+<div class="hero">
+  <div class="hero-inner">
+    <h1>M&amp;A Tracker</h1>
+    <div class="sub">Last updated: Nov 19, 2026, 11:10 PM (Ontario time)</div>
+  </div>
+</div>
 <div class="wrap">
-  <h1>M&amp;A Tracker</h1>
-  <div class="sub">Last updated: Nov 19, 2026, 09:45 PM (Ontario time)</div>
-  <div class="stats"><div class="stat"><b>52</b><span>total tracked</span></div><div class="stat"><b>43</b><span>New Announcements</span></div><div class="stat"><b>8</b><span>Closed</span></div><div class="stat"><b>1</b><span>Disputes</span></div></div>
+  <div class="stats"><div class="stat"><b>52</b><span>total tracked</span></div><div class="stat"><b>43</b><span>Announced</span></div><div class="stat"><b>8</b><span>Closed</span></div><div class="stat"><b>1</b><span>Disputes</span></div></div>
   
-    <div class="card">
-        <span class="tag NEW">NEW</span>
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/19/3406796/0/en/pontiac-bancorp-inc-and-ottawa-bancorp-inc-announce-receipt-of-all-required-regulatory-and-shareholder-approvals-for-merger.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/19/3406796/0/en/pontiac-bancorp-inc-and-ottawa-bancorp-inc-announce-receipt-of-all-required-regulatory-and-shareholder-approvals-for-merger.html" target="_blank">PONTIAC BANCORP, INC. AND OTTAWA BANCORP, INC. ANNOUNCE RECEIPT OF ALL REQUIRED REGULATORY AND SHAREHOLDER APPROVALS FOR MERGER</a>
+        <div class="notes">Rationale not stated.</div>
         <div class="meta">GlobeNewswire &middot; Nov 19, 2026, 10:04 AM</div>
     </div>
-    <div class="card">
-        <span class="tag NEW">NEW</span>
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/19/3406587/0/en/friedman-industries-expands-downstream-with-the-acquisition-of-behrens-metalware.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/19/3406587/0/en/friedman-industries-expands-downstream-with-the-acquisition-of-behrens-metalware.html" target="_blank">Friedman Industries Expands Downstream with the Acquisition of Behrens Metalware</a>
+        <div class="notes">This acquisition is intended to diversify Friedman Industries&#x27; product offerings, expand its value-added manufacturing capabilities, and capture additional margin opportunities further downstream. The transaction aims to improve the company&#x27;s product mix and customer base through the addition of branded, finished metal products.</div>
         <div class="meta">GlobeNewswire &middot; Nov 19, 2026, 08:45 AM</div>
     </div>
-    <div class="card">
-        <span class="tag NEW">NEW</span>
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/19/3406641/0/en/aifa-signs-definitive-agreement-to-acquire-little-vault-shanglong-li-to-serve-as-chairman-and-ceo-accelerating-ai-applications-and-content-ip-commercialization.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/19/3406641/0/en/aifa-signs-definitive-agreement-to-acquire-little-vault-shanglong-li-to-serve-as-chairman-and-ceo-accelerating-ai-applications-and-content-ip-commercialization.html" target="_blank">AIFA Signs Definitive Agreement to Acquire Little Vault, Shanglong Li to Serve as Chairman and CEO, Accelerating AI Applications and Content IP Commercialization</a>
+        <div class="notes">The acquisition is intended to advance AIFA&#x27;s business strategy in content IP commercialization, digital content services, and the creator economy, while facilitating the commercialization of its AI-powered application products. The company also aims to explore potential synergies by combining AI technologies with content creation, knowledge services, and digital marketing.</div>
         <div class="meta">GlobeNewswire &middot; Nov 19, 2026, 09:00 AM</div>
     </div>
-    <div class="card">
-        <span class="tag NEW">NEW</span>
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/19/3406395/9504/en/willis-lease-finance-corporation-expands-fleet-with-acquisition-of-two-airbus-a320-aircraft.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/19/3406395/9504/en/willis-lease-finance-corporation-expands-fleet-with-acquisition-of-two-airbus-a320-aircraft.html" target="_blank">Willis Lease Finance Corporation Expands Fleet with Acquisition of Two Airbus A320 Aircraft</a>
+        <div class="notes">The acquisition is intended to complement the company&#x27;s core engine leasing business and strategically expand its aviation asset portfolio to meet growing customer demand. This investment reflects a disciplined approach to asset diversification and strengthens the company&#x27;s ability to serve airline customers globally.</div>
         <div class="meta">GlobeNewswire &middot; Nov 19, 2026, 06:30 AM</div>
     </div>
-    <div class="card">
-        <span class="tag NEW">NEW</span>
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/19/3406343/0/en/exolum-enters-u-s-pipeline-operations-with-the-acquisition-of-a-pipeline-system-in-houston.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/19/3406343/0/en/exolum-enters-u-s-pipeline-operations-with-the-acquisition-of-a-pipeline-system-in-houston.html" target="_blank">Exolum enters U.S. pipeline operations with the acquisition of a pipeline system in Houston</a>
+        <div class="notes">The acquisition marks Exolum’s entry into U.S. pipeline operations and supports the company’s broader growth strategy in the region. By combining the new pipeline assets with its existing ammonia storage and logistics capabilities in Houston, Exolum aims to offer a broader range of integrated logistics solutions.</div>
         <div class="meta">GlobeNewswire &middot; Nov 19, 2026, 04:00 AM</div>
     </div>
-    <div class="card">
-        <span class="tag NEW">NEW</span>
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/18/3406019/0/en/trident-signs-mou-to-acquire-51-controlling-stake-in-malaysia-s-guang-yao-development-entering-hydrogen-power-and-battery-energy-storage-for-data-centres.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/18/3406019/0/en/trident-signs-mou-to-acquire-51-controlling-stake-in-malaysia-s-guang-yao-development-entering-hydrogen-power-and-battery-energy-storage-for-data-centres.html" target="_blank">Trident Signs MOU to Acquire 51% Controlling Stake in Malaysia’s Guang Yao Development, Entering Hydrogen Power and Battery Energy Storage for Data Centres</a>
+        <div class="notes">The acquisition is intended to extend Trident’s digital infrastructure platform into the energy layer that supports data centres. By securing a controlling stake in Guang Yao, Trident aims to transition from building digital infrastructure to also supplying the reliable and low-carbon energy required for its operation.</div>
         <div class="meta">GlobeNewswire &middot; Nov 18, 2026, 11:30 AM</div>
     </div>
-    <div class="card">
-        <span class="tag NEW">NEW</span>
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/18/3405839/35894/en/synaptics-stockholders-approve-merger-with-onsemi.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/18/3405839/35894/en/synaptics-stockholders-approve-merger-with-onsemi.html" target="_blank">Synaptics Stockholders Approve Merger with onsemi</a>
+        <div class="notes">Rationale not stated.</div>
         <div class="meta">GlobeNewswire &middot; Nov 18, 2026, 09:53 AM</div>
     </div>
-    <div class="card">
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/18/3405653/0/en/transom-capital-completes-acquisition-of-soundthinking.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
         <span class="tag CLOSED">CLOSED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/18/3405653/0/en/transom-capital-completes-acquisition-of-soundthinking.html" target="_blank">Transom Capital Completes Acquisition of SoundThinking</a>
+        <div class="notes">Transom Capital intends to leverage its operational expertise to strengthen SoundThinking&#x27;s commercial execution and accelerate its growth, including through strategic M&amp;A. The firm also plans to build on SoundThinking&#x27;s existing innovation and customer relationships to support the company&#x27;s long-term development.</div>
         <div class="meta">GlobeNewswire &middot; Nov 18, 2026, 08:42 AM</div>
     </div>
-    <div class="card">
-        <span class="tag NEW">NEW</span>
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/18/3405379/0/en/spie-signs-an-agreement-for-the-acquisition-of-enprom-group-strengthening-its-high-voltage-power-engineering-and-installation-capabilities-in-poland-and-germany.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/18/3405379/0/en/spie-signs-an-agreement-for-the-acquisition-of-enprom-group-strengthening-its-high-voltage-power-engineering-and-installation-capabilities-in-poland-and-germany.html" target="_blank">SPIE signs an agreement for the acquisition of ENPROM Group, strengthening its high-voltage power engineering and installation capabilities in Poland and Germany</a>
+        <div class="notes">The acquisition is intended to strengthen SPIE&#x27;s high-voltage power engineering and installation capabilities in Poland and Germany. This move is expected to create new growth opportunities in the electrical power construction segment and help establish a leading market position.</div>
         <div class="meta">GlobeNewswire &middot; Nov 18, 2026, 01:30 AM</div>
     </div>
-    <div class="card">
-        <span class="tag NEW">NEW</span>
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/17/3405307/0/en/fernweh-group-announces-acquisition-of-resource-energy-equipment.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/17/3405307/0/en/fernweh-group-announces-acquisition-of-resource-energy-equipment.html" target="_blank">Fernweh Group Announces Acquisition of Resource Energy Equipment</a>
+        <div class="notes">The acquisition expands Fernweh Group&#x27;s industrial portfolio and presence in energy infrastructure markets. This transaction combines Fernweh’s industrial expertise with Resource Energy Equipment&#x27;s strong foundation to support the business&#x27;s accelerated transformation and growth.</div>
         <div class="meta">GlobeNewswire &middot; Nov 17, 2026, 06:00 PM</div>
     </div>
-    <div class="card">
-        <span class="tag NEW">NEW</span>
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/17/3404565/0/en/crown-aviation-acquires-silver-king-helicopters-anchoring-its-canadian-aviation-consolidation-strategy.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/17/3404565/0/en/crown-aviation-acquires-silver-king-helicopters-anchoring-its-canadian-aviation-consolidation-strategy.html" target="_blank">Crown Aviation Acquires Silver King Helicopters, Anchoring Its Canadian Aviation Consolidation Strategy</a>
+        
         <div class="meta">GlobeNewswire &middot; Nov 17, 2026, 08:00 AM</div>
     </div>
-    <div class="card">
-        <span class="tag NEW">NEW</span>
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/17/3404581/0/en/clearwave-to-acquire-ting-s-owned-fiber-networks-expanding-fiber-footprint-to-20-states.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/17/3404581/0/en/clearwave-to-acquire-ting-s-owned-fiber-networks-expanding-fiber-footprint-to-20-states.html" target="_blank">Clearwave to acquire Ting&#x27;s owned fiber networks, expanding fiber footprint to 20 states</a>
+        
         <div class="meta">GlobeNewswire &middot; Nov 17, 2026, 08:13 AM</div>
     </div>
-    <div class="card">
-        <span class="tag NEW">NEW</span>
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/17/3404423/0/en/alpha-modus-announces-subsidiary-s-non-binding-letter-of-intent-for-a-potential-acquisition-of-or-investment-in-chaingpt.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/17/3404423/0/en/alpha-modus-announces-subsidiary-s-non-binding-letter-of-intent-for-a-potential-acquisition-of-or-investment-in-chaingpt.html" target="_blank">Alpha Modus Announces Subsidiary&#x27;s Non-Binding Letter of Intent for a Potential Acquisition of or Investment in ChainGPT</a>
+        
         <div class="meta">GlobeNewswire &middot; Nov 17, 2026, 06:59 AM</div>
     </div>
-    <div class="card">
-        <span class="tag NEW">NEW</span>
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/17/3404426/0/en/smartkem-inc-merger-partner-ferrox-advances-global-commercialization-of-tivani-titanium-and-magnetite-products-through-wogen-collaboration.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/17/3404426/0/en/smartkem-inc-merger-partner-ferrox-advances-global-commercialization-of-tivani-titanium-and-magnetite-products-through-wogen-collaboration.html" target="_blank">Smartkem, Inc. Merger Partner Ferrox Advances Global Commercialization of Tivani Titanium and Magnetite Products Through Wogen Collaboration</a>
+        
         <div class="meta">GlobeNewswire &middot; Nov 17, 2026, 07:00 AM</div>
     </div>
-    <div class="card">
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3404073/0/en/valor-energy-inc-closes-acquisition-of-18mw-computing-center-in-youngstown-ohio-accelerating-ai-data-center-expansion.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
         <span class="tag CLOSED">CLOSED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/16/3404073/0/en/valor-energy-inc-closes-acquisition-of-18mw-computing-center-in-youngstown-ohio-accelerating-ai-data-center-expansion.html" target="_blank">Valor Energy Inc. Closes Acquisition of 18MW Computing Center in Youngstown, Ohio, Accelerating AI Data Center Expansion</a>
+        
         <div class="meta">GlobeNewswire &middot; Nov 16, 2026, 03:50 PM</div>
     </div>
-    <div class="card">
-        <span class="tag NEW">NEW</span>
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3404111/10055/en/pool-corporation-to-acquire-team-horner.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/16/3404111/10055/en/pool-corporation-to-acquire-team-horner.html" target="_blank">Pool Corporation to Acquire Team Horner</a>
+        
         <div class="meta">GlobeNewswire &middot; Nov 16, 2026, 04:05 PM</div>
     </div>
-    <div class="card">
-        <span class="tag NEW">NEW</span>
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3404135/0/en/voltus-acquires-stem-s-athena-platform-to-enable-battery-partners-to-extract-more-value-from-their-assets.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/16/3404135/0/en/voltus-acquires-stem-s-athena-platform-to-enable-battery-partners-to-extract-more-value-from-their-assets.html" target="_blank">Voltus Acquires Stem’s Athena Platform to Enable Battery Partners to Extract More Value from their Assets</a>
+        
         <div class="meta">GlobeNewswire &middot; Nov 16, 2026, 04:10 PM</div>
     </div>
-    <div class="card">
-        <span class="tag NEW">NEW</span>
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3404140/0/en/rosemont-pharmaceuticals-to-acquire-aytu-biopharma-to-accelerate-us-expansion.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/16/3404140/0/en/rosemont-pharmaceuticals-to-acquire-aytu-biopharma-to-accelerate-us-expansion.html" target="_blank">Rosemont Pharmaceuticals to acquire Aytu BioPharma to accelerate US expansion</a>
+        
         <div class="meta">GlobeNewswire &middot; Nov 16, 2026, 04:11 PM</div>
     </div>
-    <div class="card">
-        <span class="tag NEW">NEW</span>
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403947/0/en/spie-nederland-strengthens-its-position-in-industrial-automation-and-robotics-with-the-acquisition-of-duflex-b-v.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/16/3403947/0/en/spie-nederland-strengthens-its-position-in-industrial-automation-and-robotics-with-the-acquisition-of-duflex-b-v.html" target="_blank">SPIE Nederland strengthens its position in industrial automation and robotics with the acquisition of Duflex B.V</a>
+        
         <div class="meta">GlobeNewswire &middot; Nov 16, 2026, 12:00 PM</div>
     </div>
-    <div class="card">
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403979/0/en/nvro-metals-completes-acquisition-of-northern-territories-resources.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
         <span class="tag CLOSED">CLOSED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/16/3403979/0/en/nvro-metals-completes-acquisition-of-northern-territories-resources.html" target="_blank">NVRO Metals Completes Acquisition of Northern Territories Resources</a>
+        
         <div class="meta">GlobeNewswire &middot; Nov 16, 2026, 12:13 PM</div>
     </div>
-    <div class="card">
-        <span class="tag NEW">NEW</span>
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403737/0/en/edustaff-acquires-speech-services-rhode-island-to-expand-onsite-special-education-services-in-the-northeast.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/16/3403737/0/en/edustaff-acquires-speech-services-rhode-island-to-expand-onsite-special-education-services-in-the-northeast.html" target="_blank">Edustaff Acquires Speech Services Rhode Island to Expand Onsite Special Education Services in the Northeast</a>
+        
         <div class="meta">GlobeNewswire &middot; Nov 16, 2026, 10:00 AM</div>
     </div>
-    <div class="card">
-        <span class="tag NEW">NEW</span>
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403426/0/en/davion-healthcare-plc-agrees-to-terms-in-acquisition-of-independence-care-homecare-network.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/16/3403426/0/en/davion-healthcare-plc-agrees-to-terms-in-acquisition-of-independence-care-homecare-network.html" target="_blank">Davion Healthcare Plc Agrees to Terms in Acquisition of Independence Care Homecare Network</a>
+        
         <div class="meta">GlobeNewswire &middot; Nov 16, 2026, 07:48 AM</div>
     </div>
-    <div class="card">
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403477/0/en/energy-capital-partners-ecp-completes-acquisition-of-energysolutions.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
         <span class="tag CLOSED">CLOSED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/16/3403477/0/en/energy-capital-partners-ecp-completes-acquisition-of-energysolutions.html" target="_blank">Energy Capital Partners (ECP) Completes Acquisition of EnergySolutions</a>
+        
         <div class="meta">GlobeNewswire &middot; Nov 16, 2026, 08:00 AM</div>
     </div>
-    <div class="card">
-        <span class="tag NEW">NEW</span>
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403471/0/en/commure-acquires-elaborate-to-cure-the-clinician-inbox.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/16/3403471/0/en/commure-acquires-elaborate-to-cure-the-clinician-inbox.html" target="_blank">Commure Acquires Elaborate to Cure the Clinician Inbox</a>
+        
         <div class="meta">GlobeNewswire &middot; Nov 16, 2026, 08:00 AM</div>
     </div>
-    <div class="card">
-        <span class="tag NEW">NEW</span>
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403531/0/en/worldwide-nft-inc-acquires-artificial-intelligence-platform-from-discourse-analytics-inc-to-expand-software-capabilities.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/16/3403531/0/en/worldwide-nft-inc-acquires-artificial-intelligence-platform-from-discourse-analytics-inc-to-expand-software-capabilities.html" target="_blank">Worldwide NFT, Inc. Acquires Artificial Intelligence Platform from Discourse Analytics, Inc. to Expand Software Capabilities</a>
+        
         <div class="meta">GlobeNewswire &middot; Nov 16, 2026, 08:30 AM</div>
     </div>
-    <div class="card">
-        <span class="tag NEW">NEW</span>
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403518/0/en/zenta-group-signs-binding-mou-for-strategic-acquisition-of-controlling-stake-in-se-asia-based-ai-technology-start-up.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/16/3403518/0/en/zenta-group-signs-binding-mou-for-strategic-acquisition-of-controlling-stake-in-se-asia-based-ai-technology-start-up.html" target="_blank">Zenta Group Signs Binding MOU for Strategic Acquisition of Controlling Stake in SE Asia-Based AI Technology Start-Up</a>
+        
         <div class="meta">GlobeNewswire &middot; Nov 16, 2026, 08:30 AM</div>
     </div>
-    <div class="card">
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403542/0/en/wsp-completes-acquisition-of-gcm-corpo.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
         <span class="tag CLOSED">CLOSED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/16/3403542/0/en/wsp-completes-acquisition-of-gcm-corpo.html" target="_blank">WSP completes acquisition of GCM Corpo</a>
+        
         <div class="meta">GlobeNewswire &middot; Nov 16, 2026, 08:35 AM</div>
     </div>
-    <div class="card">
-        <span class="tag NEW">NEW</span>
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403605/0/en/nutritics-accelerates-us-expansion-with-acquisition-of-kitchen-management-platform-parsley-software.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/16/3403605/0/en/nutritics-accelerates-us-expansion-with-acquisition-of-kitchen-management-platform-parsley-software.html" target="_blank">Nutritics accelerates US expansion with acquisition of kitchen management platform Parsley Software</a>
+        
         <div class="meta">GlobeNewswire &middot; Nov 16, 2026, 09:00 AM</div>
     </div>
-    <div class="card">
-        <span class="tag NEW">NEW</span>
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403576/0/en/qtrex-acquires-gis-to-scale-quantum-interconnect-production-adding-10-million-in-cash-and-a-business-with-11-3-million-in-revenue.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/16/3403576/0/en/qtrex-acquires-gis-to-scale-quantum-interconnect-production-adding-10-million-in-cash-and-a-business-with-11-3-million-in-revenue.html" target="_blank">QTREX Acquires GIS to Scale Quantum Interconnect Production, Adding $10 Million in Cash and a Business with $11.3 Million in Revenue</a>
+        
         <div class="meta">GlobeNewswire &middot; Nov 16, 2026, 09:00 AM</div>
     </div>
-    <div class="card">
-        <span class="tag NEW">NEW</span>
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403560/31297/en/taboola-finalizes-acquisition-of-dianomi.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/16/3403560/31297/en/taboola-finalizes-acquisition-of-dianomi.html" target="_blank">Taboola Finalizes Acquisition of Dianomi</a>
+        
         <div class="meta">GlobeNewswire &middot; Nov 16, 2026, 09:00 AM</div>
     </div>
-    <div class="card">
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403615/0/en/amd-completes-acquisition-of-world-labs.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
         <span class="tag CLOSED">CLOSED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/16/3403615/0/en/amd-completes-acquisition-of-world-labs.html" target="_blank">AMD Completes Acquisition of World Labs</a>
+        
         <div class="meta">GlobeNewswire &middot; Nov 16, 2026, 09:05 AM</div>
     </div>
-    <div class="card">
-        <span class="tag NEW">NEW</span>
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403661/0/en/caliber-sponsored-fund-acquires-tonto-oaks-apartments-expanding-caliber-s-multifamily-holdings-in-payson-arizona.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/16/3403661/0/en/caliber-sponsored-fund-acquires-tonto-oaks-apartments-expanding-caliber-s-multifamily-holdings-in-payson-arizona.html" target="_blank">Caliber-Sponsored Fund Acquires Tonto Oaks Apartments, Expanding Caliber’s Multifamily Holdings in Payson, Arizona</a>
+        
         <div class="meta">GlobeNewswire &middot; Nov 16, 2026, 09:25 AM</div>
     </div>
-    <div class="card">
-        <span class="tag NEW">NEW</span>
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403664/33206/en/rapid-micro-biosystems-signs-definitive-agreement-to-be-acquired-by-merck-kgaa-darmstadt-germany.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/16/3403664/33206/en/rapid-micro-biosystems-signs-definitive-agreement-to-be-acquired-by-merck-kgaa-darmstadt-germany.html" target="_blank">Rapid Micro Biosystems Signs Definitive Agreement to be Acquired by Merck KGaA, Darmstadt, Germany</a>
+        
         <div class="meta">GlobeNewswire &middot; Nov 16, 2026, 09:26 AM</div>
     </div>
-    <div class="card">
-        <span class="tag NEW">NEW</span>
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403314/10381/en/black-hills-corp-and-northwestern-energy-complete-merger-forming-bright-horizon-energy-corporation.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/16/3403314/10381/en/black-hills-corp-and-northwestern-energy-complete-merger-forming-bright-horizon-energy-corporation.html" target="_blank">Black Hills Corp. and NorthWestern Energy Complete Merger, Forming Bright Horizon Energy Corporation</a>
+        
         <div class="meta">GlobeNewswire &middot; Nov 16, 2026, 06:30 AM</div>
     </div>
-    <div class="card">
-        <span class="tag NEW">NEW</span>
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403226/0/en/flsmidth-to-acquire-ce-africa-strengthening-its-crushing-and-aftermarket-offering-in-southern-africa.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/16/3403226/0/en/flsmidth-to-acquire-ce-africa-strengthening-its-crushing-and-aftermarket-offering-in-southern-africa.html" target="_blank">FLSmidth to acquire CE Africa, strengthening its crushing and aftermarket offering in Southern Africa</a>
+        
         <div class="meta">GlobeNewswire &middot; Nov 16, 2026, 04:00 AM</div>
     </div>
-    <div class="card">
-        <span class="tag NEW">NEW</span>
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/14/3403026/0/en/high-arctic-energy-services-inc-enters-into-a-definitive-agreement-to-be-acquired-by-newport-capital-in-a-go-private-transaction-and-announces-intent-to-make-a-cash-distribution-to.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/14/3403026/0/en/high-arctic-energy-services-inc-enters-into-a-definitive-agreement-to-be-acquired-by-newport-capital-in-a-go-private-transaction-and-announces-intent-to-make-a-cash-distribution-to.html" target="_blank">High Arctic Energy Services Inc. Enters into a Definitive Agreement to be Acquired by Newport Capital in a Go-Private Transaction and Announces Intent to Make a Cash Distribution to Shareholders</a>
+        
         <div class="meta">GlobeNewswire &middot; Nov 13, 2026, 07:57 PM</div>
     </div>
-    <div class="card">
-        <span class="tag NEW">NEW</span>
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/13/3402965/0/en/millicom-tigo-signs-agreement-to-acquire-entel-peru-expanding-its-presence-across-latin-america.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/13/3402965/0/en/millicom-tigo-signs-agreement-to-acquire-entel-peru-expanding-its-presence-across-latin-america.html" target="_blank">Millicom (Tigo) signs agreement to acquire Entel Peru, expanding its presence across Latin America</a>
+        
         <div class="meta">GlobeNewswire &middot; Nov 13, 2026, 04:09 PM</div>
     </div>
-    <div class="card">
-        <span class="tag NEW">NEW</span>
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/13/3402862/0/en/wolters-kluwer-to-acquire-ai-powered-clinical-decision-support-platform-agilemd.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/13/3402862/0/en/wolters-kluwer-to-acquire-ai-powered-clinical-decision-support-platform-agilemd.html" target="_blank">Wolters Kluwer to acquire AI-powered clinical decision support platform AgileMD</a>
+        
         <div class="meta">GlobeNewswire &middot; Nov 13, 2026, 12:00 PM</div>
     </div>
-    <div class="card">
-        <span class="tag NEW">NEW</span>
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/13/3402523/0/en/proposed-merger-and-proven-vct-offer.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/13/3402523/0/en/proposed-merger-and-proven-vct-offer.html" target="_blank">Proposed Merger and ProVen VCT Offer</a>
+        
         <div class="meta">GlobeNewswire &middot; Nov 13, 2026, 07:58 AM</div>
     </div>
-    <div class="card">
-        <span class="tag NEW">NEW</span>
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/13/3402525/0/en/proposed-merger-and-proven-vct-offer.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/13/3402525/0/en/proposed-merger-and-proven-vct-offer.html" target="_blank">Proposed Merger and ProVen VCT Offer</a>
+        
         <div class="meta">GlobeNewswire &middot; Nov 13, 2026, 08:00 AM</div>
     </div>
-    <div class="card">
-        <span class="tag NEW">NEW</span>
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/13/3402604/0/en/gridai-technologies-signs-definitive-agreement-to-acquire-pronghorn-resources-establishing-major-wyoming-owned-natural-gas-and-multi-gigawatt-ai-power-infrastructure-platform-targe.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/13/3402604/0/en/gridai-technologies-signs-definitive-agreement-to-acquire-pronghorn-resources-establishing-major-wyoming-owned-natural-gas-and-multi-gigawatt-ai-power-infrastructure-platform-targe.html" target="_blank">GridAI Technologies Signs Definitive Agreement to Acquire Pronghorn Resources, Establishing Major Wyoming Owned-Natural Gas and Multi-Gigawatt AI Power Infrastructure Platform Targeting Initial Power Delivery in 2027</a>
+        
         <div class="meta">GlobeNewswire &middot; Nov 13, 2026, 09:00 AM</div>
     </div>
-    <div class="card">
-        <span class="tag NEW">NEW</span>
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/13/3402505/0/en/cerrado-gold-acquires-the-past-producing-manantial-espejo-mine-in-santa-cruz-argentina-from-pan-american-silver.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/13/3402505/0/en/cerrado-gold-acquires-the-past-producing-manantial-espejo-mine-in-santa-cruz-argentina-from-pan-american-silver.html" target="_blank">Cerrado Gold Acquires the Past-Producing Manantial Espejo Mine in Santa Cruz, Argentina, from Pan American Silver</a>
+        
         <div class="meta">GlobeNewswire &middot; Nov 13, 2026, 07:26 AM</div>
     </div>
-    <div class="card">
-        <span class="tag NEW">NEW</span>
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/12/3402083/0/en/advini-and-invivo-continue-to-strengthen-their-strategic-partnership-with-the-proposed-acquisition-of-the-bonne-nouvelle-and-mythique-brands.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/12/3402083/0/en/advini-and-invivo-continue-to-strengthen-their-strategic-partnership-with-the-proposed-acquisition-of-the-bonne-nouvelle-and-mythique-brands.html" target="_blank">AdVini and InVivo continue to strengthen their strategic partnership with the proposed acquisition of the Bonne Nouvelle and Mythique brands</a>
+        
         <div class="meta">GlobeNewswire &middot; Nov 12, 2026, 01:13 PM</div>
     </div>
-    <div class="card">
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/12/3402034/0/en/danone-completes-its-acquisition-of-made-group-expanding-its-presence-in-the-fast-growing-healthy-nutrition-space-in-asia-pacific.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
         <span class="tag CLOSED">CLOSED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/12/3402034/0/en/danone-completes-its-acquisition-of-made-group-expanding-its-presence-in-the-fast-growing-healthy-nutrition-space-in-asia-pacific.html" target="_blank">Danone completes its acquisition of MADE Group, expanding its presence in the fast-growing healthy nutrition space in Asia Pacific</a>
+        
         <div class="meta">GlobeNewswire &middot; Nov 12, 2026, 12:00 PM</div>
     </div>
-    <div class="card">
-        <span class="tag NEW">NEW</span>
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/12/3401727/0/en/virtuix-signs-loi-to-acquire-defense-contractor-sts-international-reporting-40-million-in-unaudited-cash-basis-revenue-through-october-2026.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/12/3401727/0/en/virtuix-signs-loi-to-acquire-defense-contractor-sts-international-reporting-40-million-in-unaudited-cash-basis-revenue-through-october-2026.html" target="_blank">Virtuix Signs LOI to Acquire Defense Contractor STS International, Reporting $40 Million in Unaudited Cash-Basis Revenue Through October 2026</a>
+        
         <div class="meta">GlobeNewswire &middot; Nov 12, 2026, 09:17 AM</div>
     </div>
-    <div class="card">
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/11/3400552/0/en/intermex-rejects-western-union-s-purported-termination-of-merger-agreement.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
         <span class="tag DISPUTE">DISPUTE</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/11/3400552/0/en/intermex-rejects-western-union-s-purported-termination-of-merger-agreement.html" target="_blank">Intermex Rejects Western Union’s Purported Termination of Merger Agreement</a>
+        
         <div class="meta">GlobeNewswire &middot; Nov 11, 2026, 06:30 AM</div>
     </div>
-    <div class="card">
-        <span class="tag NEW">NEW</span>
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/11/3400589/0/en/gowell-acquires-wellsense-to-expand-global-well-integrity-and-fiber-optic-sensing-capabilities.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/11/3400589/0/en/gowell-acquires-wellsense-to-expand-global-well-integrity-and-fiber-optic-sensing-capabilities.html" target="_blank">GOWell Acquires WellSense to Expand Global Well Integrity and Fiber Optic Sensing Capabilities</a>
+        
         <div class="meta">GlobeNewswire &middot; Nov 11, 2026, 07:00 AM</div>
     </div>
-    <div class="card">
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/11/3400577/0/en/arko-petroleum-corp-completes-acquisition-of-the-business-of-u-s-petroleum-partners-llc-expected-to-contribute-approximately-30-million-of-annualized-adjusted-ebitda.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
         <span class="tag CLOSED">CLOSED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/11/3400577/0/en/arko-petroleum-corp-completes-acquisition-of-the-business-of-u-s-petroleum-partners-llc-expected-to-contribute-approximately-30-million-of-annualized-adjusted-ebitda.html" target="_blank">ARKO Petroleum Corp. Completes Acquisition of the Business of U.S. Petroleum Partners, LLC, Expected to Contribute Approximately $30 Million of Annualized Adjusted EBITDA</a>
+        
         <div class="meta">GlobeNewswire &middot; Nov 11, 2026, 07:00 AM</div>
     </div>
-    <div class="card">
-        <span class="tag NEW">NEW</span>
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/11/3400574/16126/en/lamar-advertising-acquires-assets-of-newman-outdoor-advertising.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/11/3400574/16126/en/lamar-advertising-acquires-assets-of-newman-outdoor-advertising.html" target="_blank">Lamar Advertising Acquires Assets of Newman Outdoor Advertising</a>
+        
         <div class="meta">GlobeNewswire &middot; Nov 11, 2026, 07:00 AM</div>
     </div>
-    <div class="card">
-        <span class="tag NEW">NEW</span>
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/11/3400635/0/en/metalenz-acquires-pxe-imaging-expanding-its-perception-platform-to-bring-new-insights-to-ai.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/11/3400635/0/en/metalenz-acquires-pxe-imaging-expanding-its-perception-platform-to-bring-new-insights-to-ai.html" target="_blank">Metalenz Acquires PxE Imaging, Expanding Its Perception Platform to Bring New Insights to AI</a>
+        
         <div class="meta">GlobeNewswire &middot; Nov 11, 2026, 08:00 AM</div>
     </div>
-    <div class="card">
-        <span class="tag NEW">NEW</span>
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/11/3401148/0/en/octave-announces-acquisition-of-cerebre.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/11/3401148/0/en/octave-announces-acquisition-of-cerebre.html" target="_blank">Octave announces acquisition of Cerebre</a>
+        
         <div class="meta">GlobeNewswire &middot; Nov 11, 2026, 04:30 PM</div>
     </div>
-    <div class="card">
-        <span class="tag NEW">NEW</span>
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/11/3401183/7512/en/investcorp-credit-management-bdc-inc-to-merge-into-bcp-investment-corporation.html">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/11/3401183/7512/en/investcorp-credit-management-bdc-inc-to-merge-into-bcp-investment-corporation.html" target="_blank">Investcorp Credit Management BDC, Inc. to Merge into BCP Investment Corporation</a>
+        
         <div class="meta">GlobeNewswire &middot; Nov 11, 2026, 06:00 PM</div>
     </div>
 </div>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const cards = document.querySelectorAll(".card[data-deal-id]");
+    const STORAGE_KEY = "maTrackerSeenDeals";
+
+    // Load previously viewed deals
+
+    let seenDeals = new Set();
+    const saved = localStorage.getItem(STORAGE_KEY);
+
+    if (saved) {
+      seenDeals = new Set(JSON.parse(saved));
+    }
+
+    // Mark a deal as viewed
+    function markSeen(card) {
+        const id = card.dataset.dealId;
+
+        if (seenDeals.has(id)) return;
+
+        seenDeals.add(id);
+
+        localStorage.setItem(
+            STORAGE_KEY,
+            JSON.stringify([...seenDeals])
+        );
+
+        const badge = card.querySelector(".UNSEEN");
+
+        if (badge) {
+            badge.hidden = true;
+        }
+    }
+
+    // Show badges on deals that haven't been viewed
+    cards.forEach(card => {
+
+        const id = card.dataset.dealId;
+        const badge = card.querySelector(".UNSEEN");
+
+        if (!seenDeals.has(id)) {
+            badge.hidden = false;
+        } else {
+            badge.hidden = true;
+        }
+
+        // Clicking a deal marks it as viewed
+        card.querySelector("a").addEventListener("click", () => {
+            markSeen(card);
+        });
+
+    });
+
+    // Track which deals are visible on screen
+    const timers = new Map();
+
+    const observer = new IntersectionObserver(entries => {
+
+        entries.forEach(entry => {
+
+            const card = entry.target;
+
+            if (entry.isIntersecting) {
+
+                if (!timers.has(card)) {
+
+                    const timer = setTimeout(() => {
+                        markSeen(card);
+                        observer.unobserve(card);
+                        timers.delete(card);
+                    }, 500);
+
+                    timers.set(card, timer);
+                }
+
+            } else {
+
+                clearTimeout(timers.get(card));
+                timers.delete(card);
+
+            }
+
+        });
+
+    }, { threshold: 0.5 });
+
+    cards.forEach(card => {
+
+        if (!seenDeals.has(card.dataset.dealId)) {
+            observer.observe(card);
+        }
+
+    });
+
+});
+</script>
 </body>
 </html>
