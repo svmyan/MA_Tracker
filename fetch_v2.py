@@ -20,7 +20,7 @@ FEEDS = {
 
 # AI integration variables
 MODEL = "gemini-3.1-flash-lite"
-MAX_NOTES_PER_RUN = 10
+MAX_NOTES_PER_RUN = 60
 RULES = """Use ONLY the text or page given. Do not use outside knowledge and do not guess.
 Write 1 to 2 plain sentences on the strategic rationale and any synergies it states.
 If it does not state them, say "Rationale not stated."
