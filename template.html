@@ -6,6 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>M&amp;A Tracker</title>
 <style>
+  .meta { color: var(--muted); font-size: 13px; margin-top: 8px; }
+  .notes { font-size: 14px; line-height: 1.5; margin-top: 8px;}
     :root {
     --bg: #f6f7f9;
     --card: #ffffff;
@@ -71,13 +73,27 @@ body {
   }
   .NEW { background: var(--new); }
   .CLOSED { background: var(--closed); }
+  .hero {
+    background: 
+     linear-gradient(rgba(10,14,20,0.55), rgba(10,14,20,0.85)),
+      url("images/skyline.jpg") center / cover no-repeat;
+    color: white;
+    padding: 72px 16px 56px;
+  }
+  .hero-inner { max-width: 900px; margin: 0 auto;}
+  .hero h1 { font-size: 34px; margin: 0 0 6px; }
+  .hero .sub { color: #cbd2db; margin: 0; }
   .DISPUTE { background: var(--dispute); }
 </style> 
 </head>
 <body>
+<div class="hero">
+  <div class="hero-inner">
+    <h1>M&amp;A Tracker</h1>
+    <div class="sub">Last updated: UPDATED_HERE (Ontario time)</div>
+  </div>
+</div>
 <div class="wrap">
-  <h1>M&amp;A Tracker</h1>
-  <div class="sub">Last updated: UPDATED_HERE (Ontario time)</div>
   <div class="stats">STATS_HERE</div>
   CARDS_HERE
 </div>
