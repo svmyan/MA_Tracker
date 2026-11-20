@@ -71,8 +71,14 @@ body {
     color: white;
     margin-right: 8px;
   }
-  .NEW { background: var(--new); }
+  .tag[hidden] {
+    display: none;
+  }
+  .ANNOUNCED { background: var(--new); }
   .CLOSED { background: var(--closed); }
+  .UNSEEN {
+    background: var(--new);
+  }
   .hero {
     background: 
      linear-gradient(rgba(10,14,20,0.55), rgba(10,14,20,0.85)),
@@ -97,5 +103,102 @@ body {
   <div class="stats">STATS_HERE</div>
   CARDS_HERE
 </div>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const cards = document.querySelectorAll(".card[data-deal-id]");
+    const STORAGE_KEY = "maTrackerSeenDeals";
+
+    // Load previously viewed deals
+
+    let seenDeals = new Set();
+    const saved = localStorage.getItem(STORAGE_KEY);
+
+    if (saved) {
+      seenDeals = new Set(JSON.parse(saved));
+    }
+
+    // Mark a deal as viewed
+    function markSeen(card) {
+        const id = card.dataset.dealId;
+
+        if (seenDeals.has(id)) return;
+
+        seenDeals.add(id);
+
+        localStorage.setItem(
+            STORAGE_KEY,
+            JSON.stringify([...seenDeals])
+        );
+
+        const badge = card.querySelector(".UNSEEN");
+
+        if (badge) {
+            badge.hidden = true;
+        }
+    }
+
+    // Show badges on deals that haven't been viewed
+    cards.forEach(card => {
+
+        const id = card.dataset.dealId;
+        const badge = card.querySelector(".UNSEEN");
+
+        if (!seenDeals.has(id)) {
+            badge.hidden = false;
+        } else {
+            badge.hidden = true;
+        }
+
+        // Clicking a deal marks it as viewed
+        card.querySelector("a").addEventListener("click", () => {
+            markSeen(card);
+        });
+
+    });
+
+    // Track which deals are visible on screen
+    const timers = new Map();
+
+    const observer = new IntersectionObserver(entries => {
+
+        entries.forEach(entry => {
+
+            const card = entry.target;
+
+            if (entry.isIntersecting) {
+
+                if (!timers.has(card)) {
+
+                    const timer = setTimeout(() => {
+                        markSeen(card);
+                        observer.unobserve(card);
+                        timers.delete(card);
+                    }, 500);
+
+                    timers.set(card, timer);
+                }
+
+            } else {
+
+                clearTimeout(timers.get(card));
+                timers.delete(card);
+
+            }
+
+        });
+
+    }, { threshold: 0.5 });
+
+    cards.forEach(card => {
+
+        if (!seenDeals.has(card.dataset.dealId)) {
+            observer.observe(card);
+        }
+
+    });
+
+});
+</script>
 </body>
 </html>

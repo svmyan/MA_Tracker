@@ -45,7 +45,7 @@ def classify(title):
         return "DISPUTE" 
     if has_any(CLOSED_WORDS, title):                                    # returns closed deals
         return "CLOSED"
-    return "NEW"
+    return "ANNOUNCED"
 
 # time zone converter 
 def nice_date(text):
@@ -119,12 +119,14 @@ def deal_card(deal):
     status = deal["status"]
     title = escape(deal["title"])
     link = deal["link"]
+    deal_id = escape(link, quote=True)
     source = deal.get("source", "unknown")
     date = nice_date(deal["date"])
     notes = escape(deal.get("notes", ""))
     notes_html = f'<div class="notes">{notes}</div>' if notes else ""
     return f"""
-    <div class="card">
+    <div class="card" data-deal-id="{deal_id}">
+        <span class="tag UNSEEN" hidden>UNSEEN</span>
         <span class="tag {status}">{status}</span>
         <a href ="{link}" target="_blank">{title}</a>
         {notes_html}
@@ -138,7 +140,7 @@ def build_page(deals):
     cards = "".join(deal_card(d) for d in reversed(deals))
     stats = (
         stat_box(len(deals), "total tracked")
-        + stat_box(count_status(deals, "NEW"), "New Announcements")
+        + stat_box(count_status(deals, "ANNOUNCED"), "Announced")
         + stat_box(count_status(deals, "CLOSED"), "Closed")
         + stat_box(count_status(deals, "DISPUTE"), "Disputes")
     )
@@ -160,6 +162,8 @@ def make_notes(deal):
             contents=prompt,
             config=types.GenerateContentConfig(tools=[{"url_context": {}}]),
         )
+        print("DEBUG text:", response.text)
+        print("DEBUG meta:", response.candidates[0].url_context_metadata)
         meta = response.candidates[0].url_context_metadata
         read_ok = bool(meta and meta.url_metadata and "SUCCESS" in str(meta.url_metadata[0].url_retrieval_status))
         if not read_ok:
@@ -185,6 +189,9 @@ def add_notes(deals):
 # runs the process
 def main():
     old_deals = load_deals()
+    for deal in old_deals:
+        if deal.get("status") == "NEW":
+            deal["status"] = "ANNOUNCED"
     seen_links = {d["link"] for d in old_deals}
     new_deals =[]
 
