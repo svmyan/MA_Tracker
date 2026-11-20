@@ -3,7 +3,7 @@ name: Update MA Tracker
 
 on:
   schedule: 
-  - cron: '0 * * * *'
+  - cron: '17 */3 * * *'
   workflow_dispatch: # manual switch to run it
 
 jobs:
@@ -21,10 +21,12 @@ jobs:
           python-version: '3.11'
         
       - name: Install dependencies
-        run: pip install feedparser tzdata
+        run: pip install feedparser tzdata google-genai
 
       - name: Run script
-        run: python fetch_v1.py
+        env:
+            GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY}}
+        run: python fetch_v2.py
       
       - name: Commit and push changes 
         run: |
