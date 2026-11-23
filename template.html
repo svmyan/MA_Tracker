@@ -90,6 +90,12 @@
     .hero h1 { font-size: 34px; margin: 0 0 6px; }
     .hero .sub { color: #cbd2db; margin: 0; }
     .DISPUTE { background: var(--dispute); }
+
+    .filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0; }
+.filter { padding: 6px 12px; border: 1px solid #ccc; border-radius: 16px; background: #fff; cursor: pointer; }
+.filter.active { background: #111; color: #fff; border-color: #111; }
+.card[hidden] { display: none; }
+
   </style> 
   </head>
   <body>
@@ -101,6 +107,7 @@
   </div>
   <div class="wrap">
     <div class="stats">STATS_HERE</div>
+    <div class="filters">FILTERS_HERE</div>
     CARDS_HERE
   </div>
   <script>
@@ -195,6 +202,18 @@
       });
 
   });
+
+  document.querySelectorAll(".filter").forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".filter").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        const pick = btn.dataset.industry;
+        document.querySelectorAll(".card").forEach(card => {
+          card.hidden = pick !== "All" && card.dataset.industry !== pick;
+        });
+      });
+    });
+
   </script>
   </body>
   </html>

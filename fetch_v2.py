@@ -10,7 +10,7 @@ from google import genai
 from google.genai import types
 
 # feed address, ID badge, and other variables
-AGENT = "Mozilla/5.0 (compatible; MA-Tracker personal project)"
+AGENT = "Mozilla/5.0 (compatible; MA-Tracker personal project)" 
 FILE = "deals.json"
 TEMPLATE = "template.html"
 SHOW_OLD = 10 # how many earlier deals to display
@@ -21,10 +21,15 @@ FEEDS = {
 # AI integration variables
 MODEL = "gemini-3.1-flash-lite"
 MAX_NOTES_PER_RUN = 60
-RULES = """Use ONLY the text or page given. Do not use outside knowledge and do not guess.
-Write 1 to 2 plain sentences on the strategic rationale and any synergies it states.
-If it does not state them, say "Rationale not stated."
+INDUSTRIES = ["Technology", "Healthcare", "Financials", "Energy", "Industrials",
+              "Consumer", "Real Estate", "Materials", "Telecom & Media", "Other"]
+RULES = f"""Use ONLY the text or page given. Do not use outside knowledge and do not guess.
+Start your reply with the target company's industry, picked from exactly this list: {", ".join(INDUSTRIES)}.
+Then write a | and 1 to 2 plain sentences on the strategic rationale and any synergies it states.
+If it does not state them, do some research and find out possible synergies but mention that they weren't stated. If you can't find anything write "Rationale not stated."
+Format: Industry | sentences
 No headers, bullets, bold, or preamble."""
+
 api_key = os.environ.get("GEMINI_API_KEY")
 client = genai.Client(api_key=api_key) if api_key else None
 
@@ -122,16 +127,23 @@ def deal_card(deal):
     deal_id = escape(link, quote=True)
     source = deal.get("source", "unknown")
     date = nice_date(deal["date"])
+    industry = escape(deal.get("industry") or "Other", quote=True)
     notes = escape(deal.get("notes", ""))
     notes_html = f'<div class="notes">{notes}</div>' if notes else ""
     return f"""
-    <div class="card" data-deal-id="{deal_id}">
+    <div class="card" data-deal-id="{deal_id}" data-industry="{industry}">
         <span class="tag UNSEEN" hidden>NEW</span>
         <span class="tag {status}">{status}</span>
         <a href ="{link}" target="_blank">{title}</a>
         {notes_html}
-        <div class="meta">{source} &middot; {date}</div>
+        <div class="meta">{source} &middot; {industry} &middot; {date}</div>
     </div>"""
+
+def filter_buttons():
+    out = '<button class="filter active" data-industry="All">All</button>'
+    for ind in INDUSTRIES:
+        out += f'<button class="filter" data-industry="{escape(ind, quote=True)}">{escape(ind)}</button>'
+    return out
 
 def build_page(deals):
     with open(TEMPLATE, "r", encoding="utf-8") as f:
@@ -146,6 +158,7 @@ def build_page(deals):
     )
     updated = datetime.now(ZoneInfo("America/Toronto")).strftime("%b %d, %Y, %I:%M %p")
     html = (page.replace("STATS_HERE", stats)
+            .replace("FILTERS_HERE", filter_buttons())
             .replace("CARDS_HERE", cards)
             .replace("UPDATED_HERE", updated))
     with open("index.html", "w", encoding="utf-8") as f:
@@ -154,7 +167,7 @@ def build_page(deals):
 # Gemini AI integration
 def make_notes(deal):
     if client is None:
-        return ""
+        return "", ""
     prompt = f"You write short notes for an M&A deal tracker.\nRead this press release: {deal['link']}\n{RULES}"
     try:
         response = client.models.generate_content(
@@ -162,27 +175,36 @@ def make_notes(deal):
             contents=prompt,
             config=types.GenerateContentConfig(tools=[{"url_context": {}}]),
         )
-        print("DEBUG text:", response.text)
-        print("DEBUG meta:", response.candidates[0].url_context_metadata)
         meta = response.candidates[0].url_context_metadata
         read_ok = bool(meta and meta.url_metadata and "SUCCESS" in str(meta.url_metadata[0].url_retrieval_status))
         if not read_ok:
             print("page not read", deal["title"])
-            return ""
-        return " ".join((response.text or "").split())
+            return "", ""
+        text = " ".join((response.text or "").split())
+        if "|" in text:
+            industry, notes = text.split("|", 1)
+        else:
+            industry, notes = "Other", text
+        industry = industry.strip()
+        if industry not in INDUSTRIES:
+            industry = "Other"
+        return industry, notes.strip()
     except Exception as e:
         print("note error:", e)
-        return ""
+        return "", ""
 
 # function adds the AI notes to the site 
 def add_notes(deals):
     tried = 0
     for deal in reversed(deals):
-        if deal.get("notes"):
+        if deal.get("notes") and deal.get("industry"):
             continue
         if tried >= MAX_NOTES_PER_RUN:
             break
-        deal["notes"] = make_notes(deal)
+        industry, notes = make_notes(deal)
+        if notes:
+            deal["industry"] = industry
+            deal["notes"] = notes
         tried += 1
         time.sleep(5)
 
