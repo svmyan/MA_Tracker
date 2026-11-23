@@ -54,6 +54,8 @@
       padding: 16px 18px;
       margin-bottom: 12px;
   }
+    .card { opacity: 0; transform: translateY(16px); transition: opacity .5s ease, transform .5s ease; }
+    .card.show { opacity: 1; transform: none; }
     .card a {
       color: var(--text);
       text-decoration: none;
@@ -80,15 +82,18 @@
     .UNSEEN {
       background: #d97706;
     }
-    .hero {
-      background: 
-      linear-gradient(rgba(10,14,20,0.55), rgba(10,14,20,0.85)),
-        url("Images/City_Image.jpg") center / cover no-repeat;
+      .hero {
+      background: url("Images/City_Image.jpg") center / cover no-repeat fixed;
       color: white;
-      padding: 72px 16px 56px;
+      padding: 140px 16px 120px;
+      text-align: center;
     }
     .hero-inner { max-width: 900px; margin: 0 auto;}
-    .hero h1 { font-size: 34px; margin: 0 0 6px; }
+        .hero h1 { font-size: 56px; margin: 0 0 10px; }
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 36px; }
+      .hero { padding: 90px 16px 80px; }
+    }
     .hero .sub { color: #cbd2db; margin: 0; }
     .DISPUTE { background: var(--dispute); }
 
@@ -117,7 +122,7 @@
   <div class="hero">
     <div class="hero-inner">
       <h1>M&amp;A Tracker</h1>
-      <div class="sub">Last updated: Nov 23, 2026, 03:10 PM (EST)</div>
+      <div class="sub">Last updated: Nov 23, 2026, 03:17 PM (EST)</div>
     </div>
   </div>
   <div class="wrap">
@@ -138,12 +143,12 @@
         <div class="notes">The acquisition unites two premium hunting brands under common ownership, with the companies planning to operate independently while sharing resources and expertise to strengthen both businesses. The strategic rationale focuses on a shared commitment to product quality, craftsmanship, and the hunting community, allowing Chêne Gear to provide long-term stewardship for Stone Glacier.</div>
         <div class="meta">GlobeNewswire &middot; Consumer &middot; Nov 23, 2026, 01:22 PM</div>
     </div>
-    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/23/3408688/0/en/passage-bio-announces-1-for-6-reverse-stock-split-in-connection-with-the-proposed-merger-with-remix-therapeutics.html" data-industry="Other">
+    <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/23/3408688/0/en/passage-bio-announces-1-for-6-reverse-stock-split-in-connection-with-the-proposed-merger-with-remix-therapeutics.html" data-industry="Healthcare">
         <span class="tag UNSEEN" hidden>NEW</span>
         <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/23/3408688/0/en/passage-bio-announces-1-for-6-reverse-stock-split-in-connection-with-the-proposed-merger-with-remix-therapeutics.html" target="_blank">Passage Bio Announces 1-for-6 Reverse Stock Split in Connection With the Proposed Merger With Remix Therapeutics</a>
-        <div class="notes pending">AI overview unavailable right now. It will retry on the next update.</div>
-        <div class="meta">GlobeNewswire &middot; Other &middot; Nov 23, 2026, 11:05 AM</div>
+        <div class="notes">Rationale not stated. The press release details a reverse stock split in connection with the proposed merger but does not explicitly outline the strategic rationale or synergies behind the combination.</div>
+        <div class="meta">GlobeNewswire &middot; Healthcare &middot; Nov 23, 2026, 11:05 AM</div>
     </div>
     <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/23/3408270/0/en/unusual-whales-acquires-the-blackboxstocks-platform.html" data-industry="Financials">
         <span class="tag UNSEEN" hidden>NEW</span>
@@ -690,6 +695,15 @@
         });
       });
     });
+      const reveal = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add("show");
+        reveal.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll(".card").forEach(c => reveal.observe(c));
 
   </script>
   </body>
