@@ -19,7 +19,7 @@ FEEDS = {
 }
 
 # AI integration variables
-MODEL = "gemini-3.1-flash-lite"
+MODELS = ["gemini-3.1-flash-lite", "gemini-2.5-flash-lite"] 
 MAX_NOTES_PER_RUN = 60
 INDUSTRIES = ["Technology", "Healthcare", "Financials", "Energy", "Industrials",
               "Consumer", "Real Estate", "Materials", "Telecom & Media", "Other"]
@@ -129,7 +129,10 @@ def deal_card(deal):
     date = nice_date(deal["date"])
     industry = escape(deal.get("industry") or "Other", quote=True)
     notes = escape(deal.get("notes", ""))
-    notes_html = f'<div class="notes">{notes}</div>' if notes else ""
+    if notes:
+        notes_html = f'<div class="notes">{notes}</div>'
+    else:
+        notes_html = '<div class="notes pending">AI overview unavailable right now. It will retry on the next update.</div>'
     return f"""
     <div class="card" data-deal-id="{deal_id}" data-industry="{industry}">
         <span class="tag UNSEEN" hidden>NEW</span>
@@ -171,20 +174,23 @@ def make_notes(deal):
     prompt = f"You write short notes for an M&A deal tracker.\nRead this press release: {deal['link']}\n{RULES}"
     try:
         response = None
-        for attempt in range(3):
-            try:
-                response = client.models.generate_content(
-                    model=MODEL,
-                    contents=prompt,
-                    config=types.GenerateContentConfig(tools=[{"url_context": {}}]),
-                )
+        for model in MODELS:
+            for attempt in range(2):
+                try:
+                    response = client.models.generate_content(
+                        model=model,
+                        contents=prompt,
+                        config=types.GenerateContentConfig(tools=[{"url_context": {}}]),
+                    )
+                    break
+                except Exception as e:
+                    if "503" in str(e) or "UNAVAILABLE" in str(e):
+                        print("busy, retrying", model, deal["title"])
+                        time.sleep(15 * (attempt + 1))
+                    else:
+                        raise
+            if response is not None:
                 break
-            except Exception as e:
-                if "503" in str(e) or "UNAVAILABLE" in str(e):
-                    print("busy, retrying", deal["title"])
-                    time.sleep(15 * (attempt + 1))
-                else:
-                    raise
 
         if response is None:
             return "", ""
