@@ -82,8 +82,10 @@
     .UNSEEN {
       background: #d97706;
     }
-      .hero {
-      background: url("Images/City_Image.jpg") center / cover no-repeat fixed;
+          .hero {
+      background:
+        linear-gradient(rgba(10,14,20,0.35), rgba(10,14,20,0.35)),
+        url("Images/City_Image.jpg") center / cover no-repeat fixed;
       color: white;
       padding: 140px 16px 120px;
       text-align: center;
@@ -96,6 +98,8 @@
     }
     .hero .sub { color: #cbd2db; margin: 0; }
     .DISPUTE { background: var(--dispute); }
+        .hero h1, .hero .sub { text-shadow: 0 2px 12px rgba(0,0,0,0.55); }
+    .hero .sub { color: #fff; font-weight: 500; }
 
         .filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 24px; }
     .filter {
@@ -122,13 +126,188 @@
   <div class="hero">
     <div class="hero-inner">
       <h1>M&amp;A Tracker</h1>
-      <div class="sub">Last updated: Nov 23, 2026, 03:17 PM (EST)</div>
+      <div class="sub">Last updated: Nov 23, 2026, 04:13 PM (EST)</div>
     </div>
   </div>
   <div class="wrap">
-    <div class="stats"><div class="stat"><b>66</b><span>total tracked</span></div><div class="stat"><b>56</b><span>Announced</span></div><div class="stat"><b>9</b><span>Closed</span></div><div class="stat"><b>1</b><span>Disputes</span></div></div>
+    <div class="stats"><div class="stat"><b>91</b><span>total tracked</span></div><div class="stat"><b>80</b><span>Announced</span></div><div class="stat"><b>10</b><span>Closed</span></div><div class="stat"><b>1</b><span>Disputes</span></div></div>
     <div class="filters"><button class="filter active" data-industry="All">All</button><button class="filter" data-industry="Technology">Technology</button><button class="filter" data-industry="Healthcare">Healthcare</button><button class="filter" data-industry="Financials">Financials</button><button class="filter" data-industry="Energy">Energy</button><button class="filter" data-industry="Industrials">Industrials</button><button class="filter" data-industry="Consumer">Consumer</button><button class="filter" data-industry="Real Estate">Real Estate</button><button class="filter" data-industry="Materials">Materials</button><button class="filter" data-industry="Telecom &amp; Media">Telecom &amp; Media</button><button class="filter" data-industry="Other">Other</button></div>
     
+    <div class="card" data-deal-id="https://www.prnewswire.com/news-releases/harvest-group-acquires-good-peeps-accelerating-growth-toward-10-billion-in-retail-sales-and-2-billion-in-media-under-management-302948447.html" data-industry="Other">
+        <span class="tag UNSEEN" hidden>NEW</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
+        <a href ="https://www.prnewswire.com/news-releases/harvest-group-acquires-good-peeps-accelerating-growth-toward-10-billion-in-retail-sales-and-2-billion-in-media-under-management-302948447.html" target="_blank">Harvest Group Acquires Good Peeps, Accelerating Growth Toward $10 Billion in Retail Sales and $2 Billion in Media Under Management</a>
+        <div class="notes pending">AI overview unavailable right now. It will retry on the next update.</div>
+        <div class="meta">PR Newswire &middot; Other &middot; Nov 23, 2026, 01:00 PM</div>
+    </div>
+    <div class="card" data-deal-id="https://www.prnewswire.com/news-releases/madison-dearborn-partners-to-acquire-peli-biothermal-a-trusted-cold-chain-solutions-provider-from-pelican-products-and-platinum-equity-302948222.html" data-industry="Other">
+        <span class="tag UNSEEN" hidden>NEW</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
+        <a href ="https://www.prnewswire.com/news-releases/madison-dearborn-partners-to-acquire-peli-biothermal-a-trusted-cold-chain-solutions-provider-from-pelican-products-and-platinum-equity-302948222.html" target="_blank">Madison Dearborn Partners to Acquire Peli BioThermal, a Trusted Cold Chain Solutions Provider, from Pelican Products and Platinum Equity</a>
+        <div class="notes pending">AI overview unavailable right now. It will retry on the next update.</div>
+        <div class="meta">PR Newswire &middot; Other &middot; Nov 23, 2026, 12:00 PM</div>
+    </div>
+    <div class="card" data-deal-id="http://www.businesswire.com/news/home/20261123673204/en/Barnes-Aerospace-Signs-Agreement-to-Acquire-JJ-Churchill-Expanding-Advanced-Aeroengine-Manufacturing-Capabilities/" data-industry="Other">
+        <span class="tag UNSEEN" hidden>NEW</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
+        <a href ="http://www.businesswire.com/news/home/20261123673204/en/Barnes-Aerospace-Signs-Agreement-to-Acquire-JJ-Churchill-Expanding-Advanced-Aeroengine-Manufacturing-Capabilities/" target="_blank">Barnes Aerospace Signs Agreement to Acquire JJ Churchill, Expanding Advanced Aeroengine Manufacturing Capabilities</a>
+        <div class="notes pending">AI overview unavailable right now. It will retry on the next update.</div>
+        <div class="meta">Business Wire &middot; Other &middot; Nov 23, 2026, 11:38 AM</div>
+    </div>
+    <div class="card" data-deal-id="http://www.businesswire.com/news/home/20261123951910/en/Saragon-to-Acquire-Three-Additional-Data-Center-Facilities-Extending-Its-Edge-Footprint-to-Omaha-Tacoma-and-Cheyenne/" data-industry="Other">
+        <span class="tag UNSEEN" hidden>NEW</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
+        <a href ="http://www.businesswire.com/news/home/20261123951910/en/Saragon-to-Acquire-Three-Additional-Data-Center-Facilities-Extending-Its-Edge-Footprint-to-Omaha-Tacoma-and-Cheyenne/" target="_blank">Saragon to Acquire Three Additional Data Center Facilities, Extending Its Edge Footprint to Omaha, Tacoma and Cheyenne</a>
+        <div class="notes pending">AI overview unavailable right now. It will retry on the next update.</div>
+        <div class="meta">Business Wire &middot; Other &middot; Nov 23, 2026, 11:30 AM</div>
+    </div>
+    <div class="card" data-deal-id="https://www.prnewswire.com/news-releases/authentic-acquires-oneill-expanding-global-action-and-outdoor-portfolio-302948389.html" data-industry="Other">
+        <span class="tag UNSEEN" hidden>NEW</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
+        <a href ="https://www.prnewswire.com/news-releases/authentic-acquires-oneill-expanding-global-action-and-outdoor-portfolio-302948389.html" target="_blank">Authentic Acquires O&#x27;Neill, Expanding Global Action and Outdoor Portfolio</a>
+        <div class="notes pending">AI overview unavailable right now. It will retry on the next update.</div>
+        <div class="meta">PR Newswire &middot; Other &middot; Nov 23, 2026, 11:00 AM</div>
+    </div>
+    <div class="card" data-deal-id="http://www.businesswire.com/news/home/20261123983215/en/BTG-Pactual-Strategic-Capital-Finances-Bertram-Capitals-Acquisition-of-Medical-Technology-Associates/" data-industry="Other">
+        <span class="tag UNSEEN" hidden>NEW</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
+        <a href ="http://www.businesswire.com/news/home/20261123983215/en/BTG-Pactual-Strategic-Capital-Finances-Bertram-Capitals-Acquisition-of-Medical-Technology-Associates/" target="_blank">BTG Pactual Strategic Capital Finances Bertram Capital&amp;apos;s Acquisition of Medical Technology Associates</a>
+        <div class="notes pending">AI overview unavailable right now. It will retry on the next update.</div>
+        <div class="meta">Business Wire &middot; Other &middot; Nov 23, 2026, 09:30 AM</div>
+    </div>
+    <div class="card" data-deal-id="https://www.prnewswire.com/news-releases/workday-completes-acquisition-of-c1ai-302947290.html" data-industry="Other">
+        <span class="tag UNSEEN" hidden>NEW</span>
+        <span class="tag CLOSED">CLOSED</span>
+        <a href ="https://www.prnewswire.com/news-releases/workday-completes-acquisition-of-c1ai-302947290.html" target="_blank">Workday Completes Acquisition of C1.ai</a>
+        <div class="notes pending">AI overview unavailable right now. It will retry on the next update.</div>
+        <div class="meta">PR Newswire &middot; Other &middot; Nov 23, 2026, 09:15 AM</div>
+    </div>
+    <div class="card" data-deal-id="http://www.businesswire.com/news/home/20261123556033/en/Graham-Corporation-Acquires-Hauschild-Group-Expanding-Its-Global-Materials-Processing-Platform/" data-industry="Other">
+        <span class="tag UNSEEN" hidden>NEW</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
+        <a href ="http://www.businesswire.com/news/home/20261123556033/en/Graham-Corporation-Acquires-Hauschild-Group-Expanding-Its-Global-Materials-Processing-Platform/" target="_blank">Graham Corporation Acquires Hauschild Group, Expanding Its Global Materials Processing Platform</a>
+        <div class="notes pending">AI overview unavailable right now. It will retry on the next update.</div>
+        <div class="meta">Business Wire &middot; Other &middot; Nov 23, 2026, 09:00 AM</div>
+    </div>
+    <div class="card" data-deal-id="http://www.businesswire.com/news/home/20261123490744/en/Revive-Infrastructure-Group-Acquires-Assets-of-West-Pacific-Drilling-Inc./" data-industry="Other">
+        <span class="tag UNSEEN" hidden>NEW</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
+        <a href ="http://www.businesswire.com/news/home/20261123490744/en/Revive-Infrastructure-Group-Acquires-Assets-of-West-Pacific-Drilling-Inc./" target="_blank">Revive Infrastructure Group Acquires Assets of West Pacific Drilling, Inc.</a>
+        <div class="notes pending">AI overview unavailable right now. It will retry on the next update.</div>
+        <div class="meta">Business Wire &middot; Other &middot; Nov 23, 2026, 09:00 AM</div>
+    </div>
+    <div class="card" data-deal-id="https://www.prnewswire.com/news-releases/nauticus-robotics-signs-letter-of-intent-to-acquire-ocean-power-technologies-wam-v-business-assets-302948257.html" data-industry="Other">
+        <span class="tag UNSEEN" hidden>NEW</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
+        <a href ="https://www.prnewswire.com/news-releases/nauticus-robotics-signs-letter-of-intent-to-acquire-ocean-power-technologies-wam-v-business-assets-302948257.html" target="_blank">Nauticus Robotics™ Signs Letter of Intent to Acquire Ocean Power Technologies&#x27; WAM-V® Business Assets</a>
+        <div class="notes pending">AI overview unavailable right now. It will retry on the next update.</div>
+        <div class="meta">PR Newswire &middot; Other &middot; Nov 23, 2026, 08:43 AM</div>
+    </div>
+    <div class="card" data-deal-id="https://www.prnewswire.com/news-releases/mill-steel-company-acquires-assets-of-chicago-steel-and-lexington-steel-302947516.html" data-industry="Other">
+        <span class="tag UNSEEN" hidden>NEW</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
+        <a href ="https://www.prnewswire.com/news-releases/mill-steel-company-acquires-assets-of-chicago-steel-and-lexington-steel-302947516.html" target="_blank">Mill Steel Company Acquires Assets of Chicago Steel and Lexington Steel</a>
+        <div class="notes pending">AI overview unavailable right now. It will retry on the next update.</div>
+        <div class="meta">PR Newswire &middot; Other &middot; Nov 23, 2026, 08:32 AM</div>
+    </div>
+    <div class="card" data-deal-id="https://www.prnewswire.com/news-releases/cogent-communications-announces-definitive-agreement-to-sell-three-data-center-facilities-302947462.html" data-industry="Other">
+        <span class="tag UNSEEN" hidden>NEW</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
+        <a href ="https://www.prnewswire.com/news-releases/cogent-communications-announces-definitive-agreement-to-sell-three-data-center-facilities-302947462.html" target="_blank">Cogent Communications Announces Definitive Agreement to Sell Three Data Center Facilities</a>
+        <div class="notes pending">AI overview unavailable right now. It will retry on the next update.</div>
+        <div class="meta">PR Newswire &middot; Other &middot; Nov 23, 2026, 08:30 AM</div>
+    </div>
+    <div class="card" data-deal-id="http://www.businesswire.com/news/home/20261123645330/en/KBRA-to-Acquire-Capital-Intelligence-Ratings-Expanding-Global-Footprint/" data-industry="Other">
+        <span class="tag UNSEEN" hidden>NEW</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
+        <a href ="http://www.businesswire.com/news/home/20261123645330/en/KBRA-to-Acquire-Capital-Intelligence-Ratings-Expanding-Global-Footprint/" target="_blank">KBRA to Acquire Capital Intelligence Ratings, Expanding Global Footprint</a>
+        <div class="notes pending">AI overview unavailable right now. It will retry on the next update.</div>
+        <div class="meta">Business Wire &middot; Other &middot; Nov 23, 2026, 07:57 AM</div>
+    </div>
+    <div class="card" data-deal-id="http://www.businesswire.com/news/home/20261123426600/en/Adams-Outdoor-Advertising-Acquires-39-Billboard-Faces-in-Western-Pennsylvania-from-McWhorter-Media-Group/" data-industry="Other">
+        <span class="tag UNSEEN" hidden>NEW</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
+        <a href ="http://www.businesswire.com/news/home/20261123426600/en/Adams-Outdoor-Advertising-Acquires-39-Billboard-Faces-in-Western-Pennsylvania-from-McWhorter-Media-Group/" target="_blank">Adams Outdoor Advertising Acquires 39 Billboard Faces in Western Pennsylvania from McWhorter Media Group</a>
+        <div class="notes pending">AI overview unavailable right now. It will retry on the next update.</div>
+        <div class="meta">Business Wire &middot; Other &middot; Nov 23, 2026, 07:56 AM</div>
+    </div>
+    <div class="card" data-deal-id="http://www.businesswire.com/news/home/20261122368474/en/Mount-Street-Accelerates-U.S.-Growth-with-Acquisition-of-Seasoned-Primary-and-Special-Servicing-Team-Adding-1.35-Billion-Portfolio/" data-industry="Other">
+        <span class="tag UNSEEN" hidden>NEW</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
+        <a href ="http://www.businesswire.com/news/home/20261122368474/en/Mount-Street-Accelerates-U.S.-Growth-with-Acquisition-of-Seasoned-Primary-and-Special-Servicing-Team-Adding-1.35-Billion-Portfolio/" target="_blank">Mount Street Accelerates U.S. Growth with Acquisition of Seasoned Primary and Special Servicing Team, Adding $1.35 Billion Portfolio</a>
+        <div class="notes pending">AI overview unavailable right now. It will retry on the next update.</div>
+        <div class="meta">Business Wire &middot; Other &middot; Nov 23, 2026, 07:19 AM</div>
+    </div>
+    <div class="card" data-deal-id="https://www.prnewswire.com/news-releases/usfm-signs-term-sheet-to-acquire-up-to-85-of-hook-lake-a-fully-permitted-gold-and-copper-project-in-nunavut-canada-302947895.html" data-industry="Other">
+        <span class="tag UNSEEN" hidden>NEW</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
+        <a href ="https://www.prnewswire.com/news-releases/usfm-signs-term-sheet-to-acquire-up-to-85-of-hook-lake-a-fully-permitted-gold-and-copper-project-in-nunavut-canada-302947895.html" target="_blank">USFM Signs Term Sheet to Acquire Up to 85% of Hook Lake, a Fully Permitted Gold and Copper Project in Nunavut, Canada</a>
+        <div class="notes pending">AI overview unavailable right now. It will retry on the next update.</div>
+        <div class="meta">PR Newswire &middot; Other &middot; Nov 23, 2026, 07:00 AM</div>
+    </div>
+    <div class="card" data-deal-id="http://www.businesswire.com/news/home/20261201448686/en/IQVIA-Announces-Acquisition-of-Quotient-Sciences/" data-industry="Other">
+        <span class="tag UNSEEN" hidden>NEW</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
+        <a href ="http://www.businesswire.com/news/home/20261201448686/en/IQVIA-Announces-Acquisition-of-Quotient-Sciences/" target="_blank">IQVIA Announces Acquisition of Quotient Sciences</a>
+        <div class="notes pending">AI overview unavailable right now. It will retry on the next update.</div>
+        <div class="meta">Business Wire &middot; Other &middot; Nov 23, 2026, 07:00 AM</div>
+    </div>
+    <div class="card" data-deal-id="http://www.businesswire.com/news/home/20261118254933/en/RELEX-Acquires-autone-to-Expand-AI-Powered-Planning-Capabilities-for-Fashion-Lifestyle-Brands-and-Apparel-Retailers/" data-industry="Other">
+        <span class="tag UNSEEN" hidden>NEW</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
+        <a href ="http://www.businesswire.com/news/home/20261118254933/en/RELEX-Acquires-autone-to-Expand-AI-Powered-Planning-Capabilities-for-Fashion-Lifestyle-Brands-and-Apparel-Retailers/" target="_blank">RELEX Acquires autone to Expand AI-Powered Planning Capabilities for Fashion, Lifestyle Brands and Apparel Retailers</a>
+        <div class="notes pending">AI overview unavailable right now. It will retry on the next update.</div>
+        <div class="meta">Business Wire &middot; Other &middot; Nov 23, 2026, 07:00 AM</div>
+    </div>
+    <div class="card" data-deal-id="http://www.businesswire.com/news/home/20261123086552/en/Qnity-to-Acquire-Meridian%E2%80%99s-Electronics-Business-Expands-Advanced-Packaging-and-Thermal-Management-Capabilities/" data-industry="Other">
+        <span class="tag UNSEEN" hidden>NEW</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
+        <a href ="http://www.businesswire.com/news/home/20261123086552/en/Qnity-to-Acquire-Meridian%E2%80%99s-Electronics-Business-Expands-Advanced-Packaging-and-Thermal-Management-Capabilities/" target="_blank">Qnity to Acquire Meridian’s Electronics Business, Expands Advanced Packaging and Thermal Management Capabilities</a>
+        <div class="notes pending">AI overview unavailable right now. It will retry on the next update.</div>
+        <div class="meta">Business Wire &middot; Other &middot; Nov 23, 2026, 06:30 AM</div>
+    </div>
+    <div class="card" data-deal-id="http://www.businesswire.com/news/home/20261123828725/en/Texas-Pacific-Land-to-Acquire-EagleRock-in-All-Stock-Transaction-Expected-to-Enhance-the-Permian-Basin%E2%80%99s-Premier-Land-Water-and-Royalty-Platform/" data-industry="Other">
+        <span class="tag UNSEEN" hidden>NEW</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
+        <a href ="http://www.businesswire.com/news/home/20261123828725/en/Texas-Pacific-Land-to-Acquire-EagleRock-in-All-Stock-Transaction-Expected-to-Enhance-the-Permian-Basin%E2%80%99s-Premier-Land-Water-and-Royalty-Platform/" target="_blank">Texas Pacific Land to Acquire EagleRock in All-Stock Transaction, Expected to Enhance the Permian Basin’s Premier Land, Water and Royalty Platform</a>
+        <div class="notes pending">AI overview unavailable right now. It will retry on the next update.</div>
+        <div class="meta">Business Wire &middot; Other &middot; Nov 23, 2026, 06:00 AM</div>
+    </div>
+    <div class="card" data-deal-id="http://www.businesswire.com/news/home/20261123522174/en/CrowdStrike-to-Acquire-Zscaler-Bringing-Network-Security-and-Zero-Trust-to-the-Falcon-Platform/" data-industry="Other">
+        <span class="tag UNSEEN" hidden>NEW</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
+        <a href ="http://www.businesswire.com/news/home/20261123522174/en/CrowdStrike-to-Acquire-Zscaler-Bringing-Network-Security-and-Zero-Trust-to-the-Falcon-Platform/" target="_blank">CrowdStrike to Acquire Zscaler, Bringing Network Security and Zero Trust to the Falcon Platform</a>
+        <div class="notes pending">AI overview unavailable right now. It will retry on the next update.</div>
+        <div class="meta">Business Wire &middot; Other &middot; Nov 23, 2026, 05:32 AM</div>
+    </div>
+    <div class="card" data-deal-id="http://www.businesswire.com/news/home/20261123578591/en/SmartStop-Self-Storage-REIT-Inc.-Expands-Presence-in-Asheville-MSA-With-Acquisition-of-Woodfin-Facility/" data-industry="Other">
+        <span class="tag UNSEEN" hidden>NEW</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
+        <a href ="http://www.businesswire.com/news/home/20261123578591/en/SmartStop-Self-Storage-REIT-Inc.-Expands-Presence-in-Asheville-MSA-With-Acquisition-of-Woodfin-Facility/" target="_blank">SmartStop Self Storage REIT, Inc. Expands Presence in Asheville MSA With Acquisition of Woodfin Facility</a>
+        <div class="notes pending">AI overview unavailable right now. It will retry on the next update.</div>
+        <div class="meta">Business Wire &middot; Other &middot; Nov 23, 2026, 05:27 AM</div>
+    </div>
+    <div class="card" data-deal-id="https://www.prnewswire.com/news-releases/gulbrandsen-acquires-imacas-glass-coating-business-302947996.html" data-industry="Materials">
+        <span class="tag UNSEEN" hidden>NEW</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
+        <a href ="https://www.prnewswire.com/news-releases/gulbrandsen-acquires-imacas-glass-coating-business-302947996.html" target="_blank">Gulbrandsen acquires IMACA&#x27;s glass coating business</a>
+        <div class="notes">By combining Gulbrandsen’s hot-end coating chemistry with IMACA’s application equipment and technical services, the deal creates a unified provider capable of offering glass container manufacturers a single partner for all their hot-end coating needs. This integration allows the companies to optimize equipment operation and enhance coating application performance for their global customers.</div>
+        <div class="meta">PR Newswire &middot; Materials &middot; Nov 23, 2026, 04:40 AM</div>
+    </div>
+    <div class="card" data-deal-id="http://www.businesswire.com/news/home/20261123048575/en/Health-Partners-Expands-Prevention-Behaviour-Change-Offering-with-Acquisition-of-ICE-Creates/" data-industry="Other">
+        <span class="tag UNSEEN" hidden>NEW</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
+        <a href ="http://www.businesswire.com/news/home/20261123048575/en/Health-Partners-Expands-Prevention-Behaviour-Change-Offering-with-Acquisition-of-ICE-Creates/" target="_blank">Health Partners Expands Prevention &amp;amp; Behaviour Change Offering with Acquisition of ICE Creates</a>
+        <div class="notes pending">AI overview unavailable right now. It will retry on the next update.</div>
+        <div class="meta">Business Wire &middot; Other &middot; Nov 23, 2026, 04:30 AM</div>
+    </div>
+    <div class="card" data-deal-id="http://www.businesswire.com/news/home/20261122205180/en/Bureau-Veritas-Acquires-Topo-Solutions-to-Enhance-Its-AI-Powered-Supply-Chain-Intelligence-Offering/" data-industry="Other">
+        <span class="tag UNSEEN" hidden>NEW</span>
+        <span class="tag ANNOUNCED">ANNOUNCED</span>
+        <a href ="http://www.businesswire.com/news/home/20261122205180/en/Bureau-Veritas-Acquires-Topo-Solutions-to-Enhance-Its-AI-Powered-Supply-Chain-Intelligence-Offering/" target="_blank">Bureau Veritas Acquires Topo Solutions to Enhance Its AI-Powered Supply Chain Intelligence Offering</a>
+        <div class="notes pending">AI overview unavailable right now. It will retry on the next update.</div>
+        <div class="meta">Business Wire &middot; Other &middot; Nov 23, 2026, 01:30 AM</div>
+    </div>
     <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/23/3408794/0/en/coface-strengthens-its-debt-collection-capabilities-with-the-acquisition-of-baker-ing.html" data-industry="Other">
         <span class="tag UNSEEN" hidden>NEW</span>
         <span class="tag ANNOUNCED">ANNOUNCED</span>
