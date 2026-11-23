@@ -68,7 +68,8 @@
     "source": "GlobeNewswire",
     "date": "2026-11-12T14:17:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/12/3401727/0/en/virtuix-signs-loi-to-acquire-defense-contractor-sts-international-reporting-40-million-in-unaudited-cash-basis-revenue-through-october-2026.html",
-    "notes": "Virtuix aims to establish a new defense division to accelerate its expansion into the U.S. defense market by leveraging STS International's established contract vehicles, security clearances, and government relationships. The acquisition is intended to combine Virtuix\u2019s simulation technology with STS International's defense expertise, while the latter's revenue and positive EBITDA may help accelerate Virtuix\u2019s path to profitability."
+    "notes": "The acquisition aims to combine Virtuix\u2019s simulation technology with STS International\u2019s defense experience and established government contract vehicles to accelerate market growth and profitability. The strategic rationale includes creating a platform for defense training and services while leveraging STS\u2019s existing security infrastructure and customer relationships.",
+    "industry": "Industrials"
   },
   {
     "title": "Danone completes its acquisition of MADE Group, expanding its presence in the fast-growing healthy nutrition space in Asia Pacific",
@@ -256,7 +257,8 @@
     "source": "GlobeNewswire",
     "date": "2026-11-16T13:00:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/16/3403471/0/en/commure-acquires-elaborate-to-cure-the-clinician-inbox.html",
-    "notes": "Commure acquired Elaborate to integrate protocol-driven inbox AI into its agentic healthcare platform. This acquisition aims to automate inbox management and reduce administrative burdens for clinicians, allowing them to focus more on patient care."
+    "notes": "Commure acquired Elaborate to integrate protocol-driven inbox AI into its existing healthcare platform, aiming to automate clinical workflows and reduce the administrative burden on clinicians. This acquisition complements Commure's agentic platform by providing a unified system that handles tasks from patient intake through post-visit inbox management.",
+    "industry": "Healthcare"
   },
   {
     "title": "Energy Capital Partners (ECP) Completes Acquisition of EnergySolutions",
@@ -500,5 +502,14 @@
     "link": "https://www.globenewswire.com/en/news-release/2026/11/23/3408004/0/en/brookfield-to-acquire-pgp-glass-a-leading-global-manufacturer-of-specialty-glass-packaging-from-blackstone-for-1-7-billion.html",
     "notes": "Brookfield aims to accelerate PGP Glass's growth through an AI-led transformation program that enhances sales and operations planning, production efficiency, and quality control. The acquisition also seeks to leverage Brookfield\u2019s scale and operating expertise to capitalize on increasing global demand for high-quality packaging.",
     "industry": "Industrials"
+  },
+  {
+    "title": "Bureau Veritas acquires Topo Solutions to enhance its  AI-powered supply chain intelligence offering",
+    "status": "ANNOUNCED",
+    "source": "GlobeNewswire",
+    "date": "2026-11-23T06:30:00Z",
+    "link": "https://www.globenewswire.com/en/news-release/2026/11/23/3408019/0/en/bureau-veritas-acquires-topo-solutions-to-enhance-its-ai-powered-supply-chain-intelligence-offering.html",
+    "industry": "Technology",
+    "notes": "Bureau Veritas acquired Topo Solutions to enhance its digital supply chain intelligence offering with AI-powered, data-driven services. This bolt-on acquisition aims to help customers improve supply chain visibility, decision-making, resilience, and sustainability while reducing risks and costs."
   }
 ]
