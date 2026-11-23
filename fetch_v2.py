@@ -170,11 +170,25 @@ def make_notes(deal):
         return "", ""
     prompt = f"You write short notes for an M&A deal tracker.\nRead this press release: {deal['link']}\n{RULES}"
     try:
-        response = client.models.generate_content(
-            model=MODEL,
-            contents=prompt,
-            config=types.GenerateContentConfig(tools=[{"url_context": {}}]),
-        )
+        response = None
+        for attempt in range(3):
+            try:
+                response = client.models.generate_content(
+                    model=MODEL,
+                    contents=prompt,
+                    config=types.GenerateContentConfig(tools=[{"url_context": {}}]),
+                )
+                break
+            except Exception as e:
+                if "503" in str(e) or "UNAVAILABLE" in str(e):
+                    print("busy, retrying", deal["title"])
+                    time.sleep(15 * (attempt + 1))
+                else:
+                    raise
+
+        if response is None:
+            return "", ""
+
         meta = response.candidates[0].url_context_metadata
         read_ok = bool(meta and meta.url_metadata and "SUCCESS" in str(meta.url_metadata[0].url_retrieval_status))
         if not read_ok:
