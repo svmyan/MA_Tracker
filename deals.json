@@ -589,21 +589,27 @@
     "status": "ANNOUNCED",
     "source": "GlobeNewswire",
     "date": "2026-11-23T17:30:00Z",
-    "link": "https://www.globenewswire.com/en/news-release/2026/11/23/3408794/0/en/coface-strengthens-its-debt-collection-capabilities-with-the-acquisition-of-baker-ing.html"
+    "link": "https://www.globenewswire.com/en/news-release/2026/11/23/3408794/0/en/coface-strengthens-its-debt-collection-capabilities-with-the-acquisition-of-baker-ing.html",
+    "industry": "Financials",
+    "notes": "This acquisition aims to consolidate Coface\u2019s presence in the UK debt collection market by combining Baker Ing\u2019s specialist expertise and established client relationships with Coface\u2019s existing capabilities and global network. Baker Ing is expected to leverage Coface's international footprint to accelerate its own development."
   },
   {
     "title": "Bureau Veritas Acquires Topo Solutions to Enhance Its AI-Powered Supply Chain Intelligence Offering",
     "status": "ANNOUNCED",
     "source": "Business Wire",
     "date": "2026-11-23T06:30:00+00:00",
-    "link": "http://www.businesswire.com/news/home/20261122205180/en/Bureau-Veritas-Acquires-Topo-Solutions-to-Enhance-Its-AI-Powered-Supply-Chain-Intelligence-Offering/"
+    "link": "http://www.businesswire.com/news/home/20261122205180/en/Bureau-Veritas-Acquires-Topo-Solutions-to-Enhance-Its-AI-Powered-Supply-Chain-Intelligence-Offering/",
+    "industry": "Industrials",
+    "notes": "The acquisition aims to enhance Bureau Veritas' AI-powered supply chain intelligence offering by enabling the company to provide data-driven services to consumer goods companies and retailers. This strategic move is intended to help customers improve supply chain visibility, strengthen resilience and sustainability, and reduce risks and costs through AI-powered automation and analytics."
   },
   {
     "title": "Health Partners Expands Prevention &amp; Behaviour Change Offering with Acquisition of ICE Creates",
     "status": "ANNOUNCED",
     "source": "Business Wire",
     "date": "2026-11-23T09:30:00+00:00",
-    "link": "http://www.businesswire.com/news/home/20261123048575/en/Health-Partners-Expands-Prevention-Behaviour-Change-Offering-with-Acquisition-of-ICE-Creates/"
+    "link": "http://www.businesswire.com/news/home/20261123048575/en/Health-Partners-Expands-Prevention-Behaviour-Change-Offering-with-Acquisition-of-ICE-Creates/",
+    "industry": "Healthcare",
+    "notes": "The acquisition is designed to expand Health Partners' service offering beyond traditional occupational health by integrating ICE Creates' specialist behaviour change and prevention capabilities. This combination aims to create a broader, more comprehensive platform that leverages clinical expertise and population health initiatives to improve health outcomes at scale."
   },
   {
     "title": "Gulbrandsen acquires IMACA's glass coating business",
@@ -619,14 +625,18 @@
     "status": "ANNOUNCED",
     "source": "Business Wire",
     "date": "2026-11-23T10:27:00+00:00",
-    "link": "http://www.businesswire.com/news/home/20261123578591/en/SmartStop-Self-Storage-REIT-Inc.-Expands-Presence-in-Asheville-MSA-With-Acquisition-of-Woodfin-Facility/"
+    "link": "http://www.businesswire.com/news/home/20261123578591/en/SmartStop-Self-Storage-REIT-Inc.-Expands-Presence-in-Asheville-MSA-With-Acquisition-of-Woodfin-Facility/",
+    "industry": "Real Estate",
+    "notes": "The acquisition deepens SmartStop's presence in the Asheville market, allowing the company to leverage its existing knowledge of the customer base and operating environment. Additionally, the property provides the strategic benefit of in-place retail income and full climate-controlled unit offerings in a growing area."
   },
   {
     "title": "CrowdStrike to Acquire Zscaler, Bringing Network Security and Zero Trust to the Falcon Platform",
     "status": "ANNOUNCED",
     "source": "Business Wire",
     "date": "2026-11-23T10:32:00+00:00",
-    "link": "http://www.businesswire.com/news/home/20261123522174/en/CrowdStrike-to-Acquire-Zscaler-Bringing-Network-Security-and-Zero-Trust-to-the-Falcon-Platform/"
+    "link": "http://www.businesswire.com/news/home/20261123522174/en/CrowdStrike-to-Acquire-Zscaler-Bringing-Network-Security-and-Zero-Trust-to-the-Falcon-Platform/",
+    "industry": "Technology",
+    "notes": "CrowdStrike aims to unite endpoint security with Zscaler's Zero Trust SASE to create a unified platform that secures both devices and network connections. The acquisition is expected to generate $1 billion in annualized run-rate revenue synergies through cross-selling and $500 million in annualized run-rate cost synergies from operational and infrastructure optimization."
   },
   {
     "title": "Texas Pacific Land to Acquire EagleRock in All-Stock Transaction, Expected to Enhance the Permian Basin\u2019s Premier Land, Water and Royalty Platform",
@@ -656,21 +666,27 @@
     "status": "ANNOUNCED",
     "source": "Business Wire",
     "date": "2026-11-23T12:00:00+00:00",
-    "link": "http://www.businesswire.com/news/home/20261201448686/en/IQVIA-Announces-Acquisition-of-Quotient-Sciences/"
+    "link": "http://www.businesswire.com/news/home/20261201448686/en/IQVIA-Announces-Acquisition-of-Quotient-Sciences/",
+    "industry": "Healthcare",
+    "notes": "This acquisition aims to strengthen IQVIA's early clinical development capabilities by integrating Quotient Sciences' Translational Pharmaceutics platform to help customers accelerate drug development timelines. The deal creates a more integrated pathway from discovery through early-stage clinical development, allowing the combined entity to bridge gaps in the drug development lifecycle."
   },
   {
     "title": "USFM Signs Term Sheet to Acquire Up to 85% of Hook Lake, a Fully Permitted Gold and Copper Project in Nunavut, Canada",
     "status": "ANNOUNCED",
     "source": "PR Newswire",
     "date": "2026-11-23T12:00:00+00:00",
-    "link": "https://www.prnewswire.com/news-releases/usfm-signs-term-sheet-to-acquire-up-to-85-of-hook-lake-a-fully-permitted-gold-and-copper-project-in-nunavut-canada-302947895.html"
+    "link": "https://www.prnewswire.com/news-releases/usfm-signs-term-sheet-to-acquire-up-to-85-of-hook-lake-a-fully-permitted-gold-and-copper-project-in-nunavut-canada-302947895.html",
+    "industry": "Materials",
+    "notes": "The transaction enables USFM to secure a first-mover position in a region with significant gold and critical mineral potential, leveraging its technical team and capital to advance the fully permitted Hook Lake project. The strategic rationale includes accelerating exploration at the site to capitalize on recent high-grade drill results and supporting U.S. critical mineral supply chains."
   },
   {
     "title": "Mount Street Accelerates U.S. Growth with Acquisition of Seasoned Primary and Special Servicing Team, Adding $1.35 Billion Portfolio",
     "status": "ANNOUNCED",
     "source": "Business Wire",
     "date": "2026-11-23T12:19:00+00:00",
-    "link": "http://www.businesswire.com/news/home/20261122368474/en/Mount-Street-Accelerates-U.S.-Growth-with-Acquisition-of-Seasoned-Primary-and-Special-Servicing-Team-Adding-1.35-Billion-Portfolio/"
+    "link": "http://www.businesswire.com/news/home/20261122368474/en/Mount-Street-Accelerates-U.S.-Growth-with-Acquisition-of-Seasoned-Primary-and-Special-Servicing-Team-Adding-1.35-Billion-Portfolio/",
+    "industry": "Financials",
+    "notes": "This acquisition of a primary and special servicing team aims to accelerate Mount Street's U.S. growth and expands its portfolio by $1.35 billion. The deal strategically enhances the firm's servicing capabilities and market footprint in the region."
   },
   {
     "title": "Adams Outdoor Advertising Acquires 39 Billboard Faces in Western Pennsylvania from McWhorter Media Group",
@@ -684,7 +700,9 @@
     "status": "ANNOUNCED",
     "source": "Business Wire",
     "date": "2026-11-23T12:57:00+00:00",
-    "link": "http://www.businesswire.com/news/home/20261123645330/en/KBRA-to-Acquire-Capital-Intelligence-Ratings-Expanding-Global-Footprint/"
+    "link": "http://www.businesswire.com/news/home/20261123645330/en/KBRA-to-Acquire-Capital-Intelligence-Ratings-Expanding-Global-Footprint/",
+    "industry": "Financials",
+    "notes": "KBRA is acquiring Capital Intelligence Ratings to expand its global footprint and enhance its analytical capabilities across the Middle East and North Africa. This acquisition aims to leverage CI Ratings' established local relationships and regional expertise to broaden the combined organization's service offerings and market reach."
   },
   {
     "title": "Cogent Communications Announces Definitive Agreement to Sell Three Data Center Facilities",
@@ -700,28 +718,36 @@
     "status": "ANNOUNCED",
     "source": "PR Newswire",
     "date": "2026-11-23T13:32:00+00:00",
-    "link": "https://www.prnewswire.com/news-releases/mill-steel-company-acquires-assets-of-chicago-steel-and-lexington-steel-302947516.html"
+    "link": "https://www.prnewswire.com/news-releases/mill-steel-company-acquires-assets-of-chicago-steel-and-lexington-steel-302947516.html",
+    "industry": "Materials",
+    "notes": "The acquisition expands Mill Steel's Midwest footprint and geographic reach while adding specialized tension leveling, slitting, and cut-to-length processing capabilities. These synergies allow the company to provide customers with shorter lead times, more competitive freight, and an enhanced portfolio of processing services."
   },
   {
     "title": "Nauticus Robotics\u2122 Signs Letter of Intent to Acquire Ocean Power Technologies' WAM-V\u00ae Business Assets",
     "status": "ANNOUNCED",
     "source": "PR Newswire",
     "date": "2026-11-23T13:43:00+00:00",
-    "link": "https://www.prnewswire.com/news-releases/nauticus-robotics-signs-letter-of-intent-to-acquire-ocean-power-technologies-wam-v-business-assets-302948257.html"
+    "link": "https://www.prnewswire.com/news-releases/nauticus-robotics-signs-letter-of-intent-to-acquire-ocean-power-technologies-wam-v-business-assets-302948257.html",
+    "industry": "Technology",
+    "notes": "The acquisition aims to expand Nauticus Robotics' autonomous portfolio into surface operations and enable coordinated, multi-platform autonomy by integrating its software with the WAM-V vessels. This strategic move is designed to deliver more comprehensive offshore solutions to customers by combining surface and subsea robotic capabilities."
   },
   {
     "title": "Revive Infrastructure Group Acquires Assets of West Pacific Drilling, Inc.",
     "status": "ANNOUNCED",
     "source": "Business Wire",
     "date": "2026-11-23T14:00:00+00:00",
-    "link": "http://www.businesswire.com/news/home/20261123490744/en/Revive-Infrastructure-Group-Acquires-Assets-of-West-Pacific-Drilling-Inc./"
+    "link": "http://www.businesswire.com/news/home/20261123490744/en/Revive-Infrastructure-Group-Acquires-Assets-of-West-Pacific-Drilling-Inc./",
+    "industry": "Industrials",
+    "notes": "The acquisition aims to support record industry investment and growth by adding new customers, geographies, and high-quality crews to the company's utility infrastructure services portfolio. The partnership is also intended to help the company meet increasing demand for utility services while maintaining service quality."
   },
   {
     "title": "Graham Corporation Acquires Hauschild Group, Expanding Its Global Materials Processing Platform",
     "status": "ANNOUNCED",
     "source": "Business Wire",
     "date": "2026-11-23T14:00:00+00:00",
-    "link": "http://www.businesswire.com/news/home/20261123556033/en/Graham-Corporation-Acquires-Hauschild-Group-Expanding-Its-Global-Materials-Processing-Platform/"
+    "link": "http://www.businesswire.com/news/home/20261123556033/en/Graham-Corporation-Acquires-Hauschild-Group-Expanding-Its-Global-Materials-Processing-Platform/",
+    "industry": "Industrials",
+    "notes": "Graham Corporation acquired Hauschild Group to expand its materials processing platform by combining complementary mixing technologies and engineering capabilities under the SpeedMixer brand. The acquisition aims to capture synergies by unifying sales and distributor networks, integrating product portfolios, and leveraging a broader global operational footprint."
   },
   {
     "title": "Workday Completes Acquisition of C1.ai",
@@ -735,14 +761,18 @@
     "status": "ANNOUNCED",
     "source": "Business Wire",
     "date": "2026-11-23T14:30:00+00:00",
-    "link": "http://www.businesswire.com/news/home/20261123983215/en/BTG-Pactual-Strategic-Capital-Finances-Bertram-Capitals-Acquisition-of-Medical-Technology-Associates/"
+    "link": "http://www.businesswire.com/news/home/20261123983215/en/BTG-Pactual-Strategic-Capital-Finances-Bertram-Capitals-Acquisition-of-Medical-Technology-Associates/",
+    "industry": "Healthcare",
+    "notes": "The acquisition is intended to position Medical Technology Associates for its next phase of growth through the guidance and operational support of Bertram Capital. Specific synergies were not stated in the press release."
   },
   {
     "title": "Authentic Acquires O'Neill, Expanding Global Action and Outdoor Portfolio",
     "status": "ANNOUNCED",
     "source": "PR Newswire",
     "date": "2026-11-23T16:00:00+00:00",
-    "link": "https://www.prnewswire.com/news-releases/authentic-acquires-oneill-expanding-global-action-and-outdoor-portfolio-302948389.html"
+    "link": "https://www.prnewswire.com/news-releases/authentic-acquires-oneill-expanding-global-action-and-outdoor-portfolio-302948389.html",
+    "industry": "Consumer",
+    "notes": "This acquisition expands Authentic's presence in the action and outdoor sports market, creating new growth opportunities across content, experiences, and global commerce by leveraging Authentic's platform and network of partners."
   },
   {
     "title": "Saragon to Acquire Three Additional Data Center Facilities, Extending Its Edge Footprint to Omaha, Tacoma and Cheyenne",
@@ -758,7 +788,9 @@
     "status": "ANNOUNCED",
     "source": "Business Wire",
     "date": "2026-11-23T16:38:00+00:00",
-    "link": "http://www.businesswire.com/news/home/20261123673204/en/Barnes-Aerospace-Signs-Agreement-to-Acquire-JJ-Churchill-Expanding-Advanced-Aeroengine-Manufacturing-Capabilities/"
+    "link": "http://www.businesswire.com/news/home/20261123673204/en/Barnes-Aerospace-Signs-Agreement-to-Acquire-JJ-Churchill-Expanding-Advanced-Aeroengine-Manufacturing-Capabilities/",
+    "industry": "Industrials",
+    "notes": "The acquisition expands Barnes Aerospace's turbine and compressor airfoil manufacturing capabilities while strengthening its European footprint. This strategic move leverages JJ Churchill's engineering expertise and existing customer relationships to support Barnes's strategy of growing its original equipment manufacturing business."
   },
   {
     "title": "Madison Dearborn Partners to Acquire Peli BioThermal, a Trusted Cold Chain Solutions Provider, from Pelican Products and Platinum Equity",
@@ -772,20 +804,49 @@
     "status": "ANNOUNCED",
     "source": "PR Newswire",
     "date": "2026-11-23T18:00:00+00:00",
-    "link": "https://www.prnewswire.com/news-releases/harvest-group-acquires-good-peeps-accelerating-growth-toward-10-billion-in-retail-sales-and-2-billion-in-media-under-management-302948447.html"
+    "link": "https://www.prnewswire.com/news-releases/harvest-group-acquires-good-peeps-accelerating-growth-toward-10-billion-in-retail-sales-and-2-billion-in-media-under-management-302948447.html",
+    "industry": "Consumer",
+    "notes": "The acquisition is designed to deepen Harvest Group's retail media expertise and expand its reach by integrating Good Peeps' digital advertising and AI-driven media management capabilities into its broader commerce service offering. This move aims to accelerate Harvest Group's growth toward managing $10 billion in client retail sales and $2 billion in media spend by combining startup-speed innovation with established retail relationships."
   },
   {
     "title": "Ergodyne to Acquire Thersty Hydration Products Ltd., Expanding Heat Safety Portfolio",
     "status": "ANNOUNCED",
     "source": "GlobeNewswire",
     "date": "2026-11-23T21:00:00+00:00",
-    "link": "https://www.globenewswire.com/en/news-release/2026/11/23/3408858/0/en/ergodyne-to-acquire-thersty-hydration-products-ltd-expanding-heat-safety-portfolio.html"
+    "link": "https://www.globenewswire.com/en/news-release/2026/11/23/3408858/0/en/ergodyne-to-acquire-thersty-hydration-products-ltd-expanding-heat-safety-portfolio.html",
+    "industry": "Consumer",
+    "notes": "The acquisition is designed to expand Ergodyne's heat safety portfolio by integrating Thersty's electrolyte hydration products into its existing line of cooling, hydration, and shade solutions. This creates a comprehensive heat stress management stack for workers from a single provider."
   },
   {
     "title": "Alta Equipment Group Agrees to Acquire Jackson Group Peterbilt in Proposed Transformative Deal",
     "status": "ANNOUNCED",
     "source": "GlobeNewswire",
     "date": "2026-11-23T21:15:00+00:00",
-    "link": "https://www.globenewswire.com/en/news-release/2026/11/23/3408900/0/en/alta-equipment-group-agrees-to-acquire-jackson-group-peterbilt-in-proposed-transformative-deal.html"
+    "link": "https://www.globenewswire.com/en/news-release/2026/11/23/3408900/0/en/alta-equipment-group-agrees-to-acquire-jackson-group-peterbilt-in-proposed-transformative-deal.html",
+    "industry": "Industrials",
+    "notes": "The acquisition is intended to create a scaled, coast-to-coast dealership platform by adding a commercial truck vertical, which is expected to enhance recurring aftermarket revenue and strengthen the company's cash generation capacity. The deal is also projected to improve the company's capital efficiency and support long-term deleveraging."
+  },
+  {
+    "title": "Linamar Corporation to Acquire Genie from Terex Corporation, Significantly Expanding its Access Work Platforms Group",
+    "status": "ANNOUNCED",
+    "source": "GlobeNewswire",
+    "date": "2026-11-23T22:05:00+00:00",
+    "link": "https://www.globenewswire.com/en/news-release/2026/11/23/3408931/0/en/linamar-corporation-to-acquire-genie-from-terex-corporation-significantly-expanding-its-access-work-platforms-group.html"
+  },
+  {
+    "title": "TEREX ANNOUNCES DEFINITIVE AGREEMENT TO SELL ITS AERIALS SEGMENT TO LINAMAR",
+    "status": "ANNOUNCED",
+    "source": "PR Newswire",
+    "date": "2026-11-23T22:05:00+00:00",
+    "link": "https://www.prnewswire.com/news-releases/terex-announces-definitive-agreement-to-sell-its-aerials-segment-to-linamar-302948654.html"
+  },
+  {
+    "title": "Uniform Advantage Expands Retail Presence with Acquisition of 16 Former Scrubs & Beyond Locations",
+    "status": "ANNOUNCED",
+    "source": "PR Newswire",
+    "date": "2026-11-23T23:00:00+00:00",
+    "link": "https://www.prnewswire.com/news-releases/uniform-advantage-expands-retail-presence-with-acquisition-of-16-former-scrubs--beyond-locations-302948637.html",
+    "industry": "Consumer",
+    "notes": "The acquisition is designed to expand the company's brick-and-mortar retail footprint, allowing it to provide healthcare professionals with continued access to uniforms in local communities. This move leverages existing locations to bring the brand's exclusive and national product offerings directly to customers who prefer in-person shopping."
   }
 ]
