@@ -82,8 +82,10 @@
     .UNSEEN {
       background: #d97706;
     }
-      .hero {
-      background: url("Images/City_Image.jpg") center / cover no-repeat fixed;
+          .hero {
+      background:
+        linear-gradient(rgba(10,14,20,0.35), rgba(10,14,20,0.35)),
+        url("Images/City_Image.jpg") center / cover no-repeat fixed;
       color: white;
       padding: 140px 16px 120px;
       text-align: center;
@@ -96,6 +98,8 @@
     }
     .hero .sub { color: #cbd2db; margin: 0; }
     .DISPUTE { background: var(--dispute); }
+        .hero h1, .hero .sub { text-shadow: 0 2px 12px rgba(0,0,0,0.55); }
+    .hero .sub { color: #fff; font-weight: 500; }
 
         .filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 24px; }
     .filter {

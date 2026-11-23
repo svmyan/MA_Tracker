@@ -1,6 +1,7 @@
 # purpose is to create a tracker for M&A activity in north america
 from datetime import datetime
 from zoneinfo import ZoneInfo
+from calendar import timegm
 import feedparser
 import json
 import os
@@ -16,6 +17,8 @@ TEMPLATE = "template.html"
 SHOW_OLD = 10 # how many earlier deals to display
 FEEDS = {
     "GlobeNewswire": "https://www.globenewswire.com/en/AtomFeed/subjectcode/27-Mergers%20And%20Acquisitions/feedTitle/GlobeNewswire%20-%20Mergers%20And%20Acquisitions",
+    "Business Wire":"https://feed.businesswire.com/rss/home/?rss=G1QFDERJXkJeEFtRWA==",
+    "PR Newswire": "https://www.prnewswire.com/rss/financial-services-latest-news/acquisitions-mergers-and-takeovers-list.rss",
 }
 
 # AI integration variables
@@ -81,18 +84,26 @@ def get_new_deals(source, url, seen_links):
         print(f"Problem with {source}: status {feed.get('status')}")
         return []
 
-    new_deals =[]
+    new_deals = []
     for entry in feed.entries:
+        link = entry.link
+        if source == "Business Wire":
+            link = link.split("?")[0]
         status = classify(entry.title)
-        if status and entry.link not in seen_links:
+        if status and link not in seen_links and entry.title not in seen_links:
+            if entry.get("published_parsed"):
+                date = datetime.fromtimestamp(timegm(entry.published_parsed), tz=ZoneInfo("UTC")).isoformat()
+            else:
+                date = entry.get("published", entry.get("updated", "no date"))
             new_deals.append({
                 "title": entry.title,
                 "status": status,
                 "source": source,
-                "date": entry.get("published", entry.get("updated", "no date")),
-                "link": entry.link,
+                "date": date,
+                "link": link,
             })
-            seen_links.add(entry.link)
+            seen_links.add(link)
+            seen_links.add(entry.title)
     return new_deals
 
 # prints the deal
@@ -234,11 +245,12 @@ def main():
     for deal in old_deals:
         if deal.get("status") == "NEW":
             deal["status"] = "ANNOUNCED"
-    seen_links = {d["link"] for d in old_deals}
+    seen_links = {d["link"] for d in old_deals} | {d["title"] for d in old_deals}
     new_deals =[]
 
     for source, url in FEEDS.items():
         new_deals.extend(get_new_deals(source, url, seen_links))
+        new_deals.sort(key=lambda d: d["date"])
 
     show_section("JUST ADDED", new_deals)
     show_section("EARLIER DEALS", list(reversed(old_deals))[:SHOW_OLD])
