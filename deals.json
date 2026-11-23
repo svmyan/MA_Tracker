@@ -647,7 +647,9 @@
     "status": "ANNOUNCED",
     "source": "Business Wire",
     "date": "2026-11-23T12:00:00+00:00",
-    "link": "http://www.businesswire.com/news/home/20261118254933/en/RELEX-Acquires-autone-to-Expand-AI-Powered-Planning-Capabilities-for-Fashion-Lifestyle-Brands-and-Apparel-Retailers/"
+    "link": "http://www.businesswire.com/news/home/20261118254933/en/RELEX-Acquires-autone-to-Expand-AI-Powered-Planning-Capabilities-for-Fashion-Lifestyle-Brands-and-Apparel-Retailers/",
+    "industry": "Technology",
+    "notes": "This acquisition combines autone's specialized fashion and lifestyle planning expertise with the scale of the RELEX platform to provide brands and retailers with a unified engine for seasonal and continuous planning. The transaction aims to improve inventory performance, protect margins, and allow customers to manage the entire merchandise lifecycle through a single interface."
   },
   {
     "title": "IQVIA Announces Acquisition of Quotient Sciences",
@@ -689,7 +691,9 @@
     "status": "ANNOUNCED",
     "source": "PR Newswire",
     "date": "2026-11-23T13:30:00+00:00",
-    "link": "https://www.prnewswire.com/news-releases/cogent-communications-announces-definitive-agreement-to-sell-three-data-center-facilities-302947462.html"
+    "link": "https://www.prnewswire.com/news-releases/cogent-communications-announces-definitive-agreement-to-sell-three-data-center-facilities-302947462.html",
+    "industry": "Telecom & Media",
+    "notes": "Rationale not stated."
   },
   {
     "title": "Mill Steel Company Acquires Assets of Chicago Steel and Lexington Steel",
@@ -745,7 +749,9 @@
     "status": "ANNOUNCED",
     "source": "Business Wire",
     "date": "2026-11-23T16:30:00+00:00",
-    "link": "http://www.businesswire.com/news/home/20261123951910/en/Saragon-to-Acquire-Three-Additional-Data-Center-Facilities-Extending-Its-Edge-Footprint-to-Omaha-Tacoma-and-Cheyenne/"
+    "link": "http://www.businesswire.com/news/home/20261123951910/en/Saragon-to-Acquire-Three-Additional-Data-Center-Facilities-Extending-Its-Edge-Footprint-to-Omaha-Tacoma-and-Cheyenne/",
+    "industry": "Technology",
+    "notes": "This acquisition expands Saragon's edge infrastructure footprint into three new regional markets, enabling the company to more efficiently deliver capacity to customers in the Central Plains, Pacific Northwest, and Mountain West. The facilities were selected to leverage specific strategic advantages, such as Omaha\u2019s established network interconnection, Tacoma\u2019s proximity to Seattle, and Cheyenne\u2019s position within a growing data center corridor."
   },
   {
     "title": "Barnes Aerospace Signs Agreement to Acquire JJ Churchill, Expanding Advanced Aeroengine Manufacturing Capabilities",
@@ -767,5 +773,19 @@
     "source": "PR Newswire",
     "date": "2026-11-23T18:00:00+00:00",
     "link": "https://www.prnewswire.com/news-releases/harvest-group-acquires-good-peeps-accelerating-growth-toward-10-billion-in-retail-sales-and-2-billion-in-media-under-management-302948447.html"
+  },
+  {
+    "title": "Ergodyne to Acquire Thersty Hydration Products Ltd., Expanding Heat Safety Portfolio",
+    "status": "ANNOUNCED",
+    "source": "GlobeNewswire",
+    "date": "2026-11-23T21:00:00+00:00",
+    "link": "https://www.globenewswire.com/en/news-release/2026/11/23/3408858/0/en/ergodyne-to-acquire-thersty-hydration-products-ltd-expanding-heat-safety-portfolio.html"
+  },
+  {
+    "title": "Alta Equipment Group Agrees to Acquire Jackson Group Peterbilt in Proposed Transformative Deal",
+    "status": "ANNOUNCED",
+    "source": "GlobeNewswire",
+    "date": "2026-11-23T21:15:00+00:00",
+    "link": "https://www.globenewswire.com/en/news-release/2026/11/23/3408900/0/en/alta-equipment-group-agrees-to-acquire-jackson-group-peterbilt-in-proposed-transformative-deal.html"
   }
 ]
