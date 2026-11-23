@@ -535,28 +535,36 @@
     "status": "CLOSED",
     "source": "GlobeNewswire",
     "date": "2026-11-23T11:30:00Z",
-    "link": "https://www.globenewswire.com/en/news-release/2026/11/23/3408176/0/en/zacatecas-silver-closes-option-to-acquire-the-lourdes-gold-silver-project-from-guanajuato-silver.html"
+    "link": "https://www.globenewswire.com/en/news-release/2026/11/23/3408176/0/en/zacatecas-silver-closes-option-to-acquire-the-lourdes-gold-silver-project-from-guanajuato-silver.html",
+    "industry": "Materials",
+    "notes": "Rationale not stated. The company acquired the Lourdes gold-silver project to expand its precious metals exploration portfolio in Mexico, with plans to compile historical data and conduct further drilling."
   },
   {
     "title": "Roze AI Signs Non-Binding Memorandum of Agreement to Explore Potential Acquisition of Shares in BAUM Architects",
     "status": "ANNOUNCED",
     "source": "GlobeNewswire",
     "date": "2026-11-23T13:30:00Z",
-    "link": "https://www.globenewswire.com/en/news-release/2026/11/23/3408360/0/en/roze-ai-signs-non-binding-memorandum-of-agreement-to-explore-potential-acquisition-of-shares-in-baum-architects.html"
+    "link": "https://www.globenewswire.com/en/news-release/2026/11/23/3408360/0/en/roze-ai-signs-non-binding-memorandum-of-agreement-to-explore-potential-acquisition-of-shares-in-baum-architects.html",
+    "industry": "Other",
+    "notes": "Roze AI intends to combine its AI fire safety technology with BAUM Architects' design expertise to drive synergies in digital architectural design, smart buildings, and sustainable solutions. The companies also aim to use this potential partnership to expand their overall market share and support Roze AI\u2019s long-term growth strategy."
   },
   {
     "title": "StoneX Group Inc. Acquires GrainFox, Expanding Agricultural Technology and Market Intelligence Capabilities",
     "status": "ANNOUNCED",
     "source": "GlobeNewswire",
     "date": "2026-11-23T13:05:00Z",
-    "link": "https://www.globenewswire.com/en/news-release/2026/11/23/3408336/11961/en/stonex-group-inc-acquires-grainfox-expanding-agricultural-technology-and-market-intelligence-capabilities.html"
+    "link": "https://www.globenewswire.com/en/news-release/2026/11/23/3408336/11961/en/stonex-group-inc-acquires-grainfox-expanding-agricultural-technology-and-market-intelligence-capabilities.html",
+    "industry": "Technology",
+    "notes": "The acquisition adds GrainFox\u2019s digital platform and AI-powered tools to StoneX\u2019s existing agricultural brokerage and risk management services. This integration aims to provide North American agricultural clients with more connected tools, market insights, and data-driven support for grain marketing decisions."
   },
   {
     "title": "Unusual Whales Acquires the BlackBoxStocks Platform",
     "status": "ANNOUNCED",
     "source": "GlobeNewswire",
     "date": "2026-11-23T13:00:00Z",
-    "link": "https://www.globenewswire.com/en/news-release/2026/11/23/3408270/0/en/unusual-whales-acquires-the-blackboxstocks-platform.html"
+    "link": "https://www.globenewswire.com/en/news-release/2026/11/23/3408270/0/en/unusual-whales-acquires-the-blackboxstocks-platform.html",
+    "industry": "Financials",
+    "notes": "Unusual Whales aims to empower the BlackBoxStocks community by integrating its own extensive real-time market data sets and developer tools into the BlackBoxStocks platform. This acquisition creates synergies by combining the data depth of Unusual Whales with the existing alerts and trading rooms of BlackBoxStocks to enhance functionality for retail traders."
   },
   {
     "title": "Passage Bio Announces 1-for-6 Reverse Stock Split in Connection With the Proposed Merger With Remix Therapeutics",
@@ -564,5 +572,19 @@
     "source": "GlobeNewswire",
     "date": "2026-11-23T16:05:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/23/3408688/0/en/passage-bio-announces-1-for-6-reverse-stock-split-in-connection-with-the-proposed-merger-with-remix-therapeutics.html"
+  },
+  {
+    "title": "Ch\u00eane Gear Acquires Stone Glacier from Revelyst, Keeping the Brand Rooted in Montana",
+    "status": "ANNOUNCED",
+    "source": "GlobeNewswire",
+    "date": "2026-11-23T18:22:17Z",
+    "link": "https://www.globenewswire.com/en/news-release/2026/11/23/3408819/0/en/ch%C3%AAne-gear-acquires-stone-glacier-from-revelyst-keeping-the-brand-rooted-in-montana.html"
+  },
+  {
+    "title": "Coface strengthens its Debt Collection capabilities  with the acquisition of Baker Ing",
+    "status": "ANNOUNCED",
+    "source": "GlobeNewswire",
+    "date": "2026-11-23T17:30:00Z",
+    "link": "https://www.globenewswire.com/en/news-release/2026/11/23/3408794/0/en/coface-strengthens-its-debt-collection-capabilities-with-the-acquisition-of-baker-ing.html"
   }
 ]
