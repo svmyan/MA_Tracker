@@ -8,6 +8,7 @@
   <style>
     .meta { color: var(--muted); font-size: 13px; margin-top: 8px; }
     .notes { font-size: 14px; line-height: 1.5; margin-top: 8px;}
+    .notes.pending { color: var(--muted); font-style: italic; }
       :root {
       --bg: #f6f7f9;
       --card: #ffffff;
@@ -82,7 +83,7 @@
     .hero {
       background: 
       linear-gradient(rgba(10,14,20,0.55), rgba(10,14,20,0.85)),
-        url("Images/skyline.jpg") center / cover no-repeat;
+        url("Images/City_Image.jpg") center / cover no-repeat;
       color: white;
       padding: 72px 16px 56px;
     }
@@ -91,9 +92,23 @@
     .hero .sub { color: #cbd2db; margin: 0; }
     .DISPUTE { background: var(--dispute); }
 
-    .filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0; }
-.filter { padding: 6px 12px; border: 1px solid #ccc; border-radius: 16px; background: #fff; cursor: pointer; }
-.filter.active { background: #111; color: #fff; border-color: #111; }
+        .filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 24px; }
+    .filter {
+      padding: 6px 14px;
+      border: 1px solid #262d37;
+      border-radius: 999px;
+      background: #262d37;
+      color: #d3d9e1;
+      font-size: 13px;
+      font-family: inherit;
+      cursor: pointer;
+    }
+    .filter:hover { border-color: #3a4452; }
+    .filter.active {
+      background: #1e3a5f;
+      border-color: #2f5d99;
+      color: #dbe9fb;
+    }
 .card[hidden] { display: none; }
 
   </style> 
@@ -102,7 +117,7 @@
   <div class="hero">
     <div class="hero-inner">
       <h1>M&amp;A Tracker</h1>
-      <div class="sub">Last updated: Nov 23, 2026, 02:33 PM (EST)</div>
+      <div class="sub">Last updated: Nov 23, 2026, 03:10 PM (EST)</div>
     </div>
   </div>
   <div class="wrap">
@@ -113,7 +128,7 @@
         <span class="tag UNSEEN" hidden>NEW</span>
         <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/23/3408794/0/en/coface-strengthens-its-debt-collection-capabilities-with-the-acquisition-of-baker-ing.html" target="_blank">Coface strengthens its Debt Collection capabilities  with the acquisition of Baker Ing</a>
-        
+        <div class="notes pending">AI overview unavailable right now. It will retry on the next update.</div>
         <div class="meta">GlobeNewswire &middot; Other &middot; Nov 23, 2026, 12:30 PM</div>
     </div>
     <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/23/3408819/0/en/ch%C3%AAne-gear-acquires-stone-glacier-from-revelyst-keeping-the-brand-rooted-in-montana.html" data-industry="Consumer">
@@ -127,7 +142,7 @@
         <span class="tag UNSEEN" hidden>NEW</span>
         <span class="tag ANNOUNCED">ANNOUNCED</span>
         <a href ="https://www.globenewswire.com/en/news-release/2026/11/23/3408688/0/en/passage-bio-announces-1-for-6-reverse-stock-split-in-connection-with-the-proposed-merger-with-remix-therapeutics.html" target="_blank">Passage Bio Announces 1-for-6 Reverse Stock Split in Connection With the Proposed Merger With Remix Therapeutics</a>
-        
+        <div class="notes pending">AI overview unavailable right now. It will retry on the next update.</div>
         <div class="meta">GlobeNewswire &middot; Other &middot; Nov 23, 2026, 11:05 AM</div>
     </div>
     <div class="card" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/23/3408270/0/en/unusual-whales-acquires-the-blackboxstocks-platform.html" data-industry="Financials">
