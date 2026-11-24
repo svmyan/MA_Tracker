@@ -920,77 +920,99 @@
     "status": "ANNOUNCED",
     "source": "Business Wire",
     "date": "2026-11-24T11:55:00+00:00",
-    "link": "http://www.businesswire.com/news/home/20261124041337/en/Pursuit-Signs-Agreement-to-Acquire-Sky-Adventures-Advancing-Growth-Plans-in-Costa-Rica/"
+    "link": "http://www.businesswire.com/news/home/20261124041337/en/Pursuit-Signs-Agreement-to-Acquire-Sky-Adventures-Advancing-Growth-Plans-in-Costa-Rica/",
+    "industry": "Consumer",
+    "notes": "Pursuit is acquiring Sky Adventures to advance its growth strategy of investing in experiential infrastructure in iconic destinations with strong perennial demand. The acquisition complements Pursuit's existing Tabac\u00f3n resort by offering guests nature-based adventure experiences in the same region, creating opportunities for cross-marketing and deeper guest engagement."
   },
   {
     "title": "Radiology Partners Completes Acquisition of Everlight Radiology",
     "status": "CLOSED",
     "source": "Business Wire",
     "date": "2026-11-24T12:00:00+00:00",
-    "link": "http://www.businesswire.com/news/home/20261124019151/en/Radiology-Partners-Completes-Acquisition-of-Everlight-Radiology/"
+    "link": "http://www.businesswire.com/news/home/20261124019151/en/Radiology-Partners-Completes-Acquisition-of-Everlight-Radiology/",
+    "industry": "Healthcare",
+    "notes": "The acquisition creates a global teleradiology leader by combining Everlight's international radiologist network with Radiology Partners' U.S.-based vRad platform to provide 24/7/365 subspecialty coverage. The companies expect to generate synergies by sharing technology and clinical standards across their global markets."
   },
   {
     "title": "Parker Completes Acquisition of CIRCOR\u2019s Commercial and Defense Aerospace Business",
     "status": "CLOSED",
     "source": "GlobeNewswire",
     "date": "2026-11-24T12:30:00+00:00",
-    "link": "https://www.globenewswire.com/en/news-release/2026/11/24/3409156/0/en/parker-completes-acquisition-of-circor-s-commercial-and-defense-aerospace-business.html"
+    "link": "https://www.globenewswire.com/en/news-release/2026/11/24/3409156/0/en/parker-completes-acquisition-of-circor-s-commercial-and-defense-aerospace-business.html",
+    "industry": "Industrials",
+    "notes": "This acquisition adds complementary capabilities and proprietary flight-critical technologies to Parker\u2019s aerospace and defense portfolio, strengthening its position as a systems provider for commercial and defense platforms. The company expects to realize cost synergies by the end of the third full fiscal year following the transaction."
   },
   {
     "title": "Sentinel Capital Partners Acquires GSI Group Holdings",
     "status": "ANNOUNCED",
     "source": "PR Newswire",
     "date": "2026-11-24T12:30:00+00:00",
-    "link": "https://www.prnewswire.com/news-releases/sentinel-capital-partners-acquires-gsi-group-holdings-302948842.html"
+    "link": "https://www.prnewswire.com/news-releases/sentinel-capital-partners-acquires-gsi-group-holdings-302948842.html",
+    "industry": "Healthcare",
+    "notes": "Rationale not stated. The press release indicates that the acquisition is intended to build on GSI's foundation as a global platform of complementary brands and support the company's next phase of growth, but it does not explicitly detail specific strategic synergies."
   },
   {
     "title": "Post Road Management acquires Scenic & Girard portfolio in West Philadelphia",
     "status": "ANNOUNCED",
     "source": "GlobeNewswire",
     "date": "2026-11-24T12:59:00+00:00",
-    "link": "https://www.globenewswire.com/en/news-release/2026/11/24/3409172/0/en/post-road-management-acquires-scenic-girard-portfolio-in-west-philadelphia.html"
+    "link": "https://www.globenewswire.com/en/news-release/2026/11/24/3409172/0/en/post-road-management-acquires-scenic-girard-portfolio-in-west-philadelphia.html",
+    "industry": "Real Estate",
+    "notes": "Post Road Management acquired the Scenic & Girard portfolio to rehabilitate abandoned and deteriorated buildings, aiming to bring vacant apartments back into use and provide affordable housing. The acquisition is intended to restore the properties and make lasting improvements to the neighborhood."
   },
   {
     "title": "DRT Aerospace, a GenNx360 Capital Partners Portfolio Company, Acquires Duke Manufacturing",
     "status": "ANNOUNCED",
     "source": "Business Wire",
     "date": "2026-11-24T13:00:00+00:00",
-    "link": "http://www.businesswire.com/news/home/20261124941228/en/DRT-Aerospace-a-GenNx360-Capital-Partners-Portfolio-Company-Acquires-Duke-Manufacturing/"
+    "link": "http://www.businesswire.com/news/home/20261124941228/en/DRT-Aerospace-a-GenNx360-Capital-Partners-Portfolio-Company-Acquires-Duke-Manufacturing/",
+    "industry": "Industrials",
+    "notes": "This acquisition expands DRT Aerospace's manufacturing footprint by adding a fuel systems center-of-excellence and introduces the company to new customers and programs. The deal serves to broaden the service offerings available to existing customers while building an industry-leading platform in the aerospace and defense supply chain."
   },
   {
     "title": "Harbourfront Wealth to Acquire JC Clark, Strengthening Its National Wealth Management Platform",
     "status": "ANNOUNCED",
     "source": "Business Wire",
     "date": "2026-11-24T13:00:00+00:00",
-    "link": "http://www.businesswire.com/news/home/20261123208304/en/Harbourfront-Wealth-to-Acquire-JC-Clark-Strengthening-Its-National-Wealth-Management-Platform/"
+    "link": "http://www.businesswire.com/news/home/20261123208304/en/Harbourfront-Wealth-to-Acquire-JC-Clark-Strengthening-Its-National-Wealth-Management-Platform/",
+    "industry": "Financials",
+    "notes": "This acquisition aims to strengthen Harbourfront Wealth\u2019s national wealth management platform and advance its goal of building a leading independent wealth firm in Canada. The deal provides JC Clark with access to broader resources, technology, and wealth management capabilities to enhance the client experience while maintaining their existing investment strategies."
   },
   {
     "title": "Cosette Pharmaceuticals\u00ae Establishes Oncology Franchise Through Acquisition of MARGENZA\u00ae (margetuximab-cmkb) from TerSera\u00ae Therapeutics",
     "status": "ANNOUNCED",
     "source": "Business Wire",
     "date": "2026-11-24T13:00:00+00:00",
-    "link": "http://www.businesswire.com/news/home/20261124793124/en/Cosette-Pharmaceuticals%C2%AE-Establishes-Oncology-Franchise-Through-Acquisition-of-MARGENZA%C2%AE-margetuximab-cmkb-from-TerSera%C2%AE-Therapeutics/"
+    "link": "http://www.businesswire.com/news/home/20261124793124/en/Cosette-Pharmaceuticals%C2%AE-Establishes-Oncology-Franchise-Through-Acquisition-of-MARGENZA%C2%AE-margetuximab-cmkb-from-TerSera%C2%AE-Therapeutics/",
+    "industry": "Healthcare",
+    "notes": "The acquisition establishes an oncology franchise for Cosette Pharmaceuticals, providing a platform to expand its therapeutic focus and advance its long-term growth strategy. The company intends to leverage this foundation to build a broader presence in the oncology space while ensuring continued patient access and support."
   },
   {
     "title": "LiveChain Completes Acquisition of MIT-Originated Humanyze Assets, Positioning it for the Next Frontier of Enterprise AI",
     "status": "CLOSED",
     "source": "Business Wire",
     "date": "2026-11-24T13:00:00+00:00",
-    "link": "http://www.businesswire.com/news/home/20261124766207/en/LiveChain-Completes-Acquisition-of-MIT-Originated-Humanyze-Assets-Positioning-it-for-the-Next-Frontier-of-Enterprise-AI/"
+    "link": "http://www.businesswire.com/news/home/20261124766207/en/LiveChain-Completes-Acquisition-of-MIT-Originated-Humanyze-Assets-Positioning-it-for-the-Next-Frontier-of-Enterprise-AI/",
+    "industry": "Technology",
+    "notes": "LiveChain acquired Humanyze\u2019s workforce intelligence software assets to combine research-driven organizational analytics with emerging AI capabilities. This acquisition aims to develop intelligent systems that optimize collaboration between humans and AI agents, enabling enterprises to improve organizational performance and identify inefficiencies."
   },
   {
     "title": "Shift4 Completes Acquisition of Paramount Commerce",
     "status": "CLOSED",
     "source": "Business Wire",
     "date": "2026-11-24T13:30:00+00:00",
-    "link": "http://www.businesswire.com/news/home/20261123387699/en/Shift4-Completes-Acquisition-of-Paramount-Commerce/"
+    "link": "http://www.businesswire.com/news/home/20261123387699/en/Shift4-Completes-Acquisition-of-Paramount-Commerce/",
+    "industry": "Technology",
+    "notes": "This acquisition expands Shift4\u2019s Canadian presence and integrates real-time account-to-account payment capabilities to enhance its global platform. The deal leverages Paramount Commerce\u2019s specialized gaming expertise and payment infrastructure to provide enterprise merchants with faster, more frictionless transaction flows."
   },
   {
     "title": "BlackSky Acquires EpochGeo to Expand Real-Time Intelligence Capabilities with AI-Enabled RF, Signals and Multi-Source Analytics",
     "status": "ANNOUNCED",
     "source": "Business Wire",
     "date": "2026-11-24T13:30:00+00:00",
-    "link": "http://www.businesswire.com/news/home/20261124143284/en/BlackSky-Acquires-EpochGeo-to-Expand-Real-Time-Intelligence-Capabilities-with-AI-Enabled-RF-Signals-and-Multi-Source-Analytics/"
+    "link": "http://www.businesswire.com/news/home/20261124143284/en/BlackSky-Acquires-EpochGeo-to-Expand-Real-Time-Intelligence-Capabilities-with-AI-Enabled-RF-Signals-and-Multi-Source-Analytics/",
+    "industry": "Technology",
+    "notes": "The acquisition expands BlackSky's real-time intelligence capabilities by integrating EpochGeo\u2019s AI and machine learning expertise in fusing diverse data sources, such as RF and signals intelligence, into its existing offerings. This strategic move aims to deliver more comprehensive intelligence products to defense and national security customers while accelerating the adoption of BlackSky's analytics services."
   },
   {
     "title": "Wellable Acquires Givhero's Employee Well-Being Business",
@@ -1004,69 +1026,89 @@
     "status": "ANNOUNCED",
     "source": "PR Newswire",
     "date": "2026-11-24T14:00:00+00:00",
-    "link": "https://www.prnewswire.com/news-releases/cerberus-to-acquire-the-us-space-systems-business-of-airbus-302949473.html"
+    "link": "https://www.prnewswire.com/news-releases/cerberus-to-acquire-the-us-space-systems-business-of-airbus-302949473.html",
+    "industry": "Industrials",
+    "notes": "Cerberus intends to invest in the company's engineering organization, product portfolio, and U.S. supply chain to build a leading independent, U.S.-owned satellite platform that can scale to meet growing national security and commercial mission requirements. The acquisition aims to expand the business's capabilities and solidify its role as a trusted merchant supplier by establishing dedicated U.S. ownership."
   },
   {
     "title": "Stratix Acquires DMI's Managed Mobility Services Business",
     "status": "ANNOUNCED",
     "source": "PR Newswire",
     "date": "2026-11-24T14:00:00+00:00",
-    "link": "https://www.prnewswire.com/news-releases/stratix-acquires-dmis-managed-mobility-services-business-302948595.html"
+    "link": "https://www.prnewswire.com/news-releases/stratix-acquires-dmis-managed-mobility-services-business-302948595.html",
+    "industry": "Technology",
+    "notes": "The acquisition adds expanded logistics, help desk capabilities, and a new Chicago depot to Stratix's portfolio, enhancing its reach and depth across the enterprise device lifecycle. The transaction combines the teams and enterprise customer relationships of both companies to strengthen their support for comprehensive managed mobility programs."
   },
   {
     "title": "Revau Advanced Underwriting Announces Acquisition of H.W. Kaufman Group\u2019s Canadian MGA and Claims Business, Burns & Wilcox Canada, Strengthening Its Presence in Canada",
     "status": "ANNOUNCED",
     "source": "GlobeNewswire",
     "date": "2026-11-24T14:03:20+00:00",
-    "link": "https://www.globenewswire.com/en/news-release/2026/11/24/3409345/0/en/revau-advanced-underwriting-announces-acquisition-of-h-w-kaufman-group-s-canadian-mga-and-claims-business-burns-wilcox-canada-strengthening-its-presence-in-canada.html"
+    "link": "https://www.globenewswire.com/en/news-release/2026/11/24/3409345/0/en/revau-advanced-underwriting-announces-acquisition-of-h-w-kaufman-group-s-canadian-mga-and-claims-business-burns-wilcox-canada-strengthening-its-presence-in-canada.html",
+    "industry": "Financials",
+    "notes": "The acquisition aims to strengthen Revau's position as a leading independent MGA in Canada by expanding its distribution network, specialty underwriting capabilities, and claims team. This transaction leverages the target's established presence to enhance national scale while creating opportunities to cross-sell products and expertise to a broader broker base."
   },
   {
     "title": "Intune Physical Therapy Acquires Kinect Physiotherapy, Further Expanding Its Presence in the Raleigh Market",
     "status": "ANNOUNCED",
     "source": "PR Newswire",
     "date": "2026-11-24T14:13:00+00:00",
-    "link": "https://www.prnewswire.com/news-releases/intune-physical-therapy-acquires-kinect-physiotherapy-further-expanding-its-presence-in-the-raleigh-market-302948662.html"
+    "link": "https://www.prnewswire.com/news-releases/intune-physical-therapy-acquires-kinect-physiotherapy-further-expanding-its-presence-in-the-raleigh-market-302948662.html",
+    "industry": "Healthcare",
+    "notes": "The acquisition is designed to strengthen Intune's presence in the Raleigh, North Carolina market and continue the company's expansion across the Southeast. Intune aims to provide the acquired practice with scalable back-office operations, clinical support, and investments in technology and infrastructure to support long-term growth."
   },
   {
     "title": "Applied Systems Acquires Tailwind",
     "status": "ANNOUNCED",
     "source": "GlobeNewswire",
     "date": "2026-11-24T15:00:00+00:00",
-    "link": "https://www.globenewswire.com/en/news-release/2026/11/24/3409450/27604/en/applied-systems-acquires-tailwind.html"
+    "link": "https://www.globenewswire.com/en/news-release/2026/11/24/3409450/27604/en/applied-systems-acquires-tailwind.html",
+    "industry": "Technology",
+    "notes": "Applied Systems acquired Tailwind to integrate AI-powered document and data retrieval into its insurance management systems, aiming to automate workflows and reduce operational costs. The combination is expected to accelerate delivery of end-to-end AI automations for insurance agencies, brokers, and carriers."
   },
   {
     "title": "VIRTUS Diversified REIT Expands Seniors Housing Footprint with Acquisition of The Regency Retirement Residence in Lakefield, Ontario",
     "status": "ANNOUNCED",
     "source": "GlobeNewswire",
     "date": "2026-11-24T15:05:10+00:00",
-    "link": "https://www.globenewswire.com/en/news-release/2026/11/24/3409466/0/en/virtus-diversified-reit-expands-seniors-housing-footprint-with-acquisition-of-the-regency-retirement-residence-in-lakefield-ontario.html"
+    "link": "https://www.globenewswire.com/en/news-release/2026/11/24/3409466/0/en/virtus-diversified-reit-expands-seniors-housing-footprint-with-acquisition-of-the-regency-retirement-residence-in-lakefield-ontario.html",
+    "industry": "Real Estate",
+    "notes": "The acquisition is intended to strengthen portfolio diversification by adding seniors housing assets to the firm's existing mix of commercial and residential properties. Additionally, the transaction aims to achieve scale in the fund and generate immediate, durable cash flow through accretive assets."
   },
   {
     "title": "Georgia Ports Authority Backs Union Pacific-Norfolk Southern Merger, Joining More Than 2,000 Supporters",
     "status": "ANNOUNCED",
     "source": "Business Wire",
     "date": "2026-11-24T16:00:00+00:00",
-    "link": "http://www.businesswire.com/news/home/20261124334659/en/Georgia-Ports-Authority-Backs-Union-Pacific-Norfolk-Southern-Merger-Joining-More-Than-2000-Supporters/"
+    "link": "http://www.businesswire.com/news/home/20261124334659/en/Georgia-Ports-Authority-Backs-Union-Pacific-Norfolk-Southern-Merger-Joining-More-Than-2000-Supporters/",
+    "industry": "Industrials",
+    "notes": "The merger aims to create the nation's first seamless transcontinental railroad, strengthening freight connectivity and expanding access to inland markets via a single-line rail network. This combination is expected to enhance competition, improve service offerings, and provide more efficient reach for domestic and international trade."
   },
   {
     "title": "FCP ACQUIRES 2048 BOLTON DRIVE NW IN UPPER WESTSIDE ATLANTA",
     "status": "ANNOUNCED",
     "source": "PR Newswire",
     "date": "2026-11-24T16:43:00+00:00",
-    "link": "https://www.prnewswire.com/news-releases/fcp-acquires-2048-bolton-drive-nw-in-upper-westside-atlanta-302949674.html"
+    "link": "https://www.prnewswire.com/news-releases/fcp-acquires-2048-bolton-drive-nw-in-upper-westside-atlanta-302949674.html",
+    "industry": "Real Estate",
+    "notes": "The acquisition of this infill asset provides FCP with access to significant retail amenities and major employment centers in Atlanta's Upper Westside submarket. The strategic rationale focuses on securing a high-quality residential community that benefits from proximity to key transit infrastructure and ongoing neighborhood connectivity improvements."
   },
   {
     "title": "Duravant to Acquire FlexXray, Technology Leader in Foreign Material Inspection and Recovery Services",
     "status": "ANNOUNCED",
     "source": "Business Wire",
     "date": "2026-11-24T17:00:00+00:00",
-    "link": "http://www.businesswire.com/news/home/20261124528187/en/Duravant-to-Acquire-FlexXray-Technology-Leader-in-Foreign-Material-Inspection-and-Recovery-Services/"
+    "link": "http://www.businesswire.com/news/home/20261124528187/en/Duravant-to-Acquire-FlexXray-Technology-Leader-in-Foreign-Material-Inspection-and-Recovery-Services/",
+    "industry": "Industrials",
+    "notes": "This acquisition leverages synergistic commercial opportunities across both companies' deep customer relationships and enables Duravant to expand its sorting and inspection technology offerings. The deal also integrates FlexXray's inspection and recovery services into Duravant's Lifecycle Services business while creating new channels to cross-sell technologies and services across their respective customer bases."
   },
   {
     "title": "RHONDOS Completes Acquisition of PowerConnect for SAP\u00ae Solutions",
     "status": "CLOSED",
     "source": "GlobeNewswire",
     "date": "2026-11-24T18:00:00+00:00",
-    "link": "https://www.globenewswire.com/en/news-release/2026/11/24/3409756/0/en/rhondos-completes-acquisition-of-powerconnect-for-sap-solutions.html"
+    "link": "https://www.globenewswire.com/en/news-release/2026/11/24/3409756/0/en/rhondos-completes-acquisition-of-powerconnect-for-sap-solutions.html",
+    "industry": "Technology",
+    "notes": "The acquisition brings product development and global support together under a single owner to advance SAP observability, cybersecurity, and AI-ready data capabilities. This integration aims to create a unified roadmap and long-term commitment for customers managing critical SAP systems."
   }
 ]
