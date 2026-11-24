@@ -643,14 +643,18 @@
     "status": "ANNOUNCED",
     "source": "Business Wire",
     "date": "2026-11-23T11:00:00+00:00",
-    "link": "http://www.businesswire.com/news/home/20261123828725/en/Texas-Pacific-Land-to-Acquire-EagleRock-in-All-Stock-Transaction-Expected-to-Enhance-the-Permian-Basin%E2%80%99s-Premier-Land-Water-and-Royalty-Platform/"
+    "link": "http://www.businesswire.com/news/home/20261123828725/en/Texas-Pacific-Land-to-Acquire-EagleRock-in-All-Stock-Transaction-Expected-to-Enhance-the-Permian-Basin%E2%80%99s-Premier-Land-Water-and-Royalty-Platform/",
+    "industry": "Energy",
+    "notes": "Texas Pacific Land is acquiring EagleRock in an all-stock transaction to enhance its land, water, and royalty platform in the Permian Basin."
   },
   {
     "title": "Qnity to Acquire Meridian\u2019s Electronics Business, Expands Advanced Packaging and Thermal Management Capabilities",
     "status": "ANNOUNCED",
     "source": "Business Wire",
     "date": "2026-11-23T11:30:00+00:00",
-    "link": "http://www.businesswire.com/news/home/20261123086552/en/Qnity-to-Acquire-Meridian%E2%80%99s-Electronics-Business-Expands-Advanced-Packaging-and-Thermal-Management-Capabilities/"
+    "link": "http://www.businesswire.com/news/home/20261123086552/en/Qnity-to-Acquire-Meridian%E2%80%99s-Electronics-Business-Expands-Advanced-Packaging-and-Thermal-Management-Capabilities/",
+    "industry": "Technology",
+    "notes": "This acquisition is designed to expand Qnity's capabilities in advanced packaging and thermal management."
   },
   {
     "title": "RELEX Acquires autone to Expand AI-Powered Planning Capabilities for Fashion, Lifestyle Brands and Apparel Retailers",
@@ -693,7 +697,9 @@
     "status": "ANNOUNCED",
     "source": "Business Wire",
     "date": "2026-11-23T12:56:00+00:00",
-    "link": "http://www.businesswire.com/news/home/20261123426600/en/Adams-Outdoor-Advertising-Acquires-39-Billboard-Faces-in-Western-Pennsylvania-from-McWhorter-Media-Group/"
+    "link": "http://www.businesswire.com/news/home/20261123426600/en/Adams-Outdoor-Advertising-Acquires-39-Billboard-Faces-in-Western-Pennsylvania-from-McWhorter-Media-Group/",
+    "industry": "Telecom & Media",
+    "notes": "This acquisition expands Adams Outdoor Advertising's Ohio Valley footprint and strengthens its presence across western Pennsylvania to better connect advertisers with regional audiences. The assets complement the company's existing network, providing customers with more opportunities to reach target demographics."
   },
   {
     "title": "KBRA to Acquire Capital Intelligence Ratings, Expanding Global Footprint",
@@ -831,14 +837,18 @@
     "status": "ANNOUNCED",
     "source": "GlobeNewswire",
     "date": "2026-11-23T22:05:00+00:00",
-    "link": "https://www.globenewswire.com/en/news-release/2026/11/23/3408931/0/en/linamar-corporation-to-acquire-genie-from-terex-corporation-significantly-expanding-its-access-work-platforms-group.html"
+    "link": "https://www.globenewswire.com/en/news-release/2026/11/23/3408931/0/en/linamar-corporation-to-acquire-genie-from-terex-corporation-significantly-expanding-its-access-work-platforms-group.html",
+    "industry": "Industrials",
+    "notes": "Linamar is acquiring Genie to expand its Access Work Platforms group and diversify its industrial segment through complementary products, geographic reach, and manufacturing capabilities. The company targets $135 million in annual run-rate synergies driven by procurement, manufacturing efficiencies, engineering collaboration, logistics optimization, and shared services."
   },
   {
     "title": "TEREX ANNOUNCES DEFINITIVE AGREEMENT TO SELL ITS AERIALS SEGMENT TO LINAMAR",
     "status": "ANNOUNCED",
     "source": "PR Newswire",
     "date": "2026-11-23T22:05:00+00:00",
-    "link": "https://www.prnewswire.com/news-releases/terex-announces-definitive-agreement-to-sell-its-aerials-segment-to-linamar-302948654.html"
+    "link": "https://www.prnewswire.com/news-releases/terex-announces-definitive-agreement-to-sell-its-aerials-segment-to-linamar-302948654.html",
+    "industry": "Industrials",
+    "notes": "Terex is divesting its Aerials segment to shift its portfolio away from cyclical mining and construction markets toward more resilient essential services markets. The company plans to use the net proceeds to reduce debt, return capital to shareholders, and support growth investments, though specific operational synergies were not stated."
   },
   {
     "title": "Uniform Advantage Expands Retail Presence with Acquisition of 16 Former Scrubs & Beyond Locations",
