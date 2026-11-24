@@ -760,7 +760,9 @@
     "status": "CLOSED",
     "source": "PR Newswire",
     "date": "2026-11-23T14:15:00+00:00",
-    "link": "https://www.prnewswire.com/news-releases/workday-completes-acquisition-of-c1ai-302947290.html"
+    "link": "https://www.prnewswire.com/news-releases/workday-completes-acquisition-of-c1ai-302947290.html",
+    "industry": "Technology",
+    "notes": "The acquisition allows Workday to function as an identity governance layer for both human workers and AI agents by managing access to business systems and cloud infrastructure. This integration aims to simplify access management, reduce manual processes, and enable organizations to apply policy-driven security controls across their hybrid workforce."
   },
   {
     "title": "BTG Pactual Strategic Capital Finances Bertram Capital&apos;s Acquisition of Medical Technology Associates",
@@ -803,7 +805,9 @@
     "status": "ANNOUNCED",
     "source": "PR Newswire",
     "date": "2026-11-23T17:00:00+00:00",
-    "link": "https://www.prnewswire.com/news-releases/madison-dearborn-partners-to-acquire-peli-biothermal-a-trusted-cold-chain-solutions-provider-from-pelican-products-and-platinum-equity-302948222.html"
+    "link": "https://www.prnewswire.com/news-releases/madison-dearborn-partners-to-acquire-peli-biothermal-a-trusted-cold-chain-solutions-provider-from-pelican-products-and-platinum-equity-302948222.html",
+    "industry": "Healthcare",
+    "notes": "This investment provides strategic capital and healthcare supply chain expertise to accelerate product growth, innovation, and global service network expansion for Peli BioThermal as it transitions into a standalone company."
   },
   {
     "title": "Harvest Group Acquires Good Peeps, Accelerating Growth Toward $10 Billion in Retail Sales and $2 Billion in Media Under Management",
@@ -858,5 +862,14 @@
     "link": "https://www.prnewswire.com/news-releases/uniform-advantage-expands-retail-presence-with-acquisition-of-16-former-scrubs--beyond-locations-302948637.html",
     "industry": "Consumer",
     "notes": "The acquisition is designed to expand the company's brick-and-mortar retail footprint, allowing it to provide healthcare professionals with continued access to uniforms in local communities. This move leverages existing locations to bring the brand's exclusive and national product offerings directly to customers who prefer in-person shopping."
+  },
+  {
+    "title": "Platinum Equity Completes Acquisition of EDP",
+    "status": "CLOSED",
+    "source": "PR Newswire",
+    "date": "2026-11-24T00:30:00+00:00",
+    "link": "https://www.prnewswire.com/news-releases/platinum-equity-completes-acquisition-of-edp-302948762.html",
+    "industry": "Energy",
+    "notes": "Platinum Equity intends to leverage its operational expertise and resources to support EDP\u2019s growth through continued investments in sales, marketing, technology, and strategic acquisitions. The firm aims to utilize its experience in route-based and multi-site businesses to drive value by expanding the company\u2019s geographic footprint and deepening customer relationships."
   }
 ]
