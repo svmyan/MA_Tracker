@@ -877,7 +877,9 @@
     "status": "ANNOUNCED",
     "source": "PR Newswire",
     "date": "2026-11-24T06:30:00+00:00",
-    "link": "https://www.prnewswire.com/news-releases/sanofi-to-acquire-insmed-in-strategic-step-that-strengthens-long-term-future-302949056.html"
+    "link": "https://www.prnewswire.com/news-releases/sanofi-to-acquire-insmed-in-strategic-step-that-strengthens-long-term-future-302949056.html",
+    "industry": "Healthcare",
+    "notes": "This acquisition is a strategic move to strengthen Sanofi's immunology and rare disease portfolio while expanding its presence in respiratory diseases. By combining Insmed's commercial products and pipeline with Sanofi's global reach and scientific expertise, the deal aims to accelerate long-term growth and increase patient access to key therapies."
   },
   {
     "title": "Ascentium Acquires Statura, Expanding Its Private Client Business Across Europe and the Middle East",
@@ -887,5 +889,14 @@
     "link": "https://www.prnewswire.com/news-releases/ascentium-acquires-statura-expanding-its-private-client-business-across-europe-and-the-middle-east-302948130.html",
     "industry": "Financials",
     "notes": "The acquisition strengthens Ascentium's private client capabilities and expands its geographic footprint across Europe and the Middle East to better support ultra-high-net-worth individuals. By integrating Statura's expertise in international tax, trust administration, and multi-family office services, the deal enhances the group's cross-border service offerings within the Asia-Middle East-Europe wealth triangle."
+  },
+  {
+    "title": "Healthcare Holding Schweiz acquires share in FOCS",
+    "status": "ANNOUNCED",
+    "source": "GlobeNewswire",
+    "date": "2026-11-24T08:00:00+00:00",
+    "link": "https://www.globenewswire.com/en/news-release/2026/11/24/3409028/0/en/healthcare-holding-schweiz-acquires-share-in-focs.html",
+    "industry": "Healthcare",
+    "notes": "The acquisition is intended to expand Healthcare Holding Schweiz\u2019s Surgical Solutions platform with a specialized portfolio of cardiovascular surgery products. By adding FOCS\u2019s expertise in this area, the company aims to complement its existing medical technology offerings."
   }
 ]
