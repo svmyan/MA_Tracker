@@ -913,7 +913,9 @@
     "status": "ANNOUNCED",
     "source": "Business Wire",
     "date": "2026-11-24T11:00:00+00:00",
-    "link": "http://www.businesswire.com/news/home/20261124583868/en/Monroe-Capital-Supports-Waveborn%E2%80%99s-Acquisition-of-Jake-Rosen-Entertainment/"
+    "link": "http://www.businesswire.com/news/home/20261124583868/en/Monroe-Capital-Supports-Waveborn%E2%80%99s-Acquisition-of-Jake-Rosen-Entertainment/",
+    "industry": "Telecom & Media",
+    "notes": "Rationale not stated. Monroe Capital provided financing to support Waveborn\u2019s acquisition of Jake Rosen Entertainment, but the press release did not outline specific strategic goals or synergies."
   },
   {
     "title": "Pursuit Signs Agreement to Acquire Sky Adventures, Advancing Growth Plans in Costa Rica",
@@ -1019,7 +1021,9 @@
     "status": "ANNOUNCED",
     "source": "PR Newswire",
     "date": "2026-11-24T13:59:00+00:00",
-    "link": "https://www.prnewswire.com/news-releases/wellable-acquires-givheros-employee-well-being-business-302948841.html"
+    "link": "https://www.prnewswire.com/news-releases/wellable-acquires-givheros-employee-well-being-business-302948841.html",
+    "industry": "Healthcare",
+    "notes": "The acquisition enables Wellable to expand its corporate wellness customer base and provide these new clients with access to its broader ecosystem of rewards, recognition, and holistic health services. Additionally, the transaction allows Givhero to focus its operations and technology specifically on nonprofit fundraising, corporate social responsibility, and volunteering initiatives."
   },
   {
     "title": "Cerberus to Acquire the U.S. Space Systems Business of Airbus",
@@ -1110,5 +1114,41 @@
     "link": "https://www.globenewswire.com/en/news-release/2026/11/24/3409756/0/en/rhondos-completes-acquisition-of-powerconnect-for-sap-solutions.html",
     "industry": "Technology",
     "notes": "The acquisition brings product development and global support together under a single owner to advance SAP observability, cybersecurity, and AI-ready data capabilities. This integration aims to create a unified roadmap and long-term commitment for customers managing critical SAP systems."
+  },
+  {
+    "title": "Digi International Completes Acquisition of Disruptive Technologies, Expanding SmartSense Physical-World Intelligence Capabilities",
+    "status": "CLOSED",
+    "source": "Business Wire",
+    "date": "2026-11-24T20:00:00+00:00",
+    "link": "http://www.businesswire.com/news/home/20261124402469/en/Digi-International-Completes-Acquisition-of-Disruptive-Technologies-Expanding-SmartSense-Physical-World-Intelligence-Capabilities/",
+    "industry": "Technology",
+    "notes": "This acquisition combines Disruptive Technologies' advanced wireless sensing capabilities with SmartSense by Digi's software and analytics platform to enhance physical-world intelligence. The deal aims to expand SmartSense into new applications like building management and occupancy sensing while offering new return-on-investment opportunities for existing customers."
+  },
+  {
+    "title": "Five9 Completes Acquisition of Level AI",
+    "status": "CLOSED",
+    "source": "Business Wire",
+    "date": "2026-11-24T21:05:00+00:00",
+    "link": "http://www.businesswire.com/news/home/20261124321725/en/Five9-Completes-Acquisition-of-Level-AI/",
+    "industry": "Technology",
+    "notes": "Five9 acquired Level AI to enhance its platform with advanced artificial intelligence, specifically to provide real-time agent assistance, actionable insights, and improved customer experience automation. This strategic move aims to leverage Level AI's conversational intelligence technology to drive greater operational efficiency and quality for Five9 customers."
+  },
+  {
+    "title": "Local Bounti Becomes Largest Leafy Greens CEA Grower in the U.S. with Completed Acquisition of Revol Greens' Certified-Organic Facilities",
+    "status": "CLOSED",
+    "source": "PR Newswire",
+    "date": "2026-11-24T21:08:00+00:00",
+    "link": "https://www.prnewswire.com/news-releases/local-bounti-becomes-largest-leafy-greens-cea-grower-in-the-us-with-completed-acquisition-of-revol-greens-certified-organic-facilities-302949880.html",
+    "industry": "Consumer",
+    "notes": "Local Bounti acquired these facilities to rapidly expand production capacity and meet high customer demand at a lower cost than building new infrastructure. The acquisition also enables the company to offer certified-organic products and establishes a stronger distribution network in the Midwest and Southern U.S."
+  },
+  {
+    "title": "Remix Therapeutics Completes Closing of Merger with Passage Bio and Previously Announced $100 Million Private Placement",
+    "status": "CLOSED",
+    "source": "GlobeNewswire",
+    "date": "2026-11-24T21:15:00+00:00",
+    "link": "https://www.globenewswire.com/en/news-release/2026/11/24/3409891/0/en/remix-therapeutics-completes-closing-of-merger-with-passage-bio-and-previously-announced-100-million-private-placement.html",
+    "industry": "Healthcare",
+    "notes": "Rationale not stated."
   }
 ]
