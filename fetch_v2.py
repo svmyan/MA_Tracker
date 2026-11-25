@@ -27,10 +27,15 @@ MAX_NOTES_PER_RUN = 60
 INDUSTRIES = ["Technology", "Healthcare", "Financials", "Energy", "Industrials",
               "Consumer", "Real Estate", "Materials", "Telecom & Media", "Other"]
 RULES = f"""Use ONLY the text or page given. Do not use outside knowledge and do not guess.
-Start your reply with the target company's industry, picked from exactly this list: {", ".join(INDUSTRIES)}.
-Then write a | and 1 to 2 plain sentences on the strategic rationale and any synergies it states.
-If it does not state them, do some research and find out possible synergies but mention that they weren't stated. If you can't find anything write "Rationale not stated."
-Format: Industry | sentences
+Reply in exactly this format, 7 parts separated by |:
+Industry | Country | Acquirer | Target | Deal value | Funding | Rationale
+1. Industry: the target company's industry, picked from exactly this list: {", ".join(INDUSTRIES)}.
+2. Country: where the target company is headquartered. Write US, CA, or Other. If unclear, write Other.
+3. Acquirer: the company buying, or the first company named in a merger. Company name only. If unclear, write Not stated.
+4. Target: the company being bought, merged with, or sold off. Company name only. If unclear, write Not stated.
+5. Deal value: the total value as a number in millions plus currency code, like 1200 USD or 85.5 CAD. If the page does not state a value, write Undisclosed.
+6. Funding: how it is paid for, like Cash 60%, Stock 40% or All cash. If not stated, write Not stated.
+7. Rationale: 1 to 2 plain sentences on the strategic rationale and any synergies it states. If it does not state them, write Rationale not stated.
 No headers, bullets, bold, or preamble."""
 
 api_key = os.environ.get("GEMINI_API_KEY")
@@ -125,11 +130,30 @@ def show_section(title, deals):
     for deal in deals:
         show_deal(deal)
 
-def stat_box(number, label):
+def stat_box(number, label, status=None):
+    if status:
+        return f'<button class="stat" data-status="{status}"><b>{number}</b><span>{label}</span></button>'
     return f'<div class="stat"><b>{number}</b><span>{label}</span></div>'
 
 def count_status(deals, status):
     return sum(1 for d in deals if d["status"] == status)
+
+def money(size):
+    if size >= 1000:
+        return f"${size / 1000:.1f}B"
+    return f"${size:,.0f}M"
+
+def format_size(deal):
+    if "size_musd" not in deal:
+        return "Pending"
+    if deal["size_musd"] is None:
+        return "Undisclosed"
+    return money(deal["size_musd"])
+
+def party(deal, key):
+    if key not in deal:
+        return "Pending"
+    return escape(deal[key] or "Not stated", quote=True)
 
 def deal_card(deal):
     status = deal["status"]
@@ -140,17 +164,41 @@ def deal_card(deal):
     date = nice_date(deal["date"])
     industry = escape(deal.get("industry") or "Other", quote=True)
     notes = escape(deal.get("notes", ""))
+    size = format_size(deal)
+    funding = escape(deal.get("funding") or "Not stated")
+    acquirer = party(deal, "acquirer")
+    target = party(deal, "target")
+    size_raw = deal.get("size_musd")
+    size_data = "" if size_raw is None else size_raw
+    search = escape(f"{deal['title']} {deal.get('acquirer') or ''} {deal.get('target') or ''}".lower(), quote=True)
     if notes:
         notes_html = f'<div class="notes">{notes}</div>'
     else:
         notes_html = '<div class="notes pending">AI overview unavailable right now. It will retry on the next update.</div>'
+    COUNTRY_NAMES = {"US": "United States", "CA": "Canada", "Other": "International"}
+    country = deal.get("country")
+    country_html = f'<span class="country">{COUNTRY_NAMES[country]}</span>' if country in COUNTRY_NAMES else ""
     return f"""
-    <div class="card" data-deal-id="{deal_id}" data-industry="{industry}">
-        <span class="tag UNSEEN" hidden>NEW</span>
-        <span class="tag {status}">{status}</span>
-        <a href ="{link}" target="_blank">{title}</a>
-        {notes_html}
-        <div class="meta">{source} &middot; {industry} &middot; {date}</div>
+        <div class="deal" data-deal-id="{deal_id}" data-industry="{industry}" data-status="{status}" data-size="{size_data}" data-search="{search}">
+        <div class="card">
+            <span class="tag UNSEEN" hidden>NEW</span>
+            <span class="tag {status}">{status}</span>
+            {country_html}
+            <a href ="{link}" target="_blank">{title}</a>
+            {notes_html}
+            <div class="meta">{source} &middot; {industry} &middot; {date}</div>
+        </div>
+        <div class="side">
+            <div class="size-card">
+                <div class="size-label">Deal size</div>
+                <div class="size-value">{size}</div>
+                <div class="size-funding">{funding}</div>
+            </div>
+            <div class="parties-card">
+                <div class="party"><span class="party-label">Buyer</span><span class="party-name" title="{acquirer}">{acquirer}</span></div>
+                <div class="party"><span class="party-label">Target</span><span class="party-name" title="{target}">{target}</span></div>
+            </div>
+        </div>
     </div>"""
 
 def filter_buttons():
@@ -164,12 +212,14 @@ def build_page(deals):
         page = f.read()
 
     cards = "".join(deal_card(d) for d in reversed(deals))
+    total = sum(d.get("size_musd") or 0 for d in deals)
     stats = (
-        stat_box(len(deals), "total tracked")
-        + stat_box(count_status(deals, "ANNOUNCED"), "Announced")
-        + stat_box(count_status(deals, "CLOSED"), "Closed")
-        + stat_box(count_status(deals, "DISPUTE"), "Disputes")
-    )
+    stat_box(len(deals), "total tracked", "All")
+    + stat_box(count_status(deals, "ANNOUNCED"), "Announced", "ANNOUNCED")
+    + stat_box(count_status(deals, "CLOSED"), "Closed", "CLOSED")
+    + stat_box(count_status(deals, "DISPUTE"), "Disputes", "DISPUTE")
+    + stat_box(money(total), "Total disclosed")
+        )
     updated = datetime.now(ZoneInfo("America/Toronto")).strftime("%b %d, %Y, %I:%M %p")
     html = (page.replace("STATS_HERE", stats)
             .replace("FILTERS_HERE", filter_buttons())
@@ -178,10 +228,23 @@ def build_page(deals):
     with open("index.html", "w", encoding="utf-8") as f:
         f.write(html)
 
+# convert numbers to USD millions
+CAD_TO_USD = 0.73 # rough rate, update now and then 
+
+def parse_value(raw):
+    try:
+        num, cur = raw.replace(",", "").split()
+        num = float(num)
+    except ValueError:
+        return None 
+    if cur.upper() == "CAD":
+        num *= CAD_TO_USD
+    return round (num, 1)
+
 # Gemini AI integration
 def make_notes(deal):
     if client is None:
-        return "", ""
+        return None
     prompt = f"You write short notes for an M&A deal tracker.\nRead this press release: {deal['link']}\n{RULES}"
     try:
         response = None
@@ -204,38 +267,47 @@ def make_notes(deal):
                 break
 
         if response is None:
-            return "", ""
+            return None
 
         meta = response.candidates[0].url_context_metadata
         read_ok = bool(meta and meta.url_metadata and "SUCCESS" in str(meta.url_metadata[0].url_retrieval_status))
         if not read_ok:
             print("page not read", deal["title"])
-            return "", ""
+            return None
+
         text = " ".join((response.text or "").split())
-        if "|" in text:
-            industry, notes = text.split("|", 1)
+        parts = [p.strip() for p in text.split("|", 6)]
+        if len(parts) == 7:
+            industry, country, acquirer, target, value, funding, notes = parts
         else:
-            industry, notes = "Other", text
-        industry = industry.strip()
+            industry, country, acquirer, target, value, funding, notes = "Other", "Other", "Not stated", "Not stated", "Undisclosed", "Not stated", text
         if industry not in INDUSTRIES:
             industry = "Other"
-        return industry, notes.strip()
+        country = country.upper() if country.upper() in ("US", "CA") else "Other"
+        return {
+            "industry": industry,
+            "country": country,
+            "acquirer": None if acquirer.lower().startswith("not stated") else acquirer,
+            "target": None if target.lower().startswith("not stated") else target,
+            "size_musd": parse_value(value),
+            "funding": None if funding.lower().startswith("not stated") else funding,
+            "notes": notes,
+        }
     except Exception as e:
         print("note error:", e)
-        return "", ""
-
+        return None
+    
 # function adds the AI notes to the site 
 def add_notes(deals):
     tried = 0
     for deal in reversed(deals):
-        if deal.get("notes") and deal.get("industry"):
+        if "notes" in deal and "size_musd" in deal and "target" in deal and "country" in deal:
             continue
         if tried >= MAX_NOTES_PER_RUN:
             break
-        industry, notes = make_notes(deal)
-        if notes:
-            deal["industry"] = industry
-            deal["notes"] = notes
+        result = make_notes(deal)
+        if result:
+            deal.update(result)
         tried += 1
         time.sleep(5)
 

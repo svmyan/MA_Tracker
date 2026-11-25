@@ -1,7 +1,7 @@
   <!DOCTYPE html>
   <html>
   <head>
-  <meta http-equiv="refresh" content = "900">
+  <meta http-equiv="refresh" content="3600">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>M&amp;A Tracker</title>
@@ -53,10 +53,9 @@
       border: 1px solid var(--border);
       border-radius: 12px;
       padding: 16px 18px;
-      margin-bottom: 12px;
+      margin-bottom: 0;
+      flex: 1;
   }
-    .card { opacity: 0; transform: translateY(16px); transition: opacity .5s ease, transform .5s ease; }
-    .card.show { opacity: 1; transform: none; }
     .card a {
       color: var(--text);
       text-decoration: none;
@@ -93,10 +92,7 @@
     }
     .hero-inner { max-width: 900px; margin: 0 auto;}
         .hero h1 { font-size: 56px; margin: 0 0 10px; }
-    @media (max-width: 600px) {
-      .hero h1 { font-size: 36px; }
-      .hero { padding: 90px 16px 80px; }
-    }
+    
     .hero .sub { color: #cbd2db; margin: 0; }
     .DISPUTE { background: var(--dispute); }
         .hero h1, .hero .sub { text-shadow: 0 2px 12px rgba(0,0,0,0.55); }
@@ -119,7 +115,70 @@
       border-color: #2f5d99;
       color: #dbe9fb;
     }
-.card[hidden] { display: none; }
+
+    .deal {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity .5s ease, transform .5s ease;
+}
+.deal.above { transform: translateY(-16px); }
+.deal.show { opacity: 1; transform: none; }
+.deal[hidden] { display: none; }
+.side {
+  width: 190px;
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+.size-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 10px 14px;
+  text-align: center;
+}
+.size-label { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .05em; }
+.size-value { font-size: 20px; font-weight: 700; margin: 1px 0; }
+.size-funding { color: var(--muted); font-size: 12px; }
+.parties-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 8px 14px;
+  min-width: 0;
+}
+.party { display: flex; align-items: center; gap: 8px; font-size: 12px; line-height: 1.6; min-width: 0; }
+.party-label { color: var(--muted); width: 42px; flex: none; }
+.party-name { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+
+@media (max-width: 600px) {
+      .hero h1 { font-size: 36px; }
+      .hero { padding: 90px 16px 80px; }
+      .deal { flex-direction: column; }
+      .side { width: auto; flex-direction: row; }
+      .side > * { flex: 1; min-width: 0; }
+    }
+    button.stat { font: inherit; color: inherit; cursor: pointer; }
+.stat.active { border-color: #2f5d99; }
+.controls { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; align-items: center; margin: 0 0 16px; }
+.controls input[type="text"], .controls select {
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--card);
+  color: var(--text);
+  font-size: 13px;
+  font-family: inherit;
+}
+.controls label { color: var(--muted); font-size: 13px; display: flex; gap: 6px; align-items: center; }
+.count { color: var(--muted); font-size: 13px; text-align: center; margin: 0 0 16px; }
+.empty { text-align: center; color: var(--muted); padding: 32px 0; }
+.country { display: inline-block; padding: 2px 8px; border-radius: 6px; font-size: 12px; background: var(--border); color: var(--muted); margin-right: 8px; }
 
   </style> 
   </head>
@@ -130,15 +189,31 @@
       <div class="sub">Last updated: UPDATED_HERE (EST)</div>
     </div>
   </div>
-  <div class="wrap">
+    <div class="wrap">
     <div class="stats">STATS_HERE</div>
+    <div class="controls">
+      <input type="text" id="search" placeholder="Search by company">
+      <select id="sizeFilter">
+        <option value="any">Any size</option>
+        <option value="u100">Under $100M</option>
+        <option value="mid">$100M to $1B</option>
+        <option value="o1b">Over $1B</option>
+      </select>
+      <select id="sortBy">
+        <option value="new">Newest</option>
+        <option value="big">Largest</option>
+      </select>
+      <label><input type="checkbox" id="hideUnd"> Hide undisclosed</label>
+    </div>
     <div class="filters">FILTERS_HERE</div>
-    CARDS_HERE
+    <div class="count" id="count"></div>
+    <div id="deals">CARDS_HERE</div>
+    <div class="empty" id="empty" hidden>No deals match these filters.</div>
   </div>
   <script>
   document.addEventListener("DOMContentLoaded", () => {
 
-      const cards = document.querySelectorAll(".card[data-deal-id]");
+      const cards = document.querySelectorAll(".deal[data-deal-id]");
       const STORAGE_KEY = "maTrackerSeenDeals";
 
       // Load previously viewed deals
@@ -228,25 +303,69 @@
 
   });
 
-  document.querySelectorAll(".filter").forEach(btn => {
-      btn.addEventListener("click", () => {
-        document.querySelectorAll(".filter").forEach(b => b.classList.remove("active"));
-        btn.classList.add("active");
-        const pick = btn.dataset.industry;
-        document.querySelectorAll(".card").forEach(card => {
-          card.hidden = pick !== "All" && card.dataset.industry !== pick;
-        });
-      });
-    });
+const container = document.getElementById("deals");
+const allDeals = [...container.querySelectorAll(".deal")];
+const state = { status: "All", industry: "All", size: "any", hideUnd: false, q: "", sort: "new" };
+
+function sizeOf(card) {
+  return card.dataset.size === "" ? null : Number(card.dataset.size);
+}
+
+function matches(card) {
+  const d = card.dataset;
+  const size = sizeOf(card);
+  if (state.status !== "All" && d.status !== state.status) return false;
+  if (state.industry !== "All" && d.industry !== state.industry) return false;
+  if (state.hideUnd && size === null) return false;
+  if (state.size === "u100" && !(size !== null && size < 100)) return false;
+  if (state.size === "mid" && !(size !== null && size >= 100 && size < 1000)) return false;
+  if (state.size === "o1b" && !(size !== null && size >= 1000)) return false;
+  if (state.q && !d.search.includes(state.q)) return false;
+  return true;
+}
+
+function applyFilters() {
+  let shown = 0;
+  allDeals.forEach(card => {
+    const ok = matches(card);
+    card.hidden = !ok;
+    if (ok) shown++;
+  });
+
+  const order = state.sort === "big"
+    ? [...allDeals].sort((a, b) => (sizeOf(b) ?? -1) - (sizeOf(a) ?? -1))
+    : allDeals;
+  order.forEach(card => container.appendChild(card));
+
+  document.getElementById("count").textContent = `Showing ${shown} of ${allDeals.length} deals`;
+  document.getElementById("empty").hidden = shown !== 0;
+  document.querySelectorAll(".stat[data-status]").forEach(b =>
+    b.classList.toggle("active", b.dataset.status === state.status));
+  document.querySelectorAll(".filter").forEach(b =>
+    b.classList.toggle("active", b.dataset.industry === state.industry));
+}
+
+document.querySelectorAll(".filter").forEach(btn => {
+  btn.addEventListener("click", () => { state.industry = btn.dataset.industry; applyFilters(); });
+});
+document.querySelectorAll(".stat[data-status]").forEach(btn => {
+  btn.addEventListener("click", () => {
+    state.status = state.status === btn.dataset.status ? "All" : btn.dataset.status;
+    applyFilters();
+  });
+});
+document.getElementById("search").addEventListener("input", e => { state.q = e.target.value.trim().toLowerCase(); applyFilters(); });
+document.getElementById("sizeFilter").addEventListener("change", e => { state.size = e.target.value; applyFilters(); });
+document.getElementById("sortBy").addEventListener("change", e => { state.sort = e.target.value; applyFilters(); });
+document.getElementById("hideUnd").addEventListener("change", e => { state.hideUnd = e.target.checked; applyFilters(); });
+applyFilters();
       const reveal = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.classList.add("show");
-        reveal.unobserve(e.target);
-      }
-    });
-  }, { threshold: 0.1 });
-  document.querySelectorAll(".card").forEach(c => reveal.observe(c));
+  entries.forEach(e => {
+    e.target.classList.toggle("show", e.isIntersecting);
+    e.target.classList.toggle("above", !e.isIntersecting && e.boundingClientRect.top < 0);
+  });
+}, { threshold: 0.1 });
+  document.querySelectorAll(".deal").forEach(c => reveal.observe(c));
 
   </script>
   </body>
