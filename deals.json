@@ -825,7 +825,12 @@
     "date": "2026-11-23T21:00:00+00:00",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/23/3408858/0/en/ergodyne-to-acquire-thersty-hydration-products-ltd-expanding-heat-safety-portfolio.html",
     "industry": "Consumer",
-    "notes": "The acquisition is designed to expand Ergodyne's heat safety portfolio by integrating Thersty's electrolyte hydration products into its existing line of cooling, hydration, and shade solutions. This creates a comprehensive heat stress management stack for workers from a single provider."
+    "notes": "The acquisition adds electrolyte hydration products to Ergodyne\u2019s heat safety portfolio. This transaction strengthens the company's broader approach to heat stress solutions for workers.",
+    "country": "CA",
+    "acquirer": "Ergodyne",
+    "target": "Thersty Hydration Products Ltd.",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Alta Equipment Group Agrees to Acquire Jackson Group Peterbilt in Proposed Transformative Deal",
@@ -843,7 +848,12 @@
     "date": "2026-11-23T22:05:00+00:00",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/23/3408931/0/en/linamar-corporation-to-acquire-genie-from-terex-corporation-significantly-expanding-its-access-work-platforms-group.html",
     "industry": "Industrials",
-    "notes": "Linamar is acquiring Genie to expand its Access Work Platforms group and diversify its industrial segment through complementary products, geographic reach, and manufacturing capabilities. The company targets $135 million in annual run-rate synergies driven by procurement, manufacturing efficiencies, engineering collaboration, logistics optimization, and shared services."
+    "notes": "The acquisition expands Linamar\u2019s Industrial segment and forms the new Linamar Access Group, creating a larger global platform with complementary products and geographic reach. It strengthens Linamar's presence in global infrastructure markets and provides opportunities for long-term growth and value creation.",
+    "country": "US",
+    "acquirer": "Linamar Corporation",
+    "target": "Genie",
+    "size_musd": 1400.0,
+    "funding": null
   },
   {
     "title": "TEREX ANNOUNCES DEFINITIVE AGREEMENT TO SELL ITS AERIALS SEGMENT TO LINAMAR",
@@ -860,8 +870,13 @@
     "source": "PR Newswire",
     "date": "2026-11-23T23:00:00+00:00",
     "link": "https://www.prnewswire.com/news-releases/uniform-advantage-expands-retail-presence-with-acquisition-of-16-former-scrubs--beyond-locations-302948637.html",
-    "industry": "Consumer",
-    "notes": "The acquisition is designed to expand the company's brick-and-mortar retail footprint, allowing it to provide healthcare professionals with continued access to uniforms in local communities. This move leverages existing locations to bring the brand's exclusive and national product offerings directly to customers who prefer in-person shopping."
+    "industry": "Healthcare",
+    "notes": "The acquisition allows Uniform Advantage to expand its brick-and-mortar presence and provide healthcare professionals with continued access to retail uniform stores in select markets. By taking over these locations, the company aims to offer local communities direct access to its exclusive and national brands.",
+    "country": "US",
+    "acquirer": "Uniform Advantage",
+    "target": "Scrubs & Beyond",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Platinum Equity Completes Acquisition of EDP",
@@ -879,7 +894,12 @@
     "date": "2026-11-24T06:30:00+00:00",
     "link": "https://www.prnewswire.com/news-releases/sanofi-to-acquire-insmed-in-strategic-step-that-strengthens-long-term-future-302949056.html",
     "industry": "Healthcare",
-    "notes": "This acquisition is a strategic move to strengthen Sanofi's immunology and rare disease portfolio while expanding its presence in respiratory diseases. By combining Insmed's commercial products and pipeline with Sanofi's global reach and scientific expertise, the deal aims to accelerate long-term growth and increase patient access to key therapies."
+    "notes": "This acquisition is a strategic move to strengthen Sanofi's portfolio in immunology and rare diseases, as well as broaden its presence in respiratory diseases. By combining Insmed's commercialized products and pipeline with Sanofi's global reach, the deal aims to accelerate long-term growth and address significant unmet patient needs.",
+    "country": "US",
+    "acquirer": "Sanofi",
+    "target": "Insmed",
+    "size_musd": 41000.0,
+    "funding": "Cash"
   },
   {
     "title": "Ascentium Acquires Statura, Expanding Its Private Client Business Across Europe and the Middle East",
@@ -888,7 +908,12 @@
     "date": "2026-11-24T07:00:00+00:00",
     "link": "https://www.prnewswire.com/news-releases/ascentium-acquires-statura-expanding-its-private-client-business-across-europe-and-the-middle-east-302948130.html",
     "industry": "Financials",
-    "notes": "The acquisition strengthens Ascentium's private client capabilities and expands its geographic footprint across Europe and the Middle East to better support ultra-high-net-worth individuals. By integrating Statura's expertise in international tax, trust administration, and multi-family office services, the deal enhances the group's cross-border service offerings within the Asia-Middle East-Europe wealth triangle."
+    "notes": "The acquisition strengthens Ascentium's private client capabilities and expands its geographic footprint across Europe and the Middle East. It reinforces the company's position in the Asia-Middle East-Europe wealth triangle to better serve ultra-high-net-worth individuals.",
+    "country": "Other",
+    "acquirer": "Ascentium",
+    "target": "Statura",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Healthcare Holding Schweiz acquires share in FOCS",
@@ -915,7 +940,12 @@
     "date": "2026-11-24T11:00:00+00:00",
     "link": "http://www.businesswire.com/news/home/20261124583868/en/Monroe-Capital-Supports-Waveborn%E2%80%99s-Acquisition-of-Jake-Rosen-Entertainment/",
     "industry": "Telecom & Media",
-    "notes": "Rationale not stated. Monroe Capital provided financing to support Waveborn\u2019s acquisition of Jake Rosen Entertainment, but the press release did not outline specific strategic goals or synergies."
+    "notes": "Rationale not stated.",
+    "country": "US",
+    "acquirer": "Waveborn",
+    "target": "Jake Rosen Entertainment",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Pursuit Signs Agreement to Acquire Sky Adventures, Advancing Growth Plans in Costa Rica",
@@ -923,8 +953,13 @@
     "source": "Business Wire",
     "date": "2026-11-24T11:55:00+00:00",
     "link": "http://www.businesswire.com/news/home/20261124041337/en/Pursuit-Signs-Agreement-to-Acquire-Sky-Adventures-Advancing-Growth-Plans-in-Costa-Rica/",
-    "industry": "Consumer",
-    "notes": "Pursuit is acquiring Sky Adventures to advance its growth strategy of investing in experiential infrastructure in iconic destinations with strong perennial demand. The acquisition complements Pursuit's existing Tabac\u00f3n resort by offering guests nature-based adventure experiences in the same region, creating opportunities for cross-marketing and deeper guest engagement."
+    "industry": "Other",
+    "notes": "The acquisition advances the buyer's strategy of owning distinctive, place-based experiences in iconic destinations with strong perennial demand. The target's nature and adventure offerings complement the buyer's existing hospitality and wellness assets in the region, creating opportunities for cross-marketing.",
+    "country": "Other",
+    "acquirer": "Pursuit",
+    "target": "Sky Adventures",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Radiology Partners Completes Acquisition of Everlight Radiology",
@@ -942,7 +977,12 @@
     "date": "2026-11-24T12:30:00+00:00",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/24/3409156/0/en/parker-completes-acquisition-of-circor-s-commercial-and-defense-aerospace-business.html",
     "industry": "Industrials",
-    "notes": "This acquisition adds complementary capabilities and proprietary flight-critical technologies to Parker\u2019s aerospace and defense portfolio, strengthening its position as a systems provider for commercial and defense platforms. The company expects to realize cost synergies by the end of the third full fiscal year following the transaction."
+    "notes": "The acquisition adds complementary capabilities and proprietary technologies to Parker's aerospace and defense portfolio. The business is expected to strengthen Parker's position as a technology partner for current and next-generation commercial and defense platforms.",
+    "country": "US",
+    "acquirer": "Parker Hannifin",
+    "target": "CIRCOR Aerospace and Defense",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Sentinel Capital Partners Acquires GSI Group Holdings",
@@ -960,7 +1000,12 @@
     "date": "2026-11-24T12:59:00+00:00",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/24/3409172/0/en/post-road-management-acquires-scenic-girard-portfolio-in-west-philadelphia.html",
     "industry": "Real Estate",
-    "notes": "Post Road Management acquired the Scenic & Girard portfolio to rehabilitate abandoned and deteriorated buildings, aiming to bring vacant apartments back into use and provide affordable housing. The acquisition is intended to restore the properties and make lasting improvements to the neighborhood."
+    "notes": "The acquirer plans to rehabilitate the portfolio, repair damage, and return vacant apartments to use. This project aims to improve the neighborhood and help meet the need for affordable housing.",
+    "country": "US",
+    "acquirer": "Post Road Management",
+    "target": "Scenic & Girard portfolio",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "DRT Aerospace, a GenNx360 Capital Partners Portfolio Company, Acquires Duke Manufacturing",
@@ -978,7 +1023,12 @@
     "date": "2026-11-24T13:00:00+00:00",
     "link": "http://www.businesswire.com/news/home/20261123208304/en/Harbourfront-Wealth-to-Acquire-JC-Clark-Strengthening-Its-National-Wealth-Management-Platform/",
     "industry": "Financials",
-    "notes": "This acquisition aims to strengthen Harbourfront Wealth\u2019s national wealth management platform and advance its goal of building a leading independent wealth firm in Canada. The deal provides JC Clark with access to broader resources, technology, and wealth management capabilities to enhance the client experience while maintaining their existing investment strategies."
+    "notes": "This acquisition advances the acquirer's vision to build a leading independent wealth firm and provides the target with access to broader wealth management capabilities and resources. The partnership combines a shared commitment to client-first advice and investment excellence while enhancing the overall client experience.",
+    "country": "CA",
+    "acquirer": "Harbourfront Wealth Group",
+    "target": "JC Clark Ltd.",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Cosette Pharmaceuticals\u00ae Establishes Oncology Franchise Through Acquisition of MARGENZA\u00ae (margetuximab-cmkb) from TerSera\u00ae Therapeutics",
@@ -1005,7 +1055,12 @@
     "date": "2026-11-24T13:30:00+00:00",
     "link": "http://www.businesswire.com/news/home/20261123387699/en/Shift4-Completes-Acquisition-of-Paramount-Commerce/",
     "industry": "Technology",
-    "notes": "This acquisition expands Shift4\u2019s Canadian presence and integrates real-time account-to-account payment capabilities to enhance its global platform. The deal leverages Paramount Commerce\u2019s specialized gaming expertise and payment infrastructure to provide enterprise merchants with faster, more frictionless transaction flows."
+    "notes": "The acquisition broadens Shift4's payment ecosystem by incorporating real-time account-to-account payment capabilities and specialized gaming expertise. This allows the company to enhance its global platform and provide enterprise merchants with faster, frictionless payment solutions.",
+    "country": "CA",
+    "acquirer": "Shift4",
+    "target": "Paramount Commerce",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "BlackSky Acquires EpochGeo to Expand Real-Time Intelligence Capabilities with AI-Enabled RF, Signals and Multi-Source Analytics",
@@ -1050,7 +1105,12 @@
     "date": "2026-11-24T14:03:20+00:00",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/24/3409345/0/en/revau-advanced-underwriting-announces-acquisition-of-h-w-kaufman-group-s-canadian-mga-and-claims-business-burns-wilcox-canada-strengthening-its-presence-in-canada.html",
     "industry": "Financials",
-    "notes": "The acquisition aims to strengthen Revau's position as a leading independent MGA in Canada by expanding its distribution network, specialty underwriting capabilities, and claims team. This transaction leverages the target's established presence to enhance national scale while creating opportunities to cross-sell products and expertise to a broader broker base."
+    "notes": "This acquisition strengthens Revau's position as the largest independent MGA in Canada and expands its national platform and specialty underwriting capabilities. It also adds in-house claims administration capabilities and broadens the company's distribution network.",
+    "country": "CA",
+    "acquirer": "Revau",
+    "target": "Burns & Wilcox Canada",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Intune Physical Therapy Acquires Kinect Physiotherapy, Further Expanding Its Presence in the Raleigh Market",
@@ -1068,7 +1128,12 @@
     "date": "2026-11-24T15:00:00+00:00",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/24/3409450/27604/en/applied-systems-acquires-tailwind.html",
     "industry": "Technology",
-    "notes": "Applied Systems acquired Tailwind to integrate AI-powered document and data retrieval into its insurance management systems, aiming to automate workflows and reduce operational costs. The combination is expected to accelerate delivery of end-to-end AI automations for insurance agencies, brokers, and carriers."
+    "notes": "The acquisition aims to accelerate integrated AI automation across insurance policy workflows, reducing time and costs. By integrating Tailwind\u2019s document and data retrieval technology, Applied Systems intends to improve connectivity and efficiency for agencies, brokers, and carriers.",
+    "country": "US",
+    "acquirer": "Applied Systems",
+    "target": "Tailwind",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "VIRTUS Diversified REIT Expands Seniors Housing Footprint with Acquisition of The Regency Retirement Residence in Lakefield, Ontario",
@@ -1086,7 +1151,12 @@
     "date": "2026-11-24T16:00:00+00:00",
     "link": "http://www.businesswire.com/news/home/20261124334659/en/Georgia-Ports-Authority-Backs-Union-Pacific-Norfolk-Southern-Merger-Joining-More-Than-2000-Supporters/",
     "industry": "Industrials",
-    "notes": "The merger aims to create the nation's first seamless transcontinental railroad, strengthening freight connectivity and expanding access to inland markets via a single-line rail network. This combination is expected to enhance competition, improve service offerings, and provide more efficient reach for domestic and international trade."
+    "notes": "The merger aims to create the nation's first seamless transcontinental railroad. This combination is intended to strengthen freight connectivity, expand access to inland markets, and provide single-line service to more destinations.",
+    "country": "US",
+    "acquirer": "Union Pacific",
+    "target": "Norfolk Southern",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "FCP ACQUIRES 2048 BOLTON DRIVE NW IN UPPER WESTSIDE ATLANTA",
@@ -1122,7 +1192,12 @@
     "date": "2026-11-24T20:00:00+00:00",
     "link": "http://www.businesswire.com/news/home/20261124402469/en/Digi-International-Completes-Acquisition-of-Disruptive-Technologies-Expanding-SmartSense-Physical-World-Intelligence-Capabilities/",
     "industry": "Technology",
-    "notes": "This acquisition combines Disruptive Technologies' advanced wireless sensing capabilities with SmartSense by Digi's software and analytics platform to enhance physical-world intelligence. The deal aims to expand SmartSense into new applications like building management and occupancy sensing while offering new return-on-investment opportunities for existing customers."
+    "notes": "This acquisition expands the SmartSense physical-world intelligence platform by integrating advanced wireless sensing technology with enterprise software. The deal aims to enhance operational insights for industries like food and healthcare while opening new markets in building automation.",
+    "country": "Other",
+    "acquirer": "Digi International",
+    "target": "Disruptive Technologies",
+    "size_musd": 130.0,
+    "funding": "All cash"
   },
   {
     "title": "Five9 Completes Acquisition of Level AI",
@@ -1131,7 +1206,12 @@
     "date": "2026-11-24T21:05:00+00:00",
     "link": "http://www.businesswire.com/news/home/20261124321725/en/Five9-Completes-Acquisition-of-Level-AI/",
     "industry": "Technology",
-    "notes": "Five9 acquired Level AI to enhance its platform with advanced artificial intelligence, specifically to provide real-time agent assistance, actionable insights, and improved customer experience automation. This strategic move aims to leverage Level AI's conversational intelligence technology to drive greater operational efficiency and quality for Five9 customers."
+    "notes": "The acquisition aims to advance Five9's AI capabilities and strengthen its position in the AI-powered customer experience market. It seeks to integrate Level AI's applications into the Five9 Genius CX Platform to enable AI and human agents to work together as a coordinated system.",
+    "country": "Other",
+    "acquirer": "Five9",
+    "target": "Level AI",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Local Bounti Becomes Largest Leafy Greens CEA Grower in the U.S. with Completed Acquisition of Revol Greens' Certified-Organic Facilities",
@@ -1167,7 +1247,12 @@
     "date": "2026-11-24T21:30:00+00:00",
     "link": "http://www.businesswire.com/news/home/20261124450958/en/Pivotal-Manufacturing-Partners-Acquires-753428-Square-Foot-Advanced-Manufacturing-Facility-in-the-Dallas%E2%80%93Fort-Worth-Metroplex/",
     "industry": "Industrials",
-    "notes": "Rationale not stated."
+    "notes": "The acquisition of the 753,428-square-foot advanced manufacturing facility serves to expand Pivotal Manufacturing Partners' footprint within the Dallas\u2013Fort Worth metroplex. Rationale not stated.",
+    "country": "US",
+    "acquirer": "Pivotal Manufacturing Partners",
+    "target": null,
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "OpenTable Announces Proposed Acquisition of Australian Restaurant Technology Company me&u",
@@ -1185,7 +1270,12 @@
     "date": "2026-11-25T03:42:38+00:00",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/25/3409978/0/en/valore-metals-announces-definitive-agreement-to-acquire-bemisa-%C3%A1gua-azul-minera%C3%A7%C3%A3o-s-a-owner-of-the-%C3%A1gua-azul-gold-project-in-par%C3%A1-state-brazil.html",
     "industry": "Materials",
-    "notes": "The acquisition is designed to advance ValOre\u2019s goal of becoming a precious metals producer of scale by adding a cash-generating, open-pit gold operation and expansion project in the Caraj\u00e1s Mineral Province. The deal also provides strategic value through the project's exploration potential along a 15-kilometre mineralized corridor and existing infrastructure, allowing the company to scale up gold production while progressing its existing Pedra Branca project."
+    "notes": "ValOre Metals Corp. aims to become a precious metals producer of scale by acquiring an operating gold project with expansion potential. The deal adds a cash-generating open-pit gold operation in the Caraj\u00e1s Mineral Province to ValOre's portfolio.",
+    "country": "Other",
+    "acquirer": "ValOre Metals Corp.",
+    "target": "Bemisa \u00c1gua Azul Minera\u00e7\u00e3o S.A.",
+    "size_musd": 135.0,
+    "funding": "Cash"
   },
   {
     "title": "EQUASENS enters into exclusive negotiations to acquire a majority stake in Synapse Medicine, the developer of MedGPT and a pharmaceutical database",
@@ -1202,8 +1292,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-25T07:45:00+00:00",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/25/3410014/0/en/uk-competition-and-markets-authority-in-principle-accepts-remedies-in-akzonobel-axalta-merger.html",
-    "industry": "Materials",
-    "notes": "The merger combines two leading coatings companies with complementary portfolios, technologies, and brands to create a global coatings entity with approximately $17 billion in revenue. By integrating their operations across various coating sectors, the companies aim to leverage these synergies to enhance their market position and product offerings."
+    "industry": "Industrials",
+    "notes": "The combination brings together two leading coatings companies with complementary portfolios, technologies, and brands to create a global coatings company.",
+    "country": "Other",
+    "acquirer": "AkzoNobel",
+    "target": "Axalta Coating Systems",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Agreement to Acquire Ready-Mix Concrete Operations by INTERBETON",
@@ -1212,7 +1307,12 @@
     "date": "2026-11-25T11:09:00+00:00",
     "link": "http://www.businesswire.com/news/home/20261125667601/en/Agreement-to-Acquire-Ready-Mix-Concrete-Operations-by-INTERBETON/",
     "industry": "Materials",
-    "notes": "This acquisition aims to strengthen the company's vertical integration and expand its ready-mix concrete network in the Attica market. The deal adds three production plants to improve geographic coverage and better serve regional infrastructure and development projects."
+    "notes": "The acquisition strengthens the company's ready-mix concrete network and vertical integration in the Attica market. It aims to broaden geographic coverage and support major infrastructure and development projects.",
+    "country": "Other",
+    "acquirer": "INTERBETON",
+    "target": "ANGELOS V. PEPPAS A.B.E.E.",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Standard BioTools Announces 1-for-35 Reverse Stock Split and Special Dividend of Contingent Value Rights in Connection with Proposed Merger with Treeline Biosciences",
@@ -1239,7 +1339,12 @@
     "date": "2026-11-25T13:25:00+00:00",
     "link": "http://www.businesswire.com/news/home/20261123036345/en/PHINIA-to-Acquire-the-Business-of-the-FMP-Group-with-Operations-in-Australia-Thailand-and-Malaysia-a-Leading-Asia-Pacific-Aftermarket-Company/",
     "industry": "Industrials",
-    "notes": "This acquisition strengthens PHINIA\u2019s aftermarket presence in the Asia-Pacific region while expanding its brake components portfolio and engineering capabilities. The company anticipates synergies through accelerated product development, expansion into adjacent categories, and broader global deployment of its aftermarket solutions."
+    "notes": "The acquisition expands PHINIA's presence in the Asia-Pacific aftermarket and adds a broader propulsion-agnostic product portfolio. It also provides a regional platform with established customer relationships and vertically integrated capabilities.",
+    "country": "Other",
+    "acquirer": "PHINIA",
+    "target": "FMP Group",
+    "size_musd": 160.0,
+    "funding": "All cash"
   },
   {
     "title": "Gulf Resources Announces Agreement to Acquire Bromine and Crude Salt Assets",
@@ -1257,7 +1362,12 @@
     "date": "2026-11-25T14:00:00+00:00",
     "link": "http://www.businesswire.com/news/home/20261125286233/en/Expedia-Group-Announces-Agreement-to-Acquire-Kiwi.com-to-Augment-Flights-Capabilities/",
     "industry": "Technology",
-    "notes": "This acquisition aims to augment Expedia Group's flight capabilities by integrating Kiwi.com's technology engine, supply, and customer service expertise to strengthen its position in Europe and support its consumer and B2B businesses. The transaction is intended to provide travelers and partners with increased choice, confidence, and value."
+    "notes": "The acquisition aims to augment Expedia Group's air platform with Kiwi.com's supply, technology, and customer service capabilities. This move is intended to extend Expedia Group's U.S. air position into Europe and unlock growth opportunities for both consumer brands and B2B partners.",
+    "country": "Other",
+    "acquirer": "Expedia Group",
+    "target": "Kiwi.com",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Cheche Group Signs Definitive Agreement to Acquire 20% Interest in Residential Solar-Plus-Storage Company Long Way Fortune, With Option to Increase Stake to 51%",
@@ -1275,7 +1385,12 @@
     "date": "2026-11-25T14:51:00+00:00",
     "link": "https://www.prnewswire.com/news-releases/26health-acquires-florida-infectious-disease-specialists-expanding-hiv-and-infectious-disease-care-in-central-florida-302950596.html",
     "industry": "Healthcare",
-    "notes": "The acquisition is designed to expand access to specialized HIV and infectious disease care across the Central Florida region. By joining the 26Health network, the practice gains access to broader clinical resources and support, strengthening the organization's existing specialty care services."
+    "notes": "The acquisition aims to expand access to specialized HIV and infectious disease care for patients across the Central Florida region. It also strengthens 26Health's specialty care services by integrating the practice's expert providers and resources into its network.",
+    "country": "US",
+    "acquirer": "26Health",
+    "target": "Florida Infectious Disease Specialists",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "American-Led Consortium Announces Agreement to Acquire LUKOIL International\u2019s Global Energy Portfolio",
@@ -1284,7 +1399,12 @@
     "date": "2026-11-25T16:00:00+00:00",
     "link": "http://www.businesswire.com/news/home/20261125144720/en/American-Led-Consortium-Announces-Agreement-to-Acquire-LUKOIL-International%E2%80%99s-Global-Energy-Portfolio/",
     "industry": "Energy",
-    "notes": "The acquisition aims to secure critical global energy assets under American and allied ownership to strengthen energy security, stabilize operations, and ensure a reliable energy supply. The deal also seeks to preserve asset value and facilitate operational continuity across the energy value chain, though specific cost or revenue synergies were not stated."
+    "notes": "The transaction seeks to secure critical global energy assets under American and allied ownership to strengthen energy security and stabilize operations in various markets. The deal is structured to sever these assets from Russian ownership while avoiding direct cash payments to Russia.",
+    "country": "Other",
+    "acquirer": "Eldridge",
+    "target": "LUKOIL International GmbH",
+    "size_musd": null,
+    "funding": "Share swap"
   },
   {
     "title": "Virbac to acquire Axiota Animal Health, Inc. creating a leading global platform for innovative cattle health solutions",
@@ -1319,5 +1439,12 @@
     "source": "PR Newswire",
     "date": "2026-11-25T19:36:00+00:00",
     "link": "https://www.prnewswire.com/news-releases/virbac-to-acquire-axiota-animal-health-inc---creating-a-leading-global-platform-for-innovative-cattle-health-solutions-302950804.html"
+  },
+  {
+    "title": "LS Power Completes Acquisition of 4.4 GW Natural Gas Generation Assets from Constellation",
+    "status": "CLOSED",
+    "source": "PR Newswire",
+    "date": "2026-11-25T21:38:00+00:00",
+    "link": "https://www.prnewswire.com/news-releases/ls-power-completes-acquisition-of-4-4-gw-natural-gas-generation-assets-from-constellation-302950859.html"
   }
 ]
