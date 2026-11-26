@@ -257,8 +257,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-16T13:00:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/16/3403471/0/en/commure-acquires-elaborate-to-cure-the-clinician-inbox.html",
-    "notes": "Commure acquired Elaborate to integrate protocol-driven inbox AI into its existing healthcare platform, aiming to automate clinical workflows and reduce the administrative burden on clinicians. This acquisition complements Commure's agentic platform by providing a unified system that handles tasks from patient intake through post-visit inbox management.",
-    "industry": "Healthcare"
+    "notes": "This acquisition adds protocol-driven inbox AI to Commure's agentic healthcare platform to help automate administrative tasks and reduce clinician inbox burden. It aims to allow clinicians to spend less time on documentation and more time on patient care by integrating automated, clinically informed workflows.",
+    "industry": "Healthcare",
+    "country": "US",
+    "acquirer": "Commure",
+    "target": "Elaborate",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Energy Capital Partners (ECP) Completes Acquisition of EnergySolutions",
@@ -275,8 +280,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-16T12:48:31Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/16/3403426/0/en/davion-healthcare-plc-agrees-to-terms-in-acquisition-of-independence-care-homecare-network.html",
-    "notes": "The acquisition provides Davion with an established multi-state homecare platform to support its strategy of building a diversified healthcare services group. By integrating these businesses, the company aims to retain local expertise and patient relationships while strengthening operational oversight and financial management.",
-    "industry": "Healthcare"
+    "notes": "The acquisition establishes a multi-state homecare platform for Davion as it builds a diversified healthcare services group. It allows the company to integrate established operations while leveraging local expertise, care teams, and patient relationships.",
+    "industry": "Healthcare",
+    "country": "US",
+    "acquirer": "Davion Healthcare Plc",
+    "target": "Independence Care",
+    "size_musd": 10.0,
+    "funding": "Cash 80%, Stock 10%, Cash earnouts 10%"
   },
   {
     "title": "Edustaff Acquires Speech Services Rhode Island to Expand Onsite Special Education Services in the Northeast",
@@ -284,8 +294,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-16T15:00:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/16/3403737/0/en/edustaff-acquires-speech-services-rhode-island-to-expand-onsite-special-education-services-in-the-northeast.html",
-    "notes": "The acquisition aims to expand Edustaff's onsite special education services in the Northeast by integrating Speech Services Rhode Island's established local expertise and school partnerships. This move creates synergies by combining the target's onsite approach with Edustaff's existing virtual, hybrid, and onsite capabilities to better support diverse school staffing needs.",
-    "industry": "Other"
+    "notes": "The acquisition brings established onsite speech-language pathology expertise to Edustaff's Special Education division to support growth in the Northeast. This combination allows Edustaff to better support school districts by integrating onsite, virtual, and hybrid service models.",
+    "industry": "Healthcare",
+    "country": "US",
+    "acquirer": "Edustaff",
+    "target": "Speech Services Rhode Island",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "NVRO Metals Completes Acquisition of Northern Territories Resources",
@@ -293,8 +308,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-16T17:13:56Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/16/3403979/0/en/nvro-metals-completes-acquisition-of-northern-territories-resources.html",
-    "notes": "The acquisition secures an Australian site for the company to conduct the first industrial deployment of its proprietary NVRO Process. This strategic move aims to support the company's goal of building a scalable critical minerals production and recovery platform.",
-    "industry": "Materials"
+    "notes": "The acquisition secures an Australian site for the company's first industrial deployment of its proprietary NVRO Process. The site will host the NVRO Metal Hub to support critical minerals production and recovery.",
+    "industry": "Industrials",
+    "country": "Other",
+    "acquirer": "NVRO Metals",
+    "target": "Northern Territories Resources",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "SPIE Nederland strengthens its position in industrial automation and robotics with the acquisition of Duflex B.V",
@@ -311,8 +331,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-16T21:11:36Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/16/3404140/0/en/rosemont-pharmaceuticals-to-acquire-aytu-biopharma-to-accelerate-us-expansion.html",
-    "notes": "Rosemont Pharmaceuticals aims to accelerate its US expansion and growth strategy by leveraging Aytu BioPharma's established CNS-focused specialty portfolio and US commercial platform. The deal is expected to create synergies by combining Aytu\u2019s commercial capabilities with Rosemont's own product development, regulatory, manufacturing, and commercial expertise.",
-    "industry": "Healthcare"
+    "notes": "This acquisition is intended to accelerate Rosemont's US expansion and growth strategy. It aims to combine the companies' complementary portfolios and commercial capabilities to strengthen their position in the specialty pharmaceutical market.",
+    "industry": "Healthcare",
+    "country": "US",
+    "acquirer": "Rosemont Pharmaceuticals",
+    "target": "Aytu BioPharma",
+    "size_musd": null,
+    "funding": "All cash"
   },
   {
     "title": "Voltus Acquires Stem\u2019s Athena Platform to Enable Battery Partners to Extract More Value from their Assets",
@@ -374,8 +399,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-17T13:00:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/17/3404565/0/en/crown-aviation-acquires-silver-king-helicopters-anchoring-its-canadian-aviation-consolidation-strategy.html",
-    "notes": "Crown Aviation acquired Silver King Helicopters to anchor its strategy of consolidating Canada's fragmented aviation industry and building a diversified portfolio of mission-critical operators. The company aims to realize economies of scale and operating efficiencies by sharing resources, capital, and best practices across its platform companies.",
-    "industry": "Industrials"
+    "notes": "The acquisition serves as the first step in Crown Aviation's strategy to consolidate Canada's fragmented aviation industry. By adding Silver King to its portfolio, the company aims to realize economies of scale and operating efficiencies while providing mission-critical services.",
+    "industry": "Industrials",
+    "country": "CA",
+    "acquirer": "Crown Aviation Holdings Inc.",
+    "target": "Silver King Helicopters Inc.",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Fernweh Group Announces Acquisition of Resource Energy Equipment",
@@ -437,8 +467,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-19T11:30:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/19/3406395/9504/en/willis-lease-finance-corporation-expands-fleet-with-acquisition-of-two-airbus-a320-aircraft.html",
-    "notes": "The company acquired two Airbus A320 aircraft to complement its core engine leasing business and meet strong customer demand for diverse aviation assets. This strategic expansion aims to strengthen the company's ability to provide flexible leasing solutions to global airline customers.",
-    "industry": "Industrials"
+    "notes": "The acquisition aims to complement the company's core engine leasing business and expand its aviation asset portfolio to meet customer demand. This investment reflects a disciplined approach to acquiring diverse assets.",
+    "industry": "Industrials",
+    "country": "Other",
+    "acquirer": "Willis Lease Finance Corporation",
+    "target": null,
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "AIFA Signs Definitive Agreement to Acquire Little Vault, Shanglong Li to Serve as Chairman and CEO, Accelerating AI Applications and Content IP Commercialization",
@@ -455,8 +490,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-19T13:45:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/19/3406587/0/en/friedman-industries-expands-downstream-with-the-acquisition-of-behrens-metalware.html",
-    "notes": "The acquisition is part of Friedman's strategy to diversify its product offerings and expand downstream into branded, value-added metal products. It is expected to create synergies by providing a broader customer base and increased margin opportunities through enhanced manufacturing capabilities.",
-    "industry": "Industrials"
+    "notes": "The acquisition is part of the company's strategy to diversify its product offerings and expand value-added manufacturing capabilities downstream. It aims to capture additional margin opportunities and build a more diversified customer base.",
+    "industry": "Industrials",
+    "country": "US",
+    "acquirer": "Friedman Industries",
+    "target": "Behrens Holding, Inc.",
+    "size_musd": null,
+    "funding": "All cash"
   },
   {
     "title": "PONTIAC BANCORP, INC. AND OTTAWA BANCORP, INC. ANNOUNCE RECEIPT OF ALL REQUIRED REGULATORY AND SHAREHOLDER APPROVALS FOR MERGER",
@@ -501,8 +541,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-20T21:22:36Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/20/3407833/0/en/beeline-and-tytl-to-host-joint-stakeholder-update-call-on-merger-agreement-with-tytl-corp.html",
-    "notes": "This merger aims to combine digital mortgage origination with tokenized home equity securities and institutional capital to build a next-generation residential real estate finance platform. The companies intend to leverage blockchain technology to enhance transparency and improve transaction efficiency in the real estate market.",
-    "industry": "Financials"
+    "notes": "The merger aims to combine digital mortgage origination with tokenized home equity securities to build a next-generation residential real estate finance platform. The parties intend to expand into tokenized real estate and blockchain-enabled home equity finance.",
+    "industry": "Financials",
+    "country": "US",
+    "acquirer": "Beeline Holdings",
+    "target": "TYTL Corp.",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Brookfield to Acquire PGP Glass, a Leading Global Manufacturer of Specialty Glass Packaging from Blackstone for $1.7 billion",
@@ -649,8 +694,13 @@
     "source": "Business Wire",
     "date": "2026-11-23T06:30:00+00:00",
     "link": "http://www.businesswire.com/news/home/20261122205180/en/Bureau-Veritas-Acquires-Topo-Solutions-to-Enhance-Its-AI-Powered-Supply-Chain-Intelligence-Offering/",
-    "industry": "Industrials",
-    "notes": "The acquisition aims to enhance Bureau Veritas' AI-powered supply chain intelligence offering by enabling the company to provide data-driven services to consumer goods companies and retailers. This strategic move is intended to help customers improve supply chain visibility, strengthen resilience and sustainability, and reduce risks and costs through AI-powered automation and analytics."
+    "industry": "Technology",
+    "notes": "This acquisition enables Bureau Veritas to bring new data-driven services to consumer goods companies and retailers by enhancing its AI-powered supply chain intelligence offering. The integration aims to turn data into actionable intelligence, helping customers improve supply chain resilience, sustainability, and decision-making.",
+    "country": "Other",
+    "acquirer": "Bureau Veritas",
+    "target": "Topo Solutions",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Health Partners Expands Prevention &amp; Behaviour Change Offering with Acquisition of ICE Creates",
@@ -738,7 +788,12 @@
     "date": "2026-11-23T12:00:00+00:00",
     "link": "http://www.businesswire.com/news/home/20261118254933/en/RELEX-Acquires-autone-to-Expand-AI-Powered-Planning-Capabilities-for-Fashion-Lifestyle-Brands-and-Apparel-Retailers/",
     "industry": "Technology",
-    "notes": "This acquisition combines autone's specialized fashion and lifestyle planning expertise with the scale of the RELEX platform to provide brands and retailers with a unified engine for seasonal and continuous planning. The transaction aims to improve inventory performance, protect margins, and allow customers to manage the entire merchandise lifecycle through a single interface."
+    "notes": "The acquisition strengthens RELEX's retail planning capabilities for fashion and lifestyle brands by integrating autone's AI-powered inventory optimization technology. This allows the combined entity to offer a single engine for managing both seasonal and continuous merchandise lifecycles.",
+    "country": "Other",
+    "acquirer": "RELEX Solutions",
+    "target": "autone",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "IQVIA Announces Acquisition of Quotient Sciences",
@@ -821,7 +876,12 @@
     "date": "2026-11-23T13:32:00+00:00",
     "link": "https://www.prnewswire.com/news-releases/mill-steel-company-acquires-assets-of-chicago-steel-and-lexington-steel-302947516.html",
     "industry": "Materials",
-    "notes": "The acquisition expands Mill Steel's Midwest footprint and geographic reach while adding specialized tension leveling, slitting, and cut-to-length processing capabilities. These synergies allow the company to provide customers with shorter lead times, more competitive freight, and an enhanced portfolio of processing services."
+    "notes": "The acquisition expands the company's Midwest footprint and adds processing capacity, including a tension leveling line, to better serve customers.",
+    "country": "US",
+    "acquirer": "Mill Steel Company",
+    "target": "Chicago Steel and Lexington Steel",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Nauticus Robotics\u2122 Signs Letter of Intent to Acquire Ocean Power Technologies' WAM-V\u00ae Business Assets",
@@ -908,7 +968,12 @@
     "date": "2026-11-23T16:38:00+00:00",
     "link": "http://www.businesswire.com/news/home/20261123673204/en/Barnes-Aerospace-Signs-Agreement-to-Acquire-JJ-Churchill-Expanding-Advanced-Aeroengine-Manufacturing-Capabilities/",
     "industry": "Industrials",
-    "notes": "The acquisition expands Barnes Aerospace's turbine and compressor airfoil manufacturing capabilities while strengthening its European footprint. This strategic move leverages JJ Churchill's engineering expertise and existing customer relationships to support Barnes's strategy of growing its original equipment manufacturing business."
+    "notes": "The acquisition expands the company's precision manufacturing capabilities and strengthens its European footprint. It also brings complementary expertise in manufacturing complex turbine and compressor components to support future engine programs.",
+    "country": "Other",
+    "acquirer": "Barnes Aerospace",
+    "target": "JJ Churchill",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Madison Dearborn Partners to Acquire Peli BioThermal, a Trusted Cold Chain Solutions Provider, from Pelican Products and Platinum Equity",
@@ -1324,7 +1389,12 @@
     "date": "2026-11-24T17:00:00+00:00",
     "link": "http://www.businesswire.com/news/home/20261124528187/en/Duravant-to-Acquire-FlexXray-Technology-Leader-in-Foreign-Material-Inspection-and-Recovery-Services/",
     "industry": "Industrials",
-    "notes": "This acquisition leverages synergistic commercial opportunities across both companies' deep customer relationships and enables Duravant to expand its sorting and inspection technology offerings. The deal also integrates FlexXray's inspection and recovery services into Duravant's Lifecycle Services business while creating new channels to cross-sell technologies and services across their respective customer bases."
+    "notes": "The acquisition adds advanced inspection technology and a recurring aftermarket business model to Duravant's portfolio. It also creates synergistic commercial opportunities by linking the two companies' complementary technologies and customer relationships.",
+    "country": "US",
+    "acquirer": "Duravant",
+    "target": "FlexXray",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "RHONDOS Completes Acquisition of PowerConnect for SAP\u00ae Solutions",
@@ -1375,7 +1445,12 @@
     "date": "2026-11-24T21:08:00+00:00",
     "link": "https://www.prnewswire.com/news-releases/local-bounti-becomes-largest-leafy-greens-cea-grower-in-the-us-with-completed-acquisition-of-revol-greens-certified-organic-facilities-302949880.html",
     "industry": "Consumer",
-    "notes": "Local Bounti acquired these facilities to rapidly expand production capacity and meet high customer demand at a lower cost than building new infrastructure. The acquisition also enables the company to offer certified-organic products and establishes a stronger distribution network in the Midwest and Southern U.S."
+    "notes": "The acquisition expands Local Bounti\u2019s growing footprint by approximately 70% and adds certified-organic greens to its product offering. This transaction allows the company to meet customer demand more quickly and cost-effectively than building new facilities.",
+    "country": "US",
+    "acquirer": "Local Bounti",
+    "target": "Revol Greens",
+    "size_musd": null,
+    "funding": "Secured notes, seller financing and assumed debt"
   },
   {
     "title": "Remix Therapeutics Completes Closing of Merger with Passage Bio and Previously Announced $100 Million Private Placement",
@@ -1384,7 +1459,12 @@
     "date": "2026-11-24T21:15:00+00:00",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/24/3409891/0/en/remix-therapeutics-completes-closing-of-merger-with-passage-bio-and-previously-announced-100-million-private-placement.html",
     "industry": "Healthcare",
-    "notes": "Rationale not stated."
+    "notes": "Rationale not stated.",
+    "country": "US",
+    "acquirer": "Remix Therapeutics",
+    "target": "Passage Bio",
+    "size_musd": null,
+    "funding": "Stock"
   },
   {
     "title": "Thor Equities Completes Acquisition of Prime San Francisco Asset for $50.5 Million",
@@ -1393,7 +1473,12 @@
     "date": "2026-11-24T21:23:29+00:00",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/24/3409894/0/en/thor-equities-completes-acquisition-of-prime-san-francisco-asset-for-50-5-million.html",
     "industry": "Real Estate",
-    "notes": "Thor Equities acquired this property to expand its presence in the San Francisco market, citing the asset's prime location, scale, and flexibility as key strategic drivers. The firm aims to leverage its experience in the neighborhood and previous success in repositioning landmark properties to further develop its footprint in Union Square."
+    "notes": "The acquirer views this high-quality asset as an irreplaceable location with significant potential and intends to build a significant presence in the Union Square market.",
+    "country": "US",
+    "acquirer": "Thor Equities",
+    "target": "55 Stockton Street",
+    "size_musd": 50.5,
+    "funding": null
   },
   {
     "title": "Pivotal Manufacturing Partners Acquires 753,428-Square-Foot Advanced Manufacturing Facility in the Dallas\u2013Fort Worth Metroplex",
@@ -1627,6 +1712,13 @@
     "status": "CLOSED",
     "source": "PR Newswire",
     "date": "2026-11-25T21:38:00+00:00",
-    "link": "https://www.prnewswire.com/news-releases/ls-power-completes-acquisition-of-4-4-gw-natural-gas-generation-assets-from-constellation-302950859.html"
+    "link": "https://www.prnewswire.com/news-releases/ls-power-completes-acquisition-of-4-4-gw-natural-gas-generation-assets-from-constellation-302950859.html",
+    "industry": "Energy",
+    "country": "US",
+    "acquirer": "LS Power",
+    "target": "Constellation Energy Corporation",
+    "size_musd": null,
+    "funding": null,
+    "notes": "The acquisition allows LS Power to further scale its generation footprint in the PJM market to meet growing electricity demand. The assets provide added operational flexibility and reliability due to their dual-fuel capability."
   }
 ]
