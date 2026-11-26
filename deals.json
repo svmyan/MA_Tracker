@@ -582,7 +582,12 @@
     "date": "2026-11-23T18:22:17Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/23/3408819/0/en/ch%C3%AAne-gear-acquires-stone-glacier-from-revelyst-keeping-the-brand-rooted-in-montana.html",
     "industry": "Consumer",
-    "notes": "The acquisition unites two premium hunting brands under common ownership, with the companies planning to operate independently while sharing resources and expertise to strengthen both businesses. The strategic rationale focuses on a shared commitment to product quality, craftsmanship, and the hunting community, allowing Ch\u00eane Gear to provide long-term stewardship for Stone Glacier."
+    "notes": "The acquisition aims to unite two brands that share a commitment to high-quality, specialized hunting gear under common ownership. Ch\u00eane Gear plans to provide long-term stewardship while keeping Stone Glacier headquartered in Montana.",
+    "country": "US",
+    "acquirer": "Ch\u00eane Gear",
+    "target": "Stone Glacier",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Coface strengthens its Debt Collection capabilities  with the acquisition of Baker Ing",
@@ -609,7 +614,12 @@
     "date": "2026-11-23T09:30:00+00:00",
     "link": "http://www.businesswire.com/news/home/20261123048575/en/Health-Partners-Expands-Prevention-Behaviour-Change-Offering-with-Acquisition-of-ICE-Creates/",
     "industry": "Healthcare",
-    "notes": "The acquisition is designed to expand Health Partners' service offering beyond traditional occupational health by integrating ICE Creates' specialist behaviour change and prevention capabilities. This combination aims to create a broader, more comprehensive platform that leverages clinical expertise and population health initiatives to improve health outcomes at scale."
+    "notes": "The acquisition aims to expand the acquirer's offering beyond traditional occupational health into a broader prevention-focused service. It combines clinical expertise with behaviour change programmes to improve health outcomes at scale.",
+    "country": "Other",
+    "acquirer": "Health Partners Group",
+    "target": "ICE Creates",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Gulbrandsen acquires IMACA's glass coating business",
@@ -627,7 +637,12 @@
     "date": "2026-11-23T10:27:00+00:00",
     "link": "http://www.businesswire.com/news/home/20261123578591/en/SmartStop-Self-Storage-REIT-Inc.-Expands-Presence-in-Asheville-MSA-With-Acquisition-of-Woodfin-Facility/",
     "industry": "Real Estate",
-    "notes": "The acquisition deepens SmartStop's presence in the Asheville market, allowing the company to leverage its existing knowledge of the customer base and operating environment. Additionally, the property provides the strategic benefit of in-place retail income and full climate-controlled unit offerings in a growing area."
+    "notes": "The acquisition strengthens the company's presence in the Asheville market and offers a fully climate-controlled unit mix with in-place retail income.",
+    "country": "US",
+    "acquirer": "SmartStop Self Storage REIT, Inc.",
+    "target": null,
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "CrowdStrike to Acquire Zscaler, Bringing Network Security and Zero Trust to the Falcon Platform",
@@ -636,7 +651,12 @@
     "date": "2026-11-23T10:32:00+00:00",
     "link": "http://www.businesswire.com/news/home/20261123522174/en/CrowdStrike-to-Acquire-Zscaler-Bringing-Network-Security-and-Zero-Trust-to-the-Falcon-Platform/",
     "industry": "Technology",
-    "notes": "CrowdStrike aims to unite endpoint security with Zscaler's Zero Trust SASE to create a unified platform that secures both devices and network connections. The acquisition is expected to generate $1 billion in annualized run-rate revenue synergies through cross-selling and $500 million in annualized run-rate cost synergies from operational and infrastructure optimization."
+    "notes": "The acquisition unites endpoint security with Zero Trust network security to create a unified platform and expand the total addressable market. It is also designed to unlock cross-sell opportunities across both customer bases and drive operational efficiencies.",
+    "country": "US",
+    "acquirer": "CrowdStrike",
+    "target": "Zscaler",
+    "size_musd": 43900.0,
+    "funding": "All stock"
   },
   {
     "title": "Texas Pacific Land to Acquire EagleRock in All-Stock Transaction, Expected to Enhance the Permian Basin\u2019s Premier Land, Water and Royalty Platform",
@@ -645,7 +665,12 @@
     "date": "2026-11-23T11:00:00+00:00",
     "link": "http://www.businesswire.com/news/home/20261123828725/en/Texas-Pacific-Land-to-Acquire-EagleRock-in-All-Stock-Transaction-Expected-to-Enhance-the-Permian-Basin%E2%80%99s-Premier-Land-Water-and-Royalty-Platform/",
     "industry": "Energy",
-    "notes": "Texas Pacific Land is acquiring EagleRock in an all-stock transaction to enhance its land, water, and royalty platform in the Permian Basin."
+    "notes": "The acquisition combines complementary land and water assets to enhance TPL's platform and presence in the Permian Basin. The transaction is expected to provide opportunities for additional water commercialization and cost savings while remaining accretive to free cash flow.",
+    "country": "US",
+    "acquirer": "Texas Pacific Land Corporation",
+    "target": "EagleRock Land, LLC",
+    "size_musd": 3000.0,
+    "funding": "All stock"
   },
   {
     "title": "Qnity to Acquire Meridian\u2019s Electronics Business, Expands Advanced Packaging and Thermal Management Capabilities",
@@ -672,7 +697,12 @@
     "date": "2026-11-23T12:00:00+00:00",
     "link": "http://www.businesswire.com/news/home/20261201448686/en/IQVIA-Announces-Acquisition-of-Quotient-Sciences/",
     "industry": "Healthcare",
-    "notes": "This acquisition aims to strengthen IQVIA's early clinical development capabilities by integrating Quotient Sciences' Translational Pharmaceutics platform to help customers accelerate drug development timelines. The deal creates a more integrated pathway from discovery through early-stage clinical development, allowing the combined entity to bridge gaps in the drug development lifecycle."
+    "notes": "The acquisition strengthens IQVIA's early clinical development capabilities by integrating Quotient Sciences' Translational Pharmaceutics approach with IQVIA's global clinical services. This combination aims to help customers accelerate drug development by bridging the gap between discovery and clinical evaluation.",
+    "country": "Other",
+    "acquirer": "IQVIA",
+    "target": "Quotient Sciences",
+    "size_musd": null,
+    "funding": "Cash on hand and existing credit facilities"
   },
   {
     "title": "USFM Signs Term Sheet to Acquire Up to 85% of Hook Lake, a Fully Permitted Gold and Copper Project in Nunavut, Canada",
@@ -690,7 +720,12 @@
     "date": "2026-11-23T12:19:00+00:00",
     "link": "http://www.businesswire.com/news/home/20261122368474/en/Mount-Street-Accelerates-U.S.-Growth-with-Acquisition-of-Seasoned-Primary-and-Special-Servicing-Team-Adding-1.35-Billion-Portfolio/",
     "industry": "Financials",
-    "notes": "This acquisition of a primary and special servicing team aims to accelerate Mount Street's U.S. growth and expands its portfolio by $1.35 billion. The deal strategically enhances the firm's servicing capabilities and market footprint in the region."
+    "notes": "The acquisition adds a seasoned Dallas-based team and $1.35 billion in servicing assets to accelerate Mount Street's U.S. growth. The transaction aims to enhance the firm's capabilities in managing complex securitized products, special servicing, and related CRE credit strategies.",
+    "country": "US",
+    "acquirer": "Mount Street Group",
+    "target": null,
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Adams Outdoor Advertising Acquires 39 Billboard Faces in Western Pennsylvania from McWhorter Media Group",
@@ -699,7 +734,12 @@
     "date": "2026-11-23T12:56:00+00:00",
     "link": "http://www.businesswire.com/news/home/20261123426600/en/Adams-Outdoor-Advertising-Acquires-39-Billboard-Faces-in-Western-Pennsylvania-from-McWhorter-Media-Group/",
     "industry": "Telecom & Media",
-    "notes": "This acquisition expands Adams Outdoor Advertising's Ohio Valley footprint and strengthens its presence across western Pennsylvania to better connect advertisers with regional audiences. The assets complement the company's existing network, providing customers with more opportunities to reach target demographics."
+    "notes": "The acquisition expands the company's Ohio Valley footprint and strengthens its coverage across western Pennsylvania. These assets complement the existing footprint and provide more opportunities to reach audiences throughout the region.",
+    "country": "US",
+    "acquirer": "Adams Outdoor Advertising",
+    "target": "McWhorter Media Group",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "KBRA to Acquire Capital Intelligence Ratings, Expanding Global Footprint",
@@ -735,7 +775,12 @@
     "date": "2026-11-23T13:43:00+00:00",
     "link": "https://www.prnewswire.com/news-releases/nauticus-robotics-signs-letter-of-intent-to-acquire-ocean-power-technologies-wam-v-business-assets-302948257.html",
     "industry": "Technology",
-    "notes": "The acquisition aims to expand Nauticus Robotics' autonomous portfolio into surface operations and enable coordinated, multi-platform autonomy by integrating its software with the WAM-V vessels. This strategic move is designed to deliver more comprehensive offshore solutions to customers by combining surface and subsea robotic capabilities."
+    "notes": "The acquisition expands the company's autonomous robotics portfolio into surface operations and enables future integration with its subsea platform. The company aims to accelerate its multi-platform autonomy strategy and deliver comprehensive solutions to offshore customers.",
+    "country": "US",
+    "acquirer": "Nauticus Robotics",
+    "target": "Ocean Power Technologies",
+    "size_musd": 10.0,
+    "funding": "Stock 100%"
   },
   {
     "title": "Revive Infrastructure Group Acquires Assets of West Pacific Drilling, Inc.",
@@ -744,7 +789,12 @@
     "date": "2026-11-23T14:00:00+00:00",
     "link": "http://www.businesswire.com/news/home/20261123490744/en/Revive-Infrastructure-Group-Acquires-Assets-of-West-Pacific-Drilling-Inc./",
     "industry": "Industrials",
-    "notes": "The acquisition aims to support record industry investment and growth by adding new customers, geographies, and high-quality crews to the company's utility infrastructure services portfolio. The partnership is also intended to help the company meet increasing demand for utility services while maintaining service quality."
+    "notes": "The acquisition aims to support record industry investment and growth by adding new customers, geographies, and high-quality crews to the company's portfolio. It aligns with the strategic plan to build a world-class, national provider of utility infrastructure services.",
+    "country": "US",
+    "acquirer": "Revive Infrastructure Group",
+    "target": "West Pacific Drilling, Inc.",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Graham Corporation Acquires Hauschild Group, Expanding Its Global Materials Processing Platform",
@@ -807,7 +857,12 @@
     "date": "2026-11-23T17:00:00+00:00",
     "link": "https://www.prnewswire.com/news-releases/madison-dearborn-partners-to-acquire-peli-biothermal-a-trusted-cold-chain-solutions-provider-from-pelican-products-and-platinum-equity-302948222.html",
     "industry": "Healthcare",
-    "notes": "This investment provides strategic capital and healthcare supply chain expertise to accelerate product growth, innovation, and global service network expansion for Peli BioThermal as it transitions into a standalone company."
+    "notes": "The investment provides strategic capital and healthcare supply chain expertise to accelerate product growth, innovation, and global service network expansion. This acquisition will help the company transition into a standalone entity while continuing to protect life-saving treatments for patients.",
+    "country": "US",
+    "acquirer": "Madison Dearborn Partners",
+    "target": "Peli BioThermal",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Harvest Group Acquires Good Peeps, Accelerating Growth Toward $10 Billion in Retail Sales and $2 Billion in Media Under Management",
@@ -839,7 +894,12 @@
     "date": "2026-11-23T21:15:00+00:00",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/23/3408900/0/en/alta-equipment-group-agrees-to-acquire-jackson-group-peterbilt-in-proposed-transformative-deal.html",
     "industry": "Industrials",
-    "notes": "The acquisition is intended to create a scaled, coast-to-coast dealership platform by adding a commercial truck vertical, which is expected to enhance recurring aftermarket revenue and strengthen the company's cash generation capacity. The deal is also projected to improve the company's capital efficiency and support long-term deleveraging."
+    "notes": "The acquisition creates a scaled dealership platform for essential equipment and adds a commercial truck vertical to broaden the company's business across categories and end markets. This combination is expected to enhance recurring aftermarket mix, strengthen cash generation, and support continued deleveraging.",
+    "country": "US",
+    "acquirer": "Alta Equipment Group",
+    "target": "Jackson Group Peterbilt",
+    "size_musd": 399.0,
+    "funding": "Cash and Stock"
   },
   {
     "title": "Linamar Corporation to Acquire Genie from Terex Corporation, Significantly Expanding its Access Work Platforms Group",
@@ -1037,7 +1097,12 @@
     "date": "2026-11-24T13:00:00+00:00",
     "link": "http://www.businesswire.com/news/home/20261124793124/en/Cosette-Pharmaceuticals%C2%AE-Establishes-Oncology-Franchise-Through-Acquisition-of-MARGENZA%C2%AE-margetuximab-cmkb-from-TerSera%C2%AE-Therapeutics/",
     "industry": "Healthcare",
-    "notes": "The acquisition establishes an oncology franchise for Cosette Pharmaceuticals, providing a platform to expand its therapeutic focus and advance its long-term growth strategy. The company intends to leverage this foundation to build a broader presence in the oncology space while ensuring continued patient access and support."
+    "notes": "The acquisition establishes oncology as a core franchise for the company and provides a platform to build a broader presence in the therapeutic area.",
+    "country": "US",
+    "acquirer": "Cosette Pharmaceuticals",
+    "target": "MARGENZA",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "LiveChain Completes Acquisition of MIT-Originated Humanyze Assets, Positioning it for the Next Frontier of Enterprise AI",
@@ -1142,7 +1207,12 @@
     "date": "2026-11-24T15:05:10+00:00",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/24/3409466/0/en/virtus-diversified-reit-expands-seniors-housing-footprint-with-acquisition-of-the-regency-retirement-residence-in-lakefield-ontario.html",
     "industry": "Real Estate",
-    "notes": "The acquisition is intended to strengthen portfolio diversification by adding seniors housing assets to the firm's existing mix of commercial and residential properties. Additionally, the transaction aims to achieve scale in the fund and generate immediate, durable cash flow through accretive assets."
+    "notes": "The acquisition expands the company's seniors housing footprint and strengthens portfolio diversification. The transaction aims to deploy capital efficiently while generating durable cash flow through accretive, yield-focused assets.",
+    "country": "CA",
+    "acquirer": "Virtus Diversified REIT",
+    "target": "The Regency Retirement Residence",
+    "size_musd": 16.8,
+    "funding": "Stock 100%"
   },
   {
     "title": "Georgia Ports Authority Backs Union Pacific-Norfolk Southern Merger, Joining More Than 2,000 Supporters",
@@ -1438,7 +1508,14 @@
     "status": "ANNOUNCED",
     "source": "PR Newswire",
     "date": "2026-11-25T19:36:00+00:00",
-    "link": "https://www.prnewswire.com/news-releases/virbac-to-acquire-axiota-animal-health-inc---creating-a-leading-global-platform-for-innovative-cattle-health-solutions-302950804.html"
+    "link": "https://www.prnewswire.com/news-releases/virbac-to-acquire-axiota-animal-health-inc---creating-a-leading-global-platform-for-innovative-cattle-health-solutions-302950804.html",
+    "industry": "Healthcare",
+    "country": "US",
+    "acquirer": "Virbac",
+    "target": "Axiota Animal Health, Inc.",
+    "size_musd": null,
+    "funding": null,
+    "notes": "The acquisition provides Virbac with a strong foothold in the U.S. ruminant market and integrates innovative products like Multimin\u00ae and Lactipro\u00ae. This transaction reinforces Virbac's 'Supercharge' platform and adds specialized manufacturing and R&D capabilities to the company."
   },
   {
     "title": "LS Power Completes Acquisition of 4.4 GW Natural Gas Generation Assets from Constellation",
