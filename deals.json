@@ -1421,7 +1421,12 @@
     "date": "2026-11-24T12:30:00+00:00",
     "link": "https://www.prnewswire.com/news-releases/sentinel-capital-partners-acquires-gsi-group-holdings-302948842.html",
     "industry": "Healthcare",
-    "notes": "Rationale not stated. The press release indicates that the acquisition is intended to build on GSI's foundation as a global platform of complementary brands and support the company's next phase of growth, but it does not explicitly detail specific strategic synergies."
+    "notes": "Sentinel aims to partner with the GSI team to support the next phase of growth for the company's branded laboratory consumables and instruments. The acquisition aligns with Sentinel's experience in building branded products within healthcare and industrial end markets.",
+    "country": "US",
+    "acquirer": "Sentinel Capital Partners",
+    "target": "GSI Group Holdings",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Post Road Management acquires Scenic & Girard portfolio in West Philadelphia",
@@ -1551,7 +1556,12 @@
     "date": "2026-11-24T14:00:00+00:00",
     "link": "https://www.prnewswire.com/news-releases/stratix-acquires-dmis-managed-mobility-services-business-302948595.html",
     "industry": "Technology",
-    "notes": "The acquisition adds expanded logistics, help desk capabilities, and a new Chicago depot to Stratix's portfolio, enhancing its reach and depth across the enterprise device lifecycle. The transaction combines the teams and enterprise customer relationships of both companies to strengthen their support for comprehensive managed mobility programs."
+    "notes": "The acquisition adds expanded logistics, help desk capabilities, and a Chicago depot to Stratix's portfolio. It also brings experienced teams and enterprise customer relationships to further strengthen Stratix's ability to support mobility programs across the device lifecycle.",
+    "country": "US",
+    "acquirer": "Stratix",
+    "target": "DMI's managed mobility services business",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Revau Advanced Underwriting Announces Acquisition of H.W. Kaufman Group\u2019s Canadian MGA and Claims Business, Burns & Wilcox Canada, Strengthening Its Presence in Canada",
