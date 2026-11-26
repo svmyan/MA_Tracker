@@ -235,8 +235,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-16T14:25:11Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/16/3403661/0/en/caliber-sponsored-fund-acquires-tonto-oaks-apartments-expanding-caliber-s-multifamily-holdings-in-payson-arizona.html",
-    "notes": "Caliber acquired Tonto Oaks Apartments to execute a value-add strategy involving unit renovations and improved property management to enhance asset quality and income. This acquisition expands the company's multifamily footprint in the Payson market, leveraging synergies from its existing operations at the nearby West Frontier Apartments.",
-    "industry": "Real Estate"
+    "notes": "Caliber acquired the property as part of a value-add strategy to renovate units and improve property management. The acquisition expands the company's multifamily holdings in the Payson, Arizona market.",
+    "industry": "Real Estate",
+    "country": "US",
+    "acquirer": "Caliber",
+    "target": "Tonto Oaks Apartments",
+    "size_musd": 9.0,
+    "funding": null
   },
   {
     "title": "AMD Completes Acquisition of World Labs",
@@ -341,8 +346,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-16T13:00:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/16/3403477/0/en/energy-capital-partners-ecp-completes-acquisition-of-energysolutions.html",
-    "notes": "Energy Capital Partners acquired EnergySolutions to support the company\u2019s role in the nuclear energy value chain as nuclear power plays an increasingly important role in meeting the demand for reliable baseload power. The press release does not explicitly detail specific operational synergies.",
-    "industry": "Energy"
+    "notes": "The acquisition aims to support EnergySolutions in its role within the nuclear value chain as nuclear energy becomes increasingly important for baseload power. ECP intends to build on the company's foundation and support its continued growth.",
+    "industry": "Energy",
+    "country": "US",
+    "acquirer": "Energy Capital Partners",
+    "target": "EnergySolutions",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Davion Healthcare Plc Agrees to Terms in Acquisition of Independence Care Homecare Network",
@@ -420,8 +430,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-16T21:10:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/16/3404135/0/en/voltus-acquires-stem-s-athena-platform-to-enable-battery-partners-to-extract-more-value-from-their-assets.html",
-    "notes": "Voltus acquired the Athena platform to accelerate its ability to support commercial, industrial, and community-scale battery projects from evaluation to market integration and optimization. This acquisition aims to enable storage developers and site operators to maximize the revenue and value extracted from their battery assets.",
-    "industry": "Energy"
+    "notes": "The acquisition bolsters Voltus\u2019s battery capabilities by enabling end-to-end support for battery projects, from project evaluation to market integration. This allows developers and operators to maximize the value of their energy assets.",
+    "industry": "Energy",
+    "country": "US",
+    "acquirer": "Voltus",
+    "target": "Athena",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Pool Corporation to Acquire Team Horner",
@@ -457,8 +472,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-17T12:00:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/17/3404426/0/en/smartkem-inc-merger-partner-ferrox-advances-global-commercialization-of-tivani-titanium-and-magnetite-products-through-wogen-collaboration.html",
-    "notes": "This collaboration aims to accelerate the global commercialization of planned titanium and magnetite products by leveraging Wogen\u2019s international network for market development and customer engagement. The strategic rationale is to enable prospective customers to evaluate Tivani materials early, ensuring that feedback informs final product specifications and future commercial agreements.",
-    "industry": "Materials"
+    "notes": "The merger is intended to expand Smartkem's strategic interests into the critical minerals sector.",
+    "industry": "Materials",
+    "country": "Other",
+    "acquirer": "Smartkem",
+    "target": "Ferrox Critical Minerals",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Alpha Modus Announces Subsidiary's Non-Binding Letter of Intent for a Potential Acquisition of or Investment in ChainGPT",
@@ -735,7 +755,12 @@
     "date": "2026-11-23T13:05:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/23/3408336/11961/en/stonex-group-inc-acquires-grainfox-expanding-agricultural-technology-and-market-intelligence-capabilities.html",
     "industry": "Technology",
-    "notes": "The acquisition adds GrainFox\u2019s digital platform and AI-powered tools to StoneX\u2019s existing agricultural brokerage and risk management services. This integration aims to provide North American agricultural clients with more connected tools, market insights, and data-driven support for grain marketing decisions."
+    "notes": "The acquisition adds GrainFox\u2019s digital capabilities, AI-powered tools, and market intelligence to StoneX\u2019s existing agricultural brokerage, advisory, and risk management services. It strengthens the firm\u2019s ability to combine technology and market intelligence to support producers and agribusinesses in North America.",
+    "country": "CA",
+    "acquirer": "StoneX Group Inc.",
+    "target": "GrainFox Corp.",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Unusual Whales Acquires the BlackBoxStocks Platform",
@@ -916,7 +941,12 @@
     "date": "2026-11-23T12:00:00+00:00",
     "link": "https://www.prnewswire.com/news-releases/usfm-signs-term-sheet-to-acquire-up-to-85-of-hook-lake-a-fully-permitted-gold-and-copper-project-in-nunavut-canada-302947895.html",
     "industry": "Materials",
-    "notes": "The transaction enables USFM to secure a first-mover position in a region with significant gold and critical mineral potential, leveraging its technical team and capital to advance the fully permitted Hook Lake project. The strategic rationale includes accelerating exploration at the site to capitalize on recent high-grade drill results and supporting U.S. critical mineral supply chains."
+    "notes": "The acquisition aims to establish USFM in Canada by securing a majority interest in a fully permitted gold and critical metals project. USFM intends to leverage its technical team and capital to advance exploration and drilling at the site.",
+    "country": "CA",
+    "acquirer": "USFM Corporation",
+    "target": "Hook Lake",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Mount Street Accelerates U.S. Growth with Acquisition of Seasoned Primary and Special Servicing Team, Adding $1.35 Billion Portfolio",
@@ -1212,7 +1242,12 @@
     "date": "2026-11-24T08:00:00+00:00",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/24/3409028/0/en/healthcare-holding-schweiz-acquires-share-in-focs.html",
     "industry": "Healthcare",
-    "notes": "The acquisition is intended to expand Healthcare Holding Schweiz\u2019s Surgical Solutions platform with a specialized portfolio of cardiovascular surgery products. By adding FOCS\u2019s expertise in this area, the company aims to complement its existing medical technology offerings."
+    "notes": "FOCS complements the Surgical Solutions platform of Healthcare Holding Schweiz with its specialized portfolio in cardiovascular surgery. The acquisition is intended to strengthen the portfolio with products for heart valve and bypass procedures, cardiac stabilization, thoracic drainage, sternal closure, and wound care.",
+    "country": "Other",
+    "acquirer": "Healthcare Holding Schweiz",
+    "target": "FOCS",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Viomi Technology Appoints Zhigang (Sam) Yang as Chief Financial Officer and Enters into Agreement to Acquire Brondell Inc.",
@@ -1485,7 +1520,12 @@
     "date": "2026-11-24T16:43:00+00:00",
     "link": "https://www.prnewswire.com/news-releases/fcp-acquires-2048-bolton-drive-nw-in-upper-westside-atlanta-302949674.html",
     "industry": "Real Estate",
-    "notes": "The acquisition of this infill asset provides FCP with access to significant retail amenities and major employment centers in Atlanta's Upper Westside submarket. The strategic rationale focuses on securing a high-quality residential community that benefits from proximity to key transit infrastructure and ongoing neighborhood connectivity improvements."
+    "notes": "The company acquired the asset to add a quality, infill multifamily community with access to retail and employment centers to its portfolio.",
+    "country": "US",
+    "acquirer": "FCP",
+    "target": "Vue at The Quarter",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Duravant to Acquire FlexXray, Technology Leader in Foreign Material Inspection and Recovery Services",
@@ -1778,7 +1818,12 @@
     "date": "2026-11-25T16:45:00+00:00",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/25/3410468/0/en/virbac-to-acquire-axiota-animal-health-inc-creating-a-leading-global-platform-for-innovative-cattle-health-solutions.html",
     "industry": "Healthcare",
-    "notes": "Virbac is acquiring Axiota Animal Health to create a global preventive cattle health platform and strengthen its commercial presence in North America. The deal integrates Axiota's cattle health products and specialized teams with Virbac's existing portfolio, unlocking synergies by leveraging Virbac's global footprint to accelerate the rollout of Axiota\u2019s innovations and driving revenue growth through a comprehensive, end-to-end preventive care offering."
+    "notes": "This acquisition creates a leading global platform for cattle health solutions and significantly accelerates Virbac's Farm Animal strategy. It expands Virbac's commercial footprint in North America and complements its existing portfolio with specialized preventive care products.",
+    "country": "US",
+    "acquirer": "Virbac",
+    "target": "Axiota Animal Health, Inc.",
+    "size_musd": 315.0,
+    "funding": "All cash"
   },
   {
     "title": "Luminate Bank Acquires Select Assets of Real Genius, Expanding Consumer-Direct Mortgage Capabilities",
