@@ -5,6 +5,7 @@ from calendar import timegm
 import feedparser
 import json
 import os
+import re
 from html import escape
 import time
 from google import genai
@@ -23,9 +24,10 @@ FEEDS = {
 
 # AI integration variables
 MODELS = ["gemini-3.1-flash-lite", "gemini-2.5-flash-lite"] 
-MAX_NOTES_PER_RUN = 60
+MAX_NOTES_PER_RUN = int(os.environ.get("MAX_NOTES", 60))
 INDUSTRIES = ["Technology", "Healthcare", "Financials", "Energy", "Industrials",
               "Consumer", "Real Estate", "Materials", "Telecom & Media", "Other"]
+COUNTRY_NAMES = {"US": "United States", "CA": "Canada", "Other": "International"}
 RULES = f"""Use ONLY the text or page given. Do not use outside knowledge and do not guess.
 Reply in exactly this format, 7 parts separated by |:
 Industry | Country | Acquirer | Target | Deal value | Funding | Rationale
@@ -47,8 +49,9 @@ CLOSED_WORDS = ["completes", "completed", "closes","closing of"]
 TROUBLE_WORDS = ["rejects", "terminat"]
 SKIP_WORDS = ["form 8.3"]
 
+# search for keywords, a match has to start at the beginning of a word (so "discloses" does not match "closes")
 def has_any(words, text):
-    return any(word in text for word in words)                              # search for keywords
+    return any(re.search(r"\b" + re.escape(word), text) for word in words)
 
 def classify(title):
     title = title.lower()
@@ -68,7 +71,7 @@ def nice_date(text):
         return local.strftime("%b %d, %Y, %I:%M %p")
     except Exception as e:
         print("date error:", e)
-        return text.replace("t", " ").replace("Z", "")
+        return text.replace("T", " ").replace("Z", "")
 
 # load deals saved on earlier runs, if there's no file it starts it as an empty list, the tracker's memory
 def load_deals():
@@ -171,15 +174,15 @@ def deal_card(deal):
     size_raw = deal.get("size_musd")
     size_data = "" if size_raw is None else size_raw
     search = escape(f"{deal['title']} {deal.get('acquirer') or ''} {deal.get('target') or ''}".lower(), quote=True)
+    country = deal.get("country")
+    country_data = country if country in COUNTRY_NAMES else ""
+    country_html = f'<span class="country">{COUNTRY_NAMES[country]}</span>' if country_data else ""
     if notes:
         notes_html = f'<div class="notes">{notes}</div>'
     else:
         notes_html = '<div class="notes pending">AI overview unavailable right now. It will retry on the next update.</div>'
-    COUNTRY_NAMES = {"US": "United States", "CA": "Canada", "Other": "International"}
-    country = deal.get("country")
-    country_html = f'<span class="country">{COUNTRY_NAMES[country]}</span>' if country in COUNTRY_NAMES else ""
     return f"""
-        <div class="deal" data-deal-id="{deal_id}" data-industry="{industry}" data-status="{status}" data-size="{size_data}" data-search="{search}">
+    <div class="deal" data-deal-id="{deal_id}" data-industry="{industry}" data-status="{status}" data-size="{size_data}" data-country="{country_data}" data-search="{search}">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag {status}">{status}</span>
@@ -214,12 +217,12 @@ def build_page(deals):
     cards = "".join(deal_card(d) for d in reversed(deals))
     total = sum(d.get("size_musd") or 0 for d in deals)
     stats = (
-    stat_box(len(deals), "total tracked", "All")
-    + stat_box(count_status(deals, "ANNOUNCED"), "Announced", "ANNOUNCED")
-    + stat_box(count_status(deals, "CLOSED"), "Closed", "CLOSED")
-    + stat_box(count_status(deals, "DISPUTE"), "Disputes", "DISPUTE")
-    + stat_box(money(total), "Total disclosed")
-        )
+        stat_box(len(deals), "total tracked", "All")
+        + stat_box(count_status(deals, "ANNOUNCED"), "Announced", "ANNOUNCED")
+        + stat_box(count_status(deals, "CLOSED"), "Closed", "CLOSED")
+        + stat_box(count_status(deals, "DISPUTE"), "Disputes", "DISPUTE")
+        + stat_box(money(total), "Total disclosed")
+    )
     updated = datetime.now(ZoneInfo("America/Toronto")).strftime("%b %d, %Y, %I:%M %p")
     html = (page.replace("STATS_HERE", stats)
             .replace("FILTERS_HERE", filter_buttons())
@@ -231,15 +234,19 @@ def build_page(deals):
 # convert numbers to USD millions
 CAD_TO_USD = 0.73 # rough rate, update now and then 
 
+# only USD and CAD are handled, any other currency comes back as None (shown as Undisclosed)
 def parse_value(raw):
     try:
         num, cur = raw.replace(",", "").split()
         num = float(num)
     except ValueError:
-        return None 
-    if cur.upper() == "CAD":
-        num *= CAD_TO_USD
-    return round (num, 1)
+        return None
+    cur = cur.upper()
+    if cur == "USD":
+        return round(num, 1)
+    if cur == "CAD":
+        return round(num * CAD_TO_USD, 1)
+    return None
 
 # Gemini AI integration
 def make_notes(deal):
@@ -299,6 +306,8 @@ def make_notes(deal):
     
 # function adds the AI notes to the site 
 def add_notes(deals):
+    if client is None:
+        return
     tried = 0
     for deal in reversed(deals):
         if "notes" in deal and "size_musd" in deal and "target" in deal and "country" in deal:
