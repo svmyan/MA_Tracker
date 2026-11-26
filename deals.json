@@ -95,8 +95,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-13T12:26:32Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/13/3402505/0/en/cerrado-gold-acquires-the-past-producing-manantial-espejo-mine-in-santa-cruz-argentina-from-pan-american-silver.html",
-    "notes": "Cerrado Gold aims to restart production at the Manantial Espejo mine in 2027, utilizing existing processing infrastructure to achieve significant gold production growth. The company also intends to leverage its regional operating experience and relationships in Santa Cruz to support the site's redevelopment and exploration efforts.",
-    "industry": "Materials"
+    "notes": "The acquisition provides a platform for a rapid restart of gold operations and positions Cerrado for significant production growth in Santa Cruz. Cerrado intends to draw on its existing local operational experience to support the redevelopment of the property.",
+    "industry": "Materials",
+    "country": "Other",
+    "acquirer": "Cerrado Gold",
+    "target": "Minera Trit\u00f3n Argentina S.A.",
+    "size_musd": 20.0,
+    "funding": "All cash"
   },
   {
     "title": "GridAI Technologies Signs Definitive Agreement to Acquire Pronghorn Resources, Establishing Major Wyoming Owned-Natural Gas and Multi-Gigawatt AI Power Infrastructure Platform Targeting Initial Power Delivery in 2027",
@@ -104,8 +109,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-13T14:00:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/13/3402604/0/en/gridai-technologies-signs-definitive-agreement-to-acquire-pronghorn-resources-establishing-major-wyoming-owned-natural-gas-and-multi-gigawatt-ai-power-infrastructure-platform-targe.html",
-    "notes": "The acquisition is designed to build a vertically integrated platform that uses Pronghorn\u2019s natural gas production, infrastructure, and land assets to provide dedicated power for AI and hyperscale data centers. This move aims to ensure reliable, long-term energy availability while allowing GridAI to secure ownership interests in the AI campuses it helps develop.",
-    "industry": "Energy"
+    "notes": "GridAI aims to create a vertically integrated power platform by combining its AI infrastructure goals with Pronghorn's natural gas production, infrastructure, and water resources. The acquisition provides fuel and land assets intended to support multi-gigawatt AI data center development in Wyoming.",
+    "industry": "Energy",
+    "country": "US",
+    "acquirer": "GridAI Technologies",
+    "target": "Pronghorn Resources",
+    "size_musd": null,
+    "funding": "Stock"
   },
   {
     "title": "Proposed Merger and ProVen VCT Offer",
@@ -113,8 +123,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-13T13:00:08Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/13/3402525/0/en/proposed-merger-and-proven-vct-offer.html",
-    "notes": "The merger aims to achieve simplicity, cost savings, administrative efficiency, and increased scale to better navigate the current VCT market environment. Synergies include approximately \u00a3540,000 in annual administrative cost savings and reduced management and administration fees.",
-    "industry": "Financials"
+    "notes": "The merger is intended to achieve simplicity, cost savings, administrative efficiency, and increased scale for the two VCTs. It aims to create a larger entity that can better navigate the VCT market and drive long-term returns for shareholders.",
+    "industry": "Financials",
+    "country": "Other",
+    "acquirer": "ProVen VCT plc",
+    "target": "ProVen Growth and Income VCT plc",
+    "size_musd": null,
+    "funding": "All stock"
   },
   {
     "title": "Proposed Merger and ProVen VCT Offer",
@@ -122,8 +137,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-13T12:58:06Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/13/3402523/0/en/proposed-merger-and-proven-vct-offer.html",
-    "notes": "The merger is designed to achieve greater scale, administrative efficiency, and cost savings for shareholders, including reductions in management and administration fees. The combined entity aims to simplify investment management by consolidating portfolios and reducing administrative overhead while increasing liquidity and fundraising capacity.",
-    "industry": "Financials"
+    "notes": "The merger aims to achieve simplicity, cost savings, administrative efficiency, and increased scale for the two funds. A larger entity will provide greater firepower to support portfolio growth and improve shareholder returns.",
+    "industry": "Financials",
+    "country": "Other",
+    "acquirer": "ProVen VCT plc",
+    "target": "ProVen Growth and Income VCT plc",
+    "size_musd": null,
+    "funding": "Stock"
   },
   {
     "title": "Wolters Kluwer to acquire AI-powered clinical decision support platform AgileMD",
@@ -131,8 +151,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-13T17:00:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/13/3402862/0/en/wolters-kluwer-to-acquire-ai-powered-clinical-decision-support-platform-agilemd.html",
-    "notes": "The acquisition is designed to integrate AgileMD\u2019s AI-powered clinical decision support platform into Wolters Kluwer\u2019s UpToDate solutions, facilitating expansion into embedded workflows, local guidelines, and new digital health applications. This strategic move aims to help healthcare systems improve patient care and extract more value from their existing technology investments.",
-    "industry": "Healthcare"
+    "notes": "The acquisition aims to enhance the UpToDate platform by integrating AgileMD\u2019s AI-powered clinical decision support tools into workflows. This integration is designed to help healthcare systems improve patient care and extract more value from their technology investments.",
+    "industry": "Healthcare",
+    "country": "US",
+    "acquirer": "Wolters Kluwer",
+    "target": "AgileMD",
+    "size_musd": 100.0,
+    "funding": null
   },
   {
     "title": "Millicom (Tigo) signs agreement to acquire Entel Peru, expanding its presence across Latin America",
@@ -140,8 +165,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-13T21:09:21Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/13/3402965/0/en/millicom-tigo-signs-agreement-to-acquire-entel-peru-expanding-its-presence-across-latin-america.html",
-    "notes": "This acquisition expands Millicom\u2019s geographic footprint and presence in investment-grade markets as part of a regional growth strategy. Millicom plans to leverage operational improvements and regional purchasing power to drive efficiency, improve cash generation, and expand higher-value convergent services for customers.",
-    "industry": "Telecom & Media"
+    "notes": "The transaction aims to expand Millicom's presence in investment-grade markets and advance its regional growth strategy. It seeks to create opportunities to expand higher-value services for consumers and businesses through operational improvements and increased connectivity.",
+    "industry": "Telecom & Media",
+    "country": "Other",
+    "acquirer": "Millicom",
+    "target": "Entel Peru",
+    "size_musd": 1714.0,
+    "funding": "Local financing and cash on hand"
   },
   {
     "title": "High Arctic Energy Services Inc. Enters into a Definitive Agreement to be Acquired by Newport Capital in a Go-Private Transaction and Announces Intent to Make a Cash Distribution to Shareholders",
@@ -149,8 +179,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-14T00:57:44Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/14/3403026/0/en/high-arctic-energy-services-inc-enters-into-a-definitive-agreement-to-be-acquired-by-newport-capital-in-a-go-private-transaction-and-announces-intent-to-make-a-cash-distribution-to.html",
-    "notes": "The acquisition is a go-private transaction intended to deliver immediate cash value to shareholders and resolve the challenge of the company's shares trading at a significant discount to their underlying value, which had hindered the use of stock as acquisition currency. Synergies were not stated.",
-    "industry": "Energy"
+    "notes": "The transaction provides immediate liquidity and certainty of value to shareholders while allowing the company to eliminate risks associated with its stand-alone business plan. The acquisition follows a strategic review aimed at maximizing shareholder value after the company faced challenges in using its shares as acquisition currency.",
+    "industry": "Energy",
+    "country": "CA",
+    "acquirer": "Newport Capital",
+    "target": "High Arctic Energy Services Inc.",
+    "size_musd": 14.7,
+    "funding": "All cash"
   },
   {
     "title": "FLSmidth to acquire CE Africa, strengthening its crushing and aftermarket offering in Southern Africa",
@@ -158,8 +193,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-16T09:00:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/16/3403226/0/en/flsmidth-to-acquire-ce-africa-strengthening-its-crushing-and-aftermarket-offering-in-southern-africa.html",
-    "notes": "This acquisition is intended to expand FLSmidth's crushing portfolio and aftermarket capabilities while strengthening its market presence and geographical reach in Southern Africa. The company anticipates revenue synergies through cross-selling, alongside efforts to scale production and accelerate innovation by combining local manufacturing agility with global technical depth.",
-    "industry": "Industrials"
+    "notes": "The acquisition aims to broaden FLSmidth\u2019s compact crushing capabilities and strengthen its aftermarket offering in Southern Africa. It also intends to expand the company's geographical presence and servicing capabilities in a key mining region.",
+    "industry": "Industrials",
+    "country": "Other",
+    "acquirer": "FLSmidth",
+    "target": "CE Africa",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Black Hills Corp. and NorthWestern Energy Complete Merger, Forming Bright Horizon Energy Corporation",
@@ -167,8 +207,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-16T11:30:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/16/3403314/10381/en/black-hills-corp-and-northwestern-energy-complete-merger-forming-bright-horizon-energy-corporation.html",
-    "notes": "The companies merged to combine their complementary operations and workforces, aiming to create a stronger, more resilient organization capable of meeting the growing energy needs of their 2.2 million customers. While the release mentions an expectation of realizing projected synergies, it does not provide specific details on the nature or value of those synergies.",
-    "industry": "Energy"
+    "notes": "The merger aims to create a stronger, more resilient company by combining complementary operations and a shared commitment to safety, reliability, and affordability. This combination is intended to meet the growing energy needs of 2.2 million customers across eight states and deliver long-term value for stakeholders.",
+    "industry": "Energy",
+    "country": "US",
+    "acquirer": "Black Hills Corp.",
+    "target": "NorthWestern Energy Group, Inc.",
+    "size_musd": null,
+    "funding": "All stock"
   },
   {
     "title": "Rapid Micro Biosystems Signs Definitive Agreement to be Acquired by Merck KGaA, Darmstadt, Germany",
@@ -176,8 +221,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-16T14:26:55Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/16/3403664/33206/en/rapid-micro-biosystems-signs-definitive-agreement-to-be-acquired-by-merck-kgaa-darmstadt-germany.html",
-    "notes": "The acquisition aims to modernize and automate microbial quality-control workflows in pharmaceutical manufacturing by integrating the Growth Direct platform into Merck KGaA's existing Life Science offerings. This partnership seeks to provide customers with faster, more efficient workflows and improved data integrity to better support regulatory compliance.",
-    "industry": "Healthcare"
+    "notes": "The acquisition aims to strengthen Merck KGaA's ability to provide faster, more efficient quality-control workflows and robust data integrity to pharmaceutical manufacturing customers. By integrating Rapid Micro Biosystems' Growth Direct platform, Merck KGaA expects to bring greater automation to a critical step in pharmaceutical manufacturing.",
+    "industry": "Healthcare",
+    "country": "US",
+    "acquirer": "Merck KGaA, Darmstadt, Germany",
+    "target": "Rapid Micro Biosystems",
+    "size_musd": null,
+    "funding": "All cash"
   },
   {
     "title": "Caliber-Sponsored Fund Acquires Tonto Oaks Apartments, Expanding Caliber\u2019s Multifamily Holdings in Payson, Arizona",
@@ -212,8 +262,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-16T14:00:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/16/3403576/0/en/qtrex-acquires-gis-to-scale-quantum-interconnect-production-adding-10-million-in-cash-and-a-business-with-11-3-million-in-revenue.html",
-    "notes": "QTREX acquired GIS to bring key production controls in-house, enabling the company to scale its manufacturing of cryogenic interconnects for the quantum computing industry. The acquisition is expected to increase production throughput, improve unit-to-unit consistency, and provide the infrastructure to support upcoming commercial agreements.",
-    "industry": "Technology"
+    "notes": "The acquisition brings production controls in-house to scale the manufacturing of cryogenic interconnects for the quantum computing industry. It also allows QTREX to apply new hardware and software capabilities to improve production throughput and develop additional interconnect materials.",
+    "industry": "Technology",
+    "country": "Other",
+    "acquirer": "QTREX",
+    "target": "GIS",
+    "size_musd": 16.0,
+    "funding": "Stock 100%"
   },
   {
     "title": "Nutritics accelerates US expansion with acquisition of kitchen management platform Parsley Software",
@@ -221,8 +276,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-16T14:00:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/16/3403605/0/en/nutritics-accelerates-us-expansion-with-acquisition-of-kitchen-management-platform-parsley-software.html",
-    "notes": "This acquisition expands Nutritics' U.S. presence and integrates Parsley\u2019s kitchen operations technology, such as inventory, purchasing, and production planning, into its existing food data platform. The deal creates a unified platform that aims to help customers manage kitchen operations while ensuring compliance with evolving food safety and allergen regulations.",
-    "industry": "Technology"
+    "notes": "The acquisition expands Nutritics\u2019 kitchen management, food safety, and allergen compliance capabilities while growing its U.S. presence. It allows Nutritics to integrate Parsley\u2019s kitchen operations technology into its existing food data platform.",
+    "industry": "Technology",
+    "country": "US",
+    "acquirer": "Nutritics",
+    "target": "Parsley Software",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "WSP completes acquisition of GCM Corpo",
@@ -230,8 +290,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-16T13:35:17Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/16/3403542/0/en/wsp-completes-acquisition-of-gcm-corpo.html",
-    "notes": "The acquisition aims to expand WSP\u2019s Canadian platform and strengthen its core engineering consulting expertise in the energy, industrial, and mining sectors. By combining complementary capabilities, WSP expects to better support clients across the full project lifecycle for increasingly complex projects.",
-    "industry": "Industrials"
+    "notes": "The acquisition expands WSP\u2019s Canadian platform and client base while strengthening its core engineering consulting expertise in priority growth areas. It also broadens WSP\u2019s offering with complementary capabilities to better support clients across the energy, industrial, and mining sectors.",
+    "industry": "Industrials",
+    "country": "CA",
+    "acquirer": "WSP Global Inc.",
+    "target": "GCM Corpo Inc.",
+    "size_musd": null,
+    "funding": "Cash and Stock"
   },
   {
     "title": "Zenta Group Signs Binding MOU for Strategic Acquisition of Controlling Stake in SE Asia-Based AI Technology Start-Up",
@@ -248,8 +313,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-16T13:30:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/16/3403531/0/en/worldwide-nft-inc-acquires-artificial-intelligence-platform-from-discourse-analytics-inc-to-expand-software-capabilities.html",
-    "notes": "Worldwide NFT, Inc. acquired this AI platform to integrate advanced personalization and analytics capabilities into its existing software businesses and services. The deal aims to deepen customer engagement and create new opportunities for growth by leveraging the platform\u2019s combination of behavioral analytics and large language models.",
-    "industry": "Technology"
+    "notes": "WNFT aims to integrate the acquired AI platform into its portfolio to add AI-driven personalization and analytics capabilities. The acquisition is intended to deepen customer engagement and create new opportunities for growth across various markets.",
+    "industry": "Technology",
+    "country": "US",
+    "acquirer": "Worldwide NFT, Inc.",
+    "target": "Discourse Analytics, Inc.",
+    "size_musd": null,
+    "funding": "All stock"
   },
   {
     "title": "Commure Acquires Elaborate to Cure the Clinician Inbox",
@@ -322,8 +392,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-16T17:00:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/16/3403947/0/en/spie-nederland-strengthens-its-position-in-industrial-automation-and-robotics-with-the-acquisition-of-duflex-b-v.html",
-    "notes": "The acquisition aims to strengthen SPIE\u2019s capabilities in industrial automation, machine building, and robotics while supporting its move further up the value chain. The company expects to combine Duflex\u2019s specialized technical knowledge with SPIE\u2019s scale, maintenance expertise, and nationwide coverage to provide more comprehensive lifecycle support to customers.",
-    "industry": "Industrials"
+    "notes": "This acquisition strengthens SPIE's capabilities in industrial automation, machine building, and robotics in the Netherlands. It supports the company's move up the value chain in the industrial services sector by combining specialized expertise with SPIE's scale and nationwide coverage.",
+    "industry": "Industrials",
+    "country": "Other",
+    "acquirer": "SPIE",
+    "target": "Duflex B.V.",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Rosemont Pharmaceuticals to acquire Aytu BioPharma to accelerate US expansion",
@@ -354,8 +429,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-16T21:05:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/16/3404111/10055/en/pool-corporation-to-acquire-team-horner.html",
-    "notes": "Pool Corporation aims to expand its distribution network and increase efficiency through enhanced proximity, scale, and product availability. The acquisition is intended to deepen relationships with pool industry customers by leveraging Team Horner\u2019s established sales centers and expertise.",
-    "industry": "Consumer"
+    "notes": "The acquisition aims to expand the acquirer's distribution network in Florida and deepen relationships with pool builders, contractors, and dealers. The deal is expected to improve customer experience through enhanced proximity, scale, and product availability.",
+    "industry": "Industrials",
+    "country": "US",
+    "acquirer": "Pool Corporation",
+    "target": "Team Horner Group, Inc.",
+    "size_musd": null,
+    "funding": "Cash and borrowings"
   },
   {
     "title": "Valor Energy Inc. Closes Acquisition of 18MW Computing Center in Youngstown, Ohio, Accelerating AI Data Center Expansion",
@@ -363,8 +443,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-16T20:50:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/16/3404073/0/en/valor-energy-inc-closes-acquisition-of-18mw-computing-center-in-youngstown-ohio-accelerating-ai-data-center-expansion.html",
-    "notes": "Valor Energy acquired this facility to accelerate its strategic expansion into AI and high-performance computing infrastructure. The site's existing utility interconnection provides an established power foundation that may reduce certain development requirements compared to an undeveloped location.",
-    "industry": "Technology"
+    "notes": "The acquisition provides Valor Energy with an operational computing center to accelerate the development of AI and high-performance computing data center infrastructure. The company plans to convert the facility to support AI workloads, leveraging the site's existing power capacity.",
+    "industry": "Technology",
+    "country": "US",
+    "acquirer": "Valor Energy Inc.",
+    "target": "Glorious Star, LLC",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Smartkem, Inc. Merger Partner Ferrox Advances Global Commercialization of Tivani Titanium and Magnetite Products Through Wogen Collaboration",
@@ -390,8 +475,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-17T13:13:40Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/17/3404581/0/en/clearwave-to-acquire-ting-s-owned-fiber-networks-expanding-fiber-footprint-to-20-states.html",
-    "notes": "The acquisition expands Clearwave's fiber footprint into new markets, increasing its service area by approximately 170,000 passings. The strategic rationale includes leveraging operating scale and further investment to build upon the service currently provided to Ting customers.",
-    "industry": "Telecom & Media"
+    "notes": "The acquisition adds 170,000 fiber passings across five states, expanding Clearwave's service area to 20 states. It provides Clearwave the opportunity to grow in attractive markets by building on the service Ting customers value with more investment and operating scale.",
+    "industry": "Telecom & Media",
+    "country": "US",
+    "acquirer": "Clearwave",
+    "target": "Ting",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Crown Aviation Acquires Silver King Helicopters, Anchoring Its Canadian Aviation Consolidation Strategy",
@@ -441,7 +531,12 @@
     "date": "2026-11-18T14:53:25Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/18/3405839/35894/en/synaptics-stockholders-approve-merger-with-onsemi.html",
     "notes": "Rationale not stated.",
-    "industry": "Technology"
+    "industry": "Technology",
+    "country": "US",
+    "acquirer": "onsemi",
+    "target": "Synaptics",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Trident Signs MOU to Acquire 51% Controlling Stake in Malaysia\u2019s Guang Yao Development, Entering Hydrogen Power and Battery Energy Storage for Data Centres",
@@ -584,7 +679,12 @@
     "date": "2026-11-23T07:00:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/23/3408030/0/en/joint-statement-regarding-agreement-of-a-pre-conditional-possible-cash-acquisition-of-kenmare-resources-plc-by-international-resources-holding-rsc-ltd.html",
     "industry": "Materials",
-    "notes": "International Resources Holding (IRH) views the potential acquisition as an entry point into the mineral sands commodity market, intending to integrate Kenmare's long-life assets into its global portfolio using a mine-to-market approach. The transaction supports IRH\u2019s international growth strategy by adding a new commodity and jurisdiction to its existing portfolio of strategic minerals."
+    "notes": "IRH sees the acquisition as an entry point into mineral sands through a long-life operating asset that it expects to become a key part of its global portfolio. The deal aligns with IRH\u2019s mine-to-market approach and its strategy to build a diversified, long-term portfolio of strategic minerals.",
+    "country": "Other",
+    "acquirer": "International Resources Holding RSC Ltd",
+    "target": "Kenmare Resources plc",
+    "size_musd": 461.6,
+    "funding": "All cash"
   },
   {
     "title": "J-Star Holding Confirms Plans to Acquire $6-7 Million U.S. Manufacturing Facility, Supported by Mitsubishi Chemical Partnership and Potential Bank Financing",
@@ -1279,7 +1379,12 @@
     "date": "2026-11-24T13:30:00+00:00",
     "link": "http://www.businesswire.com/news/home/20261124143284/en/BlackSky-Acquires-EpochGeo-to-Expand-Real-Time-Intelligence-Capabilities-with-AI-Enabled-RF-Signals-and-Multi-Source-Analytics/",
     "industry": "Technology",
-    "notes": "The acquisition expands BlackSky's real-time intelligence capabilities by integrating EpochGeo\u2019s AI and machine learning expertise in fusing diverse data sources, such as RF and signals intelligence, into its existing offerings. This strategic move aims to deliver more comprehensive intelligence products to defense and national security customers while accelerating the adoption of BlackSky's analytics services."
+    "notes": "The acquisition aims to expand BlackSky's real-time intelligence capabilities by integrating EpochGeo's AI-enabled multi-source analytics and RF signals expertise. This combination allows BlackSky to provide more comprehensive intelligence solutions and better support for mission-critical defense applications.",
+    "country": "US",
+    "acquirer": "BlackSky",
+    "target": "EpochGeo",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Wellable Acquires Givhero's Employee Well-Being Business",
@@ -1631,7 +1736,12 @@
     "date": "2026-11-25T14:00:00+00:00",
     "link": "https://www.prnewswire.com/news-releases/cheche-group-signs-definitive-agreement-to-acquire-20-interest-in-residential-solar-plus-storage-company-long-way-fortune-with-option-to-increase-stake-to-51-302950548.html",
     "industry": "Energy",
-    "notes": "Cheche Group aims to establish a second growth engine by integrating its auto insurance and financing capabilities with Long Way Fortune's residential solar-plus-storage business. This partnership is designed to connect car and home ecosystems, leveraging Cheche's AI data and owner relationships to expand revenue streams in the home energy market."
+    "notes": "The investment supports Cheche's green mobility and energy strategy while creating a second growth engine through home energy storage. By connecting the car and home, Cheche aims to leverage its NEV owner relationships and AI data capabilities.",
+    "country": "Other",
+    "acquirer": "Cheche Group",
+    "target": "Long Way Fortune",
+    "size_musd": 98.0,
+    "funding": "Stock"
   },
   {
     "title": "26Health Acquires Florida Infectious Disease Specialists, Expanding HIV and Infectious Disease Care in Central Florida",
