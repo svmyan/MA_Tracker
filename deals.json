@@ -65,8 +65,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-11T12:00:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/11/3400589/0/en/gowell-acquires-wellsense-to-expand-global-well-integrity-and-fiber-optic-sensing-capabilities.html",
-    "notes": "The acquisition extends GOWell\u2019s well-integrity portfolio to include continuous distributed fiber optic sensing, allowing for more precise characterization of well problems. The deal leverages GOWell\u2019s global manufacturing and distribution platform to scale WellSense\u2019s diagnostic technologies.",
-    "industry": "Energy"
+    "notes": "This acquisition extends GOWell\u2019s well integrity portfolio from point measurements to continuous distributed fiber optic sensing. The combined organization is positioned to provide a wider range of advanced well-integrity solutions across international energy markets.",
+    "industry": "Energy",
+    "country": "Other",
+    "acquirer": "GOWell",
+    "target": "WellSense",
+    "size_musd": null,
+    "funding": "All cash"
   },
   {
     "title": "Intermex Rejects Western Union\u2019s Purported Termination of Merger Agreement",
@@ -619,8 +624,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-18T16:30:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/18/3406019/0/en/trident-signs-mou-to-acquire-51-controlling-stake-in-malaysia-s-guang-yao-development-entering-hydrogen-power-and-battery-energy-storage-for-data-centres.html",
-    "notes": "The acquisition is intended to extend Trident's digital infrastructure platform into the energy layer by supplying dependable and clean power for data centres. This move aims to leverage Guang Yao\u2019s hydrogen power and battery energy storage solutions to support the growing energy demands of digital infrastructure.",
-    "industry": "Energy"
+    "notes": "This acquisition allows Trident to expand its digital infrastructure platform by entering the hydrogen power and battery energy storage sectors to support data centers. It moves the company from building digital infrastructure to also supplying the underlying energy solutions.",
+    "industry": "Energy",
+    "country": "Other",
+    "acquirer": "Trident",
+    "target": "Guang Yao Development",
+    "size_musd": 15.3,
+    "funding": "All cash"
   },
   {
     "title": "Exolum enters U.S. pipeline operations with the acquisition of a pipeline system in Houston",
@@ -680,7 +690,12 @@
     "date": "2026-11-19T15:04:24Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/19/3406796/0/en/pontiac-bancorp-inc-and-ottawa-bancorp-inc-announce-receipt-of-all-required-regulatory-and-shareholder-approvals-for-merger.html",
     "notes": "Rationale not stated.",
-    "industry": "Financials"
+    "industry": "Financials",
+    "country": "US",
+    "acquirer": "Pontiac Bancorp, Inc.",
+    "target": "Ottawa Bancorp, Inc.",
+    "size_musd": 45.5,
+    "funding": "All cash"
   },
   {
     "title": "VisionWave Holdings Acquires Critical Minerals Intelligence Platform, Targeting Near-Term Commercialization of Defense Supply-Chain Intelligence",
@@ -1975,5 +1990,12 @@
     "size_musd": null,
     "funding": null,
     "notes": "The acquisition allows LS Power to further scale its generation footprint in the PJM market to meet growing electricity demand. The assets provide added operational flexibility and reliability due to their dual-fuel capability."
+  },
+  {
+    "title": "REV Acquires Drill-Ready Forty Mile Helium Property with Historical 7 MMcf/d Gas Flow Test at 1.1% Helium",
+    "status": "ANNOUNCED",
+    "source": "GlobeNewswire",
+    "date": "2026-11-26T13:00:00+00:00",
+    "link": "https://www.globenewswire.com/en/news-release/2026/11/26/3410761/0/en/rev-acquires-drill-ready-forty-mile-helium-property-with-historical-7-mmcf-d-gas-flow-test-at-1-1-helium.html"
   }
 ]
