@@ -473,8 +473,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-20T11:00:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/20/3407310/0/en/visionwave-holdings-acquires-critical-minerals-intelligence-platform-targeting-near-term-commercialization-of-defense-supply-chain-intelligence.html",
-    "notes": "The acquisition is intended to enter the defense-industrial supply-chain intelligence market and create a new commercial technology offering that generates recurring revenue through subscriptions, compliance services, and transaction fees. VisionWave plans to integrate the platform with its StratumAI architecture to develop advanced capabilities in supplier-risk monitoring, geopolitical supply-risk analysis, and procurement intelligence.",
-    "industry": "Technology"
+    "notes": "The acquisition aims to establish a new commercial offering in the defense-industrial supply-chain intelligence market, providing market data, regulatory compliance, and procurement tools. VisionWave intends to integrate the platform with its existing intelligence architecture to support informed procurement and risk-management decisions.",
+    "industry": "Technology",
+    "country": "Other",
+    "acquirer": "VisionWave Holdings",
+    "target": "Critical Minerals Intelligence Platform",
+    "size_musd": 11.0,
+    "funding": null
   },
   {
     "title": "Base Acquires Rubiq to Give Companies Customer Context They Can Trust for AI Infrastructure and Agentic Teammates",
@@ -482,8 +487,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-20T17:30:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/20/3407733/0/en/base-acquires-rubiq-to-give-companies-customer-context-they-can-trust-for-ai-infrastructure-and-agentic-teammates.html",
-    "notes": "Base acquired Rubiq to integrate its customer context knowledge graph into the Base Orbit platform, providing AI-powered teams and agents with the trusted data needed for post-sale activation and lifecycle management. The acquisition enables Base to improve the reliability and accuracy of AI interactions by connecting structured and unstructured customer data.",
-    "industry": "Technology"
+    "notes": "The acquisition aims to provide companies and their AI teammates with trusted customer context by integrating Rubiq's customer context knowledge graph technology into Base\u2019s platform. This technology helps AI agents reason over customer history and data to improve the effectiveness of post-sale activation and lifecycle programs.",
+    "industry": "Technology",
+    "country": "Other",
+    "acquirer": "Base",
+    "target": "Rubiq",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Beeline and TYTL to Host Joint Stakeholder Update Call on Merger Agreement with TYTL Corp.",
@@ -500,8 +510,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-23T04:30:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/23/3408004/0/en/brookfield-to-acquire-pgp-glass-a-leading-global-manufacturer-of-specialty-glass-packaging-from-blackstone-for-1-7-billion.html",
-    "notes": "Brookfield aims to accelerate PGP Glass's growth through an AI-led transformation program that enhances sales and operations planning, production efficiency, and quality control. The acquisition also seeks to leverage Brookfield\u2019s scale and operating expertise to capitalize on increasing global demand for high-quality packaging.",
-    "industry": "Industrials"
+    "notes": "Brookfield aims to accelerate PGP Glass's growth by leveraging its scale, operating expertise, and an AI-led transformation program. The acquisition also offers opportunities for deeper customer penetration and expansion into attractive markets.",
+    "industry": "Industrials",
+    "country": "Other",
+    "acquirer": "Brookfield",
+    "target": "PGP Glass",
+    "size_musd": 1700.0,
+    "funding": null
   },
   {
     "title": "Bureau Veritas acquires Topo Solutions to enhance its  AI-powered supply chain intelligence offering",
@@ -510,7 +525,12 @@
     "date": "2026-11-23T06:30:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/23/3408019/0/en/bureau-veritas-acquires-topo-solutions-to-enhance-its-ai-powered-supply-chain-intelligence-offering.html",
     "industry": "Technology",
-    "notes": "Bureau Veritas acquired Topo Solutions to enhance its digital supply chain intelligence offering with AI-powered, data-driven services. This bolt-on acquisition aims to help customers improve supply chain visibility, decision-making, resilience, and sustainability while reducing risks and costs."
+    "notes": "This acquisition enables Bureau Veritas to provide data-driven services and digital solutions to retailers and consumer goods companies. The platform will help customers streamline processes, enhance supply chain visibility, and make faster, data-driven decisions through AI-powered automation.",
+    "country": "Other",
+    "acquirer": "Bureau Veritas",
+    "target": "Topo Solutions",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Joint statement regarding agreement of a pre-conditional possible cash acquisition of Kenmare Resources plc by International Resources Holding RSC Ltd",
@@ -528,7 +548,12 @@
     "date": "2026-11-23T12:00:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/23/3408196/0/en/j-star-holding-confirms-plans-to-acquire-6-7-million-u-s-manufacturing-facility-supported-by-mitsubishi-chemical-partnership-and-potential-bank-financing.html",
     "industry": "Industrials",
-    "notes": "J-Star Holding plans to acquire a U.S.-based manufacturing facility to establish a localized production platform for precision carbon fiber drone components. This move is designed to support scalable domestic production for U.S. drone manufacturers while leveraging a long-standing supply partnership with Mitsubishi Chemical."
+    "notes": "The company plans to acquire a U.S. manufacturing facility to establish localized production capabilities for high-volume carbon fiber components. This move aims to position the company as a key domestic supply chain partner for U.S. drone manufacturers.",
+    "country": "US",
+    "acquirer": "J-Star Holding Co., Ltd",
+    "target": null,
+    "size_musd": 6.5,
+    "funding": "Debt 70%"
   },
   {
     "title": "Zacatecas Silver Closes Option to Acquire the Lourdes Gold-Silver Project from Guanajuato Silver",
@@ -537,7 +562,12 @@
     "date": "2026-11-23T11:30:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/23/3408176/0/en/zacatecas-silver-closes-option-to-acquire-the-lourdes-gold-silver-project-from-guanajuato-silver.html",
     "industry": "Materials",
-    "notes": "Rationale not stated. The company acquired the Lourdes gold-silver project to expand its precious metals exploration portfolio in Mexico, with plans to compile historical data and conduct further drilling."
+    "notes": "Zacatecas Silver aims to acquire a 100% interest in the Lourdes gold-silver project to expand its exploration portfolio in Mexico. The company plans to compile historical data, conduct confirmation sampling, and refine drill targets at the site.",
+    "country": "Other",
+    "acquirer": "Zacatecas Silver",
+    "target": "Lourdes gold-silver project",
+    "size_musd": null,
+    "funding": "Cash and Stock"
   },
   {
     "title": "Roze AI Signs Non-Binding Memorandum of Agreement to Explore Potential Acquisition of Shares in BAUM Architects",
@@ -545,8 +575,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-23T13:30:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/23/3408360/0/en/roze-ai-signs-non-binding-memorandum-of-agreement-to-explore-potential-acquisition-of-shares-in-baum-architects.html",
-    "industry": "Other",
-    "notes": "Roze AI intends to combine its AI fire safety technology with BAUM Architects' design expertise to drive synergies in digital architectural design, smart buildings, and sustainable solutions. The companies also aim to use this potential partnership to expand their overall market share and support Roze AI\u2019s long-term growth strategy."
+    "industry": "Technology",
+    "notes": "The company aims to combine its AI fire safety technology with the architectural design expertise of BAUM Architects. This potential acquisition intends to create synergies in digital transformation, smart buildings, and sustainable solutions to expand market share.",
+    "country": "Other",
+    "acquirer": "Roze AI",
+    "target": "BAUM Architects",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "StoneX Group Inc. Acquires GrainFox, Expanding Agricultural Technology and Market Intelligence Capabilities",
@@ -564,7 +599,12 @@
     "date": "2026-11-23T13:00:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/23/3408270/0/en/unusual-whales-acquires-the-blackboxstocks-platform.html",
     "industry": "Financials",
-    "notes": "Unusual Whales aims to empower the BlackBoxStocks community by integrating its own extensive real-time market data sets and developer tools into the BlackBoxStocks platform. This acquisition creates synergies by combining the data depth of Unusual Whales with the existing alerts and trading rooms of BlackBoxStocks to enhance functionality for retail traders."
+    "notes": "The acquisition aims to arm the BlackBoxStocks community with additional real-time market data sets and tools. The teams are working to combine Unusual Whales' data depth and developer tools with BlackBoxStocks' alerts and trading rooms.",
+    "country": "US",
+    "acquirer": "Unusual Whales",
+    "target": "BlackBoxStocks",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Passage Bio Announces 1-for-6 Reverse Stock Split in Connection With the Proposed Merger With Remix Therapeutics",
@@ -596,7 +636,12 @@
     "date": "2026-11-23T17:30:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/23/3408794/0/en/coface-strengthens-its-debt-collection-capabilities-with-the-acquisition-of-baker-ing.html",
     "industry": "Financials",
-    "notes": "This acquisition aims to consolidate Coface\u2019s presence in the UK debt collection market by combining Baker Ing\u2019s specialist expertise and established client relationships with Coface\u2019s existing capabilities and global network. Baker Ing is expected to leverage Coface's international footprint to accelerate its own development."
+    "notes": "The acquisition consolidates Coface\u2019s presence in the UK debt collection market by combining Baker Ing\u2019s specialist expertise and client relationships with Coface\u2019s existing capabilities. It also allows Baker Ing to utilize Coface\u2019s international network to accelerate its development.",
+    "country": "Other",
+    "acquirer": "Coface",
+    "target": "Baker Ing",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Bureau Veritas Acquires Topo Solutions to Enhance Its AI-Powered Supply Chain Intelligence Offering",
@@ -679,7 +724,12 @@
     "date": "2026-11-23T11:30:00+00:00",
     "link": "http://www.businesswire.com/news/home/20261123086552/en/Qnity-to-Acquire-Meridian%E2%80%99s-Electronics-Business-Expands-Advanced-Packaging-and-Thermal-Management-Capabilities/",
     "industry": "Technology",
-    "notes": "This acquisition is designed to expand Qnity's capabilities in advanced packaging and thermal management."
+    "notes": "Qnity is acquiring Meridian\u2019s electronics business to expand its capabilities in advanced packaging and thermal management. This strategic acquisition aims to strengthen Qnity\u2019s technological footprint in these critical areas.",
+    "country": "Other",
+    "acquirer": "Qnity",
+    "target": "Meridian",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "RELEX Acquires autone to Expand AI-Powered Planning Capabilities for Fashion, Lifestyle Brands and Apparel Retailers",
@@ -748,7 +798,12 @@
     "date": "2026-11-23T12:57:00+00:00",
     "link": "http://www.businesswire.com/news/home/20261123645330/en/KBRA-to-Acquire-Capital-Intelligence-Ratings-Expanding-Global-Footprint/",
     "industry": "Financials",
-    "notes": "KBRA is acquiring Capital Intelligence Ratings to expand its global footprint and enhance its analytical capabilities across the Middle East and North Africa. This acquisition aims to leverage CI Ratings' established local relationships and regional expertise to broaden the combined organization's service offerings and market reach."
+    "notes": "The acquisition expands KBRA's global footprint, analytical capabilities, and reach across the Middle East and North Africa. The deal leverages the target's regional expertise and relationships to complement KBRA's global platform.",
+    "country": "Other",
+    "acquirer": "KBRA",
+    "target": "Capital Intelligence Ratings",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Cogent Communications Announces Definitive Agreement to Sell Three Data Center Facilities",
@@ -839,7 +894,12 @@
     "date": "2026-11-23T16:30:00+00:00",
     "link": "http://www.businesswire.com/news/home/20261123951910/en/Saragon-to-Acquire-Three-Additional-Data-Center-Facilities-Extending-Its-Edge-Footprint-to-Omaha-Tacoma-and-Cheyenne/",
     "industry": "Technology",
-    "notes": "This acquisition expands Saragon's edge infrastructure footprint into three new regional markets, enabling the company to more efficiently deliver capacity to customers in the Central Plains, Pacific Northwest, and Mountain West. The facilities were selected to leverage specific strategic advantages, such as Omaha\u2019s established network interconnection, Tacoma\u2019s proximity to Seattle, and Cheyenne\u2019s position within a growing data center corridor."
+    "notes": "The acquisition expands Saragon's edge footprint into new regional markets, including Nebraska, Washington, and Wyoming. These facilities were selected for their strategic value as interconnection points and growing data center corridors to meet demand for colocation and AI infrastructure.",
+    "country": "US",
+    "acquirer": "Saragon",
+    "target": null,
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Barnes Aerospace Signs Agreement to Acquire JJ Churchill, Expanding Advanced Aeroengine Manufacturing Capabilities",
@@ -870,8 +930,13 @@
     "source": "PR Newswire",
     "date": "2026-11-23T18:00:00+00:00",
     "link": "https://www.prnewswire.com/news-releases/harvest-group-acquires-good-peeps-accelerating-growth-toward-10-billion-in-retail-sales-and-2-billion-in-media-under-management-302948447.html",
-    "industry": "Consumer",
-    "notes": "The acquisition is designed to deepen Harvest Group's retail media expertise and expand its reach by integrating Good Peeps' digital advertising and AI-driven media management capabilities into its broader commerce service offering. This move aims to accelerate Harvest Group's growth toward managing $10 billion in client retail sales and $2 billion in media spend by combining startup-speed innovation with established retail relationships."
+    "industry": "Telecom & Media",
+    "notes": "The acquisition aims to deepen Harvest Group's retail media expertise and expand its relationships with high-growth consumer brands. It also serves to advance the company's goal of managing $10 billion in client retail sales and $2 billion in media spending.",
+    "country": "US",
+    "acquirer": "Harvest Group",
+    "target": "Good Peeps",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Ergodyne to Acquire Thersty Hydration Products Ltd., Expanding Heat Safety Portfolio",
@@ -1028,7 +1093,12 @@
     "date": "2026-11-24T12:00:00+00:00",
     "link": "http://www.businesswire.com/news/home/20261124019151/en/Radiology-Partners-Completes-Acquisition-of-Everlight-Radiology/",
     "industry": "Healthcare",
-    "notes": "The acquisition creates a global teleradiology leader by combining Everlight's international radiologist network with Radiology Partners' U.S.-based vRad platform to provide 24/7/365 subspecialty coverage. The companies expect to generate synergies by sharing technology and clinical standards across their global markets."
+    "notes": "The acquisition combines Everlight\u2019s international radiologist network with Radiology Partners' U.S. teleradiology capabilities to create a global leader in teleradiology. This partnership extends 24/7/365 subspecialty coverage for hospitals and health systems across multiple international markets.",
+    "country": "Other",
+    "acquirer": "Radiology Partners",
+    "target": "Everlight Radiology",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Parker Completes Acquisition of CIRCOR\u2019s Commercial and Defense Aerospace Business",
@@ -1074,7 +1144,12 @@
     "date": "2026-11-24T13:00:00+00:00",
     "link": "http://www.businesswire.com/news/home/20261124941228/en/DRT-Aerospace-a-GenNx360-Capital-Partners-Portfolio-Company-Acquires-Duke-Manufacturing/",
     "industry": "Industrials",
-    "notes": "This acquisition expands DRT Aerospace's manufacturing footprint by adding a fuel systems center-of-excellence and introduces the company to new customers and programs. The deal serves to broaden the service offerings available to existing customers while building an industry-leading platform in the aerospace and defense supply chain."
+    "notes": "The acquisition expands DRT Aerospace's manufacturing footprint by adding a fuel systems center-of-excellence. It also introduces the company to additional customers and programs.",
+    "country": "US",
+    "acquirer": "DRT Aerospace",
+    "target": "Duke Manufacturing",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Harbourfront Wealth to Acquire JC Clark, Strengthening Its National Wealth Management Platform",
@@ -1111,7 +1186,12 @@
     "date": "2026-11-24T13:00:00+00:00",
     "link": "http://www.businesswire.com/news/home/20261124766207/en/LiveChain-Completes-Acquisition-of-MIT-Originated-Humanyze-Assets-Positioning-it-for-the-Next-Frontier-of-Enterprise-AI/",
     "industry": "Technology",
-    "notes": "LiveChain acquired Humanyze\u2019s workforce intelligence software assets to combine research-driven organizational analytics with emerging AI capabilities. This acquisition aims to develop intelligent systems that optimize collaboration between humans and AI agents, enabling enterprises to improve organizational performance and identify inefficiencies."
+    "notes": "LiveChain aims to leverage the acquired workforce intelligence software and intellectual property to explore AI-powered solutions for optimizing collaboration between humans and AI agents. This acquisition serves as a foundational step for the company to establish a position in the emerging enterprise intelligence market.",
+    "country": "US",
+    "acquirer": "LiveChain",
+    "target": "Sociometric Solutions",
+    "size_musd": null,
+    "funding": "Stock 100%"
   },
   {
     "title": "Shift4 Completes Acquisition of Paramount Commerce",
@@ -1253,7 +1333,12 @@
     "date": "2026-11-24T18:00:00+00:00",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/24/3409756/0/en/rhondos-completes-acquisition-of-powerconnect-for-sap-solutions.html",
     "industry": "Technology",
-    "notes": "The acquisition brings product development and global support together under a single owner to advance SAP observability, cybersecurity, and AI-ready data capabilities. This integration aims to create a unified roadmap and long-term commitment for customers managing critical SAP systems."
+    "notes": "The acquisition brings full ownership of PowerConnect IP to RHONDOS to advance SAP observability, cybersecurity, and AI-ready data. This integration aims to streamline product development, support, and long-term investment for customers running systems on SAP.",
+    "country": "US",
+    "acquirer": "RHONDOS",
+    "target": "PowerConnect for SAP Solutions",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Digi International Completes Acquisition of Disruptive Technologies, Expanding SmartSense Physical-World Intelligence Capabilities",
@@ -1354,7 +1439,12 @@
     "date": "2026-11-25T07:00:00+00:00",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/25/3410003/0/en/equasens-enters-into-exclusive-negotiations-to-acquire-a-majority-stake-in-synapse-medicine-the-developer-of-medgpt-and-a-pharmaceutical-database.html",
     "industry": "Healthcare",
-    "notes": "Equasens intends to acquire a majority stake in Synapse Medicine to integrate its medical artificial intelligence and pharmaceutical database expertise into Equasens' existing medication management software. This strategic move aims to enhance the functionality of Equasens' healthcare solutions and accelerate the integration of AI to improve patient safety and professional workflows."
+    "notes": "The acquisition aims to complement the acquirer's healthcare solutions by integrating a certified drug database and advanced medical AI technology. This move is expected to enhance patient safety and improve the functionality of the acquirer's healthcare software applications.",
+    "country": "Other",
+    "acquirer": "EQUASENS",
+    "target": "Synapse Medicine",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "UK Competition and Markets Authority in principle accepts remedies in AkzoNobel-Axalta merger",
@@ -1391,7 +1481,12 @@
     "date": "2026-11-25T13:05:00+00:00",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/25/3410172/0/en/standard-biotools-announces-1-for-35-reverse-stock-split-and-special-dividend-of-contingent-value-rights-in-connection-with-proposed-merger-with-treeline-biosciences.html",
     "industry": "Healthcare",
-    "notes": "Rationale not stated."
+    "notes": "Rationale not stated.",
+    "country": "US",
+    "acquirer": "Standard BioTools",
+    "target": "Treeline Biosciences",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Schr\u00f6dinger Acquires ENPICOM to Establish End-to-End Computational Platform for Biologics Discovery",
@@ -1400,7 +1495,12 @@
     "date": "2026-11-25T13:15:00+00:00",
     "link": "http://www.businesswire.com/news/home/20261124467594/en/Schr%C3%B6dinger-Acquires-ENPICOM-to-Establish-End-to-End-Computational-Platform-for-Biologics-Discovery/",
     "industry": "Healthcare",
-    "notes": "Schr\u00f6dinger acquired ENPICOM to establish an end-to-end computational platform for biologics discovery, aiming to enhance its capabilities in the field. The acquisition is intended to integrate ENPICOM's technology to accelerate and improve the discovery of new therapeutic biologics."
+    "notes": "The acquisition aims to establish an end-to-end computational platform for biologics discovery. This deal combines the companies' technologies to enhance the speed and success rate of drug discovery.",
+    "country": "Other",
+    "acquirer": "Schr\u00f6dinger",
+    "target": "ENPICOM",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "PHINIA to Acquire the Business of the FMP Group with Operations in Australia, Thailand and Malaysia, a Leading Asia-Pacific Aftermarket Company",
@@ -1501,7 +1601,12 @@
     "date": "2026-11-25T17:30:00+00:00",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/25/3410500/22612/en/update-gulf-resources-announces-agreement-to-acquire-bromine-and-crude-salt-assets.html",
     "industry": "Materials",
-    "notes": "The acquisition is intended to significantly expand the company's bromine and crude salt production capacity. The strategic rationale includes leveraging the newly acquired crude salt fields to facilitate the co-production of bromine and salt, thereby increasing overall output."
+    "notes": "The company believes this acquisition could significantly expand bromine and crude salt production at the site. The assets include crude salt fields that can help increase bromine production through co-production.",
+    "country": "Other",
+    "acquirer": "Gulf Resources",
+    "target": "Bromine and crude salt assets",
+    "size_musd": 103.5,
+    "funding": "Cash 92%, Stock 8%"
   },
   {
     "title": "Virbac to acquire Axiota Animal Health, Inc. - creating a leading global platform for innovative cattle health solutions",
