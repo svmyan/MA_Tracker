@@ -56,8 +56,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-11T12:00:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/11/3400577/0/en/arko-petroleum-corp-completes-acquisition-of-the-business-of-u-s-petroleum-partners-llc-expected-to-contribute-approximately-30-million-of-annualized-adjusted-ebitda.html",
-    "notes": "The acquisition aims to increase ARKO Petroleum Corp.'s scale, earnings power, and geographic presence in the Great Lakes region by adding 400 wholesale locations and approximately 280 million gallons of annual fuel volume. Synergies include enhanced vertical integration through new terminal infrastructure, improved transportation efficiency, and opportunities to capture additional margins and increase throughput.",
-    "industry": "Energy"
+    "notes": "This acquisition expands the company's wholesale fuel distribution network and geographic presence in the Great Lakes region. It also enhances vertical integration by adding fuel terminals and transportation capabilities while strengthening the company's fee-based earnings profile.",
+    "industry": "Energy",
+    "country": "US",
+    "acquirer": "ARKO Petroleum Corp.",
+    "target": "U.S. Petroleum Partners, LLC",
+    "size_musd": null,
+    "funding": "Cash 87%, Stock 13%"
   },
   {
     "title": "GOWell Acquires WellSense to Expand Global Well Integrity and Fiber Optic Sensing Capabilities",
@@ -303,8 +308,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-16T14:00:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/16/3403560/31297/en/taboola-finalizes-acquisition-of-dianomi.html",
-    "notes": "The acquisition combines Taboola's Realize platform with Dianomi\u2019s premium publisher network to provide performance advertisers with a highly specialized, brand-safe ad network focused on the finance sector. This integration aims to help advertisers reach high-intent financial audiences while offering publishers access to a deeper roster of blue-chip financial advertisers.",
-    "industry": "Technology"
+    "notes": "The acquisition bolsters Taboola\u2019s ability to provide performance advertisers with a highly specialized, premium ad network focused on finance. It also expands Taboola's brand-safe reach, providing marketers with more opportunities to connect with high-value business, finance, and lifestyle audiences.",
+    "industry": "Technology",
+    "country": "Other",
+    "acquirer": "Taboola",
+    "target": "Dianomi",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "QTREX Acquires GIS to Scale Quantum Interconnect Production, Adding $10 Million in Cash and a Business with $11.3 Million in Revenue",
