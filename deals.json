@@ -5,8 +5,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-11T23:00:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/11/3401183/7512/en/investcorp-credit-management-bdc-inc-to-merge-into-bcp-investment-corporation.html",
-    "notes": "This merger is intended to drive consolidation within the BDC sector, with the combined company expected to realize immediate cost synergies, lower financing costs, and improved trading liquidity. The deal also aims to achieve operational efficiencies through larger pro forma scale and the elimination of redundant public company expenses.",
-    "industry": "Financials"
+    "notes": "The merger aims to drive consolidation in the BDC sector to achieve greater scale and improved operating efficiencies. The combination is expected to generate cost synergies, lower financing costs, and improve trading liquidity.",
+    "industry": "Financials",
+    "country": "US",
+    "acquirer": "BCP Investment Corporation",
+    "target": "Investcorp Credit Management BDC, Inc.",
+    "size_musd": null,
+    "funding": "Stock 100%"
   },
   {
     "title": "Octave announces acquisition of Cerebre",
@@ -111,8 +116,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-12T18:13:21Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/12/3402083/0/en/advini-and-invivo-continue-to-strengthen-their-strategic-partnership-with-the-proposed-acquisition-of-the-bonne-nouvelle-and-mythique-brands.html",
-    "notes": "This acquisition aims to strengthen AdVini's market position by integrating the Bonne Nouvelle and Mythique brands, enabling the company to expand its offering in the fast-growing alcohol-free wine segment and grow its portfolio of Occitanie wines for export markets. The partnership seeks to improve scale, agility, and innovation capabilities to navigate industry challenges such as declining wine consumption and climate change.",
-    "industry": "Consumer"
+    "notes": "The acquisition aims to integrate two complementary brands into AdVini's portfolio to broaden its offering in the alcohol-free wine market and expand its presence in Occitanie wines. This transaction further strengthens the strategic partnership between AdVini and InVivo to establish AdVini as a major player in the international wine industry.",
+    "industry": "Consumer",
+    "country": "Other",
+    "acquirer": "AdVini",
+    "target": "Bonne Nouvelle and Mythique",
+    "size_musd": null,
+    "funding": "Stock and Cash"
   },
   {
     "title": "Cerrado Gold Acquires the Past-Producing Manantial Espejo Mine in Santa Cruz, Argentina, from Pan American Silver",
@@ -558,8 +568,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-17T23:00:21Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/17/3405307/0/en/fernweh-group-announces-acquisition-of-resource-energy-equipment.html",
-    "notes": "Fernweh Group acquired Resource Energy Equipment to expand its industrial portfolio and footprint in the energy infrastructure market. The transaction aims to leverage Fernweh\u2019s operational experience to support the target company's continued growth and accelerate its transformation.",
-    "industry": "Energy"
+    "notes": "The acquisition expands Fernweh's industrial portfolio and presence in energy infrastructure markets. Fernweh plans to support continued growth for the business while leveraging its operational experience.",
+    "industry": "Industrials",
+    "country": "US",
+    "acquirer": "Fernweh Group",
+    "target": "Resource Energy Equipment",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "SPIE signs an agreement for the acquisition of ENPROM Group, strengthening its high-voltage power engineering and installation capabilities in Poland and Germany",
@@ -1098,7 +1113,12 @@
     "date": "2026-11-23T14:00:00+00:00",
     "link": "http://www.businesswire.com/news/home/20261123556033/en/Graham-Corporation-Acquires-Hauschild-Group-Expanding-Its-Global-Materials-Processing-Platform/",
     "industry": "Industrials",
-    "notes": "Graham Corporation acquired Hauschild Group to expand its materials processing platform by combining complementary mixing technologies and engineering capabilities under the SpeedMixer brand. The acquisition aims to capture synergies by unifying sales and distributor networks, integrating product portfolios, and leveraging a broader global operational footprint."
+    "notes": "The acquisition aims to establish a global materials processing platform by combining complementary mixing technologies, engineering capabilities, and customer relationships under the SpeedMixer brand. It also expands the acquirer's global footprint and enhances its product portfolio with advanced mixing and tracking technologies.",
+    "country": "Other",
+    "acquirer": "Graham Corporation",
+    "target": "Hauschild Group",
+    "size_musd": null,
+    "funding": "All cash"
   },
   {
     "title": "Workday Completes Acquisition of C1.ai",
@@ -1255,7 +1275,12 @@
     "date": "2026-11-24T00:30:00+00:00",
     "link": "https://www.prnewswire.com/news-releases/platinum-equity-completes-acquisition-of-edp-302948762.html",
     "industry": "Energy",
-    "notes": "Platinum Equity intends to leverage its operational expertise and resources to support EDP\u2019s growth through continued investments in sales, marketing, technology, and strategic acquisitions. The firm aims to utilize its experience in route-based and multi-site businesses to drive value by expanding the company\u2019s geographic footprint and deepening customer relationships."
+    "notes": "Platinum Equity intends to support EDP's growth by investing in sales, marketing, technology, and strategic acquisitions. The firm aims to leverage its experience in distribution and route-based services to drive value across the company's operations.",
+    "country": "US",
+    "acquirer": "Platinum Equity",
+    "target": "EDP",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Sanofi to Acquire Insmed in Strategic Step that Strengthens Long-Term Future",
