@@ -274,8 +274,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-16T14:05:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/16/3403615/0/en/amd-completes-acquisition-of-world-labs.html",
-    "notes": "AMD acquired World Labs to integrate a leading AI research team and deep model expertise to help shape the next generation of its hardware, software, and systems for the open AI ecosystem. The acquisition aims to optimize compute platforms and models together to advance AI infrastructure for customers and developers.",
-    "industry": "Technology"
+    "notes": "The acquisition aims to expand AMD's capabilities across the AI stack by adding a leading research team and expertise in deep models. This team will collaborate with AMD engineers to help shape future hardware, software, and systems for the open AI ecosystem.",
+    "industry": "Technology",
+    "country": "US",
+    "acquirer": "AMD",
+    "target": "World Labs",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Taboola Finalizes Acquisition of Dianomi",
@@ -608,8 +613,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-19T09:00:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/19/3406343/0/en/exolum-enters-u-s-pipeline-operations-with-the-acquisition-of-a-pipeline-system-in-houston.html",
-    "notes": "This acquisition marks Exolum\u2019s entry into U.S. pipeline operations and allows the company to offer integrated logistics solutions by combining this new pipeline transportation with its existing ammonia storage capabilities in Houston. The transaction supports Exolum\u2019s U.S. growth strategy by enabling the company to leverage its international pipeline experience and existing local resources.",
-    "industry": "Energy"
+    "notes": "The acquisition marks Exolum\u2019s entry into U.S. pipeline operations and complements its existing ammonia storage and logistics capabilities in Houston. This transaction supports the company's growth strategy in the United States by allowing it to offer broader integrated logistics solutions to industrial customers.",
+    "industry": "Energy",
+    "country": "US",
+    "acquirer": "Exolum",
+    "target": "Boardwalk Pipelines, LP",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Willis Lease Finance Corporation Expands Fleet with Acquisition of Two Airbus A320 Aircraft",
@@ -818,7 +828,12 @@
     "date": "2026-11-23T16:05:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/23/3408688/0/en/passage-bio-announces-1-for-6-reverse-stock-split-in-connection-with-the-proposed-merger-with-remix-therapeutics.html",
     "industry": "Healthcare",
-    "notes": "Rationale not stated. The press release details a reverse stock split in connection with the proposed merger but does not explicitly outline the strategic rationale or synergies behind the combination."
+    "notes": "Rationale not stated.",
+    "country": "US",
+    "acquirer": "Passage Bio",
+    "target": "Remix Therapeutics",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Ch\u00eane Gear Acquires Stone Glacier from Revelyst, Keeping the Brand Rooted in Montana",
@@ -1803,7 +1818,12 @@
     "date": "2026-11-25T13:30:00+00:00",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/25/3410184/22612/en/gulf-resources-announces-agreement-to-acquire-bromine-and-crude-salt-assets.html",
     "industry": "Materials",
-    "notes": "Gulf Resources intends to use the acquired facilities and 1.29 square kilometers of crude salt fields to significantly expand its production capacity for bromine and crude salt. The acquisition is expected to create synergies by leveraging the new crude salt fields for the company's existing co-production model of bromine and salt."
+    "notes": "The company believes this acquisition could significantly expand its bromine and crude salt production. The facilities and crude salt fields are located in the same city as existing operations, allowing for operational synergies.",
+    "country": "Other",
+    "acquirer": "Gulf Resources",
+    "target": "Bromine and crude salt assets from the collective economic organization of Caiyangzi Village",
+    "size_musd": 103.5,
+    "funding": "Cash 8.30 million CNY and 355,000 restricted shares"
   },
   {
     "title": "Expedia Group Announces Agreement to Acquire Kiwi.com to Augment Flights Capabilities",
@@ -1882,7 +1902,12 @@
     "date": "2026-11-25T17:00:00+00:00",
     "link": "https://www.prnewswire.com/news-releases/luminate-bank-acquires-select-assets-of-real-genius-expanding-consumer-direct-mortgage-capabilities-302950008.html",
     "industry": "Financials",
-    "notes": "This acquisition allows Luminate Bank to expand its mortgage capabilities by adding a complementary, technology-driven consumer-direct channel to its existing relationship-based lending model. The strategic rationale is to provide consumers with more choice by offering both a self-directed digital mortgage experience and personalized professional guidance."
+    "notes": "The acquisition adds a digital-first, consumer-direct mortgage platform to Luminate Bank\u2019s existing mortgage business. This creates a complementary channel that allows the bank to serve both self-directed digital borrowers and those who prefer traditional, relationship-driven lending.",
+    "country": "US",
+    "acquirer": "Luminate Bank",
+    "target": "Real Genius",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "UPDATE -- Gulf Resources Announces Agreement to Acquire Bromine and Crude Salt Assets",
