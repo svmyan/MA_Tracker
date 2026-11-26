@@ -676,8 +676,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-19T14:00:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/19/3406641/0/en/aifa-signs-definitive-agreement-to-acquire-little-vault-shanglong-li-to-serve-as-chairman-and-ceo-accelerating-ai-applications-and-content-ip-commercialization.html",
-    "notes": "This acquisition is intended to advance AIFA's strategy in content IP commercialization and the creator economy, while facilitating the development of AI-powered applications. AIFA anticipates that combining its resources with Little Vault\u2019s expertise will create opportunities to integrate AI technologies into content creation, digital marketing, and user operations.",
-    "industry": "Technology"
+    "notes": "The acquisition is intended to advance the company's business strategy in content IP commercialization and digital content services. It also seeks to explore opportunities combining AI technologies with content creation and knowledge services.",
+    "industry": "Technology",
+    "country": "US",
+    "acquirer": "All In FutureTech Alliance, Inc.",
+    "target": "Little Vault Inc.",
+    "size_musd": 8.0,
+    "funding": "All stock"
   },
   {
     "title": "Friedman Industries Expands Downstream with the Acquisition of Behrens Metalware",
