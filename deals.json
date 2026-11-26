@@ -77,8 +77,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-12T17:00:40Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/12/3402034/0/en/danone-completes-its-acquisition-of-made-group-expanding-its-presence-in-the-fast-growing-healthy-nutrition-space-in-asia-pacific.html",
-    "notes": "This acquisition aims to expand Danone\u2019s presence in the fast-growing healthy nutrition market across Australia, New Zealand, and Southeast Asia. The company plans to create synergies by combining MADE Group\u2019s entrepreneurial culture, marketing expertise, and route-to-market capabilities with Danone\u2019s scale, science, and category expertise.",
-    "industry": "Consumer"
+    "notes": "The acquisition aims to expand Danone's presence in the healthy nutrition market in Asia Pacific. By combining MADE Group's product portfolio and expertise with Danone's scale, the deal is expected to unlock new growth opportunities across the region.",
+    "industry": "Consumer",
+    "country": "Other",
+    "acquirer": "Danone",
+    "target": "MADE Group",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "AdVini and InVivo continue to strengthen their strategic partnership with the proposed acquisition of the Bonne Nouvelle and Mythique brands",
@@ -1428,7 +1433,12 @@
     "date": "2026-11-24T13:59:00+00:00",
     "link": "https://www.prnewswire.com/news-releases/wellable-acquires-givheros-employee-well-being-business-302948841.html",
     "industry": "Healthcare",
-    "notes": "The acquisition enables Wellable to expand its corporate wellness customer base and provide these new clients with access to its broader ecosystem of rewards, recognition, and holistic health services. Additionally, the transaction allows Givhero to focus its operations and technology specifically on nonprofit fundraising, corporate social responsibility, and volunteering initiatives."
+    "notes": "This acquisition enables Wellable to expand its corporate wellness customer business. It allows Givhero to focus its technology and expertise on nonprofit fundraising, social impact, and volunteering.",
+    "country": "US",
+    "acquirer": "Wellable",
+    "target": "Givhero",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Cerberus to Acquire the U.S. Space Systems Business of Airbus",
@@ -1646,7 +1656,12 @@
     "date": "2026-11-24T23:00:00+00:00",
     "link": "https://www.prnewswire.com/news-releases/opentable-announces-proposed-acquisition-of-australian-restaurant-technology-company-meu-302949939.html",
     "industry": "Technology",
-    "notes": "By joining forces, OpenTable and me&u aim to combine their respective reservation and guest experience capabilities with a comprehensive, connected product suite to provide hospitality operators with a single, unified set of tools to manage their businesses. The acquisition allows the companies to offer a broader range of connected solutions to restaurants and enables me&u to scale its tools more effectively."
+    "notes": "The acquisition aims to combine OpenTable\u2019s reservation capabilities with me&u\u2019s AI-native product suite to provide a comprehensive, connected set of tools for restaurant operators. This move allows OpenTable to offer a broader range of solutions and expand the scale of me&u's tools for hospitality venues.",
+    "country": "Other",
+    "acquirer": "OpenTable",
+    "target": "me&u",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "ValOre Metals Announces Definitive Agreement to Acquire Bemisa \u00c1gua Azul Minera\u00e7\u00e3o S.A., Owner of the \u00c1gua Azul Gold Project in Par\u00e1 State, Brazil",
