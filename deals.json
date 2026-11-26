@@ -14,8 +14,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-11T21:30:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/11/3401148/0/en/octave-announces-acquisition-of-cerebre.html",
-    "notes": "Octave is acquiring Cerebre to integrate its plant-modeling technology with Octave's engineering records, creating a unified view that strengthens industrial AI applications for mission-critical facilities. This acquisition aims to accelerate annual recurring revenue growth and expand Octave's licensing models by introducing Cerebre's capabilities to its existing Fortune 500 customer base.",
-    "industry": "Technology"
+    "notes": "The acquisition combines Octave's engineering record with Cerebre\u2019s plant modeling to strengthen industrial AI use cases. This integration aims to support Octave's strategy of accelerated ARR growth and new licensing models.",
+    "industry": "Technology",
+    "country": "US",
+    "acquirer": "Octave Intelligence plc",
+    "target": "Cerebre",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Metalenz Acquires PxE Imaging, Expanding Its Perception Platform to Bring New Insights to AI",
@@ -23,8 +28,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-11T13:00:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/11/3400635/0/en/metalenz-acquires-pxe-imaging-expanding-its-perception-platform-to-bring-new-insights-to-ai.html",
-    "notes": "This acquisition expands Metalenz's perception platform and addressable applications into visible light sensing by integrating PxE\u2019s Holocoder technology. The deal leverages Metalenz's existing manufacturing and supply chain capabilities to reduce computational burdens for AI at the edge by decoding information directly in hardware.",
-    "industry": "Technology"
+    "notes": "This acquisition expands Metalenz's perception platform into visible sensing and increases light sensitivity for sensors. The integration aims to enable AI to run more efficiently at the edge by decoding information directly in hardware.",
+    "industry": "Technology",
+    "country": "Other",
+    "acquirer": "Metalenz",
+    "target": "PxE Imaging",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Lamar Advertising Acquires Assets of Newman Outdoor Advertising",
@@ -60,7 +70,12 @@
     "date": "2026-11-11T11:30:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/11/3400552/0/en/intermex-rejects-western-union-s-purported-termination-of-merger-agreement.html",
     "notes": "Rationale not stated.",
-    "industry": "Financials"
+    "industry": "Financials",
+    "country": "US",
+    "acquirer": "The Western Union Company",
+    "target": "International Money Express, Inc.",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Virtuix Signs LOI to Acquire Defense Contractor STS International, Reporting $40 Million in Unaudited Cash-Basis Revenue Through October 2026",
@@ -68,8 +83,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-12T14:17:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/12/3401727/0/en/virtuix-signs-loi-to-acquire-defense-contractor-sts-international-reporting-40-million-in-unaudited-cash-basis-revenue-through-october-2026.html",
-    "notes": "The acquisition aims to combine Virtuix\u2019s simulation technology with STS International\u2019s defense experience and established government contract vehicles to accelerate market growth and profitability. The strategic rationale includes creating a platform for defense training and services while leveraging STS\u2019s existing security infrastructure and customer relationships.",
-    "industry": "Industrials"
+    "notes": "The acquisition aims to combine Virtuix's training technologies with the target's defense experience and government contract vehicles to establish a new defense division and accelerate growth. It is also expected to provide a strong foundation for pursuing larger government opportunities.",
+    "industry": "Industrials",
+    "country": "US",
+    "acquirer": "Virtuix",
+    "target": "STS International",
+    "size_musd": 12.0,
+    "funding": "Cash and equity"
   },
   {
     "title": "Danone completes its acquisition of MADE Group, expanding its presence in the fast-growing healthy nutrition space in Asia Pacific",
@@ -314,8 +334,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-16T13:30:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/16/3403518/0/en/zenta-group-signs-binding-mou-for-strategic-acquisition-of-controlling-stake-in-se-asia-based-ai-technology-start-up.html",
-    "notes": "The acquisition is intended to expand Zenta Group's AI footprint in Southeast Asia and South America by integrating the target's AI computing infrastructure and AI-powered financial anti-fraud solutions into its existing portfolio. This strategic move supports the company's re-alignment toward AI and data-driven business solutions.",
-    "industry": "Technology"
+    "notes": "The acquisition aims to expand the acquirer's AI footprint in Southeast Asia and South America. It will complement the company's portfolio with regional AI computing capacity and AI-driven financial anti-fraud and risk-management capabilities.",
+    "industry": "Technology",
+    "country": "Other",
+    "acquirer": "Zenta Group",
+    "target": null,
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Worldwide NFT, Inc. Acquires Artificial Intelligence Platform from Discourse Analytics, Inc. to Expand Software Capabilities",
@@ -546,8 +571,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-18T13:42:24Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/18/3405653/0/en/transom-capital-completes-acquisition-of-soundthinking.html",
-    "notes": "Transom Capital aims to leverage its operational expertise to strengthen SoundThinking's commercial execution and accelerate growth, including through strategic M&A. The deal is intended to build on the company's innovation and existing customer relationships to further advance its public safety technology solutions.",
-    "industry": "Technology"
+    "notes": "Transom acquired the company to leverage its operational expertise to strengthen commercial execution and accelerate growth. The deal aims to build on SoundThinking's public safety technology and innovation to further its impact in the communities it serves.",
+    "industry": "Technology",
+    "country": "US",
+    "acquirer": "Transom Capital Group",
+    "target": "SoundThinking",
+    "size_musd": null,
+    "funding": "All cash"
   },
   {
     "title": "Synaptics Stockholders Approve Merger with onsemi",
@@ -1479,7 +1509,12 @@
     "date": "2026-11-24T14:13:00+00:00",
     "link": "https://www.prnewswire.com/news-releases/intune-physical-therapy-acquires-kinect-physiotherapy-further-expanding-its-presence-in-the-raleigh-market-302948662.html",
     "industry": "Healthcare",
-    "notes": "The acquisition is designed to strengthen Intune's presence in the Raleigh, North Carolina market and continue the company's expansion across the Southeast. Intune aims to provide the acquired practice with scalable back-office operations, clinical support, and investments in technology and infrastructure to support long-term growth."
+    "notes": "The acquisition strengthens Intune's presence in the Raleigh market and supports its continued expansion throughout North Carolina and the Southeast. This partnership allows Kinect Physiotherapy to gain support and resources for long-term success while preserving its local culture and leadership.",
+    "country": "US",
+    "acquirer": "Intune Physical Therapy",
+    "target": "Kinect Physiotherapy",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Applied Systems Acquires Tailwind",
