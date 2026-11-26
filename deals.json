@@ -1161,7 +1161,12 @@
     "date": "2026-11-23T14:30:00+00:00",
     "link": "http://www.businesswire.com/news/home/20261123983215/en/BTG-Pactual-Strategic-Capital-Finances-Bertram-Capitals-Acquisition-of-Medical-Technology-Associates/",
     "industry": "Healthcare",
-    "notes": "The acquisition is intended to position Medical Technology Associates for its next phase of growth through the guidance and operational support of Bertram Capital. Specific synergies were not stated in the press release."
+    "notes": "The acquisition aims to support the company's next phase of growth through operational support and guidance.",
+    "country": "US",
+    "acquirer": "Bertram Capital",
+    "target": "Medical Technology Associates",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Authentic Acquires O'Neill, Expanding Global Action and Outdoor Portfolio",
@@ -1356,7 +1361,12 @@
     "date": "2026-11-24T10:00:00+00:00",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/24/3409057/0/en/viomi-technology-appoints-zhigang-sam-yang-as-chief-financial-officer-and-enters-into-agreement-to-acquire-brondell-inc.html",
     "industry": "Consumer",
-    "notes": "The acquisition of Brondell Inc. is intended to complement Viomi's home water solutions and extend the company's reach in the North American home wellness market."
+    "notes": "The transaction aims to complement Viomi\u2019s home water solutions and extend its reach in the North American home wellness market.",
+    "country": "US",
+    "acquirer": "Viomi Technology",
+    "target": "Brondell",
+    "size_musd": null,
+    "funding": "All cash"
   },
   {
     "title": "Monroe Capital Supports Waveborn\u2019s Acquisition of Jake Rosen Entertainment",
@@ -2024,5 +2034,19 @@
     "size_musd": null,
     "funding": null,
     "notes": "This acquisition creates a \u201ctriple play\u201d discovery and development strategy, allowing the company to scale its helium exploration in the American market. The project provides prospective reservoir horizons that the company intends to drill to advance its commercial goals."
+  },
+  {
+    "title": "Euronext Athens Holding S.A. to merge with, and into, Euronext N.V.",
+    "status": "ANNOUNCED",
+    "source": "GlobeNewswire",
+    "date": "2026-11-26T20:00:00+00:00",
+    "link": "https://www.globenewswire.com/en/news-release/2026/11/26/3411031/0/en/euronext-athens-holding-s-a-to-merge-with-and-into-euronext-n-v.html",
+    "industry": "Financials",
+    "country": "Other",
+    "acquirer": "Euronext N.V.",
+    "target": "Euronext Athens Holding S.A.",
+    "size_musd": null,
+    "funding": "Stock",
+    "notes": "The merger simplifies the legal structure of the group and facilitates the full integration of the Greek market. It aims to achieve operational, commercial, organizational, and financial benefits for the group and its stakeholders."
   }
 ]

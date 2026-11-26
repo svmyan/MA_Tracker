@@ -1,214 +1,263 @@
-  <!DOCTYPE html>
-  <html>
-  <head>
-  <meta http-equiv="refresh" content="3600">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>M&amp;A Tracker</title>
-  <style>
-    .meta { color: var(--muted); font-size: 13px; margin-top: 8px; }
-    .notes { font-size: 14px; line-height: 1.5; margin-top: 8px;}
-    .notes.pending { color: var(--muted); font-style: italic; }
-      :root {
-      --bg: #f6f7f9;
-      --card: #ffffff;
-      --text: #1a1d21;
-      --muted: #6b7280;
-      --border: #e5e7eb;
-      --new: #16a34a;
-      --closed: #2563eb;
-      --dispute: #dc2626;
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="refresh" content="3600">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M&amp;A Tracker</title>
+<style>
+  .meta { color: var(--muted); font-size: 13px; margin-top: 8px; }
+  .notes { font-size: 14px; line-height: 1.5; margin-top: 8px;}
+  .notes.pending { color: var(--muted); font-style: italic; }
+  :root {
+    --bg: #f6f7f9;
+    --card: #ffffff;
+    --text: #1a1d21;
+    --muted: #6b7280;
+    --border: #e5e7eb;
+    --new: #16a34a;
+    --closed: #2563eb;
+    --dispute: #dc2626;
   }
   @media (prefers-color-scheme: dark) {
-          :root {
-        --bg: #0f1216;
-        --card: #171b21;
-        --text: #e6e8eb;
-        --muted: #8b94a1;
-        --border: #262c35;
-      }
+    :root {
+      --bg: #0f1216;
+      --card: #171b21;
+      --text: #e6e8eb;
+      --muted: #8b94a1;
+      --border: #262c35;
+    }
   }
   body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: system-ui, "Segoe UI", sans-serif;
-      margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, "Segoe UI", sans-serif;
+    margin: 0;
   }
-    .wrap { max-width: 900px; margin: 0 auto; padding: 32px 16px; }
-    h1 { font-size: 26px; margin: 0 0 4px; }
-    .sub { color: var(--muted); font-size: 14px; margin-bottom: 24px; }
-    .stats { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 24px; justify-content: center; }
-    .stat {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 12px 18px;
-      min-width: 120px;
-      text-align: center;
-    }
-    .stat b { display: block; font-size: 24px; }
-    .stat span { color: var(--muted); font-size: 13px; }
-    .card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 16px 18px;
-      margin-bottom: 0;
-      flex: 1;
+  .wrap { max-width: 900px; margin: 0 auto; padding: 32px 16px; }
+  h1 { font-size: 26px; margin: 0 0 4px; }
+  .sub { color: var(--muted); font-size: 14px; margin-bottom: 24px; }
+  .stats { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 24px; justify-content: center; }
+  .stat {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 18px;
+    min-width: 120px;
+    text-align: center;
   }
-    .card a {
-      color: var(--text);
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 1.4;
+  .stat b { display: block; font-size: 24px; }
+  .stat span { color: var(--muted); font-size: 13px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 18px;
+    margin-bottom: 0;
+    flex: 1;
   }
-    .card a:hover { text-decoration: underline; }
-    .meta { color: var(--muted); font-size: 13px; margin-top: 8px; }
-    .tag {
-      display: inline-block;
-      padding: 2px 10px;
-      border-radius: 999px;
-      font-size: 12px;
-      font-weight: 600;
-      color: white;
-      margin-right: 8px;
-    }
-    .tag[hidden] {
-      display: none;
-    }
-    .ANNOUNCED { background: var(--new); }
-    .CLOSED { background: var(--closed); }
-    .UNSEEN {
-      background: #d97706;
-    }
-          .hero {
-      background:
-        linear-gradient(rgba(10,14,20,0.35), rgba(10,14,20,0.35)),
-        url("Images/City_Image.jpg") center / cover no-repeat fixed;
-      color: white;
-      padding: 140px 16px 120px;
-      text-align: center;
-    }
-    .hero-inner { max-width: 900px; margin: 0 auto;}
-        .hero h1 { font-size: 56px; margin: 0 0 10px; }
-    
-    .hero .sub { color: #cbd2db; margin: 0; }
-    .DISPUTE { background: var(--dispute); }
-        .hero h1, .hero .sub { text-shadow: 0 2px 12px rgba(0,0,0,0.55); }
-    .hero .sub { color: #fff; font-weight: 500; }
+  .card a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  .card a:hover { text-decoration: underline; }
+  .tag {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    margin-right: 8px;
+  }
+  .tag[hidden] {
+    display: none;
+  }
+  .ANNOUNCED { background: var(--new); }
+  .CLOSED { background: var(--closed); }
+  .UNSEEN {
+    background: #d97706;
+  }
+  .hero {
+    background:
+      linear-gradient(rgba(10,14,20,0.35), rgba(10,14,20,0.35)),
+      url("Images/City_Image.jpg") center / cover no-repeat fixed;
+    color: white;
+    padding: 140px 16px 120px;
+    text-align: center;
+  }
+  .hero-inner { max-width: 900px; margin: 0 auto;}
+  .hero h1 { font-size: 56px; margin: 0 0 10px; }
+  .hero .sub { color: #cbd2db; margin: 0; }
+  .DISPUTE { background: var(--dispute); }
+  .hero h1, .hero .sub { text-shadow: 0 2px 12px rgba(0,0,0,0.55); }
+  .hero .sub { color: #fff; font-weight: 500; }
 
-    .filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 24px; justify-content: center; } 
-    .filter {
-      padding: 6px 14px;
-      border: 1px solid #262d37;
-      border-radius: 999px;
-      background: #262d37;
-      color: #d3d9e1;
-      font-size: 13px;
-      font-family: inherit;
-      cursor: pointer;
-    }
-    .filter:hover { border-color: #3a4452; }
-    .filter.active {
-      background: #1e3a5f;
-      border-color: #2f5d99;
-      color: #dbe9fb;
-    }
+  .filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 24px; justify-content: center; }
+  .filter {
+    padding: 6px 14px;
+    border: 1px solid #262d37;
+    border-radius: 999px;
+    background: #262d37;
+    color: #d3d9e1;
+    font-size: 13px;
+    font-family: inherit;
+    cursor: pointer;
+  }
+  .filter:hover { border-color: #3a4452; }
+  .filter.active {
+    background: #1e3a5f;
+    border-color: #2f5d99;
+    color: #dbe9fb;
+  }
 
-    .deal {
-  display: flex;
-  gap: 12px;
-  margin-bottom: 12px;
-  opacity: 0;
-  transform: translateY(16px);
-  transition: opacity .5s ease, transform .5s ease;
-}
-.deal.above { transform: translateY(-16px); }
-.deal.show { opacity: 1; transform: none; }
-.deal[hidden] { display: none; }
-.side {
-  width: 190px;
-  flex: none;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  min-width: 0;
-}
-.size-card {
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 10px 14px;
-  text-align: center;
-}
-.size-label { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .05em; }
-.size-value { font-size: 20px; font-weight: 700; margin: 1px 0; }
-.size-funding { color: var(--muted); font-size: 12px; }
-.parties-card {
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 8px 14px;
-  min-width: 0;
-}
-.party { display: flex; align-items: center; gap: 8px; font-size: 12px; line-height: 1.6; min-width: 0; }
-.party-label { color: var(--muted); width: 42px; flex: none; }
-.party-name { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+  .deal {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity .5s ease, transform .5s ease;
+  }
+  .deal.above { transform: translateY(-16px); }
+  .deal.show { opacity: 1; transform: none; }
+  .deal[hidden] { display: none; }
+  .side {
+    width: 190px;
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 0;
+  }
+<<<<<<< HEAD
+    .size-card {
+=======
+  .size-card {
+>>>>>>> a5fc92a1e1cb7f63a443b0957dafb5bcbd53806c
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 10px 14px;
+    text-align: center;
+<<<<<<< HEAD
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+=======
+>>>>>>> a5fc92a1e1cb7f63a443b0957dafb5bcbd53806c
+  }
+  .size-label { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .05em; }
+  .size-value { font-size: 20px; font-weight: 700; margin: 1px 0; }
+  .size-funding { color: var(--muted); font-size: 12px; }
+  .parties-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 8px 14px;
+    min-width: 0;
+<<<<<<< HEAD
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+  .party { display: flex; align-items: center; gap: 8px; font-size: 12px; line-height: 1.6; min-width: 0; }
+  .party + .party { border-top: 1px solid var(--border); padding-top: 10px; }
+=======
+  }
+  .party { display: flex; align-items: center; gap: 8px; font-size: 12px; line-height: 1.6; min-width: 0; }
+>>>>>>> a5fc92a1e1cb7f63a443b0957dafb5bcbd53806c
+  .party-label { color: var(--muted); width: 42px; flex: none; }
+  .party-name { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
 
-@media (max-width: 600px) {
-      .hero h1 { font-size: 36px; }
-      .hero { padding: 90px 16px 80px; }
-      .deal { flex-direction: column; }
-      .side { width: auto; flex-direction: row; }
-      .side > * { flex: 1; min-width: 0; }
-    }
-    button.stat { font: inherit; color: inherit; cursor: pointer; }
-.stat.active { border-color: #2f5d99; }
-.controls { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; align-items: center; margin: 0 0 16px; }
-.controls input[type="text"], .controls select {
-  padding: 6px 12px;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  background: var(--card);
-  color: var(--text);
-  font-size: 13px;
-  font-family: inherit;
-}
-.controls label { color: var(--muted); font-size: 13px; display: flex; gap: 6px; align-items: center; }
-.count { color: var(--muted); font-size: 13px; text-align: center; margin: 0 0 16px; }
-.empty { text-align: center; color: var(--muted); padding: 32px 0; }
-.country { display: inline-block; padding: 2px 8px; border-radius: 6px; font-size: 12px; background: var(--border); color: var(--muted); margin-right: 8px; }
+  button.stat { font: inherit; color: inherit; cursor: pointer; }
+  .stat.active { border-color: #2f5d99; }
+  .controls { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; align-items: center; margin: 0 0 16px; }
+  .controls input[type="text"], .controls select {
+    padding: 6px 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--card);
+    color: var(--text);
+    font-size: 13px;
+    font-family: inherit;
+  }
+  .controls label { color: var(--muted); font-size: 13px; display: flex; gap: 6px; align-items: center; }
+  .count { color: var(--muted); font-size: 13px; text-align: center; margin: 0 0 16px; }
+  .empty { text-align: center; color: var(--muted); padding: 32px 0; }
+  .country { display: inline-block; padding: 2px 8px; border-radius: 6px; font-size: 12px; background: var(--border); color: var(--muted); margin-right: 8px; }
+  .footnote { color: var(--muted); font-size: 12px; text-align: center; margin-top: 32px; }
 
-  </style> 
-  </head>
-  <body>
-  <div class="hero">
-    <div class="hero-inner">
-      <h1>M&amp;A Tracker</h1>
-      <div class="sub">Last updated: Nov 26, 2026, 02:29 PM (EST)</div>
-    </div>
+  @media (max-width: 600px) {
+    .hero h1 { font-size: 36px; }
+    .hero { padding: 90px 16px 80px; }
+    .deal { flex-direction: column; }
+    .side { width: auto; flex-direction: row; }
+    .side > * { flex: 1; min-width: 0; }
+  }
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="hero-inner">
+    <h1>M&amp;A Tracker</h1>
+    <div class="sub">Last updated: Nov 26, 2026, 03:07 PM (EST)</div>
   </div>
-    <div class="wrap">
-    <div class="stats"><button class="stat" data-status="All"><b>149</b><span>total tracked</span></button><button class="stat" data-status="ANNOUNCED"><b>126</b><span>Announced</span></button><button class="stat" data-status="CLOSED"><b>22</b><span>Closed</span></button><button class="stat" data-status="DISPUTE"><b>1</b><span>Disputes</span></button><div class="stat"><b>$95.0B</b><span>Total disclosed</span></div></div>
-    <div class="controls">
-      <input type="text" id="search" placeholder="Search by company">
-      <select id="sizeFilter">
-        <option value="any">Any size</option>
-        <option value="u100">Under $100M</option>
-        <option value="mid">$100M to $1B</option>
-        <option value="o1b">Over $1B</option>
-      </select>
-      <select id="sortBy">
-        <option value="new">Newest</option>
-        <option value="big">Largest</option>
-      </select>
-      <label><input type="checkbox" id="hideUnd"> Hide undisclosed</label>
+</div>
+<div class="wrap">
+  <div class="stats"><button class="stat" data-status="All"><b>150</b><span>total tracked</span></button><button class="stat" data-status="ANNOUNCED"><b>127</b><span>Announced</span></button><button class="stat" data-status="CLOSED"><b>22</b><span>Closed</span></button><button class="stat" data-status="DISPUTE"><b>1</b><span>Disputes</span></button><div class="stat"><b>$95.0B</b><span>Total disclosed</span></div></div>
+  <div class="controls">
+    <input type="text" id="search" placeholder="Search by company">
+    <select id="countryFilter">
+      <option value="na">North America</option>
+      <option value="us">United States</option>
+      <option value="ca">Canada</option>
+      <option value="intl">International</option>
+      <option value="all">All regions</option>
+    </select>
+    <select id="sizeFilter">
+      <option value="any">Any size</option>
+      <option value="u100">Under $100M</option>
+      <option value="mid">$100M to $1B</option>
+      <option value="o1b">Over $1B</option>
+    </select>
+    <select id="sortBy">
+      <option value="new">Newest</option>
+      <option value="big">Largest</option>
+    </select>
+    <label><input type="checkbox" id="hideUnd"> Hide undisclosed</label>
+  </div>
+  <div class="filters"><button class="filter active" data-industry="All">All</button><button class="filter" data-industry="Technology">Technology</button><button class="filter" data-industry="Healthcare">Healthcare</button><button class="filter" data-industry="Financials">Financials</button><button class="filter" data-industry="Energy">Energy</button><button class="filter" data-industry="Industrials">Industrials</button><button class="filter" data-industry="Consumer">Consumer</button><button class="filter" data-industry="Real Estate">Real Estate</button><button class="filter" data-industry="Materials">Materials</button><button class="filter" data-industry="Telecom &amp; Media">Telecom &amp; Media</button><button class="filter" data-industry="Other">Other</button></div>
+  <div class="count" id="count"></div>
+  <div id="deals">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/26/3411031/0/en/euronext-athens-holding-s-a-to-merge-with-and-into-euronext-n-v.html" data-industry="Financials" data-status="ANNOUNCED" data-size="" data-country="Other" data-search="euronext athens holding s.a. to merge with, and into, euronext n.v. euronext n.v. euronext athens holding s.a.">
+        <div class="card">
+            <span class="tag UNSEEN" hidden>NEW</span>
+            <span class="tag ANNOUNCED">ANNOUNCED</span>
+            <span class="country">International</span>
+            <a href ="https://www.globenewswire.com/en/news-release/2026/11/26/3411031/0/en/euronext-athens-holding-s-a-to-merge-with-and-into-euronext-n-v.html" target="_blank">Euronext Athens Holding S.A. to merge with, and into, Euronext N.V.</a>
+            <div class="notes">The merger simplifies the legal structure of the group and facilitates the full integration of the Greek market. It aims to achieve operational, commercial, organizational, and financial benefits for the group and its stakeholders.</div>
+            <div class="meta">GlobeNewswire &middot; Financials &middot; Nov 26, 2026, 03:00 PM</div>
+        </div>
+        <div class="side">
+            <div class="size-card">
+                <div class="size-label">Deal size</div>
+                <div class="size-value">Undisclosed</div>
+                <div class="size-funding">Stock</div>
+            </div>
+            <div class="parties-card">
+                <div class="party"><span class="party-label">Buyer</span><span class="party-name" title="Euronext N.V.">Euronext N.V.</span></div>
+                <div class="party"><span class="party-label">Target</span><span class="party-name" title="Euronext Athens Holding S.A.">Euronext Athens Holding S.A.</span></div>
+            </div>
+        </div>
     </div>
-    <div class="filters"><button class="filter active" data-industry="All">All</button><button class="filter" data-industry="Technology">Technology</button><button class="filter" data-industry="Healthcare">Healthcare</button><button class="filter" data-industry="Financials">Financials</button><button class="filter" data-industry="Energy">Energy</button><button class="filter" data-industry="Industrials">Industrials</button><button class="filter" data-industry="Consumer">Consumer</button><button class="filter" data-industry="Real Estate">Real Estate</button><button class="filter" data-industry="Materials">Materials</button><button class="filter" data-industry="Telecom &amp; Media">Telecom &amp; Media</button><button class="filter" data-industry="Other">Other</button></div>
-    <div class="count" id="count"></div>
-    <div id="deals">
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/26/3410761/0/en/rev-acquires-drill-ready-forty-mile-helium-property-with-historical-7-mmcf-d-gas-flow-test-at-1-1-helium.html" data-industry="Energy" data-status="ANNOUNCED" data-size="" data-search="rev acquires drill-ready forty mile helium property with historical 7 mmcf/d gas flow test at 1.1% helium rev exploration corp. forty mile helium property">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/26/3410761/0/en/rev-acquires-drill-ready-forty-mile-helium-property-with-historical-7-mmcf-d-gas-flow-test-at-1-1-helium.html" data-industry="Energy" data-status="ANNOUNCED" data-size="" data-country="CA" data-search="rev acquires drill-ready forty mile helium property with historical 7 mmcf/d gas flow test at 1.1% helium rev exploration corp. forty mile helium property">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -229,7 +278,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/ls-power-completes-acquisition-of-4-4-gw-natural-gas-generation-assets-from-constellation-302950859.html" data-industry="Energy" data-status="CLOSED" data-size="" data-search="ls power completes acquisition of 4.4 gw natural gas generation assets from constellation ls power constellation energy corporation">
+    <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/ls-power-completes-acquisition-of-4-4-gw-natural-gas-generation-assets-from-constellation-302950859.html" data-industry="Energy" data-status="CLOSED" data-size="" data-country="US" data-search="ls power completes acquisition of 4.4 gw natural gas generation assets from constellation ls power constellation energy corporation">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag CLOSED">CLOSED</span>
@@ -250,7 +299,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/virbac-to-acquire-axiota-animal-health-inc---creating-a-leading-global-platform-for-innovative-cattle-health-solutions-302950804.html" data-industry="Healthcare" data-status="ANNOUNCED" data-size="" data-search="virbac to acquire axiota animal health, inc. - creating a leading global platform for innovative cattle health solutions virbac axiota animal health, inc.">
+    <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/virbac-to-acquire-axiota-animal-health-inc---creating-a-leading-global-platform-for-innovative-cattle-health-solutions-302950804.html" data-industry="Healthcare" data-status="ANNOUNCED" data-size="" data-country="US" data-search="virbac to acquire axiota animal health, inc. - creating a leading global platform for innovative cattle health solutions virbac axiota animal health, inc.">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -271,7 +320,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/25/3410500/22612/en/update-gulf-resources-announces-agreement-to-acquire-bromine-and-crude-salt-assets.html" data-industry="Materials" data-status="ANNOUNCED" data-size="103.5" data-search="update -- gulf resources announces agreement to acquire bromine and crude salt assets gulf resources bromine and crude salt assets">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/25/3410500/22612/en/update-gulf-resources-announces-agreement-to-acquire-bromine-and-crude-salt-assets.html" data-industry="Materials" data-status="ANNOUNCED" data-size="103.5" data-country="Other" data-search="update -- gulf resources announces agreement to acquire bromine and crude salt assets gulf resources bromine and crude salt assets">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -292,7 +341,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/luminate-bank-acquires-select-assets-of-real-genius-expanding-consumer-direct-mortgage-capabilities-302950008.html" data-industry="Financials" data-status="ANNOUNCED" data-size="" data-search="luminate bank acquires select assets of real genius, expanding consumer-direct mortgage capabilities luminate bank real genius">
+    <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/luminate-bank-acquires-select-assets-of-real-genius-expanding-consumer-direct-mortgage-capabilities-302950008.html" data-industry="Financials" data-status="ANNOUNCED" data-size="" data-country="US" data-search="luminate bank acquires select assets of real genius, expanding consumer-direct mortgage capabilities luminate bank real genius">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -313,7 +362,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/25/3410468/0/en/virbac-to-acquire-axiota-animal-health-inc-creating-a-leading-global-platform-for-innovative-cattle-health-solutions.html" data-industry="Healthcare" data-status="ANNOUNCED" data-size="315.0" data-search="virbac to acquire axiota animal health, inc. creating a leading global platform for innovative cattle health solutions virbac axiota animal health, inc.">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/25/3410468/0/en/virbac-to-acquire-axiota-animal-health-inc-creating-a-leading-global-platform-for-innovative-cattle-health-solutions.html" data-industry="Healthcare" data-status="ANNOUNCED" data-size="315.0" data-country="US" data-search="virbac to acquire axiota animal health, inc. creating a leading global platform for innovative cattle health solutions virbac axiota animal health, inc.">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -334,7 +383,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261125144720/en/American-Led-Consortium-Announces-Agreement-to-Acquire-LUKOIL-International%E2%80%99s-Global-Energy-Portfolio/" data-industry="Energy" data-status="ANNOUNCED" data-size="" data-search="american-led consortium announces agreement to acquire lukoil international’s global energy portfolio eldridge lukoil international gmbh">
+    <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261125144720/en/American-Led-Consortium-Announces-Agreement-to-Acquire-LUKOIL-International%E2%80%99s-Global-Energy-Portfolio/" data-industry="Energy" data-status="ANNOUNCED" data-size="" data-country="Other" data-search="american-led consortium announces agreement to acquire lukoil international’s global energy portfolio eldridge lukoil international gmbh">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -355,7 +404,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/26health-acquires-florida-infectious-disease-specialists-expanding-hiv-and-infectious-disease-care-in-central-florida-302950596.html" data-industry="Healthcare" data-status="ANNOUNCED" data-size="" data-search="26health acquires florida infectious disease specialists, expanding hiv and infectious disease care in central florida 26health florida infectious disease specialists">
+    <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/26health-acquires-florida-infectious-disease-specialists-expanding-hiv-and-infectious-disease-care-in-central-florida-302950596.html" data-industry="Healthcare" data-status="ANNOUNCED" data-size="" data-country="US" data-search="26health acquires florida infectious disease specialists, expanding hiv and infectious disease care in central florida 26health florida infectious disease specialists">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -376,7 +425,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/cheche-group-signs-definitive-agreement-to-acquire-20-interest-in-residential-solar-plus-storage-company-long-way-fortune-with-option-to-increase-stake-to-51-302950548.html" data-industry="Energy" data-status="ANNOUNCED" data-size="98.0" data-search="cheche group signs definitive agreement to acquire 20% interest in residential solar-plus-storage company long way fortune, with option to increase stake to 51% cheche group long way fortune">
+    <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/cheche-group-signs-definitive-agreement-to-acquire-20-interest-in-residential-solar-plus-storage-company-long-way-fortune-with-option-to-increase-stake-to-51-302950548.html" data-industry="Energy" data-status="ANNOUNCED" data-size="98.0" data-country="Other" data-search="cheche group signs definitive agreement to acquire 20% interest in residential solar-plus-storage company long way fortune, with option to increase stake to 51% cheche group long way fortune">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -397,7 +446,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261125286233/en/Expedia-Group-Announces-Agreement-to-Acquire-Kiwi.com-to-Augment-Flights-Capabilities/" data-industry="Technology" data-status="ANNOUNCED" data-size="" data-search="expedia group announces agreement to acquire kiwi.com to augment flights capabilities expedia group kiwi.com">
+    <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261125286233/en/Expedia-Group-Announces-Agreement-to-Acquire-Kiwi.com-to-Augment-Flights-Capabilities/" data-industry="Technology" data-status="ANNOUNCED" data-size="" data-country="Other" data-search="expedia group announces agreement to acquire kiwi.com to augment flights capabilities expedia group kiwi.com">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -418,7 +467,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/25/3410184/22612/en/gulf-resources-announces-agreement-to-acquire-bromine-and-crude-salt-assets.html" data-industry="Materials" data-status="ANNOUNCED" data-size="103.5" data-search="gulf resources announces agreement to acquire bromine and crude salt assets gulf resources bromine and crude salt assets from the collective economic organization of caiyangzi village">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/25/3410184/22612/en/gulf-resources-announces-agreement-to-acquire-bromine-and-crude-salt-assets.html" data-industry="Materials" data-status="ANNOUNCED" data-size="103.5" data-country="Other" data-search="gulf resources announces agreement to acquire bromine and crude salt assets gulf resources bromine and crude salt assets from the collective economic organization of caiyangzi village">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -439,7 +488,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261123036345/en/PHINIA-to-Acquire-the-Business-of-the-FMP-Group-with-Operations-in-Australia-Thailand-and-Malaysia-a-Leading-Asia-Pacific-Aftermarket-Company/" data-industry="Industrials" data-status="ANNOUNCED" data-size="160.0" data-search="phinia to acquire the business of the fmp group with operations in australia, thailand and malaysia, a leading asia-pacific aftermarket company phinia fmp group">
+    <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261123036345/en/PHINIA-to-Acquire-the-Business-of-the-FMP-Group-with-Operations-in-Australia-Thailand-and-Malaysia-a-Leading-Asia-Pacific-Aftermarket-Company/" data-industry="Industrials" data-status="ANNOUNCED" data-size="160.0" data-country="Other" data-search="phinia to acquire the business of the fmp group with operations in australia, thailand and malaysia, a leading asia-pacific aftermarket company phinia fmp group">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -460,7 +509,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261124467594/en/Schr%C3%B6dinger-Acquires-ENPICOM-to-Establish-End-to-End-Computational-Platform-for-Biologics-Discovery/" data-industry="Healthcare" data-status="ANNOUNCED" data-size="" data-search="schrödinger acquires enpicom to establish end-to-end computational platform for biologics discovery schrödinger enpicom">
+    <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261124467594/en/Schr%C3%B6dinger-Acquires-ENPICOM-to-Establish-End-to-End-Computational-Platform-for-Biologics-Discovery/" data-industry="Healthcare" data-status="ANNOUNCED" data-size="" data-country="Other" data-search="schrödinger acquires enpicom to establish end-to-end computational platform for biologics discovery schrödinger enpicom">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -481,7 +530,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/25/3410172/0/en/standard-biotools-announces-1-for-35-reverse-stock-split-and-special-dividend-of-contingent-value-rights-in-connection-with-proposed-merger-with-treeline-biosciences.html" data-industry="Healthcare" data-status="ANNOUNCED" data-size="" data-search="standard biotools announces 1-for-35 reverse stock split and special dividend of contingent value rights in connection with proposed merger with treeline biosciences standard biotools treeline biosciences">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/25/3410172/0/en/standard-biotools-announces-1-for-35-reverse-stock-split-and-special-dividend-of-contingent-value-rights-in-connection-with-proposed-merger-with-treeline-biosciences.html" data-industry="Healthcare" data-status="ANNOUNCED" data-size="" data-country="US" data-search="standard biotools announces 1-for-35 reverse stock split and special dividend of contingent value rights in connection with proposed merger with treeline biosciences standard biotools treeline biosciences">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -502,7 +551,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261125667601/en/Agreement-to-Acquire-Ready-Mix-Concrete-Operations-by-INTERBETON/" data-industry="Materials" data-status="ANNOUNCED" data-size="" data-search="agreement to acquire ready-mix concrete operations by interbeton interbeton angelos v. peppas a.b.e.e.">
+    <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261125667601/en/Agreement-to-Acquire-Ready-Mix-Concrete-Operations-by-INTERBETON/" data-industry="Materials" data-status="ANNOUNCED" data-size="" data-country="Other" data-search="agreement to acquire ready-mix concrete operations by interbeton interbeton angelos v. peppas a.b.e.e.">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -523,7 +572,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/25/3410014/0/en/uk-competition-and-markets-authority-in-principle-accepts-remedies-in-akzonobel-axalta-merger.html" data-industry="Industrials" data-status="ANNOUNCED" data-size="" data-search="uk competition and markets authority in principle accepts remedies in akzonobel-axalta merger akzonobel axalta coating systems">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/25/3410014/0/en/uk-competition-and-markets-authority-in-principle-accepts-remedies-in-akzonobel-axalta-merger.html" data-industry="Industrials" data-status="ANNOUNCED" data-size="" data-country="Other" data-search="uk competition and markets authority in principle accepts remedies in akzonobel-axalta merger akzonobel axalta coating systems">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -544,7 +593,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/25/3410003/0/en/equasens-enters-into-exclusive-negotiations-to-acquire-a-majority-stake-in-synapse-medicine-the-developer-of-medgpt-and-a-pharmaceutical-database.html" data-industry="Healthcare" data-status="ANNOUNCED" data-size="" data-search="equasens enters into exclusive negotiations to acquire a majority stake in synapse medicine, the developer of medgpt and a pharmaceutical database equasens synapse medicine">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/25/3410003/0/en/equasens-enters-into-exclusive-negotiations-to-acquire-a-majority-stake-in-synapse-medicine-the-developer-of-medgpt-and-a-pharmaceutical-database.html" data-industry="Healthcare" data-status="ANNOUNCED" data-size="" data-country="Other" data-search="equasens enters into exclusive negotiations to acquire a majority stake in synapse medicine, the developer of medgpt and a pharmaceutical database equasens synapse medicine">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -565,7 +614,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/25/3409978/0/en/valore-metals-announces-definitive-agreement-to-acquire-bemisa-%C3%A1gua-azul-minera%C3%A7%C3%A3o-s-a-owner-of-the-%C3%A1gua-azul-gold-project-in-par%C3%A1-state-brazil.html" data-industry="Materials" data-status="ANNOUNCED" data-size="135.0" data-search="valore metals announces definitive agreement to acquire bemisa água azul mineração s.a., owner of the água azul gold project in pará state, brazil valore metals corp. bemisa água azul mineração s.a.">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/25/3409978/0/en/valore-metals-announces-definitive-agreement-to-acquire-bemisa-%C3%A1gua-azul-minera%C3%A7%C3%A3o-s-a-owner-of-the-%C3%A1gua-azul-gold-project-in-par%C3%A1-state-brazil.html" data-industry="Materials" data-status="ANNOUNCED" data-size="135.0" data-country="Other" data-search="valore metals announces definitive agreement to acquire bemisa água azul mineração s.a., owner of the água azul gold project in pará state, brazil valore metals corp. bemisa água azul mineração s.a.">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -586,7 +635,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/opentable-announces-proposed-acquisition-of-australian-restaurant-technology-company-meu-302949939.html" data-industry="Technology" data-status="ANNOUNCED" data-size="" data-search="opentable announces proposed acquisition of australian restaurant technology company me&amp;u opentable me&amp;u">
+    <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/opentable-announces-proposed-acquisition-of-australian-restaurant-technology-company-meu-302949939.html" data-industry="Technology" data-status="ANNOUNCED" data-size="" data-country="Other" data-search="opentable announces proposed acquisition of australian restaurant technology company me&amp;u opentable me&amp;u">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -607,7 +656,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261124450958/en/Pivotal-Manufacturing-Partners-Acquires-753428-Square-Foot-Advanced-Manufacturing-Facility-in-the-Dallas%E2%80%93Fort-Worth-Metroplex/" data-industry="Industrials" data-status="ANNOUNCED" data-size="" data-search="pivotal manufacturing partners acquires 753,428-square-foot advanced manufacturing facility in the dallas–fort worth metroplex pivotal manufacturing partners ">
+    <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261124450958/en/Pivotal-Manufacturing-Partners-Acquires-753428-Square-Foot-Advanced-Manufacturing-Facility-in-the-Dallas%E2%80%93Fort-Worth-Metroplex/" data-industry="Industrials" data-status="ANNOUNCED" data-size="" data-country="US" data-search="pivotal manufacturing partners acquires 753,428-square-foot advanced manufacturing facility in the dallas–fort worth metroplex pivotal manufacturing partners ">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -628,7 +677,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/24/3409894/0/en/thor-equities-completes-acquisition-of-prime-san-francisco-asset-for-50-5-million.html" data-industry="Real Estate" data-status="CLOSED" data-size="50.5" data-search="thor equities completes acquisition of prime san francisco asset for $50.5 million thor equities 55 stockton street">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/24/3409894/0/en/thor-equities-completes-acquisition-of-prime-san-francisco-asset-for-50-5-million.html" data-industry="Real Estate" data-status="CLOSED" data-size="50.5" data-country="US" data-search="thor equities completes acquisition of prime san francisco asset for $50.5 million thor equities 55 stockton street">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag CLOSED">CLOSED</span>
@@ -649,7 +698,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/24/3409891/0/en/remix-therapeutics-completes-closing-of-merger-with-passage-bio-and-previously-announced-100-million-private-placement.html" data-industry="Healthcare" data-status="CLOSED" data-size="" data-search="remix therapeutics completes closing of merger with passage bio and previously announced $100 million private placement remix therapeutics passage bio">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/24/3409891/0/en/remix-therapeutics-completes-closing-of-merger-with-passage-bio-and-previously-announced-100-million-private-placement.html" data-industry="Healthcare" data-status="CLOSED" data-size="" data-country="US" data-search="remix therapeutics completes closing of merger with passage bio and previously announced $100 million private placement remix therapeutics passage bio">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag CLOSED">CLOSED</span>
@@ -670,7 +719,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/local-bounti-becomes-largest-leafy-greens-cea-grower-in-the-us-with-completed-acquisition-of-revol-greens-certified-organic-facilities-302949880.html" data-industry="Consumer" data-status="CLOSED" data-size="" data-search="local bounti becomes largest leafy greens cea grower in the u.s. with completed acquisition of revol greens&#x27; certified-organic facilities local bounti revol greens">
+    <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/local-bounti-becomes-largest-leafy-greens-cea-grower-in-the-us-with-completed-acquisition-of-revol-greens-certified-organic-facilities-302949880.html" data-industry="Consumer" data-status="CLOSED" data-size="" data-country="US" data-search="local bounti becomes largest leafy greens cea grower in the u.s. with completed acquisition of revol greens&#x27; certified-organic facilities local bounti revol greens">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag CLOSED">CLOSED</span>
@@ -691,7 +740,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261124321725/en/Five9-Completes-Acquisition-of-Level-AI/" data-industry="Technology" data-status="CLOSED" data-size="" data-search="five9 completes acquisition of level ai five9 level ai">
+    <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261124321725/en/Five9-Completes-Acquisition-of-Level-AI/" data-industry="Technology" data-status="CLOSED" data-size="" data-country="Other" data-search="five9 completes acquisition of level ai five9 level ai">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag CLOSED">CLOSED</span>
@@ -712,7 +761,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261124402469/en/Digi-International-Completes-Acquisition-of-Disruptive-Technologies-Expanding-SmartSense-Physical-World-Intelligence-Capabilities/" data-industry="Technology" data-status="CLOSED" data-size="130.0" data-search="digi international completes acquisition of disruptive technologies, expanding smartsense physical-world intelligence capabilities digi international disruptive technologies">
+    <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261124402469/en/Digi-International-Completes-Acquisition-of-Disruptive-Technologies-Expanding-SmartSense-Physical-World-Intelligence-Capabilities/" data-industry="Technology" data-status="CLOSED" data-size="130.0" data-country="Other" data-search="digi international completes acquisition of disruptive technologies, expanding smartsense physical-world intelligence capabilities digi international disruptive technologies">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag CLOSED">CLOSED</span>
@@ -733,7 +782,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/24/3409756/0/en/rhondos-completes-acquisition-of-powerconnect-for-sap-solutions.html" data-industry="Technology" data-status="CLOSED" data-size="" data-search="rhondos completes acquisition of powerconnect for sap® solutions rhondos powerconnect for sap solutions">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/24/3409756/0/en/rhondos-completes-acquisition-of-powerconnect-for-sap-solutions.html" data-industry="Technology" data-status="CLOSED" data-size="" data-country="US" data-search="rhondos completes acquisition of powerconnect for sap® solutions rhondos powerconnect for sap solutions">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag CLOSED">CLOSED</span>
@@ -754,7 +803,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261124528187/en/Duravant-to-Acquire-FlexXray-Technology-Leader-in-Foreign-Material-Inspection-and-Recovery-Services/" data-industry="Industrials" data-status="ANNOUNCED" data-size="" data-search="duravant to acquire flexxray, technology leader in foreign material inspection and recovery services duravant flexxray">
+    <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261124528187/en/Duravant-to-Acquire-FlexXray-Technology-Leader-in-Foreign-Material-Inspection-and-Recovery-Services/" data-industry="Industrials" data-status="ANNOUNCED" data-size="" data-country="US" data-search="duravant to acquire flexxray, technology leader in foreign material inspection and recovery services duravant flexxray">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -775,7 +824,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/fcp-acquires-2048-bolton-drive-nw-in-upper-westside-atlanta-302949674.html" data-industry="Real Estate" data-status="ANNOUNCED" data-size="" data-search="fcp acquires 2048 bolton drive nw in upper westside atlanta fcp vue at the quarter">
+    <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/fcp-acquires-2048-bolton-drive-nw-in-upper-westside-atlanta-302949674.html" data-industry="Real Estate" data-status="ANNOUNCED" data-size="" data-country="US" data-search="fcp acquires 2048 bolton drive nw in upper westside atlanta fcp vue at the quarter">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -796,7 +845,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261124334659/en/Georgia-Ports-Authority-Backs-Union-Pacific-Norfolk-Southern-Merger-Joining-More-Than-2000-Supporters/" data-industry="Industrials" data-status="ANNOUNCED" data-size="" data-search="georgia ports authority backs union pacific-norfolk southern merger, joining more than 2,000 supporters union pacific norfolk southern">
+    <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261124334659/en/Georgia-Ports-Authority-Backs-Union-Pacific-Norfolk-Southern-Merger-Joining-More-Than-2000-Supporters/" data-industry="Industrials" data-status="ANNOUNCED" data-size="" data-country="US" data-search="georgia ports authority backs union pacific-norfolk southern merger, joining more than 2,000 supporters union pacific norfolk southern">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -817,7 +866,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/24/3409466/0/en/virtus-diversified-reit-expands-seniors-housing-footprint-with-acquisition-of-the-regency-retirement-residence-in-lakefield-ontario.html" data-industry="Real Estate" data-status="ANNOUNCED" data-size="16.8" data-search="virtus diversified reit expands seniors housing footprint with acquisition of the regency retirement residence in lakefield, ontario virtus diversified reit the regency retirement residence">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/24/3409466/0/en/virtus-diversified-reit-expands-seniors-housing-footprint-with-acquisition-of-the-regency-retirement-residence-in-lakefield-ontario.html" data-industry="Real Estate" data-status="ANNOUNCED" data-size="16.8" data-country="CA" data-search="virtus diversified reit expands seniors housing footprint with acquisition of the regency retirement residence in lakefield, ontario virtus diversified reit the regency retirement residence">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -838,7 +887,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/24/3409450/27604/en/applied-systems-acquires-tailwind.html" data-industry="Technology" data-status="ANNOUNCED" data-size="" data-search="applied systems acquires tailwind applied systems tailwind">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/24/3409450/27604/en/applied-systems-acquires-tailwind.html" data-industry="Technology" data-status="ANNOUNCED" data-size="" data-country="US" data-search="applied systems acquires tailwind applied systems tailwind">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -859,7 +908,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/intune-physical-therapy-acquires-kinect-physiotherapy-further-expanding-its-presence-in-the-raleigh-market-302948662.html" data-industry="Healthcare" data-status="ANNOUNCED" data-size="" data-search="intune physical therapy acquires kinect physiotherapy, further expanding its presence in the raleigh market intune physical therapy kinect physiotherapy">
+    <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/intune-physical-therapy-acquires-kinect-physiotherapy-further-expanding-its-presence-in-the-raleigh-market-302948662.html" data-industry="Healthcare" data-status="ANNOUNCED" data-size="" data-country="US" data-search="intune physical therapy acquires kinect physiotherapy, further expanding its presence in the raleigh market intune physical therapy kinect physiotherapy">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -880,7 +929,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/24/3409345/0/en/revau-advanced-underwriting-announces-acquisition-of-h-w-kaufman-group-s-canadian-mga-and-claims-business-burns-wilcox-canada-strengthening-its-presence-in-canada.html" data-industry="Financials" data-status="ANNOUNCED" data-size="" data-search="revau advanced underwriting announces acquisition of h.w. kaufman group’s canadian mga and claims business, burns &amp; wilcox canada, strengthening its presence in canada revau burns &amp; wilcox canada">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/24/3409345/0/en/revau-advanced-underwriting-announces-acquisition-of-h-w-kaufman-group-s-canadian-mga-and-claims-business-burns-wilcox-canada-strengthening-its-presence-in-canada.html" data-industry="Financials" data-status="ANNOUNCED" data-size="" data-country="CA" data-search="revau advanced underwriting announces acquisition of h.w. kaufman group’s canadian mga and claims business, burns &amp; wilcox canada, strengthening its presence in canada revau burns &amp; wilcox canada">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -901,7 +950,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/stratix-acquires-dmis-managed-mobility-services-business-302948595.html" data-industry="Technology" data-status="ANNOUNCED" data-size="" data-search="stratix acquires dmi&#x27;s managed mobility services business stratix dmi&#x27;s managed mobility services business">
+    <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/stratix-acquires-dmis-managed-mobility-services-business-302948595.html" data-industry="Technology" data-status="ANNOUNCED" data-size="" data-country="US" data-search="stratix acquires dmi&#x27;s managed mobility services business stratix dmi&#x27;s managed mobility services business">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -922,7 +971,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/cerberus-to-acquire-the-us-space-systems-business-of-airbus-302949473.html" data-industry="Industrials" data-status="ANNOUNCED" data-size="" data-search="cerberus to acquire the u.s. space systems business of airbus  ">
+    <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/cerberus-to-acquire-the-us-space-systems-business-of-airbus-302949473.html" data-industry="Industrials" data-status="ANNOUNCED" data-size="" data-country="" data-search="cerberus to acquire the u.s. space systems business of airbus  ">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -943,7 +992,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/wellable-acquires-givheros-employee-well-being-business-302948841.html" data-industry="Healthcare" data-status="ANNOUNCED" data-size="" data-search="wellable acquires givhero&#x27;s employee well-being business wellable givhero">
+    <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/wellable-acquires-givheros-employee-well-being-business-302948841.html" data-industry="Healthcare" data-status="ANNOUNCED" data-size="" data-country="US" data-search="wellable acquires givhero&#x27;s employee well-being business wellable givhero">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -964,7 +1013,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261124143284/en/BlackSky-Acquires-EpochGeo-to-Expand-Real-Time-Intelligence-Capabilities-with-AI-Enabled-RF-Signals-and-Multi-Source-Analytics/" data-industry="Technology" data-status="ANNOUNCED" data-size="" data-search="blacksky acquires epochgeo to expand real-time intelligence capabilities with ai-enabled rf, signals and multi-source analytics blacksky epochgeo">
+    <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261124143284/en/BlackSky-Acquires-EpochGeo-to-Expand-Real-Time-Intelligence-Capabilities-with-AI-Enabled-RF-Signals-and-Multi-Source-Analytics/" data-industry="Technology" data-status="ANNOUNCED" data-size="" data-country="US" data-search="blacksky acquires epochgeo to expand real-time intelligence capabilities with ai-enabled rf, signals and multi-source analytics blacksky epochgeo">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -985,7 +1034,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261123387699/en/Shift4-Completes-Acquisition-of-Paramount-Commerce/" data-industry="Technology" data-status="CLOSED" data-size="" data-search="shift4 completes acquisition of paramount commerce shift4 paramount commerce">
+    <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261123387699/en/Shift4-Completes-Acquisition-of-Paramount-Commerce/" data-industry="Technology" data-status="CLOSED" data-size="" data-country="CA" data-search="shift4 completes acquisition of paramount commerce shift4 paramount commerce">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag CLOSED">CLOSED</span>
@@ -1006,7 +1055,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261124766207/en/LiveChain-Completes-Acquisition-of-MIT-Originated-Humanyze-Assets-Positioning-it-for-the-Next-Frontier-of-Enterprise-AI/" data-industry="Technology" data-status="CLOSED" data-size="" data-search="livechain completes acquisition of mit-originated humanyze assets, positioning it for the next frontier of enterprise ai livechain sociometric solutions">
+    <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261124766207/en/LiveChain-Completes-Acquisition-of-MIT-Originated-Humanyze-Assets-Positioning-it-for-the-Next-Frontier-of-Enterprise-AI/" data-industry="Technology" data-status="CLOSED" data-size="" data-country="US" data-search="livechain completes acquisition of mit-originated humanyze assets, positioning it for the next frontier of enterprise ai livechain sociometric solutions">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag CLOSED">CLOSED</span>
@@ -1027,7 +1076,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261124793124/en/Cosette-Pharmaceuticals%C2%AE-Establishes-Oncology-Franchise-Through-Acquisition-of-MARGENZA%C2%AE-margetuximab-cmkb-from-TerSera%C2%AE-Therapeutics/" data-industry="Healthcare" data-status="ANNOUNCED" data-size="" data-search="cosette pharmaceuticals® establishes oncology franchise through acquisition of margenza® (margetuximab-cmkb) from tersera® therapeutics cosette pharmaceuticals margenza">
+    <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261124793124/en/Cosette-Pharmaceuticals%C2%AE-Establishes-Oncology-Franchise-Through-Acquisition-of-MARGENZA%C2%AE-margetuximab-cmkb-from-TerSera%C2%AE-Therapeutics/" data-industry="Healthcare" data-status="ANNOUNCED" data-size="" data-country="US" data-search="cosette pharmaceuticals® establishes oncology franchise through acquisition of margenza® (margetuximab-cmkb) from tersera® therapeutics cosette pharmaceuticals margenza">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -1048,7 +1097,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261123208304/en/Harbourfront-Wealth-to-Acquire-JC-Clark-Strengthening-Its-National-Wealth-Management-Platform/" data-industry="Financials" data-status="ANNOUNCED" data-size="" data-search="harbourfront wealth to acquire jc clark, strengthening its national wealth management platform harbourfront wealth group jc clark ltd.">
+    <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261123208304/en/Harbourfront-Wealth-to-Acquire-JC-Clark-Strengthening-Its-National-Wealth-Management-Platform/" data-industry="Financials" data-status="ANNOUNCED" data-size="" data-country="CA" data-search="harbourfront wealth to acquire jc clark, strengthening its national wealth management platform harbourfront wealth group jc clark ltd.">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -1069,7 +1118,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261124941228/en/DRT-Aerospace-a-GenNx360-Capital-Partners-Portfolio-Company-Acquires-Duke-Manufacturing/" data-industry="Industrials" data-status="ANNOUNCED" data-size="" data-search="drt aerospace, a gennx360 capital partners portfolio company, acquires duke manufacturing drt aerospace duke manufacturing">
+    <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261124941228/en/DRT-Aerospace-a-GenNx360-Capital-Partners-Portfolio-Company-Acquires-Duke-Manufacturing/" data-industry="Industrials" data-status="ANNOUNCED" data-size="" data-country="US" data-search="drt aerospace, a gennx360 capital partners portfolio company, acquires duke manufacturing drt aerospace duke manufacturing">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -1090,7 +1139,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/24/3409172/0/en/post-road-management-acquires-scenic-girard-portfolio-in-west-philadelphia.html" data-industry="Real Estate" data-status="ANNOUNCED" data-size="" data-search="post road management acquires scenic &amp; girard portfolio in west philadelphia post road management scenic &amp; girard portfolio">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/24/3409172/0/en/post-road-management-acquires-scenic-girard-portfolio-in-west-philadelphia.html" data-industry="Real Estate" data-status="ANNOUNCED" data-size="" data-country="US" data-search="post road management acquires scenic &amp; girard portfolio in west philadelphia post road management scenic &amp; girard portfolio">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -1111,7 +1160,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/sentinel-capital-partners-acquires-gsi-group-holdings-302948842.html" data-industry="Healthcare" data-status="ANNOUNCED" data-size="" data-search="sentinel capital partners acquires gsi group holdings sentinel capital partners gsi group holdings">
+    <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/sentinel-capital-partners-acquires-gsi-group-holdings-302948842.html" data-industry="Healthcare" data-status="ANNOUNCED" data-size="" data-country="US" data-search="sentinel capital partners acquires gsi group holdings sentinel capital partners gsi group holdings">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -1132,7 +1181,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/24/3409156/0/en/parker-completes-acquisition-of-circor-s-commercial-and-defense-aerospace-business.html" data-industry="Industrials" data-status="CLOSED" data-size="" data-search="parker completes acquisition of circor’s commercial and defense aerospace business parker hannifin circor aerospace and defense">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/24/3409156/0/en/parker-completes-acquisition-of-circor-s-commercial-and-defense-aerospace-business.html" data-industry="Industrials" data-status="CLOSED" data-size="" data-country="US" data-search="parker completes acquisition of circor’s commercial and defense aerospace business parker hannifin circor aerospace and defense">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag CLOSED">CLOSED</span>
@@ -1153,7 +1202,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261124019151/en/Radiology-Partners-Completes-Acquisition-of-Everlight-Radiology/" data-industry="Healthcare" data-status="CLOSED" data-size="" data-search="radiology partners completes acquisition of everlight radiology radiology partners everlight radiology">
+    <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261124019151/en/Radiology-Partners-Completes-Acquisition-of-Everlight-Radiology/" data-industry="Healthcare" data-status="CLOSED" data-size="" data-country="Other" data-search="radiology partners completes acquisition of everlight radiology radiology partners everlight radiology">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag CLOSED">CLOSED</span>
@@ -1174,7 +1223,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261124041337/en/Pursuit-Signs-Agreement-to-Acquire-Sky-Adventures-Advancing-Growth-Plans-in-Costa-Rica/" data-industry="Other" data-status="ANNOUNCED" data-size="" data-search="pursuit signs agreement to acquire sky adventures, advancing growth plans in costa rica pursuit sky adventures">
+    <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261124041337/en/Pursuit-Signs-Agreement-to-Acquire-Sky-Adventures-Advancing-Growth-Plans-in-Costa-Rica/" data-industry="Other" data-status="ANNOUNCED" data-size="" data-country="Other" data-search="pursuit signs agreement to acquire sky adventures, advancing growth plans in costa rica pursuit sky adventures">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -1195,7 +1244,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261124583868/en/Monroe-Capital-Supports-Waveborn%E2%80%99s-Acquisition-of-Jake-Rosen-Entertainment/" data-industry="Telecom &amp; Media" data-status="ANNOUNCED" data-size="" data-search="monroe capital supports waveborn’s acquisition of jake rosen entertainment waveborn jake rosen entertainment">
+    <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261124583868/en/Monroe-Capital-Supports-Waveborn%E2%80%99s-Acquisition-of-Jake-Rosen-Entertainment/" data-industry="Telecom &amp; Media" data-status="ANNOUNCED" data-size="" data-country="US" data-search="monroe capital supports waveborn’s acquisition of jake rosen entertainment waveborn jake rosen entertainment">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -1216,28 +1265,28 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/24/3409057/0/en/viomi-technology-appoints-zhigang-sam-yang-as-chief-financial-officer-and-enters-into-agreement-to-acquire-brondell-inc.html" data-industry="Consumer" data-status="ANNOUNCED" data-size="" data-search="viomi technology appoints zhigang (sam) yang as chief financial officer and enters into agreement to acquire brondell inc.  ">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/24/3409057/0/en/viomi-technology-appoints-zhigang-sam-yang-as-chief-financial-officer-and-enters-into-agreement-to-acquire-brondell-inc.html" data-industry="Consumer" data-status="ANNOUNCED" data-size="" data-country="US" data-search="viomi technology appoints zhigang (sam) yang as chief financial officer and enters into agreement to acquire brondell inc. viomi technology brondell">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
-            
+            <span class="country">United States</span>
             <a href ="https://www.globenewswire.com/en/news-release/2026/11/24/3409057/0/en/viomi-technology-appoints-zhigang-sam-yang-as-chief-financial-officer-and-enters-into-agreement-to-acquire-brondell-inc.html" target="_blank">Viomi Technology Appoints Zhigang (Sam) Yang as Chief Financial Officer and Enters into Agreement to Acquire Brondell Inc.</a>
-            <div class="notes">The acquisition of Brondell Inc. is intended to complement Viomi&#x27;s home water solutions and extend the company&#x27;s reach in the North American home wellness market.</div>
+            <div class="notes">The transaction aims to complement Viomi’s home water solutions and extend its reach in the North American home wellness market.</div>
             <div class="meta">GlobeNewswire &middot; Consumer &middot; Nov 24, 2026, 05:00 AM</div>
         </div>
         <div class="side">
             <div class="size-card">
                 <div class="size-label">Deal size</div>
-                <div class="size-value">Pending</div>
-                <div class="size-funding">Not stated</div>
+                <div class="size-value">Undisclosed</div>
+                <div class="size-funding">All cash</div>
             </div>
             <div class="parties-card">
-                <div class="party"><span class="party-label">Buyer</span><span class="party-name" title="Pending">Pending</span></div>
-                <div class="party"><span class="party-label">Target</span><span class="party-name" title="Pending">Pending</span></div>
+                <div class="party"><span class="party-label">Buyer</span><span class="party-name" title="Viomi Technology">Viomi Technology</span></div>
+                <div class="party"><span class="party-label">Target</span><span class="party-name" title="Brondell">Brondell</span></div>
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/24/3409028/0/en/healthcare-holding-schweiz-acquires-share-in-focs.html" data-industry="Healthcare" data-status="ANNOUNCED" data-size="" data-search="healthcare holding schweiz acquires share in focs healthcare holding schweiz focs">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/24/3409028/0/en/healthcare-holding-schweiz-acquires-share-in-focs.html" data-industry="Healthcare" data-status="ANNOUNCED" data-size="" data-country="Other" data-search="healthcare holding schweiz acquires share in focs healthcare holding schweiz focs">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -1258,7 +1307,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/ascentium-acquires-statura-expanding-its-private-client-business-across-europe-and-the-middle-east-302948130.html" data-industry="Financials" data-status="ANNOUNCED" data-size="" data-search="ascentium acquires statura, expanding its private client business across europe and the middle east ascentium statura">
+    <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/ascentium-acquires-statura-expanding-its-private-client-business-across-europe-and-the-middle-east-302948130.html" data-industry="Financials" data-status="ANNOUNCED" data-size="" data-country="Other" data-search="ascentium acquires statura, expanding its private client business across europe and the middle east ascentium statura">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -1279,7 +1328,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/sanofi-to-acquire-insmed-in-strategic-step-that-strengthens-long-term-future-302949056.html" data-industry="Healthcare" data-status="ANNOUNCED" data-size="41000.0" data-search="sanofi to acquire insmed in strategic step that strengthens long-term future sanofi insmed">
+    <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/sanofi-to-acquire-insmed-in-strategic-step-that-strengthens-long-term-future-302949056.html" data-industry="Healthcare" data-status="ANNOUNCED" data-size="41000.0" data-country="US" data-search="sanofi to acquire insmed in strategic step that strengthens long-term future sanofi insmed">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -1300,7 +1349,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/platinum-equity-completes-acquisition-of-edp-302948762.html" data-industry="Energy" data-status="CLOSED" data-size="" data-search="platinum equity completes acquisition of edp platinum equity edp">
+    <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/platinum-equity-completes-acquisition-of-edp-302948762.html" data-industry="Energy" data-status="CLOSED" data-size="" data-country="US" data-search="platinum equity completes acquisition of edp platinum equity edp">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag CLOSED">CLOSED</span>
@@ -1321,7 +1370,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/uniform-advantage-expands-retail-presence-with-acquisition-of-16-former-scrubs--beyond-locations-302948637.html" data-industry="Healthcare" data-status="ANNOUNCED" data-size="" data-search="uniform advantage expands retail presence with acquisition of 16 former scrubs &amp; beyond locations uniform advantage scrubs &amp; beyond">
+    <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/uniform-advantage-expands-retail-presence-with-acquisition-of-16-former-scrubs--beyond-locations-302948637.html" data-industry="Healthcare" data-status="ANNOUNCED" data-size="" data-country="US" data-search="uniform advantage expands retail presence with acquisition of 16 former scrubs &amp; beyond locations uniform advantage scrubs &amp; beyond">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -1342,7 +1391,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/terex-announces-definitive-agreement-to-sell-its-aerials-segment-to-linamar-302948654.html" data-industry="Industrials" data-status="ANNOUNCED" data-size="" data-search="terex announces definitive agreement to sell its aerials segment to linamar  ">
+    <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/terex-announces-definitive-agreement-to-sell-its-aerials-segment-to-linamar-302948654.html" data-industry="Industrials" data-status="ANNOUNCED" data-size="" data-country="" data-search="terex announces definitive agreement to sell its aerials segment to linamar  ">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -1363,7 +1412,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/23/3408931/0/en/linamar-corporation-to-acquire-genie-from-terex-corporation-significantly-expanding-its-access-work-platforms-group.html" data-industry="Industrials" data-status="ANNOUNCED" data-size="1400.0" data-search="linamar corporation to acquire genie from terex corporation, significantly expanding its access work platforms group linamar corporation genie">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/23/3408931/0/en/linamar-corporation-to-acquire-genie-from-terex-corporation-significantly-expanding-its-access-work-platforms-group.html" data-industry="Industrials" data-status="ANNOUNCED" data-size="1400.0" data-country="US" data-search="linamar corporation to acquire genie from terex corporation, significantly expanding its access work platforms group linamar corporation genie">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -1384,7 +1433,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/23/3408900/0/en/alta-equipment-group-agrees-to-acquire-jackson-group-peterbilt-in-proposed-transformative-deal.html" data-industry="Industrials" data-status="ANNOUNCED" data-size="399.0" data-search="alta equipment group agrees to acquire jackson group peterbilt in proposed transformative deal alta equipment group jackson group peterbilt">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/23/3408900/0/en/alta-equipment-group-agrees-to-acquire-jackson-group-peterbilt-in-proposed-transformative-deal.html" data-industry="Industrials" data-status="ANNOUNCED" data-size="399.0" data-country="US" data-search="alta equipment group agrees to acquire jackson group peterbilt in proposed transformative deal alta equipment group jackson group peterbilt">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -1405,7 +1454,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/23/3408858/0/en/ergodyne-to-acquire-thersty-hydration-products-ltd-expanding-heat-safety-portfolio.html" data-industry="Consumer" data-status="ANNOUNCED" data-size="" data-search="ergodyne to acquire thersty hydration products ltd., expanding heat safety portfolio ergodyne thersty hydration products ltd.">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/23/3408858/0/en/ergodyne-to-acquire-thersty-hydration-products-ltd-expanding-heat-safety-portfolio.html" data-industry="Consumer" data-status="ANNOUNCED" data-size="" data-country="CA" data-search="ergodyne to acquire thersty hydration products ltd., expanding heat safety portfolio ergodyne thersty hydration products ltd.">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -1426,7 +1475,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/harvest-group-acquires-good-peeps-accelerating-growth-toward-10-billion-in-retail-sales-and-2-billion-in-media-under-management-302948447.html" data-industry="Telecom &amp; Media" data-status="ANNOUNCED" data-size="" data-search="harvest group acquires good peeps, accelerating growth toward $10 billion in retail sales and $2 billion in media under management harvest group good peeps">
+    <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/harvest-group-acquires-good-peeps-accelerating-growth-toward-10-billion-in-retail-sales-and-2-billion-in-media-under-management-302948447.html" data-industry="Telecom &amp; Media" data-status="ANNOUNCED" data-size="" data-country="US" data-search="harvest group acquires good peeps, accelerating growth toward $10 billion in retail sales and $2 billion in media under management harvest group good peeps">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -1447,7 +1496,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/madison-dearborn-partners-to-acquire-peli-biothermal-a-trusted-cold-chain-solutions-provider-from-pelican-products-and-platinum-equity-302948222.html" data-industry="Healthcare" data-status="ANNOUNCED" data-size="" data-search="madison dearborn partners to acquire peli biothermal, a trusted cold chain solutions provider, from pelican products and platinum equity madison dearborn partners peli biothermal">
+    <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/madison-dearborn-partners-to-acquire-peli-biothermal-a-trusted-cold-chain-solutions-provider-from-pelican-products-and-platinum-equity-302948222.html" data-industry="Healthcare" data-status="ANNOUNCED" data-size="" data-country="US" data-search="madison dearborn partners to acquire peli biothermal, a trusted cold chain solutions provider, from pelican products and platinum equity madison dearborn partners peli biothermal">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -1468,7 +1517,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261123673204/en/Barnes-Aerospace-Signs-Agreement-to-Acquire-JJ-Churchill-Expanding-Advanced-Aeroengine-Manufacturing-Capabilities/" data-industry="Industrials" data-status="ANNOUNCED" data-size="" data-search="barnes aerospace signs agreement to acquire jj churchill, expanding advanced aeroengine manufacturing capabilities barnes aerospace jj churchill">
+    <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261123673204/en/Barnes-Aerospace-Signs-Agreement-to-Acquire-JJ-Churchill-Expanding-Advanced-Aeroengine-Manufacturing-Capabilities/" data-industry="Industrials" data-status="ANNOUNCED" data-size="" data-country="Other" data-search="barnes aerospace signs agreement to acquire jj churchill, expanding advanced aeroengine manufacturing capabilities barnes aerospace jj churchill">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -1489,7 +1538,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261123951910/en/Saragon-to-Acquire-Three-Additional-Data-Center-Facilities-Extending-Its-Edge-Footprint-to-Omaha-Tacoma-and-Cheyenne/" data-industry="Technology" data-status="ANNOUNCED" data-size="" data-search="saragon to acquire three additional data center facilities, extending its edge footprint to omaha, tacoma and cheyenne saragon ">
+    <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261123951910/en/Saragon-to-Acquire-Three-Additional-Data-Center-Facilities-Extending-Its-Edge-Footprint-to-Omaha-Tacoma-and-Cheyenne/" data-industry="Technology" data-status="ANNOUNCED" data-size="" data-country="US" data-search="saragon to acquire three additional data center facilities, extending its edge footprint to omaha, tacoma and cheyenne saragon ">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -1510,7 +1559,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/authentic-acquires-oneill-expanding-global-action-and-outdoor-portfolio-302948389.html" data-industry="Consumer" data-status="ANNOUNCED" data-size="" data-search="authentic acquires o&#x27;neill, expanding global action and outdoor portfolio  ">
+    <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/authentic-acquires-oneill-expanding-global-action-and-outdoor-portfolio-302948389.html" data-industry="Consumer" data-status="ANNOUNCED" data-size="" data-country="" data-search="authentic acquires o&#x27;neill, expanding global action and outdoor portfolio  ">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -1531,28 +1580,28 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261123983215/en/BTG-Pactual-Strategic-Capital-Finances-Bertram-Capitals-Acquisition-of-Medical-Technology-Associates/" data-industry="Healthcare" data-status="ANNOUNCED" data-size="" data-search="btg pactual strategic capital finances bertram capital&amp;apos;s acquisition of medical technology associates  ">
+    <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261123983215/en/BTG-Pactual-Strategic-Capital-Finances-Bertram-Capitals-Acquisition-of-Medical-Technology-Associates/" data-industry="Healthcare" data-status="ANNOUNCED" data-size="" data-country="US" data-search="btg pactual strategic capital finances bertram capital&amp;apos;s acquisition of medical technology associates bertram capital medical technology associates">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
-            
+            <span class="country">United States</span>
             <a href ="http://www.businesswire.com/news/home/20261123983215/en/BTG-Pactual-Strategic-Capital-Finances-Bertram-Capitals-Acquisition-of-Medical-Technology-Associates/" target="_blank">BTG Pactual Strategic Capital Finances Bertram Capital&amp;apos;s Acquisition of Medical Technology Associates</a>
-            <div class="notes">The acquisition is intended to position Medical Technology Associates for its next phase of growth through the guidance and operational support of Bertram Capital. Specific synergies were not stated in the press release.</div>
+            <div class="notes">The acquisition aims to support the company&#x27;s next phase of growth through operational support and guidance.</div>
             <div class="meta">Business Wire &middot; Healthcare &middot; Nov 23, 2026, 09:30 AM</div>
         </div>
         <div class="side">
             <div class="size-card">
                 <div class="size-label">Deal size</div>
-                <div class="size-value">Pending</div>
+                <div class="size-value">Undisclosed</div>
                 <div class="size-funding">Not stated</div>
             </div>
             <div class="parties-card">
-                <div class="party"><span class="party-label">Buyer</span><span class="party-name" title="Pending">Pending</span></div>
-                <div class="party"><span class="party-label">Target</span><span class="party-name" title="Pending">Pending</span></div>
+                <div class="party"><span class="party-label">Buyer</span><span class="party-name" title="Bertram Capital">Bertram Capital</span></div>
+                <div class="party"><span class="party-label">Target</span><span class="party-name" title="Medical Technology Associates">Medical Technology Associates</span></div>
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/workday-completes-acquisition-of-c1ai-302947290.html" data-industry="Technology" data-status="CLOSED" data-size="" data-search="workday completes acquisition of c1.ai  ">
+    <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/workday-completes-acquisition-of-c1ai-302947290.html" data-industry="Technology" data-status="CLOSED" data-size="" data-country="" data-search="workday completes acquisition of c1.ai  ">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag CLOSED">CLOSED</span>
@@ -1573,7 +1622,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261123556033/en/Graham-Corporation-Acquires-Hauschild-Group-Expanding-Its-Global-Materials-Processing-Platform/" data-industry="Industrials" data-status="ANNOUNCED" data-size="" data-search="graham corporation acquires hauschild group, expanding its global materials processing platform graham corporation hauschild group">
+    <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261123556033/en/Graham-Corporation-Acquires-Hauschild-Group-Expanding-Its-Global-Materials-Processing-Platform/" data-industry="Industrials" data-status="ANNOUNCED" data-size="" data-country="Other" data-search="graham corporation acquires hauschild group, expanding its global materials processing platform graham corporation hauschild group">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -1594,7 +1643,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261123490744/en/Revive-Infrastructure-Group-Acquires-Assets-of-West-Pacific-Drilling-Inc./" data-industry="Industrials" data-status="ANNOUNCED" data-size="" data-search="revive infrastructure group acquires assets of west pacific drilling, inc. revive infrastructure group west pacific drilling, inc.">
+    <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261123490744/en/Revive-Infrastructure-Group-Acquires-Assets-of-West-Pacific-Drilling-Inc./" data-industry="Industrials" data-status="ANNOUNCED" data-size="" data-country="US" data-search="revive infrastructure group acquires assets of west pacific drilling, inc. revive infrastructure group west pacific drilling, inc.">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -1615,7 +1664,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/nauticus-robotics-signs-letter-of-intent-to-acquire-ocean-power-technologies-wam-v-business-assets-302948257.html" data-industry="Technology" data-status="ANNOUNCED" data-size="10.0" data-search="nauticus robotics™ signs letter of intent to acquire ocean power technologies&#x27; wam-v® business assets nauticus robotics ocean power technologies">
+    <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/nauticus-robotics-signs-letter-of-intent-to-acquire-ocean-power-technologies-wam-v-business-assets-302948257.html" data-industry="Technology" data-status="ANNOUNCED" data-size="10.0" data-country="US" data-search="nauticus robotics™ signs letter of intent to acquire ocean power technologies&#x27; wam-v® business assets nauticus robotics ocean power technologies">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -1636,7 +1685,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/mill-steel-company-acquires-assets-of-chicago-steel-and-lexington-steel-302947516.html" data-industry="Materials" data-status="ANNOUNCED" data-size="" data-search="mill steel company acquires assets of chicago steel and lexington steel mill steel company chicago steel and lexington steel">
+    <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/mill-steel-company-acquires-assets-of-chicago-steel-and-lexington-steel-302947516.html" data-industry="Materials" data-status="ANNOUNCED" data-size="" data-country="US" data-search="mill steel company acquires assets of chicago steel and lexington steel mill steel company chicago steel and lexington steel">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -1657,7 +1706,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/cogent-communications-announces-definitive-agreement-to-sell-three-data-center-facilities-302947462.html" data-industry="Telecom &amp; Media" data-status="ANNOUNCED" data-size="" data-search="cogent communications announces definitive agreement to sell three data center facilities  ">
+    <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/cogent-communications-announces-definitive-agreement-to-sell-three-data-center-facilities-302947462.html" data-industry="Telecom &amp; Media" data-status="ANNOUNCED" data-size="" data-country="" data-search="cogent communications announces definitive agreement to sell three data center facilities  ">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -1678,7 +1727,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261123645330/en/KBRA-to-Acquire-Capital-Intelligence-Ratings-Expanding-Global-Footprint/" data-industry="Financials" data-status="ANNOUNCED" data-size="" data-search="kbra to acquire capital intelligence ratings, expanding global footprint kbra capital intelligence ratings">
+    <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261123645330/en/KBRA-to-Acquire-Capital-Intelligence-Ratings-Expanding-Global-Footprint/" data-industry="Financials" data-status="ANNOUNCED" data-size="" data-country="Other" data-search="kbra to acquire capital intelligence ratings, expanding global footprint kbra capital intelligence ratings">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -1699,7 +1748,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261123426600/en/Adams-Outdoor-Advertising-Acquires-39-Billboard-Faces-in-Western-Pennsylvania-from-McWhorter-Media-Group/" data-industry="Telecom &amp; Media" data-status="ANNOUNCED" data-size="" data-search="adams outdoor advertising acquires 39 billboard faces in western pennsylvania from mcwhorter media group adams outdoor advertising mcwhorter media group">
+    <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261123426600/en/Adams-Outdoor-Advertising-Acquires-39-Billboard-Faces-in-Western-Pennsylvania-from-McWhorter-Media-Group/" data-industry="Telecom &amp; Media" data-status="ANNOUNCED" data-size="" data-country="US" data-search="adams outdoor advertising acquires 39 billboard faces in western pennsylvania from mcwhorter media group adams outdoor advertising mcwhorter media group">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -1720,7 +1769,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261122368474/en/Mount-Street-Accelerates-U.S.-Growth-with-Acquisition-of-Seasoned-Primary-and-Special-Servicing-Team-Adding-1.35-Billion-Portfolio/" data-industry="Financials" data-status="ANNOUNCED" data-size="" data-search="mount street accelerates u.s. growth with acquisition of seasoned primary and special servicing team, adding $1.35 billion portfolio mount street group ">
+    <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261122368474/en/Mount-Street-Accelerates-U.S.-Growth-with-Acquisition-of-Seasoned-Primary-and-Special-Servicing-Team-Adding-1.35-Billion-Portfolio/" data-industry="Financials" data-status="ANNOUNCED" data-size="" data-country="US" data-search="mount street accelerates u.s. growth with acquisition of seasoned primary and special servicing team, adding $1.35 billion portfolio mount street group ">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -1741,7 +1790,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/usfm-signs-term-sheet-to-acquire-up-to-85-of-hook-lake-a-fully-permitted-gold-and-copper-project-in-nunavut-canada-302947895.html" data-industry="Materials" data-status="ANNOUNCED" data-size="" data-search="usfm signs term sheet to acquire up to 85% of hook lake, a fully permitted gold and copper project in nunavut, canada usfm corporation hook lake">
+    <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/usfm-signs-term-sheet-to-acquire-up-to-85-of-hook-lake-a-fully-permitted-gold-and-copper-project-in-nunavut-canada-302947895.html" data-industry="Materials" data-status="ANNOUNCED" data-size="" data-country="CA" data-search="usfm signs term sheet to acquire up to 85% of hook lake, a fully permitted gold and copper project in nunavut, canada usfm corporation hook lake">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -1762,7 +1811,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261201448686/en/IQVIA-Announces-Acquisition-of-Quotient-Sciences/" data-industry="Healthcare" data-status="ANNOUNCED" data-size="" data-search="iqvia announces acquisition of quotient sciences iqvia quotient sciences">
+    <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261201448686/en/IQVIA-Announces-Acquisition-of-Quotient-Sciences/" data-industry="Healthcare" data-status="ANNOUNCED" data-size="" data-country="Other" data-search="iqvia announces acquisition of quotient sciences iqvia quotient sciences">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -1783,7 +1832,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261118254933/en/RELEX-Acquires-autone-to-Expand-AI-Powered-Planning-Capabilities-for-Fashion-Lifestyle-Brands-and-Apparel-Retailers/" data-industry="Technology" data-status="ANNOUNCED" data-size="" data-search="relex acquires autone to expand ai-powered planning capabilities for fashion, lifestyle brands and apparel retailers relex solutions autone">
+    <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261118254933/en/RELEX-Acquires-autone-to-Expand-AI-Powered-Planning-Capabilities-for-Fashion-Lifestyle-Brands-and-Apparel-Retailers/" data-industry="Technology" data-status="ANNOUNCED" data-size="" data-country="Other" data-search="relex acquires autone to expand ai-powered planning capabilities for fashion, lifestyle brands and apparel retailers relex solutions autone">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -1804,7 +1853,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261123086552/en/Qnity-to-Acquire-Meridian%E2%80%99s-Electronics-Business-Expands-Advanced-Packaging-and-Thermal-Management-Capabilities/" data-industry="Technology" data-status="ANNOUNCED" data-size="" data-search="qnity to acquire meridian’s electronics business, expands advanced packaging and thermal management capabilities qnity meridian">
+    <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261123086552/en/Qnity-to-Acquire-Meridian%E2%80%99s-Electronics-Business-Expands-Advanced-Packaging-and-Thermal-Management-Capabilities/" data-industry="Technology" data-status="ANNOUNCED" data-size="" data-country="Other" data-search="qnity to acquire meridian’s electronics business, expands advanced packaging and thermal management capabilities qnity meridian">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -1825,7 +1874,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261123828725/en/Texas-Pacific-Land-to-Acquire-EagleRock-in-All-Stock-Transaction-Expected-to-Enhance-the-Permian-Basin%E2%80%99s-Premier-Land-Water-and-Royalty-Platform/" data-industry="Energy" data-status="ANNOUNCED" data-size="3000.0" data-search="texas pacific land to acquire eaglerock in all-stock transaction, expected to enhance the permian basin’s premier land, water and royalty platform texas pacific land corporation eaglerock land, llc">
+    <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261123828725/en/Texas-Pacific-Land-to-Acquire-EagleRock-in-All-Stock-Transaction-Expected-to-Enhance-the-Permian-Basin%E2%80%99s-Premier-Land-Water-and-Royalty-Platform/" data-industry="Energy" data-status="ANNOUNCED" data-size="3000.0" data-country="US" data-search="texas pacific land to acquire eaglerock in all-stock transaction, expected to enhance the permian basin’s premier land, water and royalty platform texas pacific land corporation eaglerock land, llc">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -1846,7 +1895,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261123522174/en/CrowdStrike-to-Acquire-Zscaler-Bringing-Network-Security-and-Zero-Trust-to-the-Falcon-Platform/" data-industry="Technology" data-status="ANNOUNCED" data-size="43900.0" data-search="crowdstrike to acquire zscaler, bringing network security and zero trust to the falcon platform crowdstrike zscaler">
+    <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261123522174/en/CrowdStrike-to-Acquire-Zscaler-Bringing-Network-Security-and-Zero-Trust-to-the-Falcon-Platform/" data-industry="Technology" data-status="ANNOUNCED" data-size="43900.0" data-country="US" data-search="crowdstrike to acquire zscaler, bringing network security and zero trust to the falcon platform crowdstrike zscaler">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -1867,7 +1916,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261123578591/en/SmartStop-Self-Storage-REIT-Inc.-Expands-Presence-in-Asheville-MSA-With-Acquisition-of-Woodfin-Facility/" data-industry="Real Estate" data-status="ANNOUNCED" data-size="" data-search="smartstop self storage reit, inc. expands presence in asheville msa with acquisition of woodfin facility smartstop self storage reit, inc. ">
+    <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261123578591/en/SmartStop-Self-Storage-REIT-Inc.-Expands-Presence-in-Asheville-MSA-With-Acquisition-of-Woodfin-Facility/" data-industry="Real Estate" data-status="ANNOUNCED" data-size="" data-country="US" data-search="smartstop self storage reit, inc. expands presence in asheville msa with acquisition of woodfin facility smartstop self storage reit, inc. ">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -1888,7 +1937,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/gulbrandsen-acquires-imacas-glass-coating-business-302947996.html" data-industry="Materials" data-status="ANNOUNCED" data-size="" data-search="gulbrandsen acquires imaca&#x27;s glass coating business  ">
+    <div class="deal" data-deal-id="https://www.prnewswire.com/news-releases/gulbrandsen-acquires-imacas-glass-coating-business-302947996.html" data-industry="Materials" data-status="ANNOUNCED" data-size="" data-country="" data-search="gulbrandsen acquires imaca&#x27;s glass coating business  ">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -1909,7 +1958,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261123048575/en/Health-Partners-Expands-Prevention-Behaviour-Change-Offering-with-Acquisition-of-ICE-Creates/" data-industry="Healthcare" data-status="ANNOUNCED" data-size="" data-search="health partners expands prevention &amp;amp; behaviour change offering with acquisition of ice creates health partners group ice creates">
+    <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261123048575/en/Health-Partners-Expands-Prevention-Behaviour-Change-Offering-with-Acquisition-of-ICE-Creates/" data-industry="Healthcare" data-status="ANNOUNCED" data-size="" data-country="Other" data-search="health partners expands prevention &amp;amp; behaviour change offering with acquisition of ice creates health partners group ice creates">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -1930,7 +1979,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261122205180/en/Bureau-Veritas-Acquires-Topo-Solutions-to-Enhance-Its-AI-Powered-Supply-Chain-Intelligence-Offering/" data-industry="Technology" data-status="ANNOUNCED" data-size="" data-search="bureau veritas acquires topo solutions to enhance its ai-powered supply chain intelligence offering bureau veritas topo solutions">
+    <div class="deal" data-deal-id="http://www.businesswire.com/news/home/20261122205180/en/Bureau-Veritas-Acquires-Topo-Solutions-to-Enhance-Its-AI-Powered-Supply-Chain-Intelligence-Offering/" data-industry="Technology" data-status="ANNOUNCED" data-size="" data-country="Other" data-search="bureau veritas acquires topo solutions to enhance its ai-powered supply chain intelligence offering bureau veritas topo solutions">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -1951,7 +2000,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/23/3408794/0/en/coface-strengthens-its-debt-collection-capabilities-with-the-acquisition-of-baker-ing.html" data-industry="Financials" data-status="ANNOUNCED" data-size="" data-search="coface strengthens its debt collection capabilities  with the acquisition of baker ing coface baker ing">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/23/3408794/0/en/coface-strengthens-its-debt-collection-capabilities-with-the-acquisition-of-baker-ing.html" data-industry="Financials" data-status="ANNOUNCED" data-size="" data-country="Other" data-search="coface strengthens its debt collection capabilities  with the acquisition of baker ing coface baker ing">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -1972,7 +2021,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/23/3408819/0/en/ch%C3%AAne-gear-acquires-stone-glacier-from-revelyst-keeping-the-brand-rooted-in-montana.html" data-industry="Consumer" data-status="ANNOUNCED" data-size="" data-search="chêne gear acquires stone glacier from revelyst, keeping the brand rooted in montana chêne gear stone glacier">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/23/3408819/0/en/ch%C3%AAne-gear-acquires-stone-glacier-from-revelyst-keeping-the-brand-rooted-in-montana.html" data-industry="Consumer" data-status="ANNOUNCED" data-size="" data-country="US" data-search="chêne gear acquires stone glacier from revelyst, keeping the brand rooted in montana chêne gear stone glacier">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -1993,7 +2042,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/23/3408688/0/en/passage-bio-announces-1-for-6-reverse-stock-split-in-connection-with-the-proposed-merger-with-remix-therapeutics.html" data-industry="Healthcare" data-status="ANNOUNCED" data-size="" data-search="passage bio announces 1-for-6 reverse stock split in connection with the proposed merger with remix therapeutics passage bio remix therapeutics">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/23/3408688/0/en/passage-bio-announces-1-for-6-reverse-stock-split-in-connection-with-the-proposed-merger-with-remix-therapeutics.html" data-industry="Healthcare" data-status="ANNOUNCED" data-size="" data-country="US" data-search="passage bio announces 1-for-6 reverse stock split in connection with the proposed merger with remix therapeutics passage bio remix therapeutics">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -2014,7 +2063,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/23/3408270/0/en/unusual-whales-acquires-the-blackboxstocks-platform.html" data-industry="Financials" data-status="ANNOUNCED" data-size="" data-search="unusual whales acquires the blackboxstocks platform unusual whales blackboxstocks">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/23/3408270/0/en/unusual-whales-acquires-the-blackboxstocks-platform.html" data-industry="Financials" data-status="ANNOUNCED" data-size="" data-country="US" data-search="unusual whales acquires the blackboxstocks platform unusual whales blackboxstocks">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -2035,7 +2084,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/23/3408336/11961/en/stonex-group-inc-acquires-grainfox-expanding-agricultural-technology-and-market-intelligence-capabilities.html" data-industry="Technology" data-status="ANNOUNCED" data-size="" data-search="stonex group inc. acquires grainfox, expanding agricultural technology and market intelligence capabilities stonex group inc. grainfox corp.">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/23/3408336/11961/en/stonex-group-inc-acquires-grainfox-expanding-agricultural-technology-and-market-intelligence-capabilities.html" data-industry="Technology" data-status="ANNOUNCED" data-size="" data-country="CA" data-search="stonex group inc. acquires grainfox, expanding agricultural technology and market intelligence capabilities stonex group inc. grainfox corp.">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -2056,7 +2105,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/23/3408360/0/en/roze-ai-signs-non-binding-memorandum-of-agreement-to-explore-potential-acquisition-of-shares-in-baum-architects.html" data-industry="Technology" data-status="ANNOUNCED" data-size="" data-search="roze ai signs non-binding memorandum of agreement to explore potential acquisition of shares in baum architects roze ai baum architects">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/23/3408360/0/en/roze-ai-signs-non-binding-memorandum-of-agreement-to-explore-potential-acquisition-of-shares-in-baum-architects.html" data-industry="Technology" data-status="ANNOUNCED" data-size="" data-country="Other" data-search="roze ai signs non-binding memorandum of agreement to explore potential acquisition of shares in baum architects roze ai baum architects">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -2077,7 +2126,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/23/3408176/0/en/zacatecas-silver-closes-option-to-acquire-the-lourdes-gold-silver-project-from-guanajuato-silver.html" data-industry="Materials" data-status="CLOSED" data-size="" data-search="zacatecas silver closes option to acquire the lourdes gold-silver project from guanajuato silver zacatecas silver lourdes gold-silver project">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/23/3408176/0/en/zacatecas-silver-closes-option-to-acquire-the-lourdes-gold-silver-project-from-guanajuato-silver.html" data-industry="Materials" data-status="CLOSED" data-size="" data-country="Other" data-search="zacatecas silver closes option to acquire the lourdes gold-silver project from guanajuato silver zacatecas silver lourdes gold-silver project">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag CLOSED">CLOSED</span>
@@ -2098,7 +2147,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/23/3408196/0/en/j-star-holding-confirms-plans-to-acquire-6-7-million-u-s-manufacturing-facility-supported-by-mitsubishi-chemical-partnership-and-potential-bank-financing.html" data-industry="Industrials" data-status="ANNOUNCED" data-size="6.5" data-search="j-star holding confirms plans to acquire $6-7 million u.s. manufacturing facility, supported by mitsubishi chemical partnership and potential bank financing j-star holding co., ltd ">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/23/3408196/0/en/j-star-holding-confirms-plans-to-acquire-6-7-million-u-s-manufacturing-facility-supported-by-mitsubishi-chemical-partnership-and-potential-bank-financing.html" data-industry="Industrials" data-status="ANNOUNCED" data-size="6.5" data-country="US" data-search="j-star holding confirms plans to acquire $6-7 million u.s. manufacturing facility, supported by mitsubishi chemical partnership and potential bank financing j-star holding co., ltd ">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -2119,7 +2168,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/23/3408030/0/en/joint-statement-regarding-agreement-of-a-pre-conditional-possible-cash-acquisition-of-kenmare-resources-plc-by-international-resources-holding-rsc-ltd.html" data-industry="Materials" data-status="ANNOUNCED" data-size="461.6" data-search="joint statement regarding agreement of a pre-conditional possible cash acquisition of kenmare resources plc by international resources holding rsc ltd international resources holding rsc ltd kenmare resources plc">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/23/3408030/0/en/joint-statement-regarding-agreement-of-a-pre-conditional-possible-cash-acquisition-of-kenmare-resources-plc-by-international-resources-holding-rsc-ltd.html" data-industry="Materials" data-status="ANNOUNCED" data-size="461.6" data-country="Other" data-search="joint statement regarding agreement of a pre-conditional possible cash acquisition of kenmare resources plc by international resources holding rsc ltd international resources holding rsc ltd kenmare resources plc">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -2140,7 +2189,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/23/3408019/0/en/bureau-veritas-acquires-topo-solutions-to-enhance-its-ai-powered-supply-chain-intelligence-offering.html" data-industry="Technology" data-status="ANNOUNCED" data-size="" data-search="bureau veritas acquires topo solutions to enhance its  ai-powered supply chain intelligence offering bureau veritas topo solutions">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/23/3408019/0/en/bureau-veritas-acquires-topo-solutions-to-enhance-its-ai-powered-supply-chain-intelligence-offering.html" data-industry="Technology" data-status="ANNOUNCED" data-size="" data-country="Other" data-search="bureau veritas acquires topo solutions to enhance its  ai-powered supply chain intelligence offering bureau veritas topo solutions">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -2161,7 +2210,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/23/3408004/0/en/brookfield-to-acquire-pgp-glass-a-leading-global-manufacturer-of-specialty-glass-packaging-from-blackstone-for-1-7-billion.html" data-industry="Industrials" data-status="ANNOUNCED" data-size="1700.0" data-search="brookfield to acquire pgp glass, a leading global manufacturer of specialty glass packaging from blackstone for $1.7 billion brookfield pgp glass">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/23/3408004/0/en/brookfield-to-acquire-pgp-glass-a-leading-global-manufacturer-of-specialty-glass-packaging-from-blackstone-for-1-7-billion.html" data-industry="Industrials" data-status="ANNOUNCED" data-size="1700.0" data-country="Other" data-search="brookfield to acquire pgp glass, a leading global manufacturer of specialty glass packaging from blackstone for $1.7 billion brookfield pgp glass">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -2182,7 +2231,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/20/3407833/0/en/beeline-and-tytl-to-host-joint-stakeholder-update-call-on-merger-agreement-with-tytl-corp.html" data-industry="Financials" data-status="ANNOUNCED" data-size="" data-search="beeline and tytl to host joint stakeholder update call on merger agreement with tytl corp. beeline holdings tytl corp.">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/20/3407833/0/en/beeline-and-tytl-to-host-joint-stakeholder-update-call-on-merger-agreement-with-tytl-corp.html" data-industry="Financials" data-status="ANNOUNCED" data-size="" data-country="US" data-search="beeline and tytl to host joint stakeholder update call on merger agreement with tytl corp. beeline holdings tytl corp.">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -2203,7 +2252,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/20/3407733/0/en/base-acquires-rubiq-to-give-companies-customer-context-they-can-trust-for-ai-infrastructure-and-agentic-teammates.html" data-industry="Technology" data-status="ANNOUNCED" data-size="" data-search="base acquires rubiq to give companies customer context they can trust for ai infrastructure and agentic teammates base rubiq">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/20/3407733/0/en/base-acquires-rubiq-to-give-companies-customer-context-they-can-trust-for-ai-infrastructure-and-agentic-teammates.html" data-industry="Technology" data-status="ANNOUNCED" data-size="" data-country="Other" data-search="base acquires rubiq to give companies customer context they can trust for ai infrastructure and agentic teammates base rubiq">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -2224,7 +2273,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/20/3407310/0/en/visionwave-holdings-acquires-critical-minerals-intelligence-platform-targeting-near-term-commercialization-of-defense-supply-chain-intelligence.html" data-industry="Technology" data-status="ANNOUNCED" data-size="11.0" data-search="visionwave holdings acquires critical minerals intelligence platform, targeting near-term commercialization of defense supply-chain intelligence visionwave holdings critical minerals intelligence platform">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/20/3407310/0/en/visionwave-holdings-acquires-critical-minerals-intelligence-platform-targeting-near-term-commercialization-of-defense-supply-chain-intelligence.html" data-industry="Technology" data-status="ANNOUNCED" data-size="11.0" data-country="Other" data-search="visionwave holdings acquires critical minerals intelligence platform, targeting near-term commercialization of defense supply-chain intelligence visionwave holdings critical minerals intelligence platform">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -2245,7 +2294,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/19/3406796/0/en/pontiac-bancorp-inc-and-ottawa-bancorp-inc-announce-receipt-of-all-required-regulatory-and-shareholder-approvals-for-merger.html" data-industry="Financials" data-status="ANNOUNCED" data-size="45.5" data-search="pontiac bancorp, inc. and ottawa bancorp, inc. announce receipt of all required regulatory and shareholder approvals for merger pontiac bancorp, inc. ottawa bancorp, inc.">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/19/3406796/0/en/pontiac-bancorp-inc-and-ottawa-bancorp-inc-announce-receipt-of-all-required-regulatory-and-shareholder-approvals-for-merger.html" data-industry="Financials" data-status="ANNOUNCED" data-size="45.5" data-country="US" data-search="pontiac bancorp, inc. and ottawa bancorp, inc. announce receipt of all required regulatory and shareholder approvals for merger pontiac bancorp, inc. ottawa bancorp, inc.">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -2266,7 +2315,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/19/3406587/0/en/friedman-industries-expands-downstream-with-the-acquisition-of-behrens-metalware.html" data-industry="Industrials" data-status="ANNOUNCED" data-size="" data-search="friedman industries expands downstream with the acquisition of behrens metalware friedman industries behrens holding, inc.">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/19/3406587/0/en/friedman-industries-expands-downstream-with-the-acquisition-of-behrens-metalware.html" data-industry="Industrials" data-status="ANNOUNCED" data-size="" data-country="US" data-search="friedman industries expands downstream with the acquisition of behrens metalware friedman industries behrens holding, inc.">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -2287,7 +2336,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/19/3406641/0/en/aifa-signs-definitive-agreement-to-acquire-little-vault-shanglong-li-to-serve-as-chairman-and-ceo-accelerating-ai-applications-and-content-ip-commercialization.html" data-industry="Technology" data-status="ANNOUNCED" data-size="" data-search="aifa signs definitive agreement to acquire little vault, shanglong li to serve as chairman and ceo, accelerating ai applications and content ip commercialization  ">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/19/3406641/0/en/aifa-signs-definitive-agreement-to-acquire-little-vault-shanglong-li-to-serve-as-chairman-and-ceo-accelerating-ai-applications-and-content-ip-commercialization.html" data-industry="Technology" data-status="ANNOUNCED" data-size="" data-country="" data-search="aifa signs definitive agreement to acquire little vault, shanglong li to serve as chairman and ceo, accelerating ai applications and content ip commercialization  ">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -2308,7 +2357,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/19/3406395/9504/en/willis-lease-finance-corporation-expands-fleet-with-acquisition-of-two-airbus-a320-aircraft.html" data-industry="Industrials" data-status="ANNOUNCED" data-size="" data-search="willis lease finance corporation expands fleet with acquisition of two airbus a320 aircraft willis lease finance corporation ">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/19/3406395/9504/en/willis-lease-finance-corporation-expands-fleet-with-acquisition-of-two-airbus-a320-aircraft.html" data-industry="Industrials" data-status="ANNOUNCED" data-size="" data-country="Other" data-search="willis lease finance corporation expands fleet with acquisition of two airbus a320 aircraft willis lease finance corporation ">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -2329,7 +2378,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/19/3406343/0/en/exolum-enters-u-s-pipeline-operations-with-the-acquisition-of-a-pipeline-system-in-houston.html" data-industry="Energy" data-status="ANNOUNCED" data-size="" data-search="exolum enters u.s. pipeline operations with the acquisition of a pipeline system in houston exolum boardwalk pipelines, lp">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/19/3406343/0/en/exolum-enters-u-s-pipeline-operations-with-the-acquisition-of-a-pipeline-system-in-houston.html" data-industry="Energy" data-status="ANNOUNCED" data-size="" data-country="US" data-search="exolum enters u.s. pipeline operations with the acquisition of a pipeline system in houston exolum boardwalk pipelines, lp">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -2350,7 +2399,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/18/3406019/0/en/trident-signs-mou-to-acquire-51-controlling-stake-in-malaysia-s-guang-yao-development-entering-hydrogen-power-and-battery-energy-storage-for-data-centres.html" data-industry="Energy" data-status="ANNOUNCED" data-size="15.3" data-search="trident signs mou to acquire 51% controlling stake in malaysia’s guang yao development, entering hydrogen power and battery energy storage for data centres trident guang yao development">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/18/3406019/0/en/trident-signs-mou-to-acquire-51-controlling-stake-in-malaysia-s-guang-yao-development-entering-hydrogen-power-and-battery-energy-storage-for-data-centres.html" data-industry="Energy" data-status="ANNOUNCED" data-size="15.3" data-country="Other" data-search="trident signs mou to acquire 51% controlling stake in malaysia’s guang yao development, entering hydrogen power and battery energy storage for data centres trident guang yao development">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -2371,7 +2420,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/18/3405839/35894/en/synaptics-stockholders-approve-merger-with-onsemi.html" data-industry="Technology" data-status="ANNOUNCED" data-size="" data-search="synaptics stockholders approve merger with onsemi onsemi synaptics">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/18/3405839/35894/en/synaptics-stockholders-approve-merger-with-onsemi.html" data-industry="Technology" data-status="ANNOUNCED" data-size="" data-country="US" data-search="synaptics stockholders approve merger with onsemi onsemi synaptics">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -2392,7 +2441,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/18/3405653/0/en/transom-capital-completes-acquisition-of-soundthinking.html" data-industry="Technology" data-status="CLOSED" data-size="" data-search="transom capital completes acquisition of soundthinking transom capital group soundthinking">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/18/3405653/0/en/transom-capital-completes-acquisition-of-soundthinking.html" data-industry="Technology" data-status="CLOSED" data-size="" data-country="US" data-search="transom capital completes acquisition of soundthinking transom capital group soundthinking">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag CLOSED">CLOSED</span>
@@ -2413,7 +2462,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/18/3405379/0/en/spie-signs-an-agreement-for-the-acquisition-of-enprom-group-strengthening-its-high-voltage-power-engineering-and-installation-capabilities-in-poland-and-germany.html" data-industry="Industrials" data-status="ANNOUNCED" data-size="" data-search="spie signs an agreement for the acquisition of enprom group, strengthening its high-voltage power engineering and installation capabilities in poland and germany  ">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/18/3405379/0/en/spie-signs-an-agreement-for-the-acquisition-of-enprom-group-strengthening-its-high-voltage-power-engineering-and-installation-capabilities-in-poland-and-germany.html" data-industry="Industrials" data-status="ANNOUNCED" data-size="" data-country="" data-search="spie signs an agreement for the acquisition of enprom group, strengthening its high-voltage power engineering and installation capabilities in poland and germany  ">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -2434,7 +2483,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/17/3405307/0/en/fernweh-group-announces-acquisition-of-resource-energy-equipment.html" data-industry="Industrials" data-status="ANNOUNCED" data-size="" data-search="fernweh group announces acquisition of resource energy equipment fernweh group resource energy equipment">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/17/3405307/0/en/fernweh-group-announces-acquisition-of-resource-energy-equipment.html" data-industry="Industrials" data-status="ANNOUNCED" data-size="" data-country="US" data-search="fernweh group announces acquisition of resource energy equipment fernweh group resource energy equipment">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -2455,7 +2504,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/17/3404565/0/en/crown-aviation-acquires-silver-king-helicopters-anchoring-its-canadian-aviation-consolidation-strategy.html" data-industry="Industrials" data-status="ANNOUNCED" data-size="" data-search="crown aviation acquires silver king helicopters, anchoring its canadian aviation consolidation strategy crown aviation holdings inc. silver king helicopters inc.">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/17/3404565/0/en/crown-aviation-acquires-silver-king-helicopters-anchoring-its-canadian-aviation-consolidation-strategy.html" data-industry="Industrials" data-status="ANNOUNCED" data-size="" data-country="CA" data-search="crown aviation acquires silver king helicopters, anchoring its canadian aviation consolidation strategy crown aviation holdings inc. silver king helicopters inc.">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -2476,7 +2525,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/17/3404581/0/en/clearwave-to-acquire-ting-s-owned-fiber-networks-expanding-fiber-footprint-to-20-states.html" data-industry="Telecom &amp; Media" data-status="ANNOUNCED" data-size="" data-search="clearwave to acquire ting&#x27;s owned fiber networks, expanding fiber footprint to 20 states clearwave ting">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/17/3404581/0/en/clearwave-to-acquire-ting-s-owned-fiber-networks-expanding-fiber-footprint-to-20-states.html" data-industry="Telecom &amp; Media" data-status="ANNOUNCED" data-size="" data-country="US" data-search="clearwave to acquire ting&#x27;s owned fiber networks, expanding fiber footprint to 20 states clearwave ting">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -2497,7 +2546,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/17/3404423/0/en/alpha-modus-announces-subsidiary-s-non-binding-letter-of-intent-for-a-potential-acquisition-of-or-investment-in-chaingpt.html" data-industry="Technology" data-status="ANNOUNCED" data-size="" data-search="alpha modus announces subsidiary&#x27;s non-binding letter of intent for a potential acquisition of or investment in chaingpt  ">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/17/3404423/0/en/alpha-modus-announces-subsidiary-s-non-binding-letter-of-intent-for-a-potential-acquisition-of-or-investment-in-chaingpt.html" data-industry="Technology" data-status="ANNOUNCED" data-size="" data-country="" data-search="alpha modus announces subsidiary&#x27;s non-binding letter of intent for a potential acquisition of or investment in chaingpt  ">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -2518,7 +2567,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/17/3404426/0/en/smartkem-inc-merger-partner-ferrox-advances-global-commercialization-of-tivani-titanium-and-magnetite-products-through-wogen-collaboration.html" data-industry="Materials" data-status="ANNOUNCED" data-size="" data-search="smartkem, inc. merger partner ferrox advances global commercialization of tivani titanium and magnetite products through wogen collaboration smartkem ferrox critical minerals">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/17/3404426/0/en/smartkem-inc-merger-partner-ferrox-advances-global-commercialization-of-tivani-titanium-and-magnetite-products-through-wogen-collaboration.html" data-industry="Materials" data-status="ANNOUNCED" data-size="" data-country="Other" data-search="smartkem, inc. merger partner ferrox advances global commercialization of tivani titanium and magnetite products through wogen collaboration smartkem ferrox critical minerals">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -2539,7 +2588,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3404073/0/en/valor-energy-inc-closes-acquisition-of-18mw-computing-center-in-youngstown-ohio-accelerating-ai-data-center-expansion.html" data-industry="Technology" data-status="CLOSED" data-size="" data-search="valor energy inc. closes acquisition of 18mw computing center in youngstown, ohio, accelerating ai data center expansion valor energy inc. glorious star, llc">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3404073/0/en/valor-energy-inc-closes-acquisition-of-18mw-computing-center-in-youngstown-ohio-accelerating-ai-data-center-expansion.html" data-industry="Technology" data-status="CLOSED" data-size="" data-country="US" data-search="valor energy inc. closes acquisition of 18mw computing center in youngstown, ohio, accelerating ai data center expansion valor energy inc. glorious star, llc">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag CLOSED">CLOSED</span>
@@ -2560,7 +2609,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3404111/10055/en/pool-corporation-to-acquire-team-horner.html" data-industry="Industrials" data-status="ANNOUNCED" data-size="" data-search="pool corporation to acquire team horner pool corporation team horner group, inc.">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3404111/10055/en/pool-corporation-to-acquire-team-horner.html" data-industry="Industrials" data-status="ANNOUNCED" data-size="" data-country="US" data-search="pool corporation to acquire team horner pool corporation team horner group, inc.">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -2581,7 +2630,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3404135/0/en/voltus-acquires-stem-s-athena-platform-to-enable-battery-partners-to-extract-more-value-from-their-assets.html" data-industry="Energy" data-status="ANNOUNCED" data-size="" data-search="voltus acquires stem’s athena platform to enable battery partners to extract more value from their assets voltus athena">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3404135/0/en/voltus-acquires-stem-s-athena-platform-to-enable-battery-partners-to-extract-more-value-from-their-assets.html" data-industry="Energy" data-status="ANNOUNCED" data-size="" data-country="US" data-search="voltus acquires stem’s athena platform to enable battery partners to extract more value from their assets voltus athena">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -2602,7 +2651,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3404140/0/en/rosemont-pharmaceuticals-to-acquire-aytu-biopharma-to-accelerate-us-expansion.html" data-industry="Healthcare" data-status="ANNOUNCED" data-size="" data-search="rosemont pharmaceuticals to acquire aytu biopharma to accelerate us expansion rosemont pharmaceuticals aytu biopharma">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3404140/0/en/rosemont-pharmaceuticals-to-acquire-aytu-biopharma-to-accelerate-us-expansion.html" data-industry="Healthcare" data-status="ANNOUNCED" data-size="" data-country="US" data-search="rosemont pharmaceuticals to acquire aytu biopharma to accelerate us expansion rosemont pharmaceuticals aytu biopharma">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -2623,7 +2672,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403947/0/en/spie-nederland-strengthens-its-position-in-industrial-automation-and-robotics-with-the-acquisition-of-duflex-b-v.html" data-industry="Industrials" data-status="ANNOUNCED" data-size="" data-search="spie nederland strengthens its position in industrial automation and robotics with the acquisition of duflex b.v spie duflex b.v.">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403947/0/en/spie-nederland-strengthens-its-position-in-industrial-automation-and-robotics-with-the-acquisition-of-duflex-b-v.html" data-industry="Industrials" data-status="ANNOUNCED" data-size="" data-country="Other" data-search="spie nederland strengthens its position in industrial automation and robotics with the acquisition of duflex b.v spie duflex b.v.">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -2644,7 +2693,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403979/0/en/nvro-metals-completes-acquisition-of-northern-territories-resources.html" data-industry="Industrials" data-status="CLOSED" data-size="" data-search="nvro metals completes acquisition of northern territories resources nvro metals northern territories resources">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403979/0/en/nvro-metals-completes-acquisition-of-northern-territories-resources.html" data-industry="Industrials" data-status="CLOSED" data-size="" data-country="Other" data-search="nvro metals completes acquisition of northern territories resources nvro metals northern territories resources">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag CLOSED">CLOSED</span>
@@ -2665,7 +2714,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403737/0/en/edustaff-acquires-speech-services-rhode-island-to-expand-onsite-special-education-services-in-the-northeast.html" data-industry="Healthcare" data-status="ANNOUNCED" data-size="" data-search="edustaff acquires speech services rhode island to expand onsite special education services in the northeast edustaff speech services rhode island">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403737/0/en/edustaff-acquires-speech-services-rhode-island-to-expand-onsite-special-education-services-in-the-northeast.html" data-industry="Healthcare" data-status="ANNOUNCED" data-size="" data-country="US" data-search="edustaff acquires speech services rhode island to expand onsite special education services in the northeast edustaff speech services rhode island">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -2686,7 +2735,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403426/0/en/davion-healthcare-plc-agrees-to-terms-in-acquisition-of-independence-care-homecare-network.html" data-industry="Healthcare" data-status="ANNOUNCED" data-size="10.0" data-search="davion healthcare plc agrees to terms in acquisition of independence care homecare network davion healthcare plc independence care">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403426/0/en/davion-healthcare-plc-agrees-to-terms-in-acquisition-of-independence-care-homecare-network.html" data-industry="Healthcare" data-status="ANNOUNCED" data-size="10.0" data-country="US" data-search="davion healthcare plc agrees to terms in acquisition of independence care homecare network davion healthcare plc independence care">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -2707,7 +2756,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403477/0/en/energy-capital-partners-ecp-completes-acquisition-of-energysolutions.html" data-industry="Energy" data-status="CLOSED" data-size="" data-search="energy capital partners (ecp) completes acquisition of energysolutions energy capital partners energysolutions">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403477/0/en/energy-capital-partners-ecp-completes-acquisition-of-energysolutions.html" data-industry="Energy" data-status="CLOSED" data-size="" data-country="US" data-search="energy capital partners (ecp) completes acquisition of energysolutions energy capital partners energysolutions">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag CLOSED">CLOSED</span>
@@ -2728,7 +2777,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403471/0/en/commure-acquires-elaborate-to-cure-the-clinician-inbox.html" data-industry="Healthcare" data-status="ANNOUNCED" data-size="" data-search="commure acquires elaborate to cure the clinician inbox commure elaborate">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403471/0/en/commure-acquires-elaborate-to-cure-the-clinician-inbox.html" data-industry="Healthcare" data-status="ANNOUNCED" data-size="" data-country="US" data-search="commure acquires elaborate to cure the clinician inbox commure elaborate">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -2749,7 +2798,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403531/0/en/worldwide-nft-inc-acquires-artificial-intelligence-platform-from-discourse-analytics-inc-to-expand-software-capabilities.html" data-industry="Technology" data-status="ANNOUNCED" data-size="" data-search="worldwide nft, inc. acquires artificial intelligence platform from discourse analytics, inc. to expand software capabilities worldwide nft, inc. discourse analytics, inc.">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403531/0/en/worldwide-nft-inc-acquires-artificial-intelligence-platform-from-discourse-analytics-inc-to-expand-software-capabilities.html" data-industry="Technology" data-status="ANNOUNCED" data-size="" data-country="US" data-search="worldwide nft, inc. acquires artificial intelligence platform from discourse analytics, inc. to expand software capabilities worldwide nft, inc. discourse analytics, inc.">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -2770,7 +2819,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403518/0/en/zenta-group-signs-binding-mou-for-strategic-acquisition-of-controlling-stake-in-se-asia-based-ai-technology-start-up.html" data-industry="Technology" data-status="ANNOUNCED" data-size="" data-search="zenta group signs binding mou for strategic acquisition of controlling stake in se asia-based ai technology start-up zenta group ">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403518/0/en/zenta-group-signs-binding-mou-for-strategic-acquisition-of-controlling-stake-in-se-asia-based-ai-technology-start-up.html" data-industry="Technology" data-status="ANNOUNCED" data-size="" data-country="Other" data-search="zenta group signs binding mou for strategic acquisition of controlling stake in se asia-based ai technology start-up zenta group ">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -2791,7 +2840,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403542/0/en/wsp-completes-acquisition-of-gcm-corpo.html" data-industry="Industrials" data-status="CLOSED" data-size="" data-search="wsp completes acquisition of gcm corpo wsp global inc. gcm corpo inc.">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403542/0/en/wsp-completes-acquisition-of-gcm-corpo.html" data-industry="Industrials" data-status="CLOSED" data-size="" data-country="CA" data-search="wsp completes acquisition of gcm corpo wsp global inc. gcm corpo inc.">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag CLOSED">CLOSED</span>
@@ -2812,7 +2861,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403605/0/en/nutritics-accelerates-us-expansion-with-acquisition-of-kitchen-management-platform-parsley-software.html" data-industry="Technology" data-status="ANNOUNCED" data-size="" data-search="nutritics accelerates us expansion with acquisition of kitchen management platform parsley software nutritics parsley software">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403605/0/en/nutritics-accelerates-us-expansion-with-acquisition-of-kitchen-management-platform-parsley-software.html" data-industry="Technology" data-status="ANNOUNCED" data-size="" data-country="US" data-search="nutritics accelerates us expansion with acquisition of kitchen management platform parsley software nutritics parsley software">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -2833,7 +2882,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403576/0/en/qtrex-acquires-gis-to-scale-quantum-interconnect-production-adding-10-million-in-cash-and-a-business-with-11-3-million-in-revenue.html" data-industry="Technology" data-status="ANNOUNCED" data-size="16.0" data-search="qtrex acquires gis to scale quantum interconnect production, adding $10 million in cash and a business with $11.3 million in revenue qtrex gis">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403576/0/en/qtrex-acquires-gis-to-scale-quantum-interconnect-production-adding-10-million-in-cash-and-a-business-with-11-3-million-in-revenue.html" data-industry="Technology" data-status="ANNOUNCED" data-size="16.0" data-country="Other" data-search="qtrex acquires gis to scale quantum interconnect production, adding $10 million in cash and a business with $11.3 million in revenue qtrex gis">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -2854,7 +2903,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403560/31297/en/taboola-finalizes-acquisition-of-dianomi.html" data-industry="Technology" data-status="ANNOUNCED" data-size="" data-search="taboola finalizes acquisition of dianomi taboola dianomi">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403560/31297/en/taboola-finalizes-acquisition-of-dianomi.html" data-industry="Technology" data-status="ANNOUNCED" data-size="" data-country="Other" data-search="taboola finalizes acquisition of dianomi taboola dianomi">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -2875,7 +2924,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403615/0/en/amd-completes-acquisition-of-world-labs.html" data-industry="Technology" data-status="CLOSED" data-size="" data-search="amd completes acquisition of world labs amd world labs">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403615/0/en/amd-completes-acquisition-of-world-labs.html" data-industry="Technology" data-status="CLOSED" data-size="" data-country="US" data-search="amd completes acquisition of world labs amd world labs">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag CLOSED">CLOSED</span>
@@ -2896,7 +2945,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403661/0/en/caliber-sponsored-fund-acquires-tonto-oaks-apartments-expanding-caliber-s-multifamily-holdings-in-payson-arizona.html" data-industry="Real Estate" data-status="ANNOUNCED" data-size="9.0" data-search="caliber-sponsored fund acquires tonto oaks apartments, expanding caliber’s multifamily holdings in payson, arizona caliber tonto oaks apartments">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403661/0/en/caliber-sponsored-fund-acquires-tonto-oaks-apartments-expanding-caliber-s-multifamily-holdings-in-payson-arizona.html" data-industry="Real Estate" data-status="ANNOUNCED" data-size="9.0" data-country="US" data-search="caliber-sponsored fund acquires tonto oaks apartments, expanding caliber’s multifamily holdings in payson, arizona caliber tonto oaks apartments">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -2917,7 +2966,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403664/33206/en/rapid-micro-biosystems-signs-definitive-agreement-to-be-acquired-by-merck-kgaa-darmstadt-germany.html" data-industry="Healthcare" data-status="ANNOUNCED" data-size="" data-search="rapid micro biosystems signs definitive agreement to be acquired by merck kgaa, darmstadt, germany merck kgaa, darmstadt, germany rapid micro biosystems">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403664/33206/en/rapid-micro-biosystems-signs-definitive-agreement-to-be-acquired-by-merck-kgaa-darmstadt-germany.html" data-industry="Healthcare" data-status="ANNOUNCED" data-size="" data-country="US" data-search="rapid micro biosystems signs definitive agreement to be acquired by merck kgaa, darmstadt, germany merck kgaa, darmstadt, germany rapid micro biosystems">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -2938,7 +2987,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403314/10381/en/black-hills-corp-and-northwestern-energy-complete-merger-forming-bright-horizon-energy-corporation.html" data-industry="Energy" data-status="ANNOUNCED" data-size="" data-search="black hills corp. and northwestern energy complete merger, forming bright horizon energy corporation black hills corp. northwestern energy group, inc.">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403314/10381/en/black-hills-corp-and-northwestern-energy-complete-merger-forming-bright-horizon-energy-corporation.html" data-industry="Energy" data-status="ANNOUNCED" data-size="" data-country="US" data-search="black hills corp. and northwestern energy complete merger, forming bright horizon energy corporation black hills corp. northwestern energy group, inc.">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -2959,7 +3008,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403226/0/en/flsmidth-to-acquire-ce-africa-strengthening-its-crushing-and-aftermarket-offering-in-southern-africa.html" data-industry="Industrials" data-status="ANNOUNCED" data-size="" data-search="flsmidth to acquire ce africa, strengthening its crushing and aftermarket offering in southern africa flsmidth ce africa">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/16/3403226/0/en/flsmidth-to-acquire-ce-africa-strengthening-its-crushing-and-aftermarket-offering-in-southern-africa.html" data-industry="Industrials" data-status="ANNOUNCED" data-size="" data-country="Other" data-search="flsmidth to acquire ce africa, strengthening its crushing and aftermarket offering in southern africa flsmidth ce africa">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -2980,7 +3029,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/14/3403026/0/en/high-arctic-energy-services-inc-enters-into-a-definitive-agreement-to-be-acquired-by-newport-capital-in-a-go-private-transaction-and-announces-intent-to-make-a-cash-distribution-to.html" data-industry="Energy" data-status="ANNOUNCED" data-size="14.7" data-search="high arctic energy services inc. enters into a definitive agreement to be acquired by newport capital in a go-private transaction and announces intent to make a cash distribution to shareholders newport capital high arctic energy services inc.">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/14/3403026/0/en/high-arctic-energy-services-inc-enters-into-a-definitive-agreement-to-be-acquired-by-newport-capital-in-a-go-private-transaction-and-announces-intent-to-make-a-cash-distribution-to.html" data-industry="Energy" data-status="ANNOUNCED" data-size="14.7" data-country="CA" data-search="high arctic energy services inc. enters into a definitive agreement to be acquired by newport capital in a go-private transaction and announces intent to make a cash distribution to shareholders newport capital high arctic energy services inc.">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -3001,7 +3050,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/13/3402965/0/en/millicom-tigo-signs-agreement-to-acquire-entel-peru-expanding-its-presence-across-latin-america.html" data-industry="Telecom &amp; Media" data-status="ANNOUNCED" data-size="1714.0" data-search="millicom (tigo) signs agreement to acquire entel peru, expanding its presence across latin america millicom entel peru">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/13/3402965/0/en/millicom-tigo-signs-agreement-to-acquire-entel-peru-expanding-its-presence-across-latin-america.html" data-industry="Telecom &amp; Media" data-status="ANNOUNCED" data-size="1714.0" data-country="Other" data-search="millicom (tigo) signs agreement to acquire entel peru, expanding its presence across latin america millicom entel peru">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -3022,7 +3071,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/13/3402862/0/en/wolters-kluwer-to-acquire-ai-powered-clinical-decision-support-platform-agilemd.html" data-industry="Healthcare" data-status="ANNOUNCED" data-size="100.0" data-search="wolters kluwer to acquire ai-powered clinical decision support platform agilemd wolters kluwer agilemd">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/13/3402862/0/en/wolters-kluwer-to-acquire-ai-powered-clinical-decision-support-platform-agilemd.html" data-industry="Healthcare" data-status="ANNOUNCED" data-size="100.0" data-country="US" data-search="wolters kluwer to acquire ai-powered clinical decision support platform agilemd wolters kluwer agilemd">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -3043,7 +3092,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/13/3402523/0/en/proposed-merger-and-proven-vct-offer.html" data-industry="Financials" data-status="ANNOUNCED" data-size="" data-search="proposed merger and proven vct offer proven vct plc proven growth and income vct plc">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/13/3402523/0/en/proposed-merger-and-proven-vct-offer.html" data-industry="Financials" data-status="ANNOUNCED" data-size="" data-country="Other" data-search="proposed merger and proven vct offer proven vct plc proven growth and income vct plc">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -3064,7 +3113,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/13/3402525/0/en/proposed-merger-and-proven-vct-offer.html" data-industry="Financials" data-status="ANNOUNCED" data-size="" data-search="proposed merger and proven vct offer proven vct plc proven growth and income vct plc">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/13/3402525/0/en/proposed-merger-and-proven-vct-offer.html" data-industry="Financials" data-status="ANNOUNCED" data-size="" data-country="Other" data-search="proposed merger and proven vct offer proven vct plc proven growth and income vct plc">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -3085,7 +3134,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/13/3402604/0/en/gridai-technologies-signs-definitive-agreement-to-acquire-pronghorn-resources-establishing-major-wyoming-owned-natural-gas-and-multi-gigawatt-ai-power-infrastructure-platform-targe.html" data-industry="Energy" data-status="ANNOUNCED" data-size="" data-search="gridai technologies signs definitive agreement to acquire pronghorn resources, establishing major wyoming owned-natural gas and multi-gigawatt ai power infrastructure platform targeting initial power delivery in 2027 gridai technologies pronghorn resources">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/13/3402604/0/en/gridai-technologies-signs-definitive-agreement-to-acquire-pronghorn-resources-establishing-major-wyoming-owned-natural-gas-and-multi-gigawatt-ai-power-infrastructure-platform-targe.html" data-industry="Energy" data-status="ANNOUNCED" data-size="" data-country="US" data-search="gridai technologies signs definitive agreement to acquire pronghorn resources, establishing major wyoming owned-natural gas and multi-gigawatt ai power infrastructure platform targeting initial power delivery in 2027 gridai technologies pronghorn resources">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -3106,7 +3155,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/13/3402505/0/en/cerrado-gold-acquires-the-past-producing-manantial-espejo-mine-in-santa-cruz-argentina-from-pan-american-silver.html" data-industry="Materials" data-status="ANNOUNCED" data-size="20.0" data-search="cerrado gold acquires the past-producing manantial espejo mine in santa cruz, argentina, from pan american silver cerrado gold minera tritón argentina s.a.">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/13/3402505/0/en/cerrado-gold-acquires-the-past-producing-manantial-espejo-mine-in-santa-cruz-argentina-from-pan-american-silver.html" data-industry="Materials" data-status="ANNOUNCED" data-size="20.0" data-country="Other" data-search="cerrado gold acquires the past-producing manantial espejo mine in santa cruz, argentina, from pan american silver cerrado gold minera tritón argentina s.a.">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -3127,7 +3176,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/12/3402083/0/en/advini-and-invivo-continue-to-strengthen-their-strategic-partnership-with-the-proposed-acquisition-of-the-bonne-nouvelle-and-mythique-brands.html" data-industry="Consumer" data-status="ANNOUNCED" data-size="" data-search="advini and invivo continue to strengthen their strategic partnership with the proposed acquisition of the bonne nouvelle and mythique brands advini bonne nouvelle and mythique">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/12/3402083/0/en/advini-and-invivo-continue-to-strengthen-their-strategic-partnership-with-the-proposed-acquisition-of-the-bonne-nouvelle-and-mythique-brands.html" data-industry="Consumer" data-status="ANNOUNCED" data-size="" data-country="Other" data-search="advini and invivo continue to strengthen their strategic partnership with the proposed acquisition of the bonne nouvelle and mythique brands advini bonne nouvelle and mythique">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -3148,7 +3197,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/12/3402034/0/en/danone-completes-its-acquisition-of-made-group-expanding-its-presence-in-the-fast-growing-healthy-nutrition-space-in-asia-pacific.html" data-industry="Consumer" data-status="CLOSED" data-size="" data-search="danone completes its acquisition of made group, expanding its presence in the fast-growing healthy nutrition space in asia pacific danone made group">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/12/3402034/0/en/danone-completes-its-acquisition-of-made-group-expanding-its-presence-in-the-fast-growing-healthy-nutrition-space-in-asia-pacific.html" data-industry="Consumer" data-status="CLOSED" data-size="" data-country="Other" data-search="danone completes its acquisition of made group, expanding its presence in the fast-growing healthy nutrition space in asia pacific danone made group">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag CLOSED">CLOSED</span>
@@ -3169,7 +3218,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/12/3401727/0/en/virtuix-signs-loi-to-acquire-defense-contractor-sts-international-reporting-40-million-in-unaudited-cash-basis-revenue-through-october-2026.html" data-industry="Industrials" data-status="ANNOUNCED" data-size="12.0" data-search="virtuix signs loi to acquire defense contractor sts international, reporting $40 million in unaudited cash-basis revenue through october 2026 virtuix sts international">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/12/3401727/0/en/virtuix-signs-loi-to-acquire-defense-contractor-sts-international-reporting-40-million-in-unaudited-cash-basis-revenue-through-october-2026.html" data-industry="Industrials" data-status="ANNOUNCED" data-size="12.0" data-country="US" data-search="virtuix signs loi to acquire defense contractor sts international, reporting $40 million in unaudited cash-basis revenue through october 2026 virtuix sts international">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -3190,7 +3239,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/11/3400552/0/en/intermex-rejects-western-union-s-purported-termination-of-merger-agreement.html" data-industry="Financials" data-status="DISPUTE" data-size="" data-search="intermex rejects western union’s purported termination of merger agreement the western union company international money express, inc.">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/11/3400552/0/en/intermex-rejects-western-union-s-purported-termination-of-merger-agreement.html" data-industry="Financials" data-status="DISPUTE" data-size="" data-country="US" data-search="intermex rejects western union’s purported termination of merger agreement the western union company international money express, inc.">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag DISPUTE">DISPUTE</span>
@@ -3211,7 +3260,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/11/3400589/0/en/gowell-acquires-wellsense-to-expand-global-well-integrity-and-fiber-optic-sensing-capabilities.html" data-industry="Energy" data-status="ANNOUNCED" data-size="" data-search="gowell acquires wellsense to expand global well integrity and fiber optic sensing capabilities gowell wellsense">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/11/3400589/0/en/gowell-acquires-wellsense-to-expand-global-well-integrity-and-fiber-optic-sensing-capabilities.html" data-industry="Energy" data-status="ANNOUNCED" data-size="" data-country="Other" data-search="gowell acquires wellsense to expand global well integrity and fiber optic sensing capabilities gowell wellsense">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -3232,7 +3281,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/11/3400577/0/en/arko-petroleum-corp-completes-acquisition-of-the-business-of-u-s-petroleum-partners-llc-expected-to-contribute-approximately-30-million-of-annualized-adjusted-ebitda.html" data-industry="Energy" data-status="CLOSED" data-size="" data-search="arko petroleum corp. completes acquisition of the business of u.s. petroleum partners, llc, expected to contribute approximately $30 million of annualized adjusted ebitda arko petroleum corp. u.s. petroleum partners, llc">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/11/3400577/0/en/arko-petroleum-corp-completes-acquisition-of-the-business-of-u-s-petroleum-partners-llc-expected-to-contribute-approximately-30-million-of-annualized-adjusted-ebitda.html" data-industry="Energy" data-status="CLOSED" data-size="" data-country="US" data-search="arko petroleum corp. completes acquisition of the business of u.s. petroleum partners, llc, expected to contribute approximately $30 million of annualized adjusted ebitda arko petroleum corp. u.s. petroleum partners, llc">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag CLOSED">CLOSED</span>
@@ -3253,7 +3302,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/11/3400574/16126/en/lamar-advertising-acquires-assets-of-newman-outdoor-advertising.html" data-industry="Telecom &amp; Media" data-status="ANNOUNCED" data-size="" data-search="lamar advertising acquires assets of newman outdoor advertising  ">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/11/3400574/16126/en/lamar-advertising-acquires-assets-of-newman-outdoor-advertising.html" data-industry="Telecom &amp; Media" data-status="ANNOUNCED" data-size="" data-country="" data-search="lamar advertising acquires assets of newman outdoor advertising  ">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -3274,7 +3323,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/11/3400635/0/en/metalenz-acquires-pxe-imaging-expanding-its-perception-platform-to-bring-new-insights-to-ai.html" data-industry="Technology" data-status="ANNOUNCED" data-size="" data-search="metalenz acquires pxe imaging, expanding its perception platform to bring new insights to ai metalenz pxe imaging">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/11/3400635/0/en/metalenz-acquires-pxe-imaging-expanding-its-perception-platform-to-bring-new-insights-to-ai.html" data-industry="Technology" data-status="ANNOUNCED" data-size="" data-country="Other" data-search="metalenz acquires pxe imaging, expanding its perception platform to bring new insights to ai metalenz pxe imaging">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -3295,7 +3344,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/11/3401148/0/en/octave-announces-acquisition-of-cerebre.html" data-industry="Technology" data-status="ANNOUNCED" data-size="" data-search="octave announces acquisition of cerebre octave intelligence plc cerebre">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/11/3401148/0/en/octave-announces-acquisition-of-cerebre.html" data-industry="Technology" data-status="ANNOUNCED" data-size="" data-country="US" data-search="octave announces acquisition of cerebre octave intelligence plc cerebre">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -3316,7 +3365,7 @@
             </div>
         </div>
     </div>
-        <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/11/3401183/7512/en/investcorp-credit-management-bdc-inc-to-merge-into-bcp-investment-corporation.html" data-industry="Financials" data-status="ANNOUNCED" data-size="" data-search="investcorp credit management bdc, inc. to merge into bcp investment corporation bcp investment corporation investcorp credit management bdc, inc.">
+    <div class="deal" data-deal-id="https://www.globenewswire.com/en/news-release/2026/11/11/3401183/7512/en/investcorp-credit-management-bdc-inc-to-merge-into-bcp-investment-corporation.html" data-industry="Financials" data-status="ANNOUNCED" data-size="" data-country="US" data-search="investcorp credit management bdc, inc. to merge into bcp investment corporation bcp investment corporation investcorp credit management bdc, inc.">
         <div class="card">
             <span class="tag UNSEEN" hidden>NEW</span>
             <span class="tag ANNOUNCED">ANNOUNCED</span>
@@ -3337,104 +3386,103 @@
             </div>
         </div>
     </div></div>
-    <div class="empty" id="empty" hidden>No deals match these filters.</div>
-  </div>
-  <script>
-  document.addEventListener("DOMContentLoaded", () => {
+  <div class="empty" id="empty" hidden>No deals match these filters.</div>
+  <p class="footnote">Deal details are extracted automatically from press releases and can contain errors. Check the linked source before relying on any figure. Non-USD values are converted at an approximate rate.</p>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
 
-      const cards = document.querySelectorAll(".deal[data-deal-id]");
-      const STORAGE_KEY = "maTrackerSeenDeals";
+  const cards = document.querySelectorAll(".deal[data-deal-id]");
+  const STORAGE_KEY = "maTrackerSeenDeals";
 
-      // Load previously viewed deals
+  // Load previously viewed deals
+  let seenDeals = new Set();
+  const saved = localStorage.getItem(STORAGE_KEY);
 
-      let seenDeals = new Set();
-      const saved = localStorage.getItem(STORAGE_KEY);
+  if (saved) {
+    seenDeals = new Set(JSON.parse(saved));
+  }
 
-      if (saved) {
-        seenDeals = new Set(JSON.parse(saved));
-      }
+  // Mark a deal as viewed
+  function markSeen(card) {
+    const id = card.dataset.dealId;
 
-      // Mark a deal as viewed
-      function markSeen(card) {
-          const id = card.dataset.dealId;
+    if (seenDeals.has(id)) return;
 
-          if (seenDeals.has(id)) return;
+    seenDeals.add(id);
 
-          seenDeals.add(id);
+    localStorage.setItem(
+      STORAGE_KEY,
+      JSON.stringify([...seenDeals])
+    );
+  }
 
-          localStorage.setItem(
-              STORAGE_KEY,
-              JSON.stringify([...seenDeals])
-          );
+  // Show badges on deals that haven't been viewed
+  cards.forEach(card => {
 
-      }
+    const id = card.dataset.dealId;
+    const badge = card.querySelector(".UNSEEN");
 
-      // Show badges on deals that haven't been viewed
-      cards.forEach(card => {
+    if (!seenDeals.has(id)) {
+      badge.hidden = false;
+    } else {
+      badge.hidden = true;
+    }
 
-          const id = card.dataset.dealId;
-          const badge = card.querySelector(".UNSEEN");
-
-          if (!seenDeals.has(id)) {
-              badge.hidden = false;
-          } else {
-              badge.hidden = true;
-          }
-
-          // Clicking a deal marks it as viewed
-          card.querySelector("a").addEventListener("click", () => {
-              markSeen(card);
-          });
-
-      });
-
-      // Track which deals are visible on screen
-      const timers = new Map();
-
-          const observer = new IntersectionObserver(entries => {
-
-        entries.forEach(entry => {
-
-            const card = entry.target;
-            const id = card.dataset.dealId;
-
-            if (entry.isIntersecting) {
-
-                if (!seenDeals.has(id) && !timers.has(card)) {
-                    timers.set(card, setTimeout(() => {
-                        markSeen(card);
-                        timers.delete(card);
-                    }, 1000));
-                }
-
-            } else {
-
-                clearTimeout(timers.get(card));
-                timers.delete(card);
-
-                if (seenDeals.has(id)) {
-                    card.querySelector(".UNSEEN").hidden = true;
-                    observer.unobserve(card);
-                }
-            }
-
-        });
-
-    }, { threshold: 0.5 });
-
-      cards.forEach(card => {
-
-          if (!seenDeals.has(card.dataset.dealId)) {
-              observer.observe(card);
-          }
-
-      });
+    // Clicking a deal marks it as viewed
+    card.querySelector("a").addEventListener("click", () => {
+      markSeen(card);
+    });
 
   });
 
+  // Track which deals are visible on screen
+  const timers = new Map();
+
+  const observer = new IntersectionObserver(entries => {
+
+    entries.forEach(entry => {
+
+      const card = entry.target;
+      const id = card.dataset.dealId;
+
+      if (entry.isIntersecting) {
+
+        if (!seenDeals.has(id) && !timers.has(card)) {
+          timers.set(card, setTimeout(() => {
+            markSeen(card);
+            timers.delete(card);
+          }, 1000));
+        }
+
+      } else {
+
+        clearTimeout(timers.get(card));
+        timers.delete(card);
+
+        if (seenDeals.has(id)) {
+          card.querySelector(".UNSEEN").hidden = true;
+          observer.unobserve(card);
+        }
+      }
+
+    });
+
+  }, { threshold: 0.5 });
+
+  cards.forEach(card => {
+
+    if (!seenDeals.has(card.dataset.dealId)) {
+      observer.observe(card);
+    }
+
+  });
+
+});
+
 const container = document.getElementById("deals");
 const allDeals = [...container.querySelectorAll(".deal")];
-const state = { status: "All", industry: "All", size: "any", hideUnd: false, q: "", sort: "new" };
+const state = { status: "All", industry: "All", country: "na", size: "any", hideUnd: false, q: "", sort: "new" };
 
 function sizeOf(card) {
   return card.dataset.size === "" ? null : Number(card.dataset.size);
@@ -3443,8 +3491,13 @@ function sizeOf(card) {
 function matches(card) {
   const d = card.dataset;
   const size = sizeOf(card);
+  const c = d.country;
   if (state.status !== "All" && d.status !== state.status) return false;
   if (state.industry !== "All" && d.industry !== state.industry) return false;
+  if (state.country === "na" && !(c === "US" || c === "CA" || c === "")) return false;
+  if (state.country === "us" && c !== "US") return false;
+  if (state.country === "ca" && c !== "CA") return false;
+  if (state.country === "intl" && c !== "Other") return false;
   if (state.hideUnd && size === null) return false;
   if (state.size === "u100" && !(size !== null && size < 100)) return false;
   if (state.size === "mid" && !(size !== null && size >= 100 && size < 1000)) return false;
@@ -3484,18 +3537,19 @@ document.querySelectorAll(".stat[data-status]").forEach(btn => {
   });
 });
 document.getElementById("search").addEventListener("input", e => { state.q = e.target.value.trim().toLowerCase(); applyFilters(); });
+document.getElementById("countryFilter").addEventListener("change", e => { state.country = e.target.value; applyFilters(); });
 document.getElementById("sizeFilter").addEventListener("change", e => { state.size = e.target.value; applyFilters(); });
 document.getElementById("sortBy").addEventListener("change", e => { state.sort = e.target.value; applyFilters(); });
 document.getElementById("hideUnd").addEventListener("change", e => { state.hideUnd = e.target.checked; applyFilters(); });
 applyFilters();
-      const reveal = new IntersectionObserver(entries => {
+
+const reveal = new IntersectionObserver(entries => {
   entries.forEach(e => {
     e.target.classList.toggle("show", e.isIntersecting);
     e.target.classList.toggle("above", !e.isIntersecting && e.boundingClientRect.top < 0);
   });
 }, { threshold: 0.1 });
-  document.querySelectorAll(".deal").forEach(c => reveal.observe(c));
-
-  </script>
-  </body>
-  </html>
+document.querySelectorAll(".deal").forEach(c => reveal.observe(c));
+</script>
+</body>
+</html>
