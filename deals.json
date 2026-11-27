@@ -607,8 +607,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-18T06:30:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/18/3405379/0/en/spie-signs-an-agreement-for-the-acquisition-of-enprom-group-strengthening-its-high-voltage-power-engineering-and-installation-capabilities-in-poland-and-germany.html",
-    "notes": "The acquisition aims to strengthen SPIE\u2019s high-voltage power engineering and installation capabilities in Poland and Germany while creating new growth opportunities in the electrical power construction EPC segment. The deal combines the companies' knowledge and experience to better address energy infrastructure needs and establish a leading market position.",
-    "industry": "Industrials"
+    "notes": "The acquisition aims to strengthen SPIE's high-voltage power engineering and installation capabilities in Poland and Germany. It also enables the company to create a market-leading position in the electrical power construction EPC segment.",
+    "industry": "Energy",
+    "country": "Other",
+    "acquirer": "SPIE",
+    "target": "ENPROM Group",
+    "size_musd": null,
+    "funding": "Existing financial resources"
   },
   {
     "title": "Transom Capital Completes Acquisition of SoundThinking",
@@ -2139,5 +2144,19 @@
     "size_musd": null,
     "funding": null,
     "notes": "The acquisition provides MDA Space with a strategic manufacturing footprint to accelerate growth in the U.S. defence market. It also adds an established, profitable, and cash-generating business to the company's portfolio."
+  },
+  {
+    "title": "Peak Credit Union Announces Agreement to Acquire Southwest Heritage Bank",
+    "status": "ANNOUNCED",
+    "source": "PR Newswire",
+    "date": "2026-11-27T22:30:00+00:00",
+    "link": "https://www.prnewswire.com/news-releases/peak-credit-union-announces-agreement-to-acquire-southwest-heritage-bank-302951825.html",
+    "industry": "Financials",
+    "country": "US",
+    "acquirer": "Peak Credit Union",
+    "target": "Southwest Heritage Bank",
+    "size_musd": null,
+    "funding": "All cash",
+    "notes": "The acquisition aims to combine Peak's consumer financial services with Southwest Heritage's commercial lending and treasury management expertise. This move is intended to expand Peak's market reach into Arizona and New Mexico while broadening financial resources for individuals and business owners."
   }
 ]
