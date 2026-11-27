@@ -2079,7 +2079,14 @@
     "status": "ANNOUNCED",
     "source": "PR Newswire",
     "date": "2026-11-27T07:20:00+00:00",
-    "link": "https://www.prnewswire.com/news-releases/eqt-healthcare-growth-to-acquire-majority-stake-in-specialty-european-pharmaceutical-business-kelso-pharma-302951594.html"
+    "link": "https://www.prnewswire.com/news-releases/eqt-healthcare-growth-to-acquire-majority-stake-in-specialty-european-pharmaceutical-business-kelso-pharma-302951594.html",
+    "industry": "Healthcare",
+    "country": "Other",
+    "acquirer": "EQT",
+    "target": "Kelso Pharma",
+    "size_musd": null,
+    "funding": null,
+    "notes": "EQT will support Kelso Pharma's expansion across Europe by investing in commercial capabilities, new product launches, and selective acquisitions. This partnership aims to scale Kelso into a leading pan-European specialty pharmaceutical company by leveraging EQT's healthcare expertise and global network."
   },
   {
     "title": "Viomi Technology Completes Acquisition of Brondell Inc.",
