@@ -1287,7 +1287,12 @@
     "date": "2026-11-23T22:05:00+00:00",
     "link": "https://www.prnewswire.com/news-releases/terex-announces-definitive-agreement-to-sell-its-aerials-segment-to-linamar-302948654.html",
     "industry": "Industrials",
-    "notes": "Terex is divesting its Aerials segment to shift its portfolio away from cyclical mining and construction markets toward more resilient essential services markets. The company plans to use the net proceeds to reduce debt, return capital to shareholders, and support growth investments, though specific operational synergies were not stated."
+    "notes": "This sale supports Terex's strategic transformation from cyclical mining and construction markets to resilient essential services markets with lower capital intensity. The move allows Terex to focus on businesses with strong brands serving sectors like emergency vehicles, waste collection, and infrastructure.",
+    "country": "US",
+    "acquirer": "Linamar",
+    "target": "Aerials segment",
+    "size_musd": 1400.0,
+    "funding": "All cash"
   },
   {
     "title": "Uniform Advantage Expands Retail Presence with Acquisition of 16 Former Scrubs & Beyond Locations",
@@ -1562,7 +1567,12 @@
     "date": "2026-11-24T14:00:00+00:00",
     "link": "https://www.prnewswire.com/news-releases/cerberus-to-acquire-the-us-space-systems-business-of-airbus-302949473.html",
     "industry": "Industrials",
-    "notes": "Cerberus intends to invest in the company's engineering organization, product portfolio, and U.S. supply chain to build a leading independent, U.S.-owned satellite platform that can scale to meet growing national security and commercial mission requirements. The acquisition aims to expand the business's capabilities and solidify its role as a trusted merchant supplier by establishing dedicated U.S. ownership."
+    "notes": "Cerberus intends to invest in the business' engineering organization, product portfolio, and U.S. supply chain to establish a leading independent, U.S.-owned satellite platform. The acquisition aims to expand capabilities to serve a broader range of national security and commercial missions.",
+    "country": "US",
+    "acquirer": "Cerberus",
+    "target": "U.S. Space Systems business of Airbus U.S. Space & Defense",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Stratix Acquires DMI's Managed Mobility Services Business",
