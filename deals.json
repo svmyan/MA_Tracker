@@ -2103,7 +2103,14 @@
     "status": "CLOSED",
     "source": "GlobeNewswire",
     "date": "2026-11-27T10:00:00+00:00",
-    "link": "https://www.globenewswire.com/en/news-release/2026/11/27/3411120/0/en/viomi-technology-completes-acquisition-of-brondell-inc.html"
+    "link": "https://www.globenewswire.com/en/news-release/2026/11/27/3411120/0/en/viomi-technology-completes-acquisition-of-brondell-inc.html",
+    "industry": "Technology",
+    "country": "US",
+    "acquirer": "Viomi Technology",
+    "target": "Brondell Inc.",
+    "size_musd": null,
+    "funding": "All cash",
+    "notes": "This acquisition strengthens Viomi's presence in North America by adding Brondell\u2019s established brand, distribution channels, and experienced team. It also enhances the company's local operating capabilities and supports its long-term \u201cGlobal Water\u201d business strategy."
   },
   {
     "title": "Ruthless Spine and NavJam Announce Intent to Merge",
