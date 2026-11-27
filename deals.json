@@ -47,8 +47,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-11T12:00:00Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/11/3400574/16126/en/lamar-advertising-acquires-assets-of-newman-outdoor-advertising.html",
-    "notes": "The acquisition allows Lamar Advertising to expand its portfolio and strengthen its presence across the upper Midwest. The deal immediately establishes the company as the leading outdoor advertising provider in North Dakota by adding over 2,250 billboard faces.",
-    "industry": "Telecom & Media"
+    "notes": "The acquisition bolsters Lamar's presence in the upper Midwest by adding over 2,250 billboard faces. This transaction establishes the company as the leading player in North Dakota.",
+    "industry": "Telecom & Media",
+    "country": "US",
+    "acquirer": "Lamar Advertising Company",
+    "target": "Newman Outdoor Advertising",
+    "size_musd": null,
+    "funding": "All cash"
   },
   {
     "title": "ARKO Petroleum Corp. Completes Acquisition of the Business of U.S. Petroleum Partners, LLC, Expected to Contribute Approximately $30 Million of Annualized Adjusted EBITDA",
