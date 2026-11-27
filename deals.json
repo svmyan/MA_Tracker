@@ -551,8 +551,13 @@
     "source": "GlobeNewswire",
     "date": "2026-11-17T11:59:24Z",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/17/3404423/0/en/alpha-modus-announces-subsidiary-s-non-binding-letter-of-intent-for-a-potential-acquisition-of-or-investment-in-chaingpt.html",
-    "notes": "Rationale not stated.",
-    "industry": "Technology"
+    "notes": "The company is evaluating a potential acquisition of or investment in ChainGPT to expand its reach into AI, Web3, and blockchain technologies. Rationale not stated.",
+    "industry": "Technology",
+    "country": "Other",
+    "acquirer": "Alpha Modus",
+    "target": "ChainGPT",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Clearwave to acquire Ting's owned fiber networks, expanding fiber footprint to 20 states",
