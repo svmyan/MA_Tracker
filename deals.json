@@ -1190,7 +1190,12 @@
     "date": "2026-11-23T16:00:00+00:00",
     "link": "https://www.prnewswire.com/news-releases/authentic-acquires-oneill-expanding-global-action-and-outdoor-portfolio-302948389.html",
     "industry": "Consumer",
-    "notes": "This acquisition expands Authentic's presence in the action and outdoor sports market, creating new growth opportunities across content, experiences, and global commerce by leveraging Authentic's platform and network of partners."
+    "notes": "The acquisition expands Authentic's presence in the action and outdoor sports market. The company aims to grow the O'Neill brand through its platform by leveraging content, experiences, and global commerce opportunities.",
+    "country": "US",
+    "acquirer": "Authentic Brands Group",
+    "target": "O'Neill",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "Saragon to Acquire Three Additional Data Center Facilities, Extending Its Edge Footprint to Omaha, Tacoma and Cheyenne",
@@ -2094,5 +2099,19 @@
     "source": "GlobeNewswire",
     "date": "2026-11-27T10:00:00+00:00",
     "link": "https://www.globenewswire.com/en/news-release/2026/11/27/3411120/0/en/viomi-technology-completes-acquisition-of-brondell-inc.html"
+  },
+  {
+    "title": "Ruthless Spine and NavJam Announce Intent to Merge",
+    "status": "ANNOUNCED",
+    "source": "Business Wire",
+    "date": "2026-11-27T13:00:00+00:00",
+    "link": "http://www.businesswire.com/news/home/20261125977193/en/Ruthless-Spine-and-NavJam-Announce-Intent-to-Merge/",
+    "industry": "Healthcare",
+    "country": "US",
+    "acquirer": "Ruthless Spine",
+    "target": "NavJam",
+    "size_musd": null,
+    "funding": null,
+    "notes": "Rationale not stated"
   }
 ]
