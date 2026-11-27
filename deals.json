@@ -1162,7 +1162,12 @@
     "date": "2026-11-23T14:15:00+00:00",
     "link": "https://www.prnewswire.com/news-releases/workday-completes-acquisition-of-c1ai-302947290.html",
     "industry": "Technology",
-    "notes": "The acquisition allows Workday to function as an identity governance layer for both human workers and AI agents by managing access to business systems and cloud infrastructure. This integration aims to simplify access management, reduce manual processes, and enable organizations to apply policy-driven security controls across their hybrid workforce."
+    "notes": "The acquisition allows Workday to become the identity governance layer for people and AI agents, enabling organizations to manage and secure access to business systems. By combining Workday's employee data with C1.ai's capabilities, the company aims to simplify access management and apply policy-driven controls across a hybrid workforce.",
+    "country": "US",
+    "acquirer": "Workday",
+    "target": "C1.ai",
+    "size_musd": null,
+    "funding": null
   },
   {
     "title": "BTG Pactual Strategic Capital Finances Bertram Capital&apos;s Acquisition of Medical Technology Associates",
@@ -2075,5 +2080,12 @@
     "source": "PR Newswire",
     "date": "2026-11-27T07:20:00+00:00",
     "link": "https://www.prnewswire.com/news-releases/eqt-healthcare-growth-to-acquire-majority-stake-in-specialty-european-pharmaceutical-business-kelso-pharma-302951594.html"
+  },
+  {
+    "title": "Viomi Technology Completes Acquisition of Brondell Inc.",
+    "status": "CLOSED",
+    "source": "GlobeNewswire",
+    "date": "2026-11-27T10:00:00+00:00",
+    "link": "https://www.globenewswire.com/en/news-release/2026/11/27/3411120/0/en/viomi-technology-completes-acquisition-of-brondell-inc.html"
   }
 ]
